@@ -4,6 +4,7 @@
 > **Depends on:** SPEC 01
 > **Date:** 2026-10-11
 > **Objective:** Generate a fully documented OpenAPI spec of the `/api/v1` endpoints with Scramble, viewable locally at `/docs/api` and committed as `docs/openapi/v1.json` so client apps can generate their API clients from it.
+> **Note:** Envelope updated by SPEC 04.
 
 ## Why this spec exists
 
@@ -26,7 +27,7 @@ This spec also sets two project-wide conventions:
   - Grouped under the `Auth` tag.
   - A summary and a description for each operation.
   - Every response status the endpoint can return (success, 401, 403, 404, 422, 429 where applicable), with the body shape.
-  - Examples for request bodies and for the `UserResource`, `TokenResource` and `{ token, user }` responses.
+  - Examples for request bodies and for the `UserResource`, `TokenResource` and `{ data: { token, user } }` responses.
 - Exported spec committed at `docs/openapi/v1.json` (`php artisan scramble:export`).
 - Feature tests that:
   - fail if the committed file is out of date,
@@ -141,7 +142,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 3. **Bearer security.** Add the `Scramble::configure()` document transformer in `AppServiceProvider`. Mark the five guest methods `@unauthenticated`. Check: the UI shows a bearer token input, and the guest endpoints show no lock.
 4. **Groups and summaries.** Add `#[Group('Auth')]` to every Auth controller, and a summary plus a description PHPDoc to every method. Check: the UI shows a single "Auth" section with readable operation names.
 5. **Responses.** Make each operation document exactly the statuses in the table. Rely on inference where Scramble already produces the status (validation → 422, `auth:sanctum` → 401). Add `@response` / `@throws` for the rest (204 bodies, 202 vs 200 on resend, 404 on revoking another user's token, 403 for a bad signature, 429 throttles). Check: `/docs/api.json` matches the table by hand.
-6. **Examples.** Add field examples to `UserResource`, `TokenResource` and the four FormRequests. Make sure the `{ token, user }` response of register/login renders as an object with both keys. Check: every request body and success response in the UI shows realistic example values.
+6. **Examples.** Add field examples to `UserResource`, `TokenResource` and the four FormRequests. Make sure the `{ data: { token, user } }` response of register/login renders as an object with both keys. Check: every request body and success response in the UI shows realistic example values.
 7. **Export.** Run `php artisan scramble:export --path=docs/openapi/v1.json` and commit the file. Check: the file exists and is valid JSON.
 8. **Tests.** Add `tests/Feature/Docs/OpenApiDocumentTest.php` with the drift, coverage, security and access tests. Check: `composer test` passes. Changing a summary without re-exporting makes the drift test fail.
 9. **CI check.** No workflow change: `.github/workflows/tests.yml` already runs `composer test` on every pull request and on pushes to `master`, so the drift, coverage, security and access tests run in CI. Push the branch and open the PR. Check: the `Tests` workflow passes on GitHub, including the drift test, which confirms the export is identical on the runner (relative server URL, no `APP_URL` dependency).
@@ -168,7 +169,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 - [ ] `register`, `login`, `email/verify/{id}/{hash}`, `forgot-password` and `reset-password` have `security: []`. Every other auth operation does not.
 - [ ] The document contains exactly the 11 operations in the table, all tagged `Auth`, each with a non-empty summary.
 - [ ] Each operation documents exactly the response statuses listed in the table.
-- [ ] `UserResource`, `TokenResource` and the register/login `{ token, user }` responses show example values in the schema.
+- [ ] `UserResource`, `TokenResource` and the register/login `{ data: { token, user } }` responses show example values in the schema.
 - [ ] Every field of the four auth FormRequests has an example value.
 - [ ] `docs/openapi/v1.json` is committed and identical to a fresh `php artisan scramble:export`.
 - [ ] Editing any endpoint's PHPDoc without re-exporting makes `composer test` fail with a message naming the export command.
@@ -203,7 +204,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 | Risk | Mitigation |
 | ---- | ---------- |
 | Scramble may not yet support Laravel 13, or may break on a minor upgrade. | Step 1 checks compatibility before any other work. Pin the minor version in `composer.json` if needed. |
-| Inference gets a shape wrong (e.g. the `{ token, user }` array response, or a resource with conditional fields). | Step 5/6 checks every operation by hand, and the coverage test locks the status codes. Fix wrong shapes with explicit `@response` PHPDoc. |
+| Inference gets a shape wrong (e.g. the `{ data: { token, user } }` response, or a resource with conditional fields). | Step 5/6 checks every operation by hand, and the coverage test locks the status codes. Fix wrong shapes with explicit `@response` PHPDoc. |
 | Export output is not deterministic (key order, environment-dependent values), so the drift test is flaky. | Relative server URL. Run the export in the same test environment as the comparison. If ordering still varies, compare decoded JSON instead of raw text. |
 | Developers forget to re-export after an API change. | The drift test fails `composer test` with the exact command to run, locally and in the `Tests` workflow on every PR. |
 | The docs gate depends on `APP_ENV`. A server misconfigured as `local` exposes the docs. | Documented in `CLAUDE.md`. Production deployments must set `APP_ENV=production`, which SPEC 01 already relies on. |

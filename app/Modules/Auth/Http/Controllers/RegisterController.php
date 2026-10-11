@@ -4,7 +4,7 @@ namespace App\Modules\Auth\Http\Controllers;
 
 use App\Models\User;
 use App\Modules\Auth\Http\Requests\RegisterRequest;
-use App\Modules\Auth\Http\Resources\UserResource;
+use App\Modules\Auth\Http\Resources\AuthTokenResource;
 use Dedoc\Scramble\Attributes\Group;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Exceptions\ThrottleRequestsException;
@@ -30,10 +30,8 @@ class RegisterController
 
         event(new Registered($user));
 
-        return response()->json([
-            /** @example 1|xR8nQ2vLk9Tz4WmP7bYc3HdF6gJs1NaE5uVo0iKq6b79c89d */
-            'token' => $user->createToken($request->deviceName())->plainTextToken,
-            'user' => new UserResource($user),
-        ], 201);
+        return (new AuthTokenResource($user, $user->createToken($request->deviceName())->plainTextToken))
+            ->response()
+            ->setStatusCode(201);
     }
 }

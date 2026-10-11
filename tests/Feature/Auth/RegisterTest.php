@@ -31,10 +31,10 @@ class RegisterTest extends TestCase
         $response = $this->postJson('/api/v1/auth/register', $this->payload());
 
         $response->assertCreated()
-            ->assertJsonStructure(['token', 'user' => ['id', 'name', 'email', 'role', 'email_verified_at', 'created_at']])
-            ->assertJsonPath('user.email', 'ana@example.com')
-            ->assertJsonPath('user.role', 'user')
-            ->assertJsonPath('user.email_verified_at', null);
+            ->assertJsonStructure(['data' => ['token', 'user' => ['id', 'name', 'email', 'role', 'email_verified_at', 'created_at']]])
+            ->assertJsonPath('data.user.email', 'ana@example.com')
+            ->assertJsonPath('data.user.role', 'user')
+            ->assertJsonPath('data.user.email_verified_at', null);
 
         $user = User::firstWhere('email', 'ana@example.com');
         $this->assertSame(UserRole::User, $user->role);
@@ -43,7 +43,7 @@ class RegisterTest extends TestCase
 
     public function test_returned_token_is_a_valid_sanctum_token(): void
     {
-        $token = $this->postJson('/api/v1/auth/register', $this->payload())->json('token');
+        $token = $this->postJson('/api/v1/auth/register', $this->payload())->json('data.token');
 
         $this->assertNotNull(PersonalAccessToken::findToken($token));
     }
@@ -52,7 +52,7 @@ class RegisterTest extends TestCase
     {
         $this->postJson('/api/v1/auth/register', $this->payload(['role' => 'admin']))
             ->assertCreated()
-            ->assertJsonPath('user.role', 'user');
+            ->assertJsonPath('data.user.role', 'user');
 
         $this->assertSame(UserRole::User, User::firstWhere('email', 'ana@example.com')->role);
     }

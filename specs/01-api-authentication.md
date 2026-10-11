@@ -4,6 +4,7 @@
 > **Depends on:** none
 > **Date:** 2026-10-11
 > **Objective:** Let any humanOS client register, log in and manage its session through Sanctum bearer tokens under `/api/v1/auth`, including email verification, password reset, per-device token revocation and a basic user/admin role.
+> **Note:** Envelope updated by SPEC 04.
 
 ## Why this spec exists
 
@@ -115,8 +116,8 @@ app/Modules/Auth/
 
 | Method | Path                         | Auth                    | Throttle                 | Success response |
 | ------ | ---------------------------- | ----------------------- | ------------------------ | ---------------- |
-| POST   | `/register`                  | guest                   | 6/min per IP             | 201 `{ token, user }` + sends verification email |
-| POST   | `/login`                     | guest                   | 5/min per email+IP       | 200 `{ token, user }` |
+| POST   | `/register`                  | guest                   | 6/min per IP             | 201 `{ data: { token, user } }` + sends verification email |
+| POST   | `/login`                     | guest                   | 5/min per email+IP       | 200 `{ data: { token, user } }` |
 | POST   | `/logout`                    | `auth:sanctum`          | —                        | 204, revokes the current token |
 | GET    | `/me`                        | `auth:sanctum`          | —                        | 200 `{ data: user }` |
 | GET    | `/tokens`                    | `auth:sanctum`          | —                        | 200 `{ data: token[] }` |
@@ -148,7 +149,7 @@ app/Modules/Auth/
   "expires_at": "…", "is_current": true }
 
 // register / login
-{ "token": "7|plaintext…", "user": { /* UserResource */ } }
+{ "data": { "token": "7|plaintext…", "user": { /* UserResource */ } } }
 ```
 
 Errors use the existing JSON exception rendering:
@@ -253,7 +254,7 @@ All commands below run inside the `app` container (see "Running the project (Doc
 - [ ] `docker compose exec app composer test` passes against the `laravel_testing` MySQL database, and `docker compose exec app vendor/bin/pint --test` reports no issues.
 - [ ] `docker compose exec app php artisan migrate:fresh` succeeds against the `mysql` service.
 - [ ] `docker compose exec app php artisan route:list --path=api/v1/auth` lists exactly the 11 routes in the endpoints table.
-- [ ] `POST /api/v1/auth/register` with valid data returns 201 with a `token` and a `user` whose `role` is `"user"`.
+- [ ] `POST /api/v1/auth/register` with valid data returns 201 with a `data.token` and a `data.user` whose `role` is `"user"`.
 - [ ] `POST /api/v1/auth/register` with `"role": "admin"` in the body still creates a user with `role` `"user"`.
 - [ ] Register and login without `device_name` store the `User-Agent` value as the token name.
 - [ ] `POST /api/v1/auth/login` with a wrong password returns 422 with an `errors.email` key.
