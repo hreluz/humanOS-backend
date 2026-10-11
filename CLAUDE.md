@@ -39,7 +39,7 @@ The tests use PHPUnit 12, not Pest.
 
 ## Code conventions
 
-- **Don't access the container as an array** (`$this->app['router']`, `app()['config']`). `ServiceProvider::$app` is typed as the `Illuminate\Contracts\Foundation\Application` interface, which doesn't extend `ArrayAccess`, so Intelephense reports P1006 even though it works at runtime. Use the facade (`Route::aliasMiddleware(...)`), `$this->app->make(Router::class)`, or inject the dependency into `boot()`.
+Follow `docs/code-conventions.md` for coding rules (Laravel and container usage, API documentation with Scramble). Read it before writing code.
 
 <laravel-boost-guidelines>
 # Laravel Application

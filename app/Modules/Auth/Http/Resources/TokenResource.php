@@ -20,11 +20,17 @@ class TokenResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            /** @example 1 */
             'id' => $this->id,
+            /** @example iPhone 15 */
             'name' => $this->name,
+            /** @example 2026-10-11T10:15:00Z */
             'last_used_at' => $this->last_used_at?->toIso8601ZuluString(),
+            /** @example 2026-10-11T09:30:00Z */
             'created_at' => $this->created_at?->toIso8601ZuluString(),
+            /** @example 2026-11-10T09:30:00Z */
             'expires_at' => $this->expiresAt()?->toIso8601ZuluString(),
+            /** @example true */
             'is_current' => $this->id === $request->user()?->currentAccessToken()?->id,
         ];
     }
