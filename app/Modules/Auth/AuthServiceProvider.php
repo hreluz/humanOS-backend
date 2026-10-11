@@ -25,8 +25,22 @@ class AuthServiceProvider extends ServiceProvider
 
         Route::aliasMiddleware('admin', EnsureUserIsAdmin::class);
 
+        // AUTH_THROTTLE_ENABLED=false turns both limiters off, e.g. for local end-to-end test runs.
         RateLimiter::for('auth-login', function (Request $request) {
+            if (! config('auth.throttle_enabled')) {
+                return Limit::none();
+            }
+
             return Limit::perMinute(5)->by(Str::lower((string) $request->input('email')).'|'.$request->ip());
+        });
+
+        // Shared by register, password reset and email verification: 6 requests per minute per user or IP.
+        RateLimiter::for('auth', function (Request $request) {
+            if (! config('auth.throttle_enabled')) {
+                return Limit::none();
+            }
+
+            return Limit::perMinute(6)->by($request->user()?->getAuthIdentifier() ?: $request->ip());
         });
 
         VerifyEmail::createUrlUsing(function ($notifiable) {

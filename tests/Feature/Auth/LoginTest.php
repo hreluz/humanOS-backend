@@ -79,6 +79,16 @@ class LoginTest extends TestCase
             ->assertTooManyRequests();
     }
 
+    public function test_failed_logins_are_not_throttled_when_auth_throttling_is_disabled(): void
+    {
+        config(['auth.throttle_enabled' => false]);
+
+        for ($i = 0; $i < 6; $i++) {
+            $this->postJson('/api/v1/auth/login', ['email' => 'ana@example.com', 'password' => 'wrong'])
+                ->assertUnprocessable();
+        }
+    }
+
     public function test_throttle_is_per_email(): void
     {
         for ($i = 0; $i < 5; $i++) {

@@ -115,4 +115,14 @@ class RegisterTest extends TestCase
         $this->postJson('/api/v1/auth/register', $this->payload(['email' => 'user7@example.com']))
             ->assertTooManyRequests();
     }
+
+    public function test_register_is_not_throttled_when_auth_throttling_is_disabled(): void
+    {
+        config(['auth.throttle_enabled' => false]);
+
+        for ($i = 0; $i < 7; $i++) {
+            $this->postJson('/api/v1/auth/register', $this->payload(['email' => "user{$i}@example.com"]))
+                ->assertCreated();
+        }
+    }
 }
