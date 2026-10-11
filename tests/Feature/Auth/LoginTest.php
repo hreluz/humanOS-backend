@@ -26,9 +26,9 @@ class LoginTest extends TestCase
             'password' => 'password',
             'device_name' => 'Pixel 9',
         ])->assertOk()
-            ->assertJsonStructure(['token', 'user' => ['id', 'name', 'email', 'role']])
-            ->assertJsonPath('user.id', $this->user->id)
-            ->assertJsonPath('user.role', 'user');
+            ->assertJsonStructure(['data' => ['token', 'user' => ['id', 'name', 'email', 'role']]])
+            ->assertJsonPath('data.user.id', $this->user->id)
+            ->assertJsonPath('data.user.role', 'user');
 
         $this->assertSame(['Pixel 9'], $this->user->tokens()->pluck('name')->all());
     }

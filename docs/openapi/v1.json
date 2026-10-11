@@ -42,25 +42,18 @@
                 },
                 "responses": {
                     "201": {
-                        "description": "",
+                        "description": "`AuthTokenResource`",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "token": {
-                                            "type": "string",
-                                            "examples": [
-                                                "1|xR8nQ2vLk9Tz4WmP7bYc3HdF6gJs1NaE5uVo0iKq6b79c89d"
-                                            ]
-                                        },
-                                        "user": {
-                                            "$ref": "#/components/schemas/UserResource"
+                                        "data": {
+                                            "$ref": "#/components/schemas/AuthTokenResource"
                                         }
                                     },
                                     "required": [
-                                        "token",
-                                        "user"
+                                        "data"
                                     ]
                                 }
                             }
@@ -112,25 +105,18 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "",
+                        "description": "`AuthTokenResource`",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "token": {
-                                            "type": "string",
-                                            "examples": [
-                                                "1|xR8nQ2vLk9Tz4WmP7bYc3HdF6gJs1NaE5uVo0iKq6b79c89d"
-                                            ]
-                                        },
-                                        "user": {
-                                            "$ref": "#/components/schemas/UserResource"
+                                        "data": {
+                                            "$ref": "#/components/schemas/AuthTokenResource"
                                         }
                                     },
                                     "required": [
-                                        "token",
-                                        "user"
+                                        "data"
                                     ]
                                 }
                             }
@@ -594,6 +580,25 @@
             }
         },
         "schemas": {
+            "AuthTokenResource": {
+                "type": "object",
+                "properties": {
+                    "token": {
+                        "type": "string",
+                        "examples": [
+                            "1|xR8nQ2vLk9Tz4WmP7bYc3HdF6gJs1NaE5uVo0iKq6b79c89d"
+                        ]
+                    },
+                    "user": {
+                        "$ref": "#/components/schemas/UserResource"
+                    }
+                },
+                "required": [
+                    "token",
+                    "user"
+                ],
+                "title": "AuthTokenResource"
+            },
             "ForgotPasswordRequest": {
                 "type": "object",
                 "properties": {

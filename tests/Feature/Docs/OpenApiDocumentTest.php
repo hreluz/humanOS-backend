@@ -105,6 +105,39 @@ class OpenApiDocumentTest extends TestCase
         }
     }
 
+    /**
+     * Every 2xx JSON body has a top-level `data` or `message` key (SPEC 04).
+     */
+    public function test_success_responses_use_the_envelope(): void
+    {
+        $document = json_decode(file_get_contents(base_path(self::EXPORT_PATH)), true);
+        $offenders = [];
+
+        foreach ($document['paths'] as $path => $methods) {
+            foreach ($methods as $method => $operation) {
+                foreach ($operation['responses'] as $status => $response) {
+                    if (! str_starts_with((string) $status, '2')) {
+                        continue;
+                    }
+
+                    $schema = $this->resolve($document, $response)['content']['application/json']['schema'] ?? null;
+
+                    if ($schema === null) {
+                        continue;
+                    }
+
+                    $properties = array_keys($this->resolve($document, $schema)['properties'] ?? []);
+
+                    if (! in_array('data', $properties, true) && ! in_array('message', $properties, true)) {
+                        $offenders[] = strtoupper($method)." {$path} {$status}";
+                    }
+                }
+            }
+        }
+
+        $this->assertSame([], $offenders, 'These success responses have no top-level `data` or `message` key.');
+    }
+
     public function test_docs_are_reachable_in_local(): void
     {
         $this->app->detectEnvironment(fn () => 'local');
@@ -127,6 +160,22 @@ class OpenApiDocumentTest extends TestCase
     private function document(): array
     {
         return app(Generator::class)(Scramble::getGeneratorConfig(Scramble::DEFAULT_API));
+    }
+
+    /**
+     * Follow a local `$ref` (e.g. `#/components/schemas/UserResource`) until a concrete node.
+     *
+     * @param  array<string, mixed>  $document
+     * @param  array<string, mixed>  $node
+     * @return array<string, mixed>
+     */
+    private function resolve(array $document, array $node): array
+    {
+        while (isset($node['$ref'])) {
+            $node = data_get($document, str_replace('/', '.', substr($node['$ref'], 2)));
+        }
+
+        return $node;
     }
 
     /**
