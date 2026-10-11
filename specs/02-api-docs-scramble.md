@@ -32,7 +32,7 @@ This spec also sets two project-wide conventions:
   - fail if the committed file is out of date,
   - check the documented status codes per endpoint,
   - check that the docs are reachable in `local` and blocked in `production`.
-- `CLAUDE.md` updated with the docs URL, the export command and the "document every endpoint" convention.
+- `CLAUDE.md` updated with the docs URL and the export command. The "document every endpoint" convention lives in `docs/code-conventions.md`, linked from `CLAUDE.md`.
 
 **Out of scope (for future specs):**
 
@@ -150,7 +150,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
      - Add `php artisan scramble:export --path=docs/openapi/v1.json` to Commands.
      - Note that the docs live at `/docs/api` (local only).
      - Note that client repos are expected next to this one and read `../humanOS-backend/docs/openapi/v1.json`.
-     - Add the convention: every new endpoint gets a group, a summary, all response statuses and examples, and the export is regenerated in the same PR.
+     - Link `docs/code-conventions.md`, which holds the convention: every new endpoint follows Scramble's documentation and gets a group, a summary, all response statuses and examples, and the export is regenerated in the same PR. (Done early: the file was created before step 9, and the existing CLAUDE.md conventions moved there.)
    - Run `vendor/bin/pint`.
 11. **Docker smoke check.** With the stack up:
     1. Open `http://localhost:8000/docs/api`. It shows "humanOS API" with one "Auth" group of 11 operations.
@@ -174,7 +174,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 - [ ] Editing any endpoint's PHPDoc without re-exporting makes `composer test` fail with a message naming the export command.
 - [ ] No test-only route appears in `docs/openapi/v1.json`.
 - [ ] The `Tests` GitHub Actions workflow passes on the PR, drift test included.
-- [ ] `CLAUDE.md` documents the docs URL, the export command and the "document every endpoint" convention.
+- [ ] `CLAUDE.md` documents the docs URL and the export command, and links `docs/code-conventions.md`, which holds the "follow Scramble, document every endpoint" convention.
 - [ ] The step 11 Docker smoke check completes with the expected results.
 
 ## Decisions
@@ -207,7 +207,7 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 | Export output is not deterministic (key order, environment-dependent values), so the drift test is flaky. | Relative server URL. Run the export in the same test environment as the comparison. If ordering still varies, compare decoded JSON instead of raw text. |
 | Developers forget to re-export after an API change. | The drift test fails `composer test` with the exact command to run, locally and in the `Tests` workflow on every PR. |
 | The docs gate depends on `APP_ENV`. A server misconfigured as `local` exposes the docs. | Documented in `CLAUDE.md`. Production deployments must set `APP_ENV=production`, which SPEC 01 already relies on. |
-| Full documentation adds PHPDoc upkeep on every endpoint. | The coverage test for each new module catches missing statuses, and the convention in `CLAUDE.md` sets the expectation. |
+| Full documentation adds PHPDoc upkeep on every endpoint. | The coverage test for each new module catches missing statuses, and the convention in `docs/code-conventions.md` sets the expectation. |
 
 ## What is **not** in this spec
 
