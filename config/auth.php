@@ -114,4 +114,17 @@ return [
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Auth Rate Limiting
+    |--------------------------------------------------------------------------
+    |
+    | When disabled, the "auth-login" and "auth" rate limiters allow every
+    | request. Only turn this off locally, for example so the frontend's
+    | end-to-end tests can register and reset passwords repeatedly.
+    |
+    */
+
+    'throttle_enabled' => (bool) env('AUTH_THROTTLE_ENABLED', true),
+
 ];
