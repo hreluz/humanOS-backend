@@ -1,58 +1,175 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# humanOS
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A customizable, cross-platform fitness and health management application that helps users track nutrition, workouts, physical activity, health metrics, and personal goals.
 
-## About Laravel
+Unlike traditional fitness trackers, humanOS does not simply display statistics. It analyzes user data and provides personalized recommendations about what to eat, how to train, and what to improve each day.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> **Core question:** *What should I do today to get closer to my fitness goals?*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This repository contains the **backend API** (Laravel).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Table of Contents
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- [Core Features](#core-features)
+- [Supported Platforms](#supported-platforms)
+- [Technology Stack](#technology-stack)
+- [Proposed Repository Structure](#proposed-repository-structure)
+- [Initial MVP](#initial-mvp)
+- [Later Phases](#later-phases)
+- [Product Vision](#product-vision)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Core Features
 
-## Agentic Development
+### 1. Personal Profile & Goals
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Users enter age, weight, height, activity level, and fitness objectives. The app calculates personalized calorie and macronutrient targets for fat loss, muscle gain, or weight maintenance. Users can customize targets.
 
-```bash
-composer require laravel/boost --dev
+### 2. Nutrition & Meal Tracking
 
-php artisan boost:install
+- Create custom foods with nutritional information per gram or serving.
+- Use a shared food database maintained by administrators.
+- Track calories, protein, carbohydrates, fats, and fiber.
+- Create recipes and reusable meals.
+- Log meals or plan them ahead of time.
+- Monitor daily remaining calories and macronutrients.
+- Track food prices and generate grocery lists.
+
+### 3. Workout & Activity Tracking
+
+- Create customizable workout routines.
+- Record exercises, sets, repetitions, weights, and rest periods.
+- Track walking, cycling, running, and other measurable activities.
+- Record distance, duration, heart rate, and estimated calories burned.
+- Review workout history and strength progression.
+
+### 4. Health & Wearable Integration
+
+Integrate optionally with Apple Health and Apple Watch, with manual entry as an alternative. Track steps, active calories, heart rate, sleep, weight, body fat, and workouts.
+
+### 5. Smart Daily Dashboard
+
+Display calories consumed and estimated burned, remaining calories relative to the user's target, protein/carbohydrate/fat progress, workouts, steps, sleep, recovery, and goal progress.
+
+### 6. Intelligent Decision Engine
+
+Combine nutrition, activity, health data, and goals to suggest practical next actions:
+
+- Eat another 35 g of protein today.
+- Choose a meal that fits remaining macros.
+- Walk another 2,000 steps to reach an activity goal.
+- Review calorie targets based on recent progress.
+- Consider recovery before an intense workout.
+
+Calorie guidance should estimate total daily energy expenditure (TDEE) and avoid automatically treating every exercise calorie as extra food allowance.
+
+### 7. AI Personal Coach
+
+Analyze longer-term patterns to identify inconsistent habits, weight plateaus, workout progression, sleep and recovery trends, and possible adjustments. Recommendations should explain their reasoning and avoid overstating what the data proves.
+
+### 8. Progress & Analytics
+
+- Weight and body measurement history.
+- Progress photos.
+- Strength progression charts.
+- Nutrition consistency.
+- Weekly and monthly reports.
+- Personalized fitness insights.
+
+### 9. Lifestyle Features
+
+- Water intake tracking.
+- Supplement reminders.
+- Habit tracking.
+- Recovery tracking.
+- Meal preparation planning.
+- Grocery budgeting.
+- Daily achievement scores.
+
+### 10. Future Coaching Platform
+
+Allow trainers and nutrition professionals to manage clients, assign programs, review nutrition logs, and monitor progress. Initially, the product focuses on individual users.
+
+---
+
+## Supported Platforms
+
+| Platform    | Experience                                            |
+|-------------|-------------------------------------------------------|
+| Web         | Desktop and responsive mobile browsers; PWA support   |
+| Mobile      | Native iOS and Android applications                   |
+| Apple Watch | Native watchOS companion app                          |
+| Desktop     | Windows, macOS, and Linux applications                |
+
+---
+
+## Technology Stack
+
+| Component       | Technology                                                  |
+|-----------------|-------------------------------------------------------------|
+| Backend         | Laravel modular monolith, API-only                          |
+| Database        | PostgreSQL                                                  |
+| Web             | Nuxt + Vue 3 + TypeScript                                   |
+| Mobile          | React Native + TypeScript                                   |
+| Desktop         | Tauri + shared Vue frontend                                 |
+| Apple Watch     | SwiftUI + HealthKit                                         |
+| Authentication  | Laravel Sanctum                                             |
+| Cache / Queues  | Redis                                                       |
+| Storage         | S3-compatible object storage                                |
+| API Contract    | OpenAPI-generated clients                                   |
+| Architecture    | API-first monorepo; independently deployed applications     |
+| AI              | Rules-based recommendation engine plus optional LLM integration |
+
+---
+
+## Proposed Repository Structure
+
+```
+fitness-platform/
+├── apps/
+│   ├── api/          # Laravel
+│   ├── web/          # Nuxt responsive web/PWA
+│   ├── mobile/       # React Native iOS + Android
+│   ├── desktop/      # Tauri
+│   └── watch-ios/    # SwiftUI
+├── packages/
+│   ├── api-client/
+│   ├── shared-types/
+│   ├── business-rules/
+│   └── design-tokens/
+└── infrastructure/
+    ├── docker/
+    └── terraform/
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## Initial MVP
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. User profiles and customizable goals.
+2. Admin-provided and user-created food database.
+3. Meal logging, serving sizes, and daily macro tracking.
+4. Workout and cardio activity logging.
+5. Manual health metrics.
+6. Daily dashboard and rules-based recommendations.
+7. Basic progress charts and weekly reviews.
 
-## Code of Conduct
+## Later Phases
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- React Native mobile apps and offline synchronization.
+- Apple Health integration and Apple Watch companion.
+- Tauri desktop app.
+- Advanced meal planning, grocery lists, and budgeting.
+- AI coaching and adaptive targets.
+- Multi-client professional coach features.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Product Vision
 
-## License
+A personal fitness operating system that transforms nutrition, exercise, and health data into actionable daily guidance.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The long-term goal is a highly customizable platform that helps users make better fitness decisions, measure progress, and adapt routines based on results.
