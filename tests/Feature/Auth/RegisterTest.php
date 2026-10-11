@@ -125,4 +125,17 @@ class RegisterTest extends TestCase
                 ->assertCreated();
         }
     }
+
+    public function test_register_throttle_limit_is_configurable(): void
+    {
+        config(['auth.throttle.sensitive' => 10]);
+
+        for ($i = 0; $i < 10; $i++) {
+            $this->postJson('/api/v1/auth/register', $this->payload(['email' => "user{$i}@example.com"]))
+                ->assertCreated();
+        }
+
+        $this->postJson('/api/v1/auth/register', $this->payload(['email' => 'user11@example.com']))
+            ->assertTooManyRequests();
+    }
 }
