@@ -10,12 +10,12 @@ Other clients (Nuxt web, React Native mobile, Tauri desktop, SwiftUI watch) are 
 
 ## Current state vs. target architecture
 
-The repo is still close to a fresh Laravel 13 skeleton (PHP ^8.3; the Docker image uses 8.4). Several pieces in the README's planned stack are not in place yet:
+The repo is a Laravel 13 app (PHP ^8.3; the Docker image uses 8.4) in its early stages. Some pieces of the README's planned stack are in place, others are not yet:
 
-- **Database:** the README targets PostgreSQL, but `docker-compose.yml` runs MySQL 8 and `.env.example` defaults to SQLite. Tests use in-memory SQLite (`phpunit.xml`).
-- **Auth:** Laravel Sanctum is planned but not installed.
-- **Routing:** there is no `routes/api.php` yet, and `bootstrap/app.php` registers only the `web` and `console` routes. Exceptions already render as JSON for `api/*` requests or requests that expect JSON.
-- **Structure:** the target is a *modular monolith*, but no module layout exists yet. Ask before introducing a module convention.
+- **Database:** the README targets PostgreSQL, but `docker-compose.yml` runs MySQL 8 and `.env.example` defaults to SQLite. Tests run against a separate MySQL database, `laravel_testing` (`phpunit.xml`), so they need the Docker stack and must run inside the `app` container. The testing database is created by hand once (see `docs/docker.md`, "Tests").
+- **Auth:** Laravel Sanctum is installed. Clients authenticate with bearer tokens (personal access tokens) issued by `/api/v1/auth` (see `specs/01-api-authentication.md`).
+- **Routing:** API routes are versioned under `/api/v1`. `routes/api.php` exists but stays empty: each module's service provider loads its own `routes.php` with its prefix (e.g. `api/v1/auth`) and the `api` middleware. Exceptions render as JSON for `api/*` requests or requests that expect JSON.
+- **Structure:** *modular monolith*. Each module lives in `app/Modules/<Name>` with its own service provider (registered in `bootstrap/providers.php`), `routes.php`, and `Http/`, `Console/`, `Enums/` folders as needed. `Auth` is the first module. Shared models such as `User` stay in `app/Models`.
 - **Redis:** planned for cache and queues. It is not yet in docker-compose (the cache and queue default to the `database` driver).
 
 ## Commands
@@ -25,6 +25,7 @@ composer setup             # install deps, create .env, generate key, migrate, b
 composer dev               # run the local dev stack (php artisan dev)
 docker compose up          # app on :8000, mysql, phpmyadmin on :8083; first-time setup in docs/docker.md
 
+# tests use MySQL `laravel_testing`: run them inside the container (docker compose exec app ...)
 composer test              # clear config, then run the full suite
 php artisan test --filter=SomeTest            # single test class or method
 php artisan test tests/Feature/SomeTest.php   # single file
@@ -35,6 +36,10 @@ vendor/bin/pint --test     # check formatting only
 ```
 
 The tests use PHPUnit 12, not Pest.
+
+## Code conventions
+
+- **Don't access the container as an array** (`$this->app['router']`, `app()['config']`). `ServiceProvider::$app` is typed as the `Illuminate\Contracts\Foundation\Application` interface, which doesn't extend `ArrayAccess`, so Intelephense reports P1006 even though it works at runtime. Use the facade (`Route::aliasMiddleware(...)`), `$this->app->make(Router::class)`, or inject the dependency into `boot()`.
 
 <laravel-boost-guidelines>
 # Laravel Application
