@@ -16,6 +16,7 @@ The repo is a Laravel 13 app (PHP ^8.3; the Docker image uses 8.4) in its early 
 - **Auth:** Laravel Sanctum is installed. Clients authenticate with bearer tokens (personal access tokens) issued by `/api/v1/auth` (see `specs/01-api-authentication.md`).
 - **Routing:** API routes are versioned under `/api/v1`. `routes/api.php` exists but stays empty: each module's service provider loads its own `routes.php` with its prefix (e.g. `api/v1/auth`) and the `api` middleware. Exceptions render as JSON for `api/*` requests or requests that expect JSON.
 - **Structure:** *modular monolith*. Each module lives in `app/Modules/<Name>` with its own service provider (registered in `bootstrap/providers.php`), `routes.php`, and `Http/`, `Console/`, `Enums/` folders as needed. `Auth` is the first module. Shared models such as `User` stay in `app/Models`.
+- **API docs:** Scramble generates the OpenAPI document from the code (see `specs/02-api-docs-scramble.md`). The UI is at `/docs/api` and the JSON at `/docs/api.json`. Both are reachable **only when `APP_ENV=local`** and return 403 otherwise, so deployed servers must set `APP_ENV=production`. The exported document, `docs/openapi/v1.json`, is committed and is the contract for the client apps. Their repos are expected to be cloned next to this one, and their generators read `../humanOS-backend/docs/openapi/v1.json`. How to document endpoints is in `docs/code-conventions.md`.
 - **Redis:** planned for cache and queues. It is not yet in docker-compose (the cache and queue default to the `database` driver).
 
 ## Commands
@@ -33,13 +34,16 @@ php artisan test --testsuite=Unit             # Unit or Feature
 
 vendor/bin/pint            # format (Laravel Pint)
 vendor/bin/pint --test     # check formatting only
+
+# regenerate the committed OpenAPI document after any API change (the drift test fails otherwise)
+php artisan scramble:export --path=docs/openapi/v1.json
 ```
 
 The tests use PHPUnit 12, not Pest.
 
 ## Code conventions
 
-- **Don't access the container as an array** (`$this->app['router']`, `app()['config']`). `ServiceProvider::$app` is typed as the `Illuminate\Contracts\Foundation\Application` interface, which doesn't extend `ArrayAccess`, so Intelephense reports P1006 even though it works at runtime. Use the facade (`Route::aliasMiddleware(...)`), `$this->app->make(Router::class)`, or inject the dependency into `boot()`.
+Follow `docs/code-conventions.md` for coding rules (Laravel and container usage, API documentation with Scramble). Read it before writing code.
 
 <laravel-boost-guidelines>
 # Laravel Application

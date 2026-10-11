@@ -16,8 +16,11 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
+            /** @example ana@example.com */
             'email' => ['required', 'string', 'email'],
+            /** @example correct-horse-battery-staple */
             'password' => ['required', 'string'],
+            /** @example iPhone 15 */
             'device_name' => ['nullable', 'string', 'max:255'],
         ];
     }

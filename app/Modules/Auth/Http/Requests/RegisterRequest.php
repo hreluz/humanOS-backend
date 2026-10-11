@@ -17,9 +17,13 @@ class RegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
+            /** @example Ana Torres */
             'name' => ['required', 'string', 'max:255'],
+            /** @example ana@example.com */
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
+            /** @example correct-horse-battery-staple */
             'password' => ['required', 'confirmed', Password::defaults()],
+            /** @example iPhone 15 */
             'device_name' => ['nullable', 'string', 'max:255'],
         ];
     }
