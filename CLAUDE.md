@@ -23,7 +23,7 @@ The repo is still close to a fresh Laravel 13 skeleton (PHP ^8.3; the Docker ima
 ```sh
 composer setup             # install deps, create .env, generate key, migrate, build assets
 composer dev               # run the local dev stack (php artisan dev)
-docker compose up          # app on :8000 plus mysql (set DB_HOST=mysql in .env)
+docker compose up          # app on :8000, mysql, phpmyadmin on :8083; first-time setup in docs/docker.md
 
 composer test              # clear config, then run the full suite
 php artisan test --filter=SomeTest            # single test class or method
