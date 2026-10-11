@@ -119,12 +119,21 @@ return [
     | Auth Rate Limiting
     |--------------------------------------------------------------------------
     |
-    | When disabled, the "auth-login" and "auth" rate limiters allow every
-    | request. Only turn this off locally, for example so the frontend's
-    | end-to-end tests can register and reset passwords repeatedly.
+    | "throttle_enabled" turns the "auth-login" and "auth" rate limiters on or
+    | off. Only turn it off locally, for example so the frontend's end-to-end
+    | tests can register and reset passwords repeatedly.
+    |
+    | "throttle" sets the attempts per minute: "login" is keyed by email and
+    | IP; "sensitive" (register, password reset, email verification) is keyed
+    | by user or IP.
     |
     */
 
     'throttle_enabled' => (bool) env('AUTH_THROTTLE_ENABLED', true),
+
+    'throttle' => [
+        'login' => (int) env('AUTH_THROTTLE_LOGIN', 5),
+        'sensitive' => (int) env('AUTH_THROTTLE_SENSITIVE', 6),
+    ],
 
 ];
