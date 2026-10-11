@@ -1,26 +1,18 @@
 # Running with Docker
 
-`docker-compose.yml` defines two services:
+`docker-compose.yml` defines four services:
 
 - **app**: PHP 8.4 CLI (see `Dockerfile`) running `php artisan serve` on port 8000. The project directory is mounted at `/app`, so dependencies are not baked into the image.
 - **mysql**: MySQL 8.0 with database `laravel`, user `laravel`, password `secret` (root password `root`). Data persists in the `mysql_data` volume.
 - **phpmyadmin**: web UI for the `mysql` service at http://localhost:8083. Log in with `laravel` / `secret` (or `root` / `root`).
+- **mailpit**: catches every email the app sends over SMTP (port 1025) and shows it in a web inbox at http://localhost:8025. Messages persist in the `mailpit_data` volume.
 
 ## First-time setup
 
-1. Create `.env` and point it at the `mysql` service. `.env.example` defaults to SQLite, so changing `DB_HOST` alone is not enough:
+1. Create `.env` from `.env.development`, the Docker template. It is `.env.example` with `DB_*` pointing to the `mysql` service and `MAIL_*` pointing to `mailpit`:
 
    ```sh
-   cp .env.example .env
-   ```
-
-   ```
-   DB_CONNECTION=mysql
-   DB_HOST=mysql
-   DB_PORT=3306
-   DB_DATABASE=laravel
-   DB_USERNAME=laravel
-   DB_PASSWORD=secret
+   cp .env.development .env
    ```
 
 2. Install dependencies and generate the app key (inside the container, or on the host if PHP and Composer are installed locally):
@@ -45,6 +37,8 @@ The API is then at http://localhost:8000.
 | --- | --- | --- |
 | `APP_PORT` | `8000` | Host port mapped to the app container |
 | `PHPMYADMIN_PORT` | `8083` | Host port mapped to phpMyAdmin |
+| `MAILPIT_UI_PORT` | `8025` | Host port mapped to the Mailpit web inbox |
+| `MAILPIT_SMTP_PORT` | `1025` | Host port mapped to Mailpit's SMTP server |
 | `HOST_UID` / `HOST_GID` | `1000` | User the app container runs as. On macOS your UID is usually 501, so set these to avoid file-permission issues: `HOST_UID=$(id -u) HOST_GID=$(id -g) docker compose up` |
 
 These variables are read by the app from `.env`, not by compose:
@@ -56,7 +50,15 @@ These variables are read by the app from `.env`, not by compose:
 
 ## Reading emails
 
-`.env.example` uses `MAIL_MAILER=log`, so verification and password-reset emails are written to `storage/logs/laravel.log` instead of being sent:
+With `.env` copied from `.env.development`, the app sends email over SMTP to the `mailpit` service. Open http://localhost:8025 to see verification and password-reset emails rendered, with clickable links.
+
+If the app runs on the host (`composer dev`) while Mailpit runs in Docker, set `MAIL_MAILER=smtp`, `MAIL_HOST=127.0.0.1` and `MAIL_PORT=1025`.
+
+Captured emails survive `docker compose restart` and `docker compose down`. `docker compose down -v` deletes the `mailpit_data` volume and wipes them.
+
+### Fallback: log mailer
+
+`.env.example` uses `MAIL_MAILER=log`, so without Mailpit verification and password-reset emails are written to `storage/logs/laravel.log` instead of being sent:
 
 ```sh
 docker compose exec app tail -n 200 storage/logs/laravel.log
@@ -85,7 +87,7 @@ docker compose logs -f app                    # follow app logs
 docker compose exec app php artisan <cmd>     # run artisan inside the container
 docker compose exec mysql mysql -ularavel -psecret laravel   # MySQL shell
 docker compose down                           # stop (keeps DB data)
-docker compose down -v                        # stop and delete the DB volume
+docker compose down -v                        # stop and delete the volumes (DB data and captured emails)
 ```
 
 ## Tests
