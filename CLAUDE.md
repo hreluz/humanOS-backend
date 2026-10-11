@@ -13,6 +13,8 @@ Other clients (Nuxt web, React Native mobile, Tauri desktop, SwiftUI watch) are 
 The repo is a Laravel 13 app (PHP ^8.3; the Docker image uses 8.4) in its early stages. Some pieces of the README's planned stack are in place, others are not yet:
 
 - **Database:** the README targets PostgreSQL, but `docker-compose.yml` runs MySQL 8 and `.env.example` defaults to SQLite. Tests run against a separate MySQL database, `laravel_testing` (`phpunit.xml`), so they need the Docker stack and must run inside the `app` container. The testing database is created by hand once (see `docs/docker.md`, "Tests").
+- **Env files:** `.env.example` is the generic template (SQLite, `MAIL_MAILER=log`). `.env.development` is the committed template for the Docker stack: the same file with `DB_*` pointing to `mysql` and `MAIL_*` pointing to `mailpit`. Keep the two in sync: any variable added to or changed in `.env.example` goes into `.env.development` too.
+- **Email:** in Docker, the app sends mail to Mailpit, and the inbox is at http://localhost:8025. Tests use the `array` mailer.
 - **Auth:** Laravel Sanctum is installed. Clients authenticate with bearer tokens (personal access tokens) issued by `/api/v1/auth` (see `specs/01-api-authentication.md`).
 - **Routing:** API routes are versioned under `/api/v1`. `routes/api.php` exists but stays empty: each module's service provider loads its own `routes.php` with its prefix (e.g. `api/v1/auth`) and the `api` middleware. Exceptions render as JSON for `api/*` requests or requests that expect JSON.
 - **Structure:** *modular monolith*. Each module lives in `app/Modules/<Name>` with its own service provider (registered in `bootstrap/providers.php`), `routes.php`, and `Http/`, `Console/`, `Enums/` folders as needed. `Auth` is the first module. Shared models such as `User` stay in `app/Models`.
@@ -24,7 +26,7 @@ The repo is a Laravel 13 app (PHP ^8.3; the Docker image uses 8.4) in its early 
 ```sh
 composer setup             # install deps, create .env, generate key, migrate, build assets
 composer dev               # run the local dev stack (php artisan dev)
-docker compose up          # app on :8000, mysql, phpmyadmin on :8083; first-time setup in docs/docker.md
+docker compose up          # app on :8000, mysql, phpmyadmin on :8083, mailpit on :8025; first-time setup in docs/docker.md
 
 # tests use MySQL `laravel_testing`: run them inside the container (docker compose exec app ...)
 composer test              # clear config, then run the full suite
