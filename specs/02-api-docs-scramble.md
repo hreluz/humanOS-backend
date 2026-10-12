@@ -1,6 +1,6 @@
 # SPEC 02 — API documentation with Scramble
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 01
 > **Date:** 2026-10-11
 > **Objective:** Generate a fully documented OpenAPI spec of the `/api/v1` endpoints with Scramble, viewable locally at `/docs/api` and committed as `docs/openapi/v1.json` so client apps can generate their API clients from it.
