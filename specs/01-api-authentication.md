@@ -1,6 +1,6 @@
 # SPEC 01 — API authentication
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** none
 > **Date:** 2026-10-11
 > **Objective:** Let any humanOS client register, log in and manage its session through Sanctum bearer tokens under `/api/v1/auth`, including email verification, password reset, per-device token revocation and a basic user/admin role.

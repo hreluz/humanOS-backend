@@ -14,6 +14,9 @@
     "tags": [
         {
             "name": "Auth"
+        },
+        {
+            "name": "Profile"
         }
     ],
     "security": [
@@ -570,6 +573,158 @@
                     }
                 }
             }
+        },
+        "/v1/profile": {
+            "get": {
+                "operationId": "profile.show",
+                "description": "Returns the user's body profile with their latest weight and target weight. Values are\nreturned in the user's `unit_system` and in metric. A user who has not saved a profile\nyet gets 404.",
+                "summary": "Get the profile",
+                "tags": [
+                    "Profile"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "`ProfileResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/ProfileResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "put": {
+                "operationId": "profile.update",
+                "description": "Creates the user's profile or fully replaces it; every field is required. Values are read\nin `unit_system` units, stored in metric, and `unit_system` is kept as the display\npreference. Each save also records one weight entry and one target weight entry, even when\nthe values did not change. Always returns 200.",
+                "summary": "Save the profile",
+                "tags": [
+                    "Profile"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateProfileRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "`ProfileResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/ProfileResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/v1/profile/weight-entries": {
+            "get": {
+                "operationId": "weightEntry.index",
+                "description": "Lists every weight the user has recorded, newest first. One entry is added on each profile\nsave. `weight` is in the profile's `unit_system` (metric if the user has no profile yet).",
+                "summary": "List weight entries",
+                "tags": [
+                    "Profile"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `WeightEntryResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/WeightEntryResource"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/profile/target-weight-entries": {
+            "get": {
+                "operationId": "targetWeightEntry.index",
+                "description": "Lists every target weight the user has set, newest first. One entry is added on each profile\nsave. `target_weight` is in the profile's `unit_system` (metric if the user has no profile yet).",
+                "summary": "List target weight entries",
+                "tags": [
+                    "Profile"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `TargetWeightEntryResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/TargetWeightEntryResource"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -580,6 +735,17 @@
             }
         },
         "schemas": {
+            "ActivityLevel": {
+                "type": "string",
+                "enum": [
+                    "sedentary",
+                    "lightly_active",
+                    "moderately_active",
+                    "very_active",
+                    "extra_active"
+                ],
+                "title": "ActivityLevel"
+            },
             "AuthTokenResource": {
                 "type": "object",
                 "properties": {
@@ -647,6 +813,116 @@
                     "password"
                 ],
                 "title": "LoginRequest"
+            },
+            "ProfileResource": {
+                "type": "object",
+                "properties": {
+                    "birth_date": {
+                        "type": "string",
+                        "examples": [
+                            "1990-04-15"
+                        ]
+                    },
+                    "age": {
+                        "type": "integer",
+                        "examples": [
+                            36
+                        ]
+                    },
+                    "sex": {
+                        "type": "string",
+                        "examples": [
+                            "female"
+                        ]
+                    },
+                    "activity_level": {
+                        "type": "string",
+                        "examples": [
+                            "moderately_active"
+                        ]
+                    },
+                    "unit_system": {
+                        "type": "string",
+                        "examples": [
+                            "imperial"
+                        ]
+                    },
+                    "height": {
+                        "type": "number",
+                        "description": "Height in `unit_system` units: centimetres (metric) or inches (imperial).",
+                        "examples": [
+                            65
+                        ]
+                    },
+                    "weight": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Latest weight in `unit_system` units: kilograms (metric) or pounds (imperial).",
+                        "examples": [
+                            154.3
+                        ]
+                    },
+                    "target_weight": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Latest target weight in `unit_system` units: kilograms (metric) or pounds (imperial).",
+                        "examples": [
+                            140
+                        ]
+                    },
+                    "height_cm": {
+                        "type": "number",
+                        "examples": [
+                            165.1
+                        ]
+                    },
+                    "weight_kg": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "examples": [
+                            69.99
+                        ]
+                    },
+                    "target_weight_kg": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "examples": [
+                            63.5
+                        ]
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "examples": [
+                            "2026-10-11T09:30:00Z"
+                        ]
+                    }
+                },
+                "required": [
+                    "birth_date",
+                    "age",
+                    "sex",
+                    "activity_level",
+                    "unit_system",
+                    "height",
+                    "weight",
+                    "target_weight",
+                    "height_cm",
+                    "weight_kg",
+                    "target_weight_kg",
+                    "updated_at"
+                ],
+                "title": "ProfileResource"
             },
             "RegisterRequest": {
                 "type": "object",
@@ -734,6 +1010,51 @@
                 ],
                 "title": "ResetPasswordRequest"
             },
+            "Sex": {
+                "type": "string",
+                "enum": [
+                    "male",
+                    "female"
+                ],
+                "title": "Sex"
+            },
+            "TargetWeightEntryResource": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "examples": [
+                            7
+                        ]
+                    },
+                    "target_weight": {
+                        "type": "number",
+                        "description": "Target weight in the profile's `unit_system`: kilograms (metric, also used when the user\nhas no profile) or pounds (imperial).",
+                        "examples": [
+                            140
+                        ]
+                    },
+                    "target_weight_kg": {
+                        "type": "number",
+                        "examples": [
+                            63.5
+                        ]
+                    },
+                    "recorded_at": {
+                        "type": "string",
+                        "examples": [
+                            "2026-10-11T09:30:00Z"
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "target_weight",
+                    "target_weight_kg",
+                    "recorded_at"
+                ],
+                "title": "TargetWeightEntryResource"
+            },
             "TokenResource": {
                 "type": "object",
                 "properties": {
@@ -793,6 +1114,77 @@
                 ],
                 "title": "TokenResource"
             },
+            "UnitSystem": {
+                "type": "string",
+                "enum": [
+                    "metric",
+                    "imperial"
+                ],
+                "title": "UnitSystem"
+            },
+            "UpdateProfileRequest": {
+                "type": "object",
+                "properties": {
+                    "unit_system": {
+                        "description": "Units of `height`, `weight` and `target_weight`: cm/kg (metric) or inches/lb\n(imperial). Also saved as the user's display preference.",
+                        "examples": [
+                            "imperial"
+                        ],
+                        "$ref": "#/components/schemas/UnitSystem"
+                    },
+                    "birth_date": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "The user must be 13 to 120 years old today.",
+                        "examples": [
+                            "1990-04-15"
+                        ]
+                    },
+                    "sex": {
+                        "examples": [
+                            "female"
+                        ],
+                        "$ref": "#/components/schemas/Sex"
+                    },
+                    "height": {
+                        "type": "number",
+                        "description": "Height in centimetres (50\u2013272) or total inches (19.7\u2013107.1).",
+                        "examples": [
+                            65
+                        ]
+                    },
+                    "weight": {
+                        "type": "number",
+                        "description": "Current weight in kilograms (20\u2013500) or pounds (44.1\u20131102.3), at most 1 decimal.",
+                        "examples": [
+                            154.3
+                        ]
+                    },
+                    "target_weight": {
+                        "type": "number",
+                        "description": "Target weight in kilograms (20\u2013500) or pounds (44.1\u20131102.3), at most 1 decimal.",
+                        "examples": [
+                            140
+                        ]
+                    },
+                    "activity_level": {
+                        "examples": [
+                            "moderately_active"
+                        ],
+                        "$ref": "#/components/schemas/ActivityLevel"
+                    }
+                },
+                "required": [
+                    "unit_system",
+                    "birth_date",
+                    "sex",
+                    "height",
+                    "weight",
+                    "target_weight",
+                    "activity_level"
+                ],
+                "title": "UpdateProfileRequest"
+            },
             "UserResource": {
                 "type": "object",
                 "properties": {
@@ -848,6 +1240,43 @@
                     "created_at"
                 ],
                 "title": "UserResource"
+            },
+            "WeightEntryResource": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "examples": [
+                            12
+                        ]
+                    },
+                    "weight": {
+                        "type": "number",
+                        "description": "Weight in the profile's `unit_system`: kilograms (metric, also used when the user\nhas no profile) or pounds (imperial).",
+                        "examples": [
+                            154.3
+                        ]
+                    },
+                    "weight_kg": {
+                        "type": "number",
+                        "examples": [
+                            69.99
+                        ]
+                    },
+                    "recorded_at": {
+                        "type": "string",
+                        "examples": [
+                            "2026-10-11T09:30:00Z"
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "weight",
+                    "weight_kg",
+                    "recorded_at"
+                ],
+                "title": "WeightEntryResource"
             }
         },
         "responses": {

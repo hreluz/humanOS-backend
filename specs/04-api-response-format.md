@@ -1,6 +1,6 @@
 # SPEC 04 — API response format
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 01, SPEC 02
 > **Date:** 2026-10-11
 > **Objective:** Define one snake_case response envelope for the whole API, write it down in `docs/code-conventions.md`, enforce it with a test on the OpenAPI document, and align the `Auth` login and register responses with it.

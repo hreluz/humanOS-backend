@@ -12,7 +12,8 @@ class OpenApiDocumentTest extends TestCase
     private const EXPORT_PATH = 'docs/openapi/v1.json';
 
     /**
-     * The documented operations and their exact response statuses (SPEC 02).
+     * The documented operations and their exact response statuses (SPEC 02, SPEC 05).
+     * Each operation is tagged with its module, the first segment after /v1.
      */
     private const OPERATIONS = [
         'POST /v1/auth/register' => [201, 422, 429],
@@ -26,6 +27,10 @@ class OpenApiDocumentTest extends TestCase
         'POST /v1/auth/email/verification-notification' => [200, 202, 401, 429],
         'POST /v1/auth/forgot-password' => [200, 422, 429],
         'POST /v1/auth/reset-password' => [200, 422, 429],
+        'GET /v1/profile' => [200, 401, 404],
+        'PUT /v1/profile' => [200, 401, 422],
+        'GET /v1/profile/weight-entries' => [200, 401],
+        'GET /v1/profile/target-weight-entries' => [200, 401],
     ];
 
     private const GUEST_OPERATIONS = [
@@ -66,8 +71,10 @@ class OpenApiDocumentTest extends TestCase
     {
         $documented = $this->operations()[$operation] ?? null;
 
+        $module = ucfirst(explode('/', explode(' ', $operation)[1])[2]);
+
         $this->assertNotNull($documented, "{$operation} is not documented.");
-        $this->assertSame(['Auth'], $documented['tags'] ?? null);
+        $this->assertSame([$module], $documented['tags'] ?? null);
         $this->assertNotEmpty($documented['summary'] ?? null, "{$operation} has no summary.");
 
         $documentedStatuses = array_map('intval', array_keys($documented['responses']));

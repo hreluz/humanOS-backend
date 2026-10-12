@@ -1,6 +1,6 @@
 # SPEC 03 — Mailpit for local email
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 01
 > **Date:** 2026-10-11
 > **Objective:** Add a Mailpit service to the Docker stack so verification and password-reset emails can be viewed rendered in a local web inbox at http://localhost:8025.
