@@ -1,0 +1,2284 @@
+[
+  {
+    "key": "chest_push_from_3_point_stance",
+    "name": "Chest Push from 3 point stance",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a three point stance, squatted down with your back flat and one hand on the ground. Place the medicine ball directly in front of you.",
+      "To begin, take your first step as you pull the ball to your chest, positioning both hands to prepare for the throw.",
+      "As you execute the second step, explosively release the ball forward as hard as possible."
+    ],
+    "source_id": "Chest_Push_from_3_point_stance",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Chest_Push_from_3_point_stance"
+      }
+    ]
+  },
+  {
+    "key": "chest_push_multiple_response",
+    "name": "Chest Push (multiple response)",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a kneeling position facing a wall or utilize a partner. Hold the ball with both hands tight into the chest.",
+      "Execute the pass by exploding forward and outward with the hips while pushing the ball as hard as possible.",
+      "Follow through by falling forward, catching yourself with your hands.",
+      "Immediately return to an upright position. Repeat for the desired number of repetitions."
+    ],
+    "source_id": "Chest_Push_multiple_response",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Chest_Push_multiple_response"
+      }
+    ]
+  },
+  {
+    "key": "chest_push_single_response",
+    "name": "Chest Push (single response)",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a kneeling position holding the medicine ball with both hands tightly into the chest.",
+      "Execute the pass by exploding forward and outward with the hips while pushing the ball as far as possible.",
+      "Follow through by falling forward, catching yourself with your hands."
+    ],
+    "source_id": "Chest_Push_single_response",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Chest_Push_single_response"
+      }
+    ]
+  },
+  {
+    "key": "chest_push_with_run_release",
+    "name": "Chest Push with Run Release",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in an athletic stance with the knees bent, hips back, and back flat. Hold the medicine ball near your legs. This will be your starting position.",
+      "While taking your first step draw the medicine ball into your chest.",
+      "As you take the second step, explosively push the ball forward, immediately sprinting for 10 yards after the release. If you are really fast, you can catch your own pass!"
+    ],
+    "source_id": "Chest_Push_with_Run_Release",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Chest_Push_with_Run_Release"
+      }
+    ]
+  },
+  {
+    "key": "drop_push",
+    "name": "Drop Push",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Position low boxes or other platforms 2-3 feet apart.",
+      "Move to a pushup position between them, supporting yourself by placing your hands on the boxes.",
+      "With good posture, drop from the platforms by pressing up and moving your hands to shoulder width, cushioning your landing by absorbing the impact through the arm."
+    ],
+    "source_id": "Drop_Push",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Drop_Push"
+      }
+    ]
+  },
+  {
+    "key": "heavy_bag_thrust",
+    "name": "Heavy Bag Thrust",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Utilize a heavy bag for this exercise. Assume an upright stance next to the bag, with your feet staggered, fairly wide apart. Place your hand on the bag at about chest height. This will be your starting position.",
+      "Begin by twisting at the waist, pushing the bag forward as hard as possible. Perform this move quickly, pushing the bag away from your body.",
+      "Receive the bag as it swings back by reversing these steps."
+    ],
+    "source_id": "Heavy_Bag_Thrust",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Heavy_Bag_Thrust"
+      }
+    ]
+  },
+  {
+    "key": "incline_push_up_depth_jump",
+    "name": "Incline Push-Up Depth Jump",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "For this drill you will need a box about 12 inches high, and two thick mats or aerobics steps.",
+      "Place the steps just outside of your shoulders, and place your feet on top of the box so that you are in an incline pushup position, your hands just inside the steps. This will be your starting position.",
+      "Begin by bending at the elbows to lower your body, quickly reversing position to push your body off of the ground. As you leave the ground, move your hands onto the steps, bending your elbows to absorb the impact.",
+      "Repeat the motion to return to the starting position."
+    ],
+    "source_id": "Incline_Push-Up_Depth_Jump",
+    "primary": [
+      "lower_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Incline_Push-Up_Depth_Jump"
+      }
+    ]
+  },
+  {
+    "key": "isometric_chest_squeezes",
+    "name": "Isometric Chest Squeezes",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "static",
+    "cue": null,
+    "instructions": [
+      "While either seating or standing, bend your arms at a 90-degree angle and place the palms of your hands together in front of your chest. Tip: Your hands should be open with the palms together and fingers facing forward (perpendicular to your torso).",
+      "Push both hands against each other as you contract your chest. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+      "Hold for the recommended number of seconds.",
+      "Now release the tension slowly.",
+      "Rest for the recommended amount of time and repeat."
+    ],
+    "source_id": "Isometric_Chest_Squeezes",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Isometric_Chest_Squeezes"
+      }
+    ]
+  },
+  {
+    "key": "medicine_ball_chest_pass",
+    "name": "Medicine Ball Chest Pass",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "You will need a partner for this exercise. Lacking one, this movement can be performed against a wall.",
+      "Begin facing your partner holding the medicine ball at your torso with both hands.",
+      "Pull the ball to your chest, and reverse the motion by extending through the elbows. For sports applications, you can take a step as you throw.",
+      "Your partner should catch the ball, and throw it back to you.",
+      "Receive the throw with both hands at chest height."
+    ],
+    "source_id": "Medicine_Ball_Chest_Pass",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Medicine_Ball_Chest_Pass"
+      }
+    ]
+  },
+  {
+    "key": "plyo_push_up",
+    "name": "Plyo Push-up",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Move into a prone position on the floor, supporting your weight on your hands and toes.",
+      "Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position.",
+      "Descend by flexing at the elbow, lowering your chest towards the ground.",
+      "At the bottom, reverse the motion by pushing yourself up through elbow extension as quickly as possible. Attempt to push your upper body up until your hands leave the ground.",
+      "Return to the starting position and repeat the exercise.",
+      "For added difficulty, add claps into the movement while you are air borne."
+    ],
+    "source_id": "Plyo_Push-up",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Plyo_Push-up"
+      }
+    ]
+  },
+  {
+    "key": "supine_chest_throw",
+    "name": "Supine Chest Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill is great for chest passes when you lack a partner or a wall of sufficient strength. Lay on the ground on your back with your knees bent.",
+      "Begin with the ball on your chest, held with both hands on the bottom.",
+      "Explode up, extending through the elbow to throw the ball directly above you as high as possible.",
+      "Catch the ball with both hands as it comes down."
+    ],
+    "source_id": "Supine_Chest_Throw",
+    "primary": [
+      "lower_chest",
+      "upper_chest",
+      "triceps_lateral"
+    ],
+    "secondary": [
+      "triceps_long",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Supine_Chest_Throw"
+      }
+    ]
+  },
+  {
+    "key": "kneeling_arm_drill",
+    "name": "Kneeling Arm Drill",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": null,
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "This drill helps increase arm efficiency during the run. Begin kneeling, left foot in front, right knee down. Apply pressure through the front heel to keep your glutes and hamstrings activated.",
+      "Begin by blocking the arms in long, pendulum like swings. Close the arm angle, blocking with the arms as you would when jogging, progressing to a run and finally a sprint.",
+      "As soon as your hands pass the hip, accelerate them forward during the sprinting motion to move them as quickly as possible.",
+      "Switch knees and repeat."
+    ],
+    "source_id": "Kneeling_Arm_Drill",
+    "primary": [
+      "front_delts",
+      "rear_delts"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Kneeling_Arm_Drill"
+      }
+    ]
+  },
+  {
+    "key": "return_push_from_stance",
+    "name": "Return Push from Stance",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "You will need a partner for this drill.",
+      "Begin in an athletic 2 or 3 point stance.",
+      "At the signal, move into a position to receive the pass from your partner.",
+      "Catch the medicine ball with both hands and immediately throw it back to your partner.",
+      "You can modify this drill by running different routes."
+    ],
+    "source_id": "Return_Push_from_Stance",
+    "primary": [
+      "front_delts",
+      "lower_chest"
+    ],
+    "secondary": [
+      "triceps_lateral",
+      "triceps_long",
+      "upper_chest"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Return_Push_from_Stance"
+      }
+    ]
+  },
+  {
+    "key": "medicine_ball_full_twist",
+    "name": "Medicine Ball Full Twist",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "For this exercise you will need a medicine ball and a partner. Stand back to back with your partner, spaced 2-3 feet apart. This will be your starting position.",
+      "Hold the ball in front of the trunk. Open the hips and turn the shoulders at the same time as your partner.",
+      "For full rotation, you and your partner should twist in the same direction, i.e. counter-clockwise.",
+      "Pass the ball to your partner, and both of you can now twist in the opposite direction to repeat the procedure."
+    ],
+    "source_id": "Medicine_Ball_Full_Twist",
+    "primary": [
+      "obliques"
+    ],
+    "secondary": [
+      "upper_abs"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Medicine_Ball_Full_Twist"
+      }
+    ]
+  },
+  {
+    "key": "sledgehammer_swings",
+    "name": "Sledgehammer Swings",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "You will need a tire and a sledgehammer for this exercise. Stand in front of the tire about two feet away from it with a staggered stance. Grip the sledgehammer.",
+      "If you are right handed, your left hand should be at the bottom of the handle, and your right hand should be choking up closer to the head.",
+      "As you bring the sledge up, your right hand slides toward the head; as you swing down, your right hand will slide down to join your left hand. Slam it down as hard as you can against the tire. Control the bounce of the hammer off of the tire.",
+      "Repeat on the other side."
+    ],
+    "source_id": "Sledgehammer_Swings",
+    "primary": [
+      "obliques",
+      "lats"
+    ],
+    "secondary": [
+      "upper_abs",
+      "forearm_flexors",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Sledgehammer_Swings"
+      }
+    ]
+  },
+  {
+    "key": "supine_one_arm_overhead_throw",
+    "name": "Supine One-Arm Overhead Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Lay on the ground on your back with your knees bent. Hold the ball with one hand, extending the arm fully behind your head. This will be your starting position.",
+      "Initiate the movement at the shoulder, throwing the ball directly forward of you as you sit up, attempting to go for maximum distance.",
+      "The ball can be thrown to a partner or bounced off of a wall."
+    ],
+    "source_id": "Supine_One-Arm_Overhead_Throw",
+    "primary": [
+      "upper_abs",
+      "lats"
+    ],
+    "secondary": [
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Supine_One-Arm_Overhead_Throw"
+      }
+    ]
+  },
+  {
+    "key": "supine_two_arm_overhead_throw",
+    "name": "Supine Two-Arm Overhead Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Lay on the ground on your back with your knees bent.",
+      "Hold the ball with both hands, extending the arms fully behind your head. This will be your starting position.",
+      "Initiate the movement at the shoulder, throwing the ball directly forward of you as you sit up, attempting to go for maximum distance.",
+      "The ball can be thrown to a partner or bounced off of a wall."
+    ],
+    "source_id": "Supine_Two-Arm_Overhead_Throw",
+    "primary": [
+      "upper_abs",
+      "lats"
+    ],
+    "secondary": [
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Supine_Two-Arm_Overhead_Throw"
+      }
+    ]
+  },
+  {
+    "key": "catch_and_overhead_throw",
+    "name": "Catch and Overhead Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin standing while facing a wall or a partner.",
+      "Using both hands, position the ball behind your head, stretching as much as possible, and forcefully throw the ball forward.",
+      "Ensure that you follow your throw through, being prepared to receive your rebound from your throw. If you are throwing against the wall, make sure that you stand close enough to the wall to receive the rebound, and aim a little higher than you would with a partner."
+    ],
+    "source_id": "Catch_and_Overhead_Throw",
+    "primary": [
+      "lats",
+      "upper_abs"
+    ],
+    "secondary": [
+      "triceps_long",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Catch_and_Overhead_Throw"
+      }
+    ]
+  },
+  {
+    "key": "overhead_slam",
+    "name": "Overhead Slam",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Hold a medine ball with both hands and stand with your feet at shoulder width. This will be your starting position.",
+      "Initiate the countermovement by raising the ball above your head and fully extending your body.",
+      "Reverse the motion, slamming the ball into the ground directly in front of you as hard as you can.",
+      "Receive the ball with both hands on the bounce and repeat the movement."
+    ],
+    "source_id": "Overhead_Slam",
+    "primary": [
+      "lats",
+      "upper_abs"
+    ],
+    "secondary": [
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Overhead_Slam"
+      }
+    ]
+  },
+  {
+    "key": "standing_two_arm_overhead_throw",
+    "name": "Standing Two-Arm Overhead Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Stand with your feet shoulder width apart holding a medicine ball in both hands. To begin, reach the medicine ball deep behind your head as you bend the knees slightly and lean back.",
+      "Violently throw the ball forward, flexing at the hip and using your whole body to complete the movement.",
+      "The medicine ball can be thrown to a partner or to a wall, receiving it as it bounces back."
+    ],
+    "source_id": "Standing_Two-Arm_Overhead_Throw",
+    "primary": [
+      "lats",
+      "upper_abs"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Standing_Two-Arm_Overhead_Throw"
+      }
+    ]
+  },
+  {
+    "key": "alternate_leg_diagonal_bound",
+    "name": "Alternate Leg Diagonal Bound",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a comfortable stance with one foot slightly in front of the other.",
+      "Begin by pushing off with the front leg, driving the opposite knee forward and as high as possible before landing. Attempt to cover as much distance to each side with each bound.",
+      "It may help to use a line on the ground to guage distance from side to side.",
+      "Repeat the sequence with the other leg."
+    ],
+    "source_id": "Alternate_Leg_Diagonal_Bound",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_med",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Alternate_Leg_Diagonal_Bound"
+      }
+    ]
+  },
+  {
+    "key": "backward_medicine_ball_throw",
+    "name": "Backward Medicine Ball Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This exercise is best done with a partner. If you lack a partner, the ball can be thrown and retrieved or thrown against a wall.",
+      "Begin standing a few meters in front of your partner, both facing the same direction. Begin holding the ball between your legs.",
+      "Squat down and then forcefully reverse direction, coming to full extension and you toss the ball over your head to your partner.",
+      "Your partner can then roll the ball back to you. Repeat for the desired number of repetitions."
+    ],
+    "source_id": "Backward_Medicine_Ball_Throw",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "front_delts",
+      "lower_back",
+      "quads"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Backward_Medicine_Ball_Throw"
+      }
+    ]
+  },
+  {
+    "key": "bench_jump",
+    "name": "Bench Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin with a box or bench 1-2 feet in front of you. Stand with your feet shoulder width apart. This will be your starting position.",
+      "Perform a short squat in preparation for the jump; swing your arms behind you.",
+      "Rebound out of this position, extending through the hips, knees, and ankles to jump as high as possible. Swing your arms forward and up.",
+      "Jump over the bench, landing with the knees bent, absorbing the impact through the legs.",
+      "Turn around and face the opposite direction, then jump back over the bench."
+    ],
+    "source_id": "Bench_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Bench_Jump"
+      }
+    ]
+  },
+  {
+    "key": "bench_sprint",
+    "name": "Bench Sprint",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand on the ground with one foot resting on a bench or box with your heel close to the edge.",
+      "Push off with your foot on top of the bench, extending through the hip and knee.",
+      "Land with the opposite foot on top of the box, returning your other foot back to the start position.",
+      "Continue alternating from one foot to another to complete the set."
+    ],
+    "source_id": "Bench_Sprint",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "hip_flexors",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Bench_Sprint"
+      }
+    ]
+  },
+  {
+    "key": "bicycling",
+    "name": "Bicycling",
+    "equipment": "other",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, seat yourself on the bike and adjust the seat to your height."
+    ],
+    "source_id": "Bicycling",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Bicycling"
+      }
+    ]
+  },
+  {
+    "key": "bicycling_stationary",
+    "name": "Bicycling, Stationary",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, seat yourself on the bike and adjust the seat to your height.",
+      "Select the desired option from the menu. You may have to start pedaling to turn it on. You can use the manual setting, or you can select a program to use. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. The level of resistance can be changed throughout the workout. The handles can be used to monitor your heart rate to help you stay at an appropriate intensity."
+    ],
+    "source_id": "Bicycling_Stationary",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Bicycling_Stationary"
+      }
+    ]
+  },
+  {
+    "key": "box_jump_multiple_response",
+    "name": "Box Jump (Multiple Response)",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a relaxed stance facing the box or platform approximately an arm's length away. Arms should be down at the sides and legs slightly bent.",
+      "Using the arms to aid in the initial burst, jump upward and forward, landing with feet simultaneously on top of the box or platform.",
+      "Immediately drop or jump back down to the original starting place; then repeat the sequence."
+    ],
+    "source_id": "Box_Jump_Multiple_Response",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Box_Jump_Multiple_Response"
+      }
+    ]
+  },
+  {
+    "key": "box_skip",
+    "name": "Box Skip",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "You will need several boxes lined up about 8 feet apart.",
+      "Begin facing the first box with one leg slightly behind the other.",
+      "Drive off the back leg, attempting to gain as much height with the hips as possible.",
+      "Immediately upon landing on the box, drive the other leg forward and upward to gain height and distance, leaping from the box. Land between the first two boxes with the same leg that landed on the first box.",
+      "Then, step to the next box and repeat."
+    ],
+    "source_id": "Box_Skip",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Box_Skip"
+      }
+    ]
+  },
+  {
+    "key": "carioca_quick_step",
+    "name": "Carioca Quick Step",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "Begin with your feet a few inches apart and your left arm up in a relaxed, athletic position.",
+      "With your right foot, quick step behind and pull the knee up.",
+      "Fire your arms back up when you pull the right knee, being sure that your knee goes straight up and down. Avoid turning your feet as you move and continue to look forward as you move to the side."
+    ],
+    "source_id": "Carioca_Quick_Step",
+    "primary": [
+      "glute_med",
+      "adductors"
+    ],
+    "secondary": [
+      "quads",
+      "obliques"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Carioca_Quick_Step"
+      }
+    ]
+  },
+  {
+    "key": "depth_jump_leap",
+    "name": "Depth Jump Leap",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "For this drill you will need two boxes or benches, one 12 to 16 inches high and the other 22 to 26 inches high.",
+      "Stand on one of the two boxes with arms at the sides; feet should be together and slightly off the edge as in the depth jump. Place the other box approximately two or three feet in front of and facing the performer.",
+      "Begin by dropping off the initial box, landing and simultaneously taking off with both feet.",
+      "Rebound by driving upward and outward as intensely as possible, using the arms and full extension of the body to jump onto the higher box. Again, allow the legs to absorb the impact."
+    ],
+    "source_id": "Depth_Jump_Leap",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Depth_Jump_Leap"
+      }
+    ]
+  },
+  {
+    "key": "double_leg_butt_kick",
+    "name": "Double Leg Butt Kick",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin standing with your knees slightly bent.",
+      "Quickly squat a short distance, flexing the hips and knees, and immediately extend to jump for maximum vertical height.",
+      "As you go up, tuck your heels by flexing the knees, attempting to touch the buttocks.",
+      "Finish the motion by landing with the knees only partially bent, using your legs to absorb the impact."
+    ],
+    "source_id": "Double_Leg_Butt_Kick",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Double_Leg_Butt_Kick"
+      }
+    ]
+  },
+  {
+    "key": "dumbbell_seated_box_jump",
+    "name": "Dumbbell Seated Box Jump",
+    "equipment": "dumbbell",
+    "category": "plyometrics",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Position a box a couple feet to the side of a bench. Hold a dumbbell to your chest with both hands and seat yourself on the bench facing the box. This will be your starting position.",
+      "Plant your feet firmly on the ground as you lean forward, extending through the hips and knees to jump up and forward.",
+      "Land on the box with both feet, absorbing the impact by allowing the hips and knees to bend.",
+      "Step down and return to the starting position."
+    ],
+    "source_id": "Dumbbell_Seated_Box_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Dumbbell_Seated_Box_Jump"
+      }
+    ]
+  },
+  {
+    "key": "elliptical_trainer",
+    "name": "Elliptical Trainer",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "intermediate",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the elliptical and select the desired option from the menu. Most ellipticals have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.",
+      "The handles can be used to monitor your heart rate to help you stay at an appropriate intensity."
+    ],
+    "source_id": "Elliptical_Trainer",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Elliptical_Trainer"
+      }
+    ]
+  },
+  {
+    "key": "fast_skipping",
+    "name": "Fast Skipping",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Start in a relaxed position with one leg slightly forward. This will be your starting position.",
+      "Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth.",
+      "Perform fast skips by maintaining close contact with the ground and reduce air time, moving as quickly as possible."
+    ],
+    "source_id": "Fast_Skipping",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Fast_Skipping"
+      }
+    ]
+  },
+  {
+    "key": "front_box_jump",
+    "name": "Front Box Jump",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin with a box of an appropriate height 1-2 feet in front of you. Stand with your feet should width apart. This will be your starting position.",
+      "Perform a short squat in preparation for jumping, swinging your arms behind you.",
+      "Rebound out of this position, extending through the hips, knees, and ankles to jump as high as possible. Swing your arms forward and up.",
+      "Land on the box with the knees bent, absorbing the impact through the legs. You can jump from the box back to the ground, or preferably step down one leg at a time."
+    ],
+    "source_id": "Front_Box_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Front_Box_Jump"
+      }
+    ]
+  },
+  {
+    "key": "front_cone_hops_or_hurdle_hops",
+    "name": "Front Cone Hops (or hurdle hops)",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Set up a row of cones or other small barriers, placing them a few feet apart.",
+      "Stand in front of the first cone with your feet shoulder width apart. This will be your starting position.",
+      "Begin by jumping with both feet over the first cone, swinging both arms as you jump.",
+      "Absorb the impact of landing by bending the knees, rebounding out of the first leap by jumping over the next cone.",
+      "Continue until you have jumped over all of the cones."
+    ],
+    "source_id": "Front_Cone_Hops_or_hurdle_hops",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Front_Cone_Hops_or_hurdle_hops"
+      }
+    ]
+  },
+  {
+    "key": "hurdle_hops",
+    "name": "Hurdle Hops",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Set up a row of hurdles or other small barriers, placing them a few feet apart.",
+      "Stand in front of the first hurdle with your feet shoulder width apart. This will be your starting position.",
+      "Begin by jumping with both feet over the first hurdle, swinging both arms as you jump.",
+      "Absorb the impact of landing by bending the knees, rebounding out of the first leap by jumping over the next hurdle. Continue until you have jumped over all of the hurdles."
+    ],
+    "source_id": "Hurdle_Hops",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hurdle_Hops"
+      }
+    ]
+  },
+  {
+    "key": "jogging_treadmill",
+    "name": "Jogging, Treadmill",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the treadmill and select the desired option from the menu. Most treadmills have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.",
+      "Treadmills offer convenience, cardiovascular benefits, and usually have less impact than jogging outside. A 150 lb person will burn almost 250 calories jogging for 30 minutes, compared to more than 450 calories running. Maintain proper posture as you jog, and only hold onto the handles when necessary, such as when dismounting or checking your heart rate."
+    ],
+    "source_id": "Jogging_Treadmill",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "gastrocnemius",
+      "hip_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Jogging_Treadmill"
+      }
+    ]
+  },
+  {
+    "key": "knee_tuck_jump",
+    "name": "Knee Tuck Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a comfortable standing position with your knees slightly bent. Hold your hands in front of you, palms down with your fingertips together at chest height. This will be your starting position.",
+      "Rapidly dip down into a quarter squat and immediately explode upward. Drive the knees towards the chest, attempting to touch them to the palms of the hands.",
+      "Jump as high as you can, raising your knees up, and then ensure a good land be re-extending your legs, absorbing impact through be allowing the knees to rebend."
+    ],
+    "source_id": "Knee_Tuck_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hip_flexors",
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Knee_Tuck_Jump"
+      }
+    ]
+  },
+  {
+    "key": "lateral_bound",
+    "name": "Lateral Bound",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a half squat position facing 90 degrees from your direction of travel. This will be your starting position.",
+      "Allow your lead leg to do a countermovement inward as you shift your weight to the outside leg.",
+      "Immediately push off and extend, attempting to bound to the side as far as possible.",
+      "Upon landing, immediately push off in the opposite direction, returning to your original start position.",
+      "Continue back and forth for several repetitions."
+    ],
+    "source_id": "Lateral_Bound",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Lateral_Bound"
+      }
+    ]
+  },
+  {
+    "key": "lateral_box_jump",
+    "name": "Lateral Box Jump",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a comfortable standing position, with a short box positioned next to you. This will be your starting position.",
+      "Quickly dip into a quarter squat to initiate the stretch reflex, and immediately reverse direction to jump up and to the side.",
+      "Bring your knees high enough to ensure your feet have good clearance over the box.",
+      "Land on the center of the box, using your legs to absorb the impact.",
+      "Carefully jump down to the other side of the box, and continue going back and forth for several repetitions."
+    ],
+    "source_id": "Lateral_Box_Jump",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Lateral_Box_Jump"
+      }
+    ]
+  },
+  {
+    "key": "lateral_cone_hops",
+    "name": "Lateral Cone Hops",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Position a number of cones in a row several feet apart.",
+      "Stand next to the end of the cones, facing 90 degrees to the direction of travel. This will be your starting position.",
+      "Begin the jump by dipping with the knees to initiate a stretch reflex, and immediately reverse direction to push off the ground, jumping up and sideways over the cone.",
+      "Use your legs to absorb impact upon landing, and rebound into the next jump, continuing down the row of cones."
+    ],
+    "source_id": "Lateral_Cone_Hops",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Lateral_Cone_Hops"
+      }
+    ]
+  },
+  {
+    "key": "linear_3_part_start_technique",
+    "name": "Linear 3-Part Start Technique",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill helps you accelerate as quickly as possible into a sprint from a dead stop. It helps to use a line to start from. Begin with two feet on the line. Place your left foot with the toe next to your right ankle. Place your right foot 4-6 inches behind the left.",
+      "Place your right hand onto the line, and thing bring your nose close to your left knee.",
+      "Squat down as you lean foward, your head being lower than your hips and your weight loaded onto the left leg. This will be your starting position.",
+      "Take your left hand up so that it is parallel to the ground, pointing behind you, and explode out when ready."
+    ],
+    "source_id": "Linear_3-Part_Start_Technique",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "hip_flexors",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Linear_3-Part_Start_Technique"
+      }
+    ]
+  },
+  {
+    "key": "linear_acceleration_wall_drill",
+    "name": "Linear Acceleration Wall Drill",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "Lean at around 45 degrees against a wall. Your feet should be together, glutes contracted.",
+      "Begin by lifting your right knee quickly, pausing, and then driving it straight down into the ground.",
+      "Switch legs, raising the opposite knee, and then attacking the ground straight down.",
+      "Repeat once more with your right leg, and as soon as the right foot strikes the ground hammer them out rapidly, alternating left and right as fast as you can."
+    ],
+    "source_id": "Linear_Acceleration_Wall_Drill",
+    "primary": [
+      "hip_flexors",
+      "glute_max"
+    ],
+    "secondary": [
+      "quads",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Linear_Acceleration_Wall_Drill"
+      }
+    ]
+  },
+  {
+    "key": "linear_depth_jump",
+    "name": "Linear Depth Jump",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "You will need two boxes or benches spaced a few feet away from each other. Begin by standing on one box facing towards the other platform.",
+      "To initiate the movement, gently drop down to the ground between your platforms, allowing the knees and hips to flex.",
+      "Reverse the motion by exploding, extending through the hips, knees, and ankles to jump onto the other platform.",
+      "Land softly, asborbing the impact through the legs."
+    ],
+    "source_id": "Linear_Depth_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Linear_Depth_Jump"
+      }
+    ]
+  },
+  {
+    "key": "medicine_ball_scoop_throw",
+    "name": "Medicine Ball Scoop Throw",
+    "equipment": "medicine_ball",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a semisquat stance with a medicine ball in your hands. Your arms should hang so the ball is near your feet.",
+      "Begin by thrusting the hips forward as you extend through the legs, jumping up.",
+      "As you do, swing your arms up and over your head, keeping them extended, releasing the ball at the peak of your movement. The goal is to throw the ball the greatest distance behind you."
+    ],
+    "source_id": "Medicine_Ball_Scoop_Throw",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Medicine_Ball_Scoop_Throw"
+      }
+    ]
+  },
+  {
+    "key": "moving_claw_series",
+    "name": "Moving Claw Series",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "This move helps prepare your running form to help you excel at sprinting. As you run, be sure to flex the knee, aiming to kick your glutes as the hip extends.",
+      "Reload the quad as the leg moves back forward, attacking the ground on the next step.",
+      "Ensure that as you run, you block with the arms, punching through in a rapid 1-2 motion."
+    ],
+    "source_id": "Moving_Claw_Series",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "hip_flexors",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Moving_Claw_Series"
+      }
+    ]
+  },
+  {
+    "key": "prowler_sprint",
+    "name": "Prowler Sprint",
+    "equipment": "other",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Place your sled on an appropriate surface, loaded to a suitable weight. The sled should provide enough resistance to require effort, but not so heavy that you are significantly slowed down.",
+      "You may use the upright or the low handles for this exercise. Place your hands on the handles with your arms extended, leaning into the implement.",
+      "With good posture, drive through the ground with alternating, short steps. Move as fast as you can for a short distance."
+    ],
+    "source_id": "Prowler_Sprint",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Prowler_Sprint"
+      }
+    ]
+  },
+  {
+    "key": "quick_leap",
+    "name": "Quick Leap",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "You will need a box for this exerise.",
+      "Begin facing the box standing 1-2 feet from its edge.",
+      "By utilizing your hips, hop onto the box, landing on both legs. Ensure that you land with your legs bent and your feet flat.",
+      "Immediately upon landing, fully extend through the entire body and swing your arms overhead to explode off of the box. Use your legs to absorb the impact of landing."
+    ],
+    "source_id": "Quick_Leap",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Quick_Leap"
+      }
+    ]
+  },
+  {
+    "key": "recumbent_bike",
+    "name": "Recumbent Bike",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, seat yourself on the bike and adjust the seat to your height.",
+      "Select the desired option from the menu. You may have to start pedaling to turn it on. You can use the manual setting, or you can select a program to use. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. The level of resistance can be changed throughout the workout. The handles can be used to monitor your heart rate to help you stay at an appropriate intensity.",
+      "Recumbent bikes offer convenience, cardiovascular benefits, and have less impact than other activities. A 150 lb person will burn about 230 calories cycling at a moderate rate for 30 minutes, compared to 450 calories or more running."
+    ],
+    "source_id": "Recumbent_Bike",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Recumbent_Bike"
+      }
+    ]
+  },
+  {
+    "key": "rocket_jump",
+    "name": "Rocket Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
+      "To initiate the move, squat down halfway and explode back up as high as possible.",
+      "Fully extend your entire body, reaching overhead as far as possible. As you land, absorb your impact through the legs."
+    ],
+    "source_id": "Rocket_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Rocket_Jump"
+      }
+    ]
+  },
+  {
+    "key": "rowing_stationary",
+    "name": "Rowing, Stationary",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "intermediate",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, seat yourself on the rower. Make sure that your heels are resting comfortably against the base of the foot pedals and that the straps are secured. Select the program that you wish to use, if applicable. Sit up straight and bend forward at the hips.",
+      "There are three phases of movement when using a rower. The first phase is when you come forward on the rower. Your knees are bent and against your chest. Your upper body is leaning slightly forward while still maintaining good posture. Next, push against the foot pedals and extend your legs while bringing your hands to your upper abdominal area, squeezing your shoulders back as you do so. To avoid straining your back, use primarily your leg and hip muscles.",
+      "The recovery phase simply involves straightening your arms, bending the knees, and bringing your body forward again as you transition back into the first phase."
+    ],
+    "source_id": "Rowing_Stationary",
+    "primary": [
+      "quads",
+      "lats"
+    ],
+    "secondary": [
+      "glute_max",
+      "mid_traps",
+      "biceps",
+      "lower_back",
+      "rear_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Rowing_Stationary"
+      }
+    ]
+  },
+  {
+    "key": "running_treadmill",
+    "name": "Running, Treadmill",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the treadmill and select the desired option from the menu. Most treadmills have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.",
+      "Treadmills offer convenience, cardiovascular benefits, and usually have less impact than running outside. A 150 lb person will burn over 450 calories running 8 miles per hour for 30 minutes. Maintain proper posture as you run, and only hold onto the handles when necessary, such as when dismounting or checking your heart rate."
+    ],
+    "source_id": "Running_Treadmill",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "gastrocnemius",
+      "hip_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Running_Treadmill"
+      }
+    ]
+  },
+  {
+    "key": "scissors_jump",
+    "name": "Scissors Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground.",
+      "Ensure that the front knee is over the midline of the foot. Extending through both legs, jump as high as possible, swinging your arms to gain lift.",
+      "As you jump as high as you can, switch the position of your legs, moving your front leg to the back and the rear leg to the front.",
+      "As you land, absorb the impact through the legs by adopting the lunge position, and repeat."
+    ],
+    "source_id": "Scissors_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Scissors_Jump"
+      }
+    ]
+  },
+  {
+    "key": "side_hop_sprint",
+    "name": "Side Hop-Sprint",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand to the side of a cone or hurdle.",
+      "Begin this drill by hopping sideways over the obstacle, rebounding out of your landing to hop back to where you started.",
+      "Hop for a prescribed number or repetitions as quickly as possible, and finish this drill by sprinting a short distance upon landing the last hop."
+    ],
+    "source_id": "Side_Hop-Sprint",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Side_Hop-Sprint"
+      }
+    ]
+  },
+  {
+    "key": "side_standing_long_jump",
+    "name": "Side Standing Long Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin standing with your feet hip width apart in an athletic stance. Your head and chest should be up, knees and hips slightly bent. This will be your starting position.",
+      "Leaning to your right, extend through your hips, knees, and ankles to jump into the air. Block with the arms to lead the movement, jumping as far to your right as you can.",
+      "Land facing the same direction with your feet hip width apart, absorbing the impact through your lower body."
+    ],
+    "source_id": "Side_Standing_Long_Jump",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Side_Standing_Long_Jump"
+      }
+    ]
+  },
+  {
+    "key": "side_to_side_box_shuffle",
+    "name": "Side to Side Box Shuffle",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand to one side of the box with your left foot resting on the middle of it.",
+      "To begin, jump up and over to the other side of the box, landing with your right foot on top of the box and your left foot on the floor. Swing your arms to aid your movement.",
+      "Continue shuffling back and forth across the box."
+    ],
+    "source_id": "Side_to_Side_Box_Shuffle",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Side_to_Side_Box_Shuffle"
+      }
+    ]
+  },
+  {
+    "key": "single_cone_sprint_drill",
+    "name": "Single-Cone Sprint Drill",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": null,
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill teaches quick foot action. You need a single cone. Begin standing next to the cone with one arm back and one arm forward.",
+      "Chop the feet as quickly as possible, blocking with the arms. Circle the cone, keep your knees up, with violent foot action.",
+      "Rest after three trips around the cone."
+    ],
+    "source_id": "Single-Cone_Sprint_Drill",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "hip_flexors",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single-Cone_Sprint_Drill"
+      }
+    ]
+  },
+  {
+    "key": "single_leg_butt_kick",
+    "name": "Single Leg Butt Kick",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin by standing on one leg, with the bent knee raised. This will be your start position.",
+      "Using a countermovement jump, take off upward by extending the hip, knee, and ankle of the grounded leg.",
+      "Immediately flex the knee and attempt to touch your butt with the heel of your jumping leg.",
+      "Return the leg to a partially bent position underneath the hips and land. Your opposite leg should stay in relatively the same position throughout the drill."
+    ],
+    "source_id": "Single_Leg_Butt_Kick",
+    "primary": [
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "hip_flexors",
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single_Leg_Butt_Kick"
+      }
+    ]
+  },
+  {
+    "key": "single_leg_hop_progression",
+    "name": "Single-Leg Hop Progression",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Arrange a line of cones in front of you. Assume a relaxed standing position, balanced on one leg. Raise the knee of your opposite leg. This will be your starting position.",
+      "Hop forward, jumping and landing with the same leg over the cone.",
+      "Use a countermovement jump to hop from cone to cone.",
+      "At the end, turn around and go back on the other leg."
+    ],
+    "source_id": "Single-Leg_Hop_Progression",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_med",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single-Leg_Hop_Progression"
+      }
+    ]
+  },
+  {
+    "key": "single_leg_lateral_hop",
+    "name": "Single-Leg Lateral Hop",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand to the side of a cone or hurdle. To get into the start position, stand on one leg with your knee slightly bent.",
+      "To begin, execute a counterjump to hop sideways over the cone.",
+      "Land on your jumping leg, and immediately rebound out of it by jumping back to the start position.",
+      "Continue hopping back and forth."
+    ],
+    "source_id": "Single-Leg_Lateral_Hop",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single-Leg_Lateral_Hop"
+      }
+    ]
+  },
+  {
+    "key": "single_leg_push_off",
+    "name": "Single Leg Push-off",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand on the ground with one foot resting on the box, heel close to the edge.",
+      "Push off with your foot on top of the box, trying to gain as much height as possible by extending through the hip and knee.",
+      "Land with the same foot on top of the box, returning your other foot back to the start position."
+    ],
+    "source_id": "Single_Leg_Push-off",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_med",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single_Leg_Push-off"
+      }
+    ]
+  },
+  {
+    "key": "single_leg_stride_jump",
+    "name": "Single-Leg Stride Jump",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand to the side of a box with your inside foot on top of it, close to the edge.",
+      "Begin by swinging the arms upward as you push through the top leg, jumping upward as high as possible. Attempt to drive the opposite knee upward.",
+      "Land in the same position that you started, using your inside leg to decelerate the impact."
+    ],
+    "source_id": "Single-Leg_Stride_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_med",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Single-Leg_Stride_Jump"
+      }
+    ]
+  },
+  {
+    "key": "skating",
+    "name": "Skating",
+    "equipment": "other",
+    "category": "cardio",
+    "level": "intermediate",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "Roller skating is a fun activity which can be effective in improving cardiorespiratory fitness and muscular endurance. It requires relatively good balance and coordination. It is necessary to learn the basics of skating including turning and stopping and to wear protective gear to avoid possible injury.",
+      "You can skate at a comfortable pace for 30 minutes straight. If you want a cardio challenge, do interval skating — speed skate two minutes of every five minutes, using the remaining three minutes to recover. A 150 lb person will typically burn about 175 calories in 30 minutes skating at a comfortable pace, similar to brisk walking."
+    ],
+    "source_id": "Skating",
+    "primary": [
+      "quads",
+      "glute_max",
+      "glute_med"
+    ],
+    "secondary": [
+      "adductors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Skating"
+      }
+    ]
+  },
+  {
+    "key": "split_jump",
+    "name": "Split Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground.",
+      "Ensure that the front knee is over the midline of the foot.",
+      "Extending through both legs, jump as high as possible, swinging your arms to gain lift.",
+      "As you jump, bring your feet together, and move them back to their initial positions as you land.",
+      "Absorb the impact by reverting back to the starting position."
+    ],
+    "source_id": "Split_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Split_Jump"
+      }
+    ]
+  },
+  {
+    "key": "stairmaster",
+    "name": "Stairmaster",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "intermediate",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the stairmaster and select the desired option from the menu. You can choose a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise.",
+      "Pump your legs up and down in an established rhythm, driving the pedals down but not all the way to the floor. It is recommended that you maintain your grip on the handles so that you don't fall. The handles can be used to monitor your heart rate to help you stay at an appropriate intensity.",
+      "Stairmasters offer convenience, cardiovascular benefits, and usually have less impact than running outside. They are typically much harder than other cardio equipment. A 150 lb person will typically burn over 300 calories in 30 minutes, compared to about 175 calories walking."
+    ],
+    "source_id": "Stairmaster",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Stairmaster"
+      }
+    ]
+  },
+  {
+    "key": "standing_long_jump",
+    "name": "Standing Long Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill is best done in sand or other soft landing surface. Ensure that you are able to measure distance. Stand in a partial squat stance with feet shoulder width apart.",
+      "Utilizing a big arm swing and a countermovement of the legs, jump forward as far as you can.",
+      "Attempt to land with your feet out in front you, reaching as far as possible with your legs.",
+      "Measure the distance from your landing point to the starting point and track results."
+    ],
+    "source_id": "Standing_Long_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Standing_Long_Jump"
+      }
+    ]
+  },
+  {
+    "key": "star_jump",
+    "name": "Star Jump",
+    "equipment": "body_only",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
+      "To initiate the move, squat down halfway and explode back up as high as possible. Fully extend your entire body, spreading your legs and arms away from the body.",
+      "As you land, bring your limbs back in and absorb your impact through the legs."
+    ],
+    "source_id": "Star_Jump",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "side_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Star_Jump"
+      }
+    ]
+  },
+  {
+    "key": "step_mill",
+    "name": "Step Mill",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "intermediate",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the stepmill and select the desired option from the menu. You can choose a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Use caution so that you don't trip as you climb the stairs. It is recommended that you maintain your grip on the handles so that you don't fall.",
+      "Stepmills offer convenience, cardiovascular benefits, and usually have less impact than running outside while offering a similar rate of calories burned. They are typically much harder than other cardio equipment. A 150 lb person will typically burn over 300 calories in 30 minutes, compared to about 175 calories walking."
+    ],
+    "source_id": "Step_Mill",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Step_Mill"
+      }
+    ]
+  },
+  {
+    "key": "stride_jump_crossover",
+    "name": "Stride Jump Crossover",
+    "equipment": "other",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Stand to the side of a box with your inside foot on top of it, close to the edge.",
+      "Begin by swinging the arms upward as you push through the top leg, jumping upward as high as possible. Attempt to drive the opposite knee upward.",
+      "Land in the opposite position that you started, on the opposite side of the box. The foot that was initially on the box will now be on the ground, with the opposite foot now on the box.",
+      "Repeat the movement, crossing back over to the other side."
+    ],
+    "source_id": "Stride_Jump_Crossover",
+    "primary": [
+      "glute_med",
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Stride_Jump_Crossover"
+      }
+    ]
+  },
+  {
+    "key": "trail_running_walking",
+    "name": "Trail Running/Walking",
+    "equipment": "body_only",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "Running or hiking on trails will get the blood pumping and heart beating almost immediately. Make sure you have good shoes. While you use the muscles in your calves and buttocks to pull yourself up a hill, the knees, joints and ankles absorb the bulk of the pounding coming back down. Take smaller steps as you walk downhill, keep your knees bent to reduce the impact and slow down to avoid falling.",
+      "A 150 lb person can burn over 200 calories for 30 minutes walking uphill, compared to 175 on a flat surface. If running the trail, a 150 lb person can burn well over 500 calories in 30 minutes."
+    ],
+    "source_id": "Trail_Running_Walking",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "gastrocnemius",
+      "hip_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Trail_Running_Walking"
+      }
+    ]
+  },
+  {
+    "key": "vertical_swing",
+    "name": "Vertical Swing",
+    "equipment": "dumbbell",
+    "category": "plyometrics",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Allow the dumbbell to hang at arms length between your legs, holding it with both hands. Keep your back straight and your head up.",
+      "Swing the dumbbell between your legs, flexing at the hips and bending the knees slightly.",
+      "Powerfully reverse the motion by extending at the hips, knees, and ankles to propel yourself upward, swinging the dumbell over your head.",
+      "As you land, absorb the impact through your legs and draw the dumbbell to your torso before the next repetition."
+    ],
+    "source_id": "Vertical_Swing",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "front_delts",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Vertical_Swing"
+      }
+    ]
+  },
+  {
+    "key": "walking_treadmill",
+    "name": "Walking, Treadmill",
+    "equipment": "machine",
+    "category": "cardio",
+    "level": "beginner",
+    "mechanic": null,
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "To begin, step onto the treadmill and select the desired option from the menu. Most treadmills have a manual setting, or you can select a program to run. Typically, you can enter your age and weight to estimate the amount of calories burned during exercise. Elevation can be adjusted to change the intensity of the workout.",
+      "Treadmills offer convenience, cardiovascular benefits, and usually have less impact than walking outside. When walking, you should move at a moderate to fast pace, not a leisurely one. Being an activity of lower intensity, walking doesn't burn as many calories as some other activities, but still provides great benefit. A 150 lb person will burn about 175 calories walking 4 miles per hour for 30 minutes, compared to 450 calories running twice as fast. Maintain proper posture as you walk, and only hold onto the handles when necessary, such as when dismounting or checking your heart rate."
+    ],
+    "source_id": "Walking_Treadmill",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Walking_Treadmill"
+      }
+    ]
+  }
+]
