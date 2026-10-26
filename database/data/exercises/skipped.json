@@ -1,0 +1,26 @@
+[
+  {
+    "source_id": "Cable_Internal_Rotation",
+    "reason": "Rotator cuff isolation; the catalog has no rotator cuff muscle (SPEC 06)"
+  },
+  {
+    "source_id": "External_Rotation",
+    "reason": "Rotator cuff isolation; the catalog has no rotator cuff muscle (SPEC 06)"
+  },
+  {
+    "source_id": "External_Rotation_with_Band",
+    "reason": "Rotator cuff isolation; the catalog has no rotator cuff muscle (SPEC 06)"
+  },
+  {
+    "source_id": "External_Rotation_with_Cable",
+    "reason": "Rotator cuff isolation; the catalog has no rotator cuff muscle (SPEC 06)"
+  },
+  {
+    "source_id": "Internal_Rotation_with_Band",
+    "reason": "Rotator cuff isolation; the catalog has no rotator cuff muscle (SPEC 06)"
+  },
+  {
+    "source_id": "Seated_Dumbbell_Press",
+    "reason": "Duplicate of curated seated_dumbbell_press (source Dumbbell_Shoulder_Press)"
+  }
+]

@@ -98,7 +98,7 @@ These go into `docs/exercise-tagging.md` next to SPEC 08's rules.
 
 1. **Key:** the free-exercise-db name in snake_case. If that key is already taken, prefix the equipment key, with `body_only` written `bodyweight` (`kettlebell_goblet_squat`, `bodyweight_russian_twist`). Free-exercise-db's naming quirks stay in `name` only where they're the real name (`Farmer's Walk`); obvious formatting noise is cleaned (`Neck-SMR` → `Neck SMR`).
 2. **Duplicates:** if a curated exercise is the same movement with the same equipment as a free-exercise-db exercise and has no `source_id`, set its `source_id` instead of importing a second copy. If it already has a different `source_id` (e.g. `seated_dumbbell_press` → `Dumbbell_Shoulder_Press`), the free-exercise-db one goes in `skipped.json` as a duplicate.
-3. **Equipment:** free-exercise-db's value through `equipment.source_key` (SPEC 07). No equipment → `body_only`, unless the instructions name a prop, then `other`.
+3. **Equipment:** free-exercise-db's value through `equipment.source_key` (SPEC 07). No equipment → `body_only`, unless the instructions name a prop, then `other`. A band-loaded exercise that free-exercise-db lists as `other` gets `bands`. An exercise whose main mover isn't in the catalog (rotator cuff isolation) goes in `skipped.json`.
 4. **Muscles:** map each coarse muscle to the fine ones the movement loads, following SPEC 08's rules 1 to 9. free-exercise-db's primary/secondary split is a starting point, not a given: if it marks a stabiliser as secondary, drop it (rule 9).
 5. **Stretching:** primary = the muscles being stretched. No secondary.
 6. **Self-myofascial release (foam roll, `-SMR`):** primary = the muscle being rolled. No secondary. Category `stretching`, as free-exercise-db has it.
