@@ -2,10 +2,12 @@
 
 use App\Modules\Auth\AuthServiceProvider;
 use App\Modules\Profile\ProfileServiceProvider;
+use App\Modules\Training\TrainingServiceProvider;
 use App\Providers\AppServiceProvider;
 
 return [
     AppServiceProvider::class,
     AuthServiceProvider::class,
     ProfileServiceProvider::class,
+    TrainingServiceProvider::class,
 ];
