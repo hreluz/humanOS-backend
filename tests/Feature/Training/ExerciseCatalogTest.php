@@ -27,7 +27,7 @@ class ExerciseCatalogTest extends TestCase
      *
      * @var list<string>
      */
-    private const COVERED_GROUPS = ['gym', 'dumbbell', 'bodyweight'];
+    private const COVERED_GROUPS = ['gym', 'dumbbell', 'bodyweight', 'kettlebell', 'bands', 'accessories'];
 
     /**
      * Muscle and group pairs with no recognised exercise, documented in `docs/exercise-tagging.md`.
@@ -37,6 +37,13 @@ class ExerciseCatalogTest extends TestCase
     private const COVERAGE_EXCEPTIONS = [
         ['forearm_extensors', 'bodyweight'],
         ['neck', 'dumbbell'],
+        ['serratus', 'kettlebell'],
+        ['neck', 'kettlebell'],
+        ['lower_traps', 'kettlebell'],
+        ['glute_med', 'kettlebell'],
+        ['hip_flexors', 'kettlebell'],
+        ['soleus', 'bands'],
+        ['serratus', 'accessories'],
     ];
 
     /**
@@ -64,6 +71,16 @@ class ExerciseCatalogTest extends TestCase
 
         $sourceIds = array_filter(array_column($this->exercises, 'source_id'));
         $this->assertSame(array_values($sourceIds), array_values(array_unique($sourceIds)), 'Duplicate source ids');
+    }
+
+    public function test_every_free_exercise_db_exercise_is_in_the_catalog_or_skipped(): void
+    {
+        $ids = json_decode(file_get_contents(base_path('tests/Fixtures/free-exercise-db-ids.json')), true, flags: JSON_THROW_ON_ERROR);
+        $skipped = array_column(json_decode(file_get_contents(database_path('data/exercises/'.ExerciseSeeder::SKIPPED_FILE)), true, flags: JSON_THROW_ON_ERROR), 'source_id');
+        $sourceIds = array_values(array_filter(array_column($this->exercises, 'source_id')));
+
+        $this->assertSame([], array_values(array_diff($ids, $sourceIds, $skipped)), 'free-exercise-db ids neither in the catalog nor skipped');
+        $this->assertSame([], array_values(array_diff([...$sourceIds, ...$skipped], $ids)), 'Source ids that free-exercise-db does not have at the pinned commit');
     }
 
     public function test_skipped_exercises_have_a_reason_and_are_not_in_the_catalog(): void

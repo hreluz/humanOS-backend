@@ -61,6 +61,25 @@
     ]
   },
   {
+    "key": "band_serratus_punch",
+    "name": "Band Serratus Punch",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Arm straight, reach forward past the shoulder without bending the elbow.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "serratus"
+    ],
+    "secondary": [
+      "front_delts"
+    ],
+    "photos": []
+  },
+  {
     "key": "barbell_guillotine_bench_press",
     "name": "Barbell Guillotine Bench Press",
     "equipment": "barbell",
@@ -4400,6 +4419,55 @@
     ]
   },
   {
+    "key": "band_curl",
+    "name": "Band Curl",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Stand on the band, elbows still, squeeze at the top.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "biceps"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Dumbbell_Bicep_Curl"
+      }
+    ]
+  },
+  {
+    "key": "band_hammer_curl",
+    "name": "Band Hammer Curl",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Palms facing in, curl without letting the elbows drift forward.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "biceps",
+      "forearm_extensors"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hammer_Curls"
+      }
+    ]
+  },
+  {
     "key": "band_skull_crusher",
     "name": "Band Skull Crusher",
     "equipment": "bands",
@@ -4423,6 +4491,28 @@
       {
         "source": "free_exercise_db",
         "id": "Band_Skull_Crusher"
+      }
+    ]
+  },
+  {
+    "key": "band_wrist_curl",
+    "name": "Band Wrist Curl",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Forearm on your thigh, palm up, curl only at the wrist.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "forearm_flexors"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench"
       }
     ]
   },
@@ -5709,6 +5799,30 @@
     ]
   },
   {
+    "key": "kettlebell_curl",
+    "name": "Kettlebell Curl",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Elbows pinned to your sides, curl the bell to your shoulder.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "biceps"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Dumbbell_Bicep_Curl"
+      }
+    ]
+  },
+  {
     "key": "kettlebell_halo_with_overhead_extension",
     "name": "Kettlebell Halo with Overhead Extension",
     "equipment": "kettlebell",
@@ -5735,6 +5849,31 @@
       "side_delts"
     ],
     "photos": []
+  },
+  {
+    "key": "kettlebell_hammer_curl",
+    "name": "Kettlebell Hammer Curl",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Hold the handle with a neutral grip, curl without swinging.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "biceps",
+      "forearm_extensors"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hammer_Curls"
+      }
+    ]
   },
   {
     "key": "kettlebell_overhead_triceps_extension",
@@ -7856,6 +7995,55 @@
     ]
   },
   {
+    "key": "band_pallof_press",
+    "name": "Band Pallof Press",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Press the band straight out and don't let it turn you.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "obliques"
+    ],
+    "secondary": [
+      "upper_abs",
+      "lower_abs"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Pallof_Press"
+      }
+    ]
+  },
+  {
+    "key": "band_reverse_crunch",
+    "name": "Band Reverse Crunch",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Band around the feet, curl the hips off the floor against it.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "lower_abs"
+    ],
+    "secondary": [
+      "hip_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Reverse_Crunch"
+      }
+    ]
+  },
+  {
     "key": "barbell_ab_rollout",
     "name": "Barbell Ab Rollout",
     "equipment": "barbell",
@@ -8550,11 +8738,10 @@
     ],
     "source_id": "Exercise_Ball_Pull-In",
     "primary": [
-      "lower_abs"
-    ],
-    "secondary": [
+      "lower_abs",
       "hip_flexors"
     ],
+    "secondary": [],
     "photos": [
       {
         "source": "free_exercise_db",
@@ -8744,6 +8931,31 @@
     ]
   },
   {
+    "key": "kettlebell_dead_bug",
+    "name": "Kettlebell Dead Bug",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "static",
+    "cue": "Press the bell to the ceiling, keep your lower back flat as the legs move.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "lower_abs",
+      "upper_abs"
+    ],
+    "secondary": [
+      "obliques"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Dead_Bug"
+      }
+    ]
+  },
+  {
     "key": "kettlebell_figure_8",
     "name": "Kettlebell Figure 8",
     "equipment": "kettlebell",
@@ -8796,6 +9008,30 @@
       {
         "source": "free_exercise_db",
         "id": "Kettlebell_Pass_Between_The_Legs"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_sit_up",
+    "name": "Kettlebell Sit-Up",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Hug the bell to your chest and curl up one vertebra at a time.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "upper_abs"
+    ],
+    "secondary": [
+      "hip_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Sit-Up"
       }
     ]
   },
@@ -9746,6 +9982,50 @@
     ]
   },
   {
+    "key": "band_neck_extension",
+    "name": "Band Neck Extension",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Band around the back of the head, extend slowly, no jerking.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "neck"
+    ],
+    "secondary": [
+      "upper_traps"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Lying_Face_Down_Plate_Neck_Resistance"
+      }
+    ]
+  },
+  {
+    "key": "band_y_raise",
+    "name": "Band Y Raise",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Thumbs up, raise the arms into a Y and pull the shoulder blades down.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "lower_traps"
+    ],
+    "secondary": [
+      "side_delts",
+      "rear_delts"
+    ],
+    "photos": []
+  },
+  {
     "key": "barbell_shrug_behind_the_back",
     "name": "Barbell Shrug Behind The Back",
     "equipment": "barbell",
@@ -10123,6 +10403,25 @@
     ]
   },
   {
+    "key": "exercise_ball_y_raise",
+    "name": "Exercise Ball Y Raise",
+    "equipment": "exercise_ball",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Chest on the ball, thumbs up, lift into a Y with the shoulder blades down.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "lower_traps"
+    ],
+    "secondary": [
+      "rear_delts"
+    ],
+    "photos": []
+  },
+  {
     "key": "front_raise_and_pullover",
     "name": "Front Raise And Pullover",
     "equipment": "barbell",
@@ -10365,6 +10664,58 @@
       {
         "source": "free_exercise_db",
         "id": "Isometric_Neck_Exercise_-_Sides"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_good_morning",
+    "name": "Kettlebell Good Morning",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": "Bell at the chest, hinge with a flat back until you feel the hamstrings.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "lower_back",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Good_Morning"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_high_pull",
+    "name": "Kettlebell High Pull",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": "Drive with the hips, pull the elbow high and back.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "upper_traps",
+      "rear_delts"
+    ],
+    "secondary": [
+      "side_delts",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Kettlebell_Sumo_High_Pull"
       }
     ]
   },
@@ -11541,6 +11892,30 @@
     ]
   },
   {
+    "key": "trap_bar_shrug",
+    "name": "Trap Bar Shrug",
+    "equipment": "other",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Stand tall inside the bar, shrug straight up, no rolling.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "upper_traps"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Barbell_Shrug"
+      }
+    ]
+  },
+  {
     "key": "two_arm_kettlebell_row",
     "name": "Two-Arm Kettlebell Row",
     "equipment": "kettlebell",
@@ -11915,6 +12290,28 @@
       {
         "source": "free_exercise_db",
         "id": "Ball_Leg_Curl"
+      }
+    ]
+  },
+  {
+    "key": "band_dorsiflexion",
+    "name": "Band Dorsiflexion",
+    "equipment": "bands",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Band anchored in front, pull the toes toward the shin and lower slowly.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "tibialis"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Smith_Machine_Reverse_Calf_Raises"
       }
     ]
   },
@@ -13499,6 +13896,55 @@
     ]
   },
   {
+    "key": "kettlebell_calf_raise",
+    "name": "Kettlebell Calf Raise",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Knees straight, rise onto the balls of your feet and pause at the top.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "gastrocnemius"
+    ],
+    "secondary": [
+      "soleus"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Standing_Dumbbell_Calf_Raise"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_cossack_squat",
+    "name": "Kettlebell Cossack Squat",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": "Bell at the chest, sit into one hip with the other leg straight.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "adductors",
+      "quads"
+    ],
+    "secondary": [
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Barbell_Side_Split_Squat"
+      }
+    ]
+  },
+  {
     "key": "kettlebell_dead_clean",
     "name": "Kettlebell Dead Clean",
     "equipment": "kettlebell",
@@ -13650,6 +14096,52 @@
       {
         "source": "free_exercise_db",
         "id": "Kettlebell_Pistol_Squat"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_seated_calf_raise",
+    "name": "Kettlebell Seated Calf Raise",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Bell on your thighs, knees bent, lift the heels as high as you can.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "soleus"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Seated_Calf_Raise"
+      }
+    ]
+  },
+  {
+    "key": "kettlebell_tibialis_raise",
+    "name": "Kettlebell Tibialis Raise",
+    "equipment": "kettlebell",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "pull",
+    "cue": "Bell hooked over the foot, pull the toes toward the shin.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "tibialis"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Smith_Machine_Reverse_Calf_Raises"
       }
     ]
   },
@@ -14274,6 +14766,30 @@
       {
         "source": "free_exercise_db",
         "id": "Physioball_Hip_Bridge"
+      }
+    ]
+  },
+  {
+    "key": "plate_seated_calf_raise",
+    "name": "Plate Seated Calf Raise",
+    "equipment": "other",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Plate on the thighs, knees bent, lift the heels and pause.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "soleus"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Barbell_Seated_Calf_Raise"
       }
     ]
   },
