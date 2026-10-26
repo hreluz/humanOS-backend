@@ -12,7 +12,7 @@ class OpenApiDocumentTest extends TestCase
     private const EXPORT_PATH = 'docs/openapi/v1.json';
 
     /**
-     * The documented operations and their exact response statuses (SPEC 02, SPEC 05).
+     * The documented operations and their exact response statuses (SPEC 02, SPEC 05, SPEC 10).
      * Each operation is tagged with its module, the first segment after /v1.
      */
     private const OPERATIONS = [
@@ -31,6 +31,8 @@ class OpenApiDocumentTest extends TestCase
         'PUT /v1/profile' => [200, 401, 422],
         'GET /v1/profile/weight-entries' => [200, 401],
         'GET /v1/profile/target-weight-entries' => [200, 401],
+        'GET /v1/training/muscle-areas' => [200, 401],
+        'GET /v1/training/equipment-groups' => [200, 401],
     ];
 
     private const GUEST_OPERATIONS = [
