@@ -1,0 +1,1793 @@
+[
+  {
+    "key": "forward_drag_with_press",
+    "name": "Forward Drag with Press",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Attach a dual handled chain or rope attachment to the sled. You should be facing away from the sled, holding a handle in each hand.",
+      "Begin the movement by moving forward for one step. Leaning forward, extend through the legs and hips to move, pausing with each step to extend through the elbows, pressing your hands forward. Step forward until you return to the start position prepared to press."
+    ],
+    "source_id": "Forward_Drag_with_Press",
+    "primary": [
+      "lower_chest",
+      "upper_chest"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_lateral",
+      "quads"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Forward_Drag_with_Press"
+      }
+    ]
+  },
+  {
+    "key": "circus_bell",
+    "name": "Circus Bell",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "The circus bell is an oversized dumbbell with a thick handle. Begin with the dumbbell between your feet, and grip the handle with both hands.",
+      "Clean the dumbbell by extending through your hips and knees to deliver the implement to the desired shoulder, letting go with the extra hand.",
+      "Ensure that you get one of the dumbbell heads behind the shoulder to keep from being thrown off balance. To raise it overhead, dip by flexing the knees, and the drive upwards as you extend the dumbbell overhead, leaning slightly away from it as you do so.",
+      "Carefully guide the bell back to the floor, keeping it under control as much as possible. It is best to perform this event on a thick rubber mat to prevent damage to the floor."
+    ],
+    "source_id": "Circus_Bell",
+    "primary": [
+      "front_delts"
+    ],
+    "secondary": [
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long",
+      "glute_max",
+      "obliques"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Circus_Bell"
+      }
+    ]
+  },
+  {
+    "key": "crucifix",
+    "name": "Crucifix",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "static",
+    "cue": null,
+    "instructions": [
+      "In the crucifix, you statically hold weights out to the side for time. While the event can be practiced using dumbbells, it is best to practice with one of the various implements used, such as axes and hammers, as it feels different.",
+      "Begin standing, and raise your arms out to the side holding the implements. Your arms should be parallel to the ground. In competition, judges or sensors are used to let you know when you break parallel. Hold for as long as you can. Typically, the weights should be heavy enough that you fail in 30-60 seconds."
+    ],
+    "source_id": "Crucifix",
+    "primary": [
+      "side_delts"
+    ],
+    "secondary": [
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Crucifix"
+      }
+    ]
+  },
+  {
+    "key": "jerk_balance",
+    "name": "Jerk Balance",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill helps you learn to drive yourself low enough during the jerk and corrects those who move backward during the movement. Begin with the bar racked in the jerk position, with the shoulders forward, torso upright, and the feet split slightly apart.",
+      "Initiate the movement as you would a normal jerk, dipping at the knees while keeping your torso vertical, and driving back up forcefully, using momentum and not your arms to elevate the weight.",
+      "Keep the rear foot in place, using it to drive your body forward into a full split as you jerk the weight. Recover by standing up with the weight overhead."
+    ],
+    "source_id": "Jerk_Balance",
+    "primary": [
+      "front_delts",
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Jerk_Balance"
+      }
+    ]
+  },
+  {
+    "key": "log_lift",
+    "name": "Log Lift",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin standing with the log in front of you. Grasp the handles, and begin to clean the log. As you are bent over to start the clean, attempt to get the log as high as possible, pulling it into your chest. Extend through the hips and knees to bring it up to complete the clean.",
+      "Push your head back and look up, creating a shelf on your chest to rest the log. Begin the press by dipping, flexing slightly through the knees and reversing the motion. This push press will generate momentum to start the log moving vertically. Continue by extending through the elbows to press the log above your head. There are no strict rules on form, so use whatever techniques you are most efficient with. As the log is pressed, ensure that you push your head through on each repetition, looking forward.",
+      "Repeat as many times as possible. Attempt to control the descent of the log as it is returned to the ground."
+    ],
+    "source_id": "Log_Lift",
+    "primary": [
+      "front_delts",
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "triceps_lateral",
+      "triceps_long",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Log_Lift"
+      }
+    ]
+  },
+  {
+    "key": "power_jerk",
+    "name": "Power Jerk",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Standing with the weight racked on the front of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible.",
+      "Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the shoulders.",
+      "At this moment as the feet leave the floor, the feet must be placed into the receiving position as quickly as possible. In the brief moment the feet are not actively driving against the platform, the athletes effort to push the bar up will drive them down. The feet should be moved to a slightly wider stance, with the knees partially bent.",
+      "Receive the bar with the arms locked out overhead.",
+      "Return to a standing position."
+    ],
+    "source_id": "Power_Jerk",
+    "primary": [
+      "front_delts",
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Power_Jerk"
+      }
+    ]
+  },
+  {
+    "key": "push_press",
+    "name": "Push Press",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": null,
+    "source_id": "Push_Press",
+    "primary": [
+      "front_delts"
+    ],
+    "secondary": [
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long",
+      "quads"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Push_Press"
+      }
+    ]
+  },
+  {
+    "key": "push_press_behind_the_neck",
+    "name": "Push Press - Behind the Neck",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Standing with the weight racked on the back of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible. Drive through the heels create as much speed and force as possible, moving the bar in a vertical path.",
+      "Using the momentum generated, finish pressing the weight overhead be extending through the arms.",
+      "Return to the starting position, using your legs to absorb the impact."
+    ],
+    "source_id": "Push_Press_-_Behind_the_Neck",
+    "primary": [
+      "front_delts"
+    ],
+    "secondary": [
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long",
+      "quads"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Push_Press_-_Behind_the_Neck"
+      }
+    ]
+  },
+  {
+    "key": "split_jerk",
+    "name": "Split Jerk",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Standing with the weight racked on the front of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward.",
+      "Go down only slightly, and reverse direction as powerfully as possible. Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the shoulders. At this moment as the feet leave the floor, the feet must be placed into the receiving position as quickly as possible.",
+      "In the brief moment the feet are not actively driving against the platform, the athlete's effort to push the bar up will drive them down. The feet should be moved to a split stance, one foot forward, one foot back, with the knees partially bent. Receive the bar with the arms locked out overhead.",
+      "Return to a standing position, bringing the feet together."
+    ],
+    "source_id": "Split_Jerk",
+    "primary": [
+      "front_delts",
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "side_delts",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Split_Jerk"
+      }
+    ]
+  },
+  {
+    "key": "farmers_walk",
+    "name": "Farmer's Walk",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "There are various implements that can be used for the farmers walk. These can also be performed with heavy dumbbells or short bars if these implements aren't available. Begin by standing between the implements.",
+      "After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up.",
+      "Walk taking short, quick steps, and don't forget to breathe. Move for a given distance, typically 50-100 feet, as fast as possible."
+    ],
+    "source_id": "Farmers_Walk",
+    "primary": [
+      "forearm_flexors"
+    ],
+    "secondary": [
+      "upper_traps",
+      "obliques"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Farmers_Walk"
+      }
+    ]
+  },
+  {
+    "key": "rickshaw_carry",
+    "name": "Rickshaw Carry",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "Position the frame at the starting point, and load with the appropriate weight. Standing in the center of the frame, begin by gripping the handles and driving through your heels to lift the frame. Ensure your chest and head are up and your back is straight.",
+      "Immediately begin walking briskly with quick, controlled steps. Keep your chest up and head forward, and make sure you continue breathing. Bring the frame to the ground after you have reached the end point."
+    ],
+    "source_id": "Rickshaw_Carry",
+    "primary": [
+      "forearm_flexors"
+    ],
+    "secondary": [
+      "upper_traps",
+      "quads",
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Rickshaw_Carry"
+      }
+    ]
+  },
+  {
+    "key": "clean_shrug",
+    "name": "Clean Shrug",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a shoulder width, double overhand or hook grip, with the bar hanging at the mid thigh position. Your back should be straight and inclined slightly forward.",
+      "Shrug your shoulders towards your ears. While this exercise can usually by loaded with heavier weight than a clean, avoid overloading to the point that the execution slows down."
+    ],
+    "source_id": "Clean_Shrug",
+    "primary": [
+      "upper_traps"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean_Shrug"
+      }
+    ]
+  },
+  {
+    "key": "rack_delivery",
+    "name": "Rack Delivery",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "This drill teaches the delivery of the barbell to the rack position on the shoulders. Begin holding a bar in the scarecrow position, with the upper arms parallel to the floor, and the forearms hanging down. Use a hook grip, with your fingers wrapped over your thumbs.",
+      "Begin by rotating the elbows around the bar, delivering the bar to the shoulders. As your elbows come forward, relax your grip. The shoulders should be protracted, providing a shelf for the bar, which should lightly contact the throat.",
+      "It is important that the bar stay close to the body at all times, as with a heavier load any distance will result in an unwanted collision. As the movement becomes smoother, speed and load can be increased before progressing further."
+    ],
+    "source_id": "Rack_Delivery",
+    "primary": [
+      "upper_traps",
+      "front_delts"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Rack_Delivery"
+      }
+    ]
+  },
+  {
+    "key": "snatch_shrug",
+    "name": "Snatch Shrug",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a wide grip, with the bar hanging at the mid thigh position. You can use a hook or overhand grip. Your back should be straight and inclined slightly forward.",
+      "Shrug your shoulders towards your ears. While this exercise can usually by loaded with heavier weight than a snatch, avoid overloading to the point that the execution slows down."
+    ],
+    "source_id": "Snatch_Shrug",
+    "primary": [
+      "upper_traps"
+    ],
+    "secondary": [
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Snatch_Shrug"
+      }
+    ]
+  },
+  {
+    "key": "atlas_stone_trainer",
+    "name": "Atlas Stone Trainer",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "This trainer is effective for developing Atlas Stone strength for those who don't have access to stones, and are typically made from bar ends or heavy pipe.",
+      "Begin by loading the desired weight onto the bar. Straddle the weight, wrapping your arms around the implement, bending at the hips.",
+      "Begin by pulling the weight up past the knees, extending through the hips. As the weight clears the knees, it can be lapped by resting it on your thighs and sitting back, hugging it tightly to your chest.",
+      "Finish the movement by extending through your hips and knees to raise the weight as high as possible. The weight can be returned to the lap or to the ground for successive repetitions."
+    ],
+    "source_id": "Atlas_Stone_Trainer",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "quads"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "biceps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Atlas_Stone_Trainer"
+      }
+    ]
+  },
+  {
+    "key": "atlas_stones",
+    "name": "Atlas Stones",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with the atlas stone between your feet. Bend at the hips to wrap your arms vertically around the Atlas Stone, attempting to get your fingers underneath the stone. Many stones will have a small flat portion on the bottom, which will make the stone easier to hold.",
+      "Pulling the stone into your torso, drive through the back half of your feet to pull the stone from the ground.",
+      "As the stone passes the knees, lap it by sitting backward, pulling the stone on top of your thighs.",
+      "Sit low, getting the stone high onto your chest as you change your grip to reach over the stone. Stand, driving through with your hips. Close distance to the loading platform, and lean back, extending the hips to get the stone as high as possible."
+    ],
+    "source_id": "Atlas_Stones",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "quads"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "biceps",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Atlas_Stones"
+      }
+    ]
+  },
+  {
+    "key": "axle_deadlift",
+    "name": "Axle Deadlift",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an over/under grip.",
+      "With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward.",
+      "After the bar passes the knees, aggressively pull the bar back, pulling your shoulder blades together as you drive your hips forward into the bar.",
+      "Lower the bar by bending at the hips and guiding it to the floor."
+    ],
+    "source_id": "Axle_Deadlift",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Axle_Deadlift"
+      }
+    ]
+  },
+  {
+    "key": "backward_drag",
+    "name": "Backward Drag",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Load a sled with the desired weight, attaching a rope or straps to the sled that you can hold onto.",
+      "Begin the exercise by moving backwards for a given distance. Leaning back, extend through the legs for short steps to move as quickly as possible."
+    ],
+    "source_id": "Backward_Drag",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Backward_Drag"
+      }
+    ]
+  },
+  {
+    "key": "bear_crawl_sled_drags",
+    "name": "Bear Crawl Sled Drags",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Wearing either a harness or a loose weight belt, attach the chain to the back so that you will be facing away from the sled. Bend down so that your hands are on the ground. Your back should be flat and knees bent. This is your starting position.",
+      "Begin by driving with legs, alternating left and right. Use your hands to maintain balance and to help pull. Try to keep your back flat as you move over a given distance."
+    ],
+    "source_id": "Bear_Crawl_Sled_Drags",
+    "primary": [
+      "quads",
+      "front_delts"
+    ],
+    "secondary": [
+      "glute_max",
+      "upper_abs"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Bear_Crawl_Sled_Drags"
+      }
+    ]
+  },
+  {
+    "key": "car_deadlift",
+    "name": "Car Deadlift",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "This event apparatus typically has neutral grip handles, however some have a straight bar that you can approach like a normal deadlift. The apparatus can be loaded with a vehicle or other heavy objects such as tractor tires or kegs.",
+      "Center yourself between the handles if you are a strong squatter, or back a couple inches if you are a strong deadlifter. You feet should be about hip width apart. Bend at the hip to grip the handles. With your feet and your grip set, take a big breath and then lower your hips and flex the knees.",
+      "Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.",
+      "Lower the weight by bending at the hips and guiding it to the floor."
+    ],
+    "source_id": "Car_Deadlift",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Car_Deadlift"
+      }
+    ]
+  },
+  {
+    "key": "clean",
+    "name": "Clean",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "With a barbell on the floor close to the shins, take an overhand (or hook) grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees.",
+      "Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight; at the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended.",
+      "As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position."
+    ],
+    "source_id": "Clean",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean"
+      }
+    ]
+  },
+  {
+    "key": "clean_and_jerk",
+    "name": "Clean and Jerk",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "With a barbell on the floor close to the shins, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees.",
+      "Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight; at the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended.",
+      "As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position.",
+      "The second phase is the jerk, which raises the weight overhead. Standing with the weight racked on the front of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible.",
+      "Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the shoulders.",
+      "At this moment as the feet leave the floor, the feet must be placed into the receiving position as quickly as possible. In the brief moment the feet are not actively driving against the platform, the athletes effort to push the bar up will drive them down. The feet should be split, with one foot forward, and one foot back. Receive the bar with the arms locked out overhead. Return to a standing position."
+    ],
+    "source_id": "Clean_and_Jerk",
+    "primary": [
+      "glute_max",
+      "quads",
+      "front_delts"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "upper_traps",
+      "triceps_lateral",
+      "triceps_long"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean_and_Jerk"
+      }
+    ]
+  },
+  {
+    "key": "clean_deadlift",
+    "name": "Clean Deadlift",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin standing with a barbell close to your shins. Your feet should be directly under your hips with your feet turned out slightly. Grip the bar with a double overhand grip or hook grip, about shoulder width apart. Squat down to the bar. Your spine should be in full extension, with a back angle that places your shoulders in front of the bar and your back as vertical as possible.",
+      "Begin by driving through the floor through the front of your heels. As the bar travels upward, maintain a constant back angle. Flare your knees out to the side to help keep them out of the bar's path.",
+      "After the bar crosses the knees, complete the lift by driving the hips into the bar until your hips and knees are extended."
+    ],
+    "source_id": "Clean_Deadlift",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean_Deadlift"
+      }
+    ]
+  },
+  {
+    "key": "clean_from_blocks",
+    "name": "Clean from Blocks",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "With a barbell on boxes or stands of the desired height, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight with the elbows pointed out.",
+      "As full extension is achieved, transition into the receiving position by aggressively shrugging and flexing the arms with the elbows up and out. Aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position. Return the weight to the boxes for the next rep."
+    ],
+    "source_id": "Clean_from_Blocks",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean_from_Blocks"
+      }
+    ]
+  },
+  {
+    "key": "clean_pull",
+    "name": "Clean Pull",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "With a barbell on the floor close to the shins, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight and elbows out. Move the weight with control as you continue to above the knees.",
+      "Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight; at the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended. Full extension should be violent and abrupt, and ensure that you do not prolong the extension for longer than necessary."
+    ],
+    "source_id": "Clean_Pull",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Clean_Pull"
+      }
+    ]
+  },
+  {
+    "key": "conans_wheel",
+    "name": "Conan's Wheel",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "With the weight loaded, take a zurcher hold on the end of the implement. Place the bar in the crook of the elbow and hold onto your wrist. Try to keep the weight off of the forearms.",
+      "Begin by lifting the weight from the ground. Keep a tight, upright posture as you being to walk, taking short, fast steps. Look up and away as you turn in a circle. Do not hold your breath during the event. Continue walking until you complete one or more complete turns."
+    ],
+    "source_id": "Conans_Wheel",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "biceps",
+      "upper_abs",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Conans_Wheel"
+      }
+    ]
+  },
+  {
+    "key": "frankenstein_squat",
+    "name": "Frankenstein Squat",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill teaches you the proper positioning of both the bar and your body during the clean and front squat.",
+      "Place the barbell on the front of the shoulders, releasing your grip and extending your arms out in front of you. The shoulders should be pushed forward to create a shelf, and the bar should be in contact with the throat. Ensure that you only move your shoulder blades forward; don't round the thoracic spine.",
+      "Squat by flexing the knees and hips, sitting in between your legs. Keep the torso upright, the arms up, and the shoulders forward, and the bar should stay in place. Go to the bottom of the squat, until your hamstrings contact your calves.",
+      "Return to the upright position by driving through the front of the heel and extending the knees and hips."
+    ],
+    "source_id": "Frankenstein_Squat",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max",
+      "upper_abs"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Frankenstein_Squat"
+      }
+    ]
+  },
+  {
+    "key": "hang_clean",
+    "name": "Hang Clean",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a shoulder width, double overhand or hook grip, with the bar hanging at the mid thigh position. Your back should be straight and inclined slightly forward.",
+      "Begin by aggressively extending through the hips, knees and ankles, driving the weight upward. As you do so, shrug your shoulders towards your ears.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position."
+    ],
+    "source_id": "Hang_Clean",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hang_Clean"
+      }
+    ]
+  },
+  {
+    "key": "hang_clean_below_the_knees",
+    "name": "Hang Clean - Below the Knees",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a shoulder width, double overhand or hook grip, with the bar hanging just below the knees. Your back should be straight and inclined slightly forward.",
+      "Begin by aggressively extending through the hips, knees and ankles, driving the weight upward. As you do so, shrug your shoulders towards your ears. As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out.",
+      "At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so. Receive the bar in a front squat position, the depth of which is dependent upon the height of the bar at the end of the third pull. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed. Continue to descend to the bottom squat position, which will help in the recovery.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position."
+    ],
+    "source_id": "Hang_Clean_-_Below_the_Knees",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hang_Clean_-_Below_the_Knees"
+      }
+    ]
+  },
+  {
+    "key": "hang_snatch",
+    "name": "Hang Snatch",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a wide grip on the bar, with an overhand or hook grip. The feet should be directly below the hips with the feet turned out. Your knees should be slightly bent, and the torso inclined forward. The spine should be fully extended and the head facing forward. The bar should be at the hips. This will be your starting position.",
+      "Aggressively extend through the legs and hips. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, forcefully pull yourself below the bar as you elevate the bar overhead. Receive the bar with your body as low as possible and the arms fully extended overhead.",
+      "Return to a standing position with the weight overhead. Follow by returning the weight to the ground under control."
+    ],
+    "source_id": "Hang_Snatch",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hang_Snatch"
+      }
+    ]
+  },
+  {
+    "key": "hang_snatch_below_knees",
+    "name": "Hang Snatch - Below Knees",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a wide grip on the bar, with an overhand or hook grip. The feet should be directly below the hips with the feet turned out. Your knees should be slightly bent, and the torso inclined forward. The spine should be fully extended and the head facing forward. The bar should be just below the knees. This will be your starting position.",
+      "Aggressively extend through the legs and hips. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, forcefully pull yourself below the bar as you elevate the bar overhead. Receive the bar with your body as low as possible and the arms fully extended overhead.",
+      "Return to a standing position with the weight overhead, and then return the weight to the floor under control."
+    ],
+    "source_id": "Hang_Snatch_-_Below_Knees",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Hang_Snatch_-_Below_Knees"
+      }
+    ]
+  },
+  {
+    "key": "heaving_snatch_balance",
+    "name": "Heaving Snatch Balance",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This drill helps you learn the snatch. Begin by holding a light weight across the back of the shoulders. Your feet should be slightly wider than hip width apart with the feet turned out, the same position that you would perform a squat with.",
+      "Begin by dipping with the knees slightly, and popping back up to briefly unload the bar. Drive yourself underneath the bar, elevating it overhead as you descend into a full squat.",
+      "Return to a standing position."
+    ],
+    "source_id": "Heaving_Snatch_Balance",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_long",
+      "adductors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Heaving_Snatch_Balance"
+      }
+    ]
+  },
+  {
+    "key": "jerk_dip_squat",
+    "name": "Jerk Dip Squat",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "This movement strengthens the dip portion of the jerk. Begin with the bar racked in the jerk position, with the shoulders forward to create a shelf and the bar lightly contacting the throat. The feet should be directly under the hips, with the feet turned out as is comfortable.",
+      "Keeping the torso vertical, dip by flexing the knees, allowing them to travel forward and without moving the hips to the rear. The dip should not be excessive. Return the weight to the starting position by driving forcefully though the feet."
+    ],
+    "source_id": "Jerk_Dip_Squat",
+    "primary": [
+      "quads"
+    ],
+    "secondary": [
+      "glute_max"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Jerk_Dip_Squat"
+      }
+    ]
+  },
+  {
+    "key": "keg_load",
+    "name": "Keg Load",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "To load kegs, place the desired number a distance from the loading platform, typically 30-50 feet.",
+      "Begin by grabbing the close handle of the first keg, tilting it onto its side to grab the opposite edge of the bottom of the keg. Lift the keg up to your chest.",
+      "The higher you can place the keg, the faster you should be able to move to the platform. Shouldering is usually not allowed. Be sure to keep a firm hold on the keg. Move as quickly as possible to the platform, and load it, extending through your hips, knees, and ankles to get it as high as possible.",
+      "Return to the starting position to retrieve the next keg, and repeat until the event is completed."
+    ],
+    "source_id": "Keg_Load",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "quads"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "biceps",
+      "upper_traps"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Keg_Load"
+      }
+    ]
+  },
+  {
+    "key": "kneeling_jump_squat",
+    "name": "Kneeling Jump Squat",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin kneeling on the floor with a barbell racked across the back of your shoulders, or you can use your body weight for this exercise. This can be done inside of a power rack to make unracking easier.",
+      "Sit back with your hips until your glutes touch your feet, keeping your head and chest up.",
+      "Explode up with your hips, generating enough power to land with your feet flat on the floor.",
+      "Continue with the squat by driving through your heels and extending the knees to come to a standing position."
+    ],
+    "source_id": "Kneeling_Jump_Squat",
+    "primary": [
+      "glute_max",
+      "quads"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Kneeling_Jump_Squat"
+      }
+    ]
+  },
+  {
+    "key": "muscle_snatch",
+    "name": "Muscle Snatch",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a loaded barbell held at the mid thigh position with a wide grip. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
+      "Begin the pull by driving through the front of the heels, raising the bar. Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body.",
+      "Continue raising the bar to the overhead position, without rebending the knees."
+    ],
+    "source_id": "Muscle_Snatch",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "upper_traps",
+      "front_delts",
+      "side_delts",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Muscle_Snatch"
+      }
+    ]
+  },
+  {
+    "key": "olympic_squat",
+    "name": "Olympic Squat",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin with a barbell supported on top of the traps. The chest should be up, and the head facing forward. Adopt a hip width stance with the feet turned out as needed.",
+      "Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward; ensure that they stay aligned with the feet. The goal is to keep the torso as upright as possible. Continue all the way down, keeping the weight on the front of the heel.",
+      "At the moment the upper legs contact the lower, reverse the motion, driving the weight upward."
+    ],
+    "source_id": "Olympic_Squat",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "adductors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Olympic_Squat"
+      }
+    ]
+  },
+  {
+    "key": "overhead_squat",
+    "name": "Overhead Squat",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Start out by having a barbell in front of you on the floor. Your feet should be wider than shoulder width apart from each other.",
+      "Bend the knees and use a pronated grip (palms facing you) to grab the barbell. Your hands should be at a wider than shoulder width apart from each other before lifting. Once you are positioned, lift the barbell up until you can rest it on your chest.",
+      "Move the barbell over and slightly behind your head and make sure your arms are fully extended. Keep your head up at all times and also maintain a straight back. Retract your shoulder blades. This is your starting position.",
+      "Slowly lower the weight by bending your knees until your thighs are parallel to the ground while inhaling. Tip: Keep your back straight while performing this exercise to avoid any injuries and your arms should remain extended and over your head at all times.",
+      "Now use your feet and legs to help bring the weight back up to the starting position while exhaling.",
+      "Repeat for the recommended amount of repetitions."
+    ],
+    "source_id": "Overhead_Squat",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "adductors",
+      "front_delts",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Overhead_Squat"
+      }
+    ]
+  },
+  {
+    "key": "power_clean_from_blocks",
+    "name": "Power Clean from Blocks",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "With a barbell on boxes of the desired height, take a grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. As the bar approaches the mid-thigh position, begin extending through the hips.",
+      "In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight. At the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended.",
+      "As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, pull yourself under the bar far enough that it can be racked onto the shoulders, rotating your elbows under the bar as you do so. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Continue until you have risen to a standing position, and complete the repetition by returning the weight to the boxes."
+    ],
+    "source_id": "Power_Clean_from_Blocks",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Power_Clean_from_Blocks"
+      }
+    ]
+  },
+  {
+    "key": "power_snatch",
+    "name": "Power Snatch",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a loaded barbell on the floor. The bar should be close to or touching the shins, and a wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
+      "Begin the first pull by driving through the front of the heels, raising the bar from the ground. The back angle should stay the same until the bar passes the knees.",
+      "Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, a slightly wider position, pull yourself below the bar as you elevate the bar overhead. The bar should be received in a partial squat. Continue raising the bar to the overhead position, receiving the bar locked out overhead.",
+      "Return to a standing position with the weight over head."
+    ],
+    "source_id": "Power_Snatch",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Power_Snatch"
+      }
+    ]
+  },
+  {
+    "key": "power_snatch_from_blocks",
+    "name": "Power Snatch from Blocks",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a loaded barbell on boxes or stands of the desired height. A wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar, with the elbows pointed out. This will be the starting position.",
+      "Begin the first pull by driving through the front of the heels, raising the bar from the boxes.",
+      "Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, forcefully pull yourself below the bar as you elevate the bar overhead. The feet should move to just outside the hips, turned out as necessary. Receive the bar above a full squat and with the arms fully extended overhead.",
+      "Keeping the bar aligned over the front of the heels, your head and chest up, drive through heels of the feet to move to a standing position. Carefully return the weight to the boxes."
+    ],
+    "source_id": "Power_Snatch_from_Blocks",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Power_Snatch_from_Blocks"
+      }
+    ]
+  },
+  {
+    "key": "power_stairs",
+    "name": "Power Stairs",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "In the power stairs, implements are moved up a staircase. For training purposes, these can be performed with a tire or box.",
+      "Begin by taking the implement with both hands. Set your feet wide, with your head and chest up. Drive through the ground with your heels, extending your knees and hips to raise the weight from the ground.",
+      "As you lean back, attempt to swing the weight onto the stairs, which are usually around 16-18\" high. You can use your legs to help push the weight onto the stair.",
+      "Repeat for 3-5 repetitions, and continue with a heavier weight, moving as fast as possible."
+    ],
+    "source_id": "Power_Stairs",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Power_Stairs"
+      }
+    ]
+  },
+  {
+    "key": "rickshaw_deadlift",
+    "name": "Rickshaw Deadlift",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Load the frame with the desired weight. Center yourself between the handles. You feet should be about hip width apart. Bend at the hips to grip the handles, allowing your shoulder blades to protract.",
+      "With your feet and your grip set, take a big breath and then lower your hips and flex the knees. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.",
+      "Lower the weight by bending at the hips and guiding it to the ground."
+    ],
+    "source_id": "Rickshaw_Deadlift",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "lower_back",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Rickshaw_Deadlift"
+      }
+    ]
+  },
+  {
+    "key": "romanian_deadlift_from_deficit",
+    "name": "Romanian Deadlift from Deficit",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin standing while holding a bar at arm's length in front of you. You can stand on a raised platform to increase the range of motion.",
+      "Begin by flexing the knees slightly, and then flex at the hip, moving your butt back as far as possible, lowering the torso as far as flexibility allows. The back should remain in absolute extension at all times, and the bar should remain in contact with the legs. If done properly, there should be heavy tension felt in the hamstrings.",
+      "Reverse the motion to return to the starting position."
+    ],
+    "source_id": "Romanian_Deadlift_from_Deficit",
+    "primary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "glute_max"
+    ],
+    "secondary": [
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Romanian_Deadlift_from_Deficit"
+      }
+    ]
+  },
+  {
+    "key": "sandbag_load",
+    "name": "Sandbag Load",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "To load sandbags or other objects, begin with the implements placed a distance from the loading platform, typically 50 feet.",
+      "Begin by lifting the sandbag. Sandbags are extremely awkward, and the manner of lifting them can vary depending on the particular sandbag used. Reach as far around it as possible, extending through the hips and knees to pull it up high. Shouldering is usually not allowed.",
+      "Move as quickly as possible to the platform, and load it, extending through your hips, knees, and ankles to get it as high as possible. Place it onto the platform, ensuring it doesn't fall off.",
+      "Return to the starting position to retrieve the next sandbag, and repeat until the event is completed."
+    ],
+    "source_id": "Sandbag_Load",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "quads"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "biceps",
+      "upper_traps"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Sandbag_Load"
+      }
+    ]
+  },
+  {
+    "key": "sled_drag_harness",
+    "name": "Sled Drag - Harness",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "To begin, load the sled with the desired weight and attach the pulling strap. You can pull with handles, use a harness, or attach the pulling strap to a weight belt.",
+      "Whether pulling forwards or backwards, lean in the direction of travel and progress by extending through the hips and knees."
+    ],
+    "source_id": "Sled_Drag_-_Harness",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Sled_Drag_-_Harness"
+      }
+    ]
+  },
+  {
+    "key": "sled_push",
+    "name": "Sled Push",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "beginner",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Load your pushing sled with the desired weight.",
+      "Take an athletic posture, leaning into the sled with your arms fully extended, grasping the handles. Push the sled as fast as possible, focusing on extending your hips and knees to strengthen your posterior chain."
+    ],
+    "source_id": "Sled_Push",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "gastrocnemius",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Sled_Push"
+      }
+    ]
+  },
+  {
+    "key": "snatch",
+    "name": "Snatch",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Place your feet at a shoulder width stance with the barbell resting right above the connection between the toes and the rest of the foot.",
+      "With a palms facing down grip, bend at the knees and keeping the back flat grab the bar using a wider than shoulder width grip. Bring the hips down and make sure that your body drops as if you were going to sit on a chair. This will be your starting position.",
+      "Start pushing the floor as if it were a moving platform with your feet and simultaneously start lifting the barbell keeping it close to your legs.",
+      "As the bar reaches the middle of your thighs, push the floor with your legs and lift your body to a complete extension in an explosive motion.",
+      "Lift your shoulders back in a shrugging movement as you bring the bar up while lifting your elbows out to the side and keeping them above the bar for as long as possible.",
+      "Now in a very quick but powerful motion, you have to get your body under the barbell when it has reached a high enough point where it can be controlled and drop while locking your arms and holding the barbell overhead as you assume a squat position.",
+      "Finalize the movement by rising up out of the squat position to finish the lift. At the end of the lift both feet should be on line and the arms fully extended holding the barbell overhead."
+    ],
+    "source_id": "Snatch",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Snatch"
+      }
+    ]
+  },
+  {
+    "key": "snatch_balance",
+    "name": "Snatch Balance",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "push",
+    "cue": null,
+    "instructions": [
+      "Begin with the feet in the pulling position, the bar racked across the back of the shoulders, and the hands placed in a wide snatch grip.",
+      "Pop the bar with an abrupt dip and drive of the knees, and aggressively drive under the bar, transitioning the feet into the receiving position.",
+      "Receive the bar locked out overhead near the bottom of the squat. The torso should remain vertical, lowering the hips between the legs.",
+      "Continue to descend to full depth, and return to a standing position. Carefully lower the weight."
+    ],
+    "source_id": "Snatch_Balance",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "front_delts",
+      "triceps_long",
+      "adductors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Snatch_Balance"
+      }
+    ]
+  },
+  {
+    "key": "snatch_deadlift",
+    "name": "Snatch Deadlift",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "The snatch deadlift strengthens the first pull of the snatch. Begin with a wide snatch grip with the barbell placed on the platform. The feet should be directly under the hips, with the feet turned out. Squat down to the bar, keeping the back in absolute extension with the head facing forward.",
+      "Initiate the movement by driving through the heels, raising the hips. The back angle should remain the same until the bar passes the knees.",
+      "At that point, drive your hips through the bar as you lay back. Return the bar to the platform by reversing the motion."
+    ],
+    "source_id": "Snatch_Deadlift",
+    "primary": [
+      "glute_max",
+      "lower_back",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "forearm_flexors"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Snatch_Deadlift"
+      }
+    ]
+  },
+  {
+    "key": "snatch_from_blocks",
+    "name": "Snatch from Blocks",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a loaded barbell on boxes or stands of the desired height. A wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar, with the elbows pointed out. This will be the starting position.",
+      "Begin the first pull by driving through the front of the heels, raising the bar from the boxes.",
+      "Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, forcefully pull yourself below the bar as you elevate the bar overhead. The feet should move to just outside the hips, turned out as necessary. Receive the bar with your body as low as possible and the arms fully extended overhead.",
+      "Keeping the bar aligned over the front of the heels, your head and chest up, drive through heels of the feet to move to a standing position. Carefully return the weight to the boxes."
+    ],
+    "source_id": "Snatch_from_Blocks",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Snatch_from_Blocks"
+      }
+    ]
+  },
+  {
+    "key": "split_clean",
+    "name": "Split Clean",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "With a barbell on the floor close to the shins, take an overhand grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
+      "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees.",
+      "Next comes the second pull, the main source of acceleration for the clean. As the bar approaches the mid-thigh position, begin extending through the hips. In a jumping motion, accelerate by extending the hips, knees, and ankles, using speed to move the bar upward. There should be no need to actively pull through the arms to accelerate the weight; at the end of the second pull, the body should be fully extended, leaning slightly back, with the arms still extended.",
+      "As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out. At peak extension, aggressively pull yourself down, rotating your elbows under the bar as you do so.",
+      "Receive the bar with the feet split, aggressively moving one foot forward and one foot back. The bar should be racked onto the protracted shoulders, lightly touching the throat with the hands relaxed. Continue to descend to the bottom position, which will help in the recovery.",
+      "Immediately recover by driving through the heels, keeping the torso upright and elbows up. Bring the feet together as you stand up."
+    ],
+    "source_id": "Split_Clean",
+    "primary": [
+      "quads",
+      "glute_max",
+      "hamstrings_inner"
+    ],
+    "secondary": [
+      "hamstrings_outer",
+      "upper_traps",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Split_Clean"
+      }
+    ]
+  },
+  {
+    "key": "split_snatch",
+    "name": "Split Snatch",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "expert",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a loaded barbell on the floor. The bar should be close to or touching the shins, and a wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
+      "Begin the first pull by driving through the front of the heels, raising the bar from the ground. The back angle should stay the same until the bar passes the knees.",
+      "Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
+      "As you move your feet into the receiving position, forcefully pull yourself below the bar as you elevate the bar overhead. The feet should move forcefully to a split position, one foot forward one foot back. Receive the bar with your body as low as possible and the arms fully extended overhead.",
+      "Keeping the bar aligned over the front of the heels, your head and chest up, drive through heels of the feet to move to a standing position, bringing your feet together.",
+      "Carefully return the weight to floor."
+    ],
+    "source_id": "Split_Snatch",
+    "primary": [
+      "glute_max",
+      "hamstrings_inner",
+      "hamstrings_outer"
+    ],
+    "secondary": [
+      "quads",
+      "upper_traps",
+      "lower_back",
+      "front_delts"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Split_Snatch"
+      }
+    ]
+  },
+  {
+    "key": "tire_flip",
+    "name": "Tire Flip",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin by gripping the bottom of the tire on the tread, and position your feet back a bit. Your chest should be driving into the tire.",
+      "To lift the tire, extend through the hips, knees, and ankles, driving into the tire and up.",
+      "As the tire reaches a 45 degree angle, step forward and drive a knee into the tire. As you do so adjust your grip to the upper portion of the tire and push it forward as hard as possible to complete the turn. Repeat as necessary."
+    ],
+    "source_id": "Tire_Flip",
+    "primary": [
+      "glute_max",
+      "quads",
+      "lower_back"
+    ],
+    "secondary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "lower_chest",
+      "front_delts",
+      "triceps_lateral"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Tire_Flip"
+      }
+    ]
+  },
+  {
+    "key": "wide_stance_stiff_legs",
+    "name": "Wide Stance Stiff Legs",
+    "equipment": "barbell",
+    "category": "olympic_weightlifting",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": "pull",
+    "cue": null,
+    "instructions": [
+      "Begin with a barbell loaded on the floor. Adopt a wide stance, and then bend at the hips to grab the bar. Your hips should be as far back as possible, and your legs nearly straight. Keep your back straight, and your head and chest up. This will be your starting position.",
+      "Begin the movement be engaging the hips, driving them forward as you allow the arms to hang straight. Continue until you are standing straight up, and then slowly return the weight to the starting position. For successive reps, the weight need not touch the floor."
+    ],
+    "source_id": "Wide_Stance_Stiff_Legs",
+    "primary": [
+      "hamstrings_inner",
+      "hamstrings_outer",
+      "glute_max"
+    ],
+    "secondary": [
+      "adductors",
+      "lower_back"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Wide_Stance_Stiff_Legs"
+      }
+    ]
+  },
+  {
+    "key": "yoke_walk",
+    "name": "Yoke Walk",
+    "equipment": "other",
+    "category": "strongman",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "force": null,
+    "cue": null,
+    "instructions": [
+      "The yoke is usually done with a yoke apparatus, but is sometimes seen with refrigerators or other heavy objects.",
+      "Begin by racking the apparatus across the back of the shoulders. With your head looking forward and back arched, lift the yoke by driving through the heels.",
+      "Begin walking as quickly as possible using short, quick steps. You may hold the side posts of the yoke to help steady it and hold it in position. Continue for the given distance as fast as possible, usually 75-100 feet."
+    ],
+    "source_id": "Yoke_Walk",
+    "primary": [
+      "quads",
+      "glute_max"
+    ],
+    "secondary": [
+      "lower_back",
+      "upper_traps"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Yoke_Walk"
+      }
+    ]
+  }
+]
