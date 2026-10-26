@@ -66,6 +66,21 @@ class ExerciseCatalogTest extends TestCase
         $this->assertSame(array_values($sourceIds), array_values(array_unique($sourceIds)), 'Duplicate source ids');
     }
 
+    public function test_skipped_exercises_have_a_reason_and_are_not_in_the_catalog(): void
+    {
+        $skipped = json_decode(file_get_contents(database_path('data/exercises/'.ExerciseSeeder::SKIPPED_FILE)), true, flags: JSON_THROW_ON_ERROR);
+        $sourceIds = array_filter(array_column($this->exercises, 'source_id'));
+
+        foreach ($skipped as $entry) {
+            $this->assertSame(['source_id', 'reason'], array_keys($entry));
+            $this->assertNotEmpty($entry['reason'], "Reason for skipping {$entry['source_id']}");
+            $this->assertNotContains($entry['source_id'], $sourceIds, "{$entry['source_id']} is both skipped and in the catalog");
+        }
+
+        $ids = array_column($skipped, 'source_id');
+        $this->assertSame($ids, array_values(array_unique($ids)), 'Duplicate skipped ids');
+    }
+
     public function test_every_value_is_valid(): void
     {
         $muscles = Muscle::pluck('key')->all();
