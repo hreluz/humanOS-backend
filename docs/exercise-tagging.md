@@ -81,7 +81,7 @@ How a free-exercise-db exercise becomes an entry (SPEC 09). A script may draft t
 
 ## Coverage
 
-Every muscle needs at least one exercise that lists it as primary in each of the `gym`, `dumbbell` and `bodyweight` equipment groups. Stretches don't count: a stretch doesn't train the muscle it stretches. `ExerciseCatalogTest` checks this. A new exercise added to close a gap must be a recognised exercise; use the free-exercise-db version when one exists.
+Every muscle needs at least one exercise that lists it as primary in each of the six equipment groups (`gym`, `dumbbell`, `bodyweight`, `kettlebell`, `bands`, `accessories`). Stretches don't count: a stretch doesn't train the muscle it stretches. `ExerciseCatalogTest` checks this. A new exercise added to close a gap must be a recognised exercise; use the free-exercise-db version when one exists.
 
 When no recognised exercise makes a muscle the primary mover with a group's equipment, the pair becomes a documented exception in `ExerciseCatalogTest` instead of an invented exercise or a stretched tag. Current exceptions:
 
@@ -89,6 +89,22 @@ When no recognised exercise makes a muscle the primary mover with a group's equi
 |---|---|---|
 | `forearm_extensors` | `bodyweight` | No bodyweight exercise loads wrist extension or the brachioradialis as the main mover. Neutral-grip pulling uses it, but as an assistant to the lats and biceps. |
 | `neck` | `dumbbell` | Neck work is loaded with plates, a harness or a machine. No recognised exercise uses a dumbbell for it. |
+| `neck` | `kettlebell` | Same as dumbbell: no recognised neck exercise uses a kettlebell. |
+| `serratus` | `kettlebell` | Serratus work is a loaded protraction (punches, shoulder raises). No recognised kettlebell version exists. |
+| `serratus` | `accessories` | Same: no recognised protraction exercise uses a ball, foam roll or other prop as the load. |
+| `lower_traps` | `kettlebell` | Y raises and prone raises are done with dumbbells, cables or bands; the kettlebell's offset handle isn't used for them. |
+| `glute_med` | `kettlebell` | Abduction is loaded with bands, cables, machines or ankle weights. Kettlebell exercises use the glute med as a stabiliser only. |
+| `hip_flexors` | `kettlebell` | Loaded hip flexion uses cables, bands or a dumbbell between the feet. No recognised kettlebell version exists. |
+| `soleus` | `bands` | Band calf work is done with the knee straight, which loads the gastrocnemius. No recognised bent-knee band exercise exists. |
+
+### Stretches
+
+Every muscle also needs at least one `stretching` exercise that lists it as primary, in any equipment group. `ExerciseCatalogTest` checks this too. Current exceptions:
+
+| Muscle | Why |
+|---|---|
+| `serratus` | No recognised stretch isolates it. Drills named for it (wall slides, punches) contract it rather than stretch it. |
+| `lower_traps` | No recognised stretch isolates it. Upper-back stretches (thread the needle, child's pose) stretch the mid traps and lats. |
 
 ## Checking photos
 
