@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'exercise_photos' => [
+        // Pinned to a commit so an upstream rename can't break stored paths.
+        'free_exercise_db' => env('EXERCISE_PHOTOS_FREE_EXERCISE_DB_URL', 'https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises'),
+        'wger' => env('EXERCISE_PHOTOS_WGER_URL', 'https://wger.de/media'),
+    ],
+
 ];
