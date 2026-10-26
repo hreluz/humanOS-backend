@@ -97,6 +97,15 @@ When no recognised exercise makes a muscle the primary mover with a group's equi
 | `hip_flexors` | `kettlebell` | Loaded hip flexion uses cables, bands or a dumbbell between the feet. No recognised kettlebell version exists. |
 | `soleus` | `bands` | Band calf work is done with the knee straight, which loads the gastrocnemius. No recognised bent-knee band exercise exists. |
 
+### Stretches
+
+Every muscle also needs at least one `stretching` exercise that lists it as primary, in any equipment group. `ExerciseCatalogTest` checks this too. Current exceptions:
+
+| Muscle | Why |
+|---|---|
+| `serratus` | No recognised stretch isolates it. Drills named for it (wall slides, punches) contract it rather than stretch it. |
+| `lower_traps` | No recognised stretch isolates it. Upper-back stretches (thread the needle, child's pose) stretch the mid traps and lats. |
+
 ## Checking photos
 
 `php artisan exercises:check-photos` sends a HEAD request to every photo URL and lists the ones that fail. It needs the network, so run it by hand after changing photos.

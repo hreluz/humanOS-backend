@@ -47,6 +47,13 @@ class ExerciseCatalogTest extends TestCase
     ];
 
     /**
+     * Muscles with no recognised stretch, documented in `docs/exercise-tagging.md`.
+     *
+     * @var list<string>
+     */
+    private const STRETCH_EXCEPTIONS = ['serratus', 'lower_traps'];
+
+    /**
      * @var list<array<string, mixed>>
      */
     private array $exercises;
@@ -203,6 +210,28 @@ class ExerciseCatalogTest extends TestCase
 
         foreach ($exceptions as $pair) {
             $this->assertArrayNotHasKey($pair, $covered, "{$pair} is covered now; remove it from the exceptions");
+        }
+    }
+
+    public function test_every_muscle_has_a_stretch(): void
+    {
+        $stretched = [];
+        foreach ($this->exercises as $exercise) {
+            if ($exercise['category'] === ExerciseCategory::Stretching->value) {
+                foreach ($exercise['primary'] as $muscle) {
+                    $stretched[$muscle] = true;
+                }
+            }
+        }
+
+        $missing = Muscle::orderBy('id')->pluck('key')
+            ->reject(fn (string $muscle) => isset($stretched[$muscle]) || in_array($muscle, self::STRETCH_EXCEPTIONS, true))
+            ->values()->all();
+
+        $this->assertSame([], $missing, 'Muscles with no stretch');
+
+        foreach (self::STRETCH_EXCEPTIONS as $muscle) {
+            $this->assertArrayNotHasKey($muscle, $stretched, "{$muscle} has a stretch now; remove it from the exceptions");
         }
     }
 

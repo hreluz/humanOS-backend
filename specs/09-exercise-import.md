@@ -152,6 +152,7 @@ Tests added or changed:
 - [ ] The 145 curated exercises keep their ids and tags (except the `source_id` fixes from rule 2).
 - [ ] `MuscleSeeder` seeds 30 muscles, including `neck` first in the `back` area, with no muscle id changed.
 - [ ] Every muscle × group pair (30 muscles, all six groups) has an exercise with that muscle as primary, or a documented exception.
+- [ ] Every muscle has at least one stretch, or a documented exception.
 - [ ] `php artisan exercises:check-photos` exits with `0`.
 - [ ] `docs/exercise-tagging.md` has the import rules and the full exception table.
 - [ ] `docs/openapi/v1.json` is unchanged.
@@ -163,7 +164,7 @@ Tests added or changed:
 - **Yes:** `skipped.json` plus a completeness test, so nothing is dropped silently.
 - **No:** cues for imported exercises. free-exercise-db has none, and writing 770 good cues is its own piece of work. `cue` is already nullable.
 - **No:** variant photos for imported exercises. Almost all of them have their own two photos.
-- **Yes:** stretches are tagged with the muscle stretched, and don't count for coverage.
+- **Yes:** stretches are tagged with the muscle stretched, and don't count for coverage. A separate check requires a stretch for every muscle, with documented exceptions.
 - **No:** schema or enum changes. SPEC 08 defined all seven categories already.
 - **Yes:** a single `neck` muscle now, before the frontend can draw it. Skipping the neck exercises would leave holes in the import; the frontend adds the region later.
 - **Yes:** full coverage for `kettlebell`, `bands` and `accessories`, with documented exceptions, not just a report.
