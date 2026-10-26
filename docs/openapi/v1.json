@@ -17,6 +17,9 @@
         },
         {
             "name": "Profile"
+        },
+        {
+            "name": "Training"
         }
     ],
     "security": [
@@ -725,6 +728,98 @@
                     }
                 }
             }
+        },
+        "/v1/training/muscle-areas": {
+            "get": {
+                "operationId": "training.muscleArea",
+                "description": "Lists the body areas in display order, each with its muscles in display order. Clients use\nit to draw the body map and to label the muscle keys that exercises return.",
+                "summary": "List muscle areas",
+                "tags": [
+                    "Training"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `MuscleAreaResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "allOf": [
+                                                    {
+                                                        "$ref": "#/components/schemas/MuscleAreaResource"
+                                                    },
+                                                    {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "muscles"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/equipment-groups": {
+            "get": {
+                "operationId": "training.equipmentGroup",
+                "description": "Lists the equipment groups in display order, each with its equipment in display order.\nClients use it to draw the equipment tabs and to label the equipment keys that exercises\nreturn.",
+                "summary": "List equipment groups",
+                "tags": [
+                    "Training"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `EquipmentGroupResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "allOf": [
+                                                    {
+                                                        "$ref": "#/components/schemas/EquipmentGroupResource"
+                                                    },
+                                                    {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "equipment"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -764,6 +859,66 @@
                     "user"
                 ],
                 "title": "AuthTokenResource"
+            },
+            "BodyView": {
+                "type": "string",
+                "enum": [
+                    "front",
+                    "back"
+                ],
+                "title": "BodyView"
+            },
+            "EquipmentGroupResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "examples": [
+                            "gym"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "Gym"
+                        ]
+                    },
+                    "equipment": {
+                        "type": "array",
+                        "description": "The equipment in the group, in display order.",
+                        "items": {
+                            "$ref": "#/components/schemas/EquipmentResource"
+                        }
+                    }
+                },
+                "required": [
+                    "key",
+                    "label"
+                ],
+                "title": "EquipmentGroupResource"
+            },
+            "EquipmentResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used by exercises to reference the equipment.",
+                        "examples": [
+                            "barbell"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "Barbell"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "label"
+                ],
+                "title": "EquipmentResource"
             },
             "ForgotPasswordRequest": {
                 "type": "object",
@@ -813,6 +968,66 @@
                     "password"
                 ],
                 "title": "LoginRequest"
+            },
+            "MuscleAreaResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "examples": [
+                            "chest"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "Chest"
+                        ]
+                    },
+                    "muscles": {
+                        "type": "array",
+                        "description": "The muscles in the area, in display order.",
+                        "items": {
+                            "$ref": "#/components/schemas/MuscleResource"
+                        }
+                    }
+                },
+                "required": [
+                    "key",
+                    "label"
+                ],
+                "title": "MuscleAreaResource"
+            },
+            "MuscleResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used by exercises to reference the muscle.",
+                        "examples": [
+                            "upper_chest"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "Upper chest"
+                        ]
+                    },
+                    "body_view": {
+                        "description": "The body map view the muscle is drawn on.",
+                        "examples": [
+                            "front"
+                        ],
+                        "$ref": "#/components/schemas/BodyView"
+                    }
+                },
+                "required": [
+                    "key",
+                    "label",
+                    "body_view"
+                ],
+                "title": "MuscleResource"
             },
             "ProfileResource": {
                 "type": "object",
