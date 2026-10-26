@@ -1,0 +1,82 @@
+[
+  {
+    "key": "isometric_neck_exercise_front_and_back",
+    "name": "Isometric Neck Exercise - Front And Back",
+    "equipment": "body_only",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "static",
+    "cue": null,
+    "instructions": [
+      "With your head and neck in a neutral position (normal position with head erect facing forward), place both of your hands on the front side of your head.",
+      "Now gently push forward as you contract the neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+      "Hold for the recommended number of seconds.",
+      "Now release the tension slowly.",
+      "Rest for the recommended amount of time and repeat with your hands placed on the back side of your head."
+    ],
+    "source_id": "Isometric_Neck_Exercise_-_Front_And_Back",
+    "primary": [
+      "neck"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Isometric_Neck_Exercise_-_Front_And_Back"
+      }
+    ]
+  },
+  {
+    "key": "isometric_neck_exercise_sides",
+    "name": "Isometric Neck Exercise - Sides",
+    "equipment": "body_only",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "static",
+    "cue": null,
+    "instructions": [
+      "With your head and neck in a neutral position (normal position with head erect facing forward), place your left hand on the left side of your head.",
+      "Now gently push towards the left as you contract the left neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+      "Hold for the recommended number of seconds.",
+      "Now release the tension slowly.",
+      "Rest for the recommended amount of time and repeat with your right hand placed on the right side of your head."
+    ],
+    "source_id": "Isometric_Neck_Exercise_-_Sides",
+    "primary": [
+      "neck"
+    ],
+    "secondary": [],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Isometric_Neck_Exercise_-_Sides"
+      }
+    ]
+  },
+  {
+    "key": "machine_neck_extension",
+    "name": "Machine Neck Extension",
+    "equipment": "machine",
+    "category": "strength",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "force": "push",
+    "cue": "Pad on the back of the head, extend slowly, never jerk.",
+    "instructions": null,
+    "source_id": null,
+    "primary": [
+      "neck"
+    ],
+    "secondary": [
+      "upper_traps"
+    ],
+    "photos": [
+      {
+        "source": "free_exercise_db",
+        "id": "Seated_Head_Harness_Neck_Resistance"
+      }
+    ]
+  }
+]
