@@ -15,7 +15,7 @@ class MuscleSeederTest extends TestCase
     use RefreshDatabase;
 
     /**
-     * The catalog from SPEC 06, written out separately from the seeder: area => [muscle key => view].
+     * The catalog from SPEC 06 (plus `neck` from SPEC 09), written out separately from the seeder: area => [muscle key => view].
      *
      * @var array<string, array<string, string>>
      */
@@ -24,7 +24,7 @@ class MuscleSeederTest extends TestCase
         'shoulders' => ['front_delts' => 'front', 'side_delts' => 'front', 'rear_delts' => 'back'],
         'arms' => ['biceps' => 'front', 'triceps_long' => 'back', 'triceps_lateral' => 'back', 'forearm_flexors' => 'front', 'forearm_extensors' => 'back'],
         'core' => ['upper_abs' => 'front', 'lower_abs' => 'front', 'obliques' => 'front'],
-        'back' => ['upper_traps' => 'back', 'mid_traps' => 'back', 'lower_traps' => 'back', 'lats' => 'back', 'lower_back' => 'back'],
+        'back' => ['neck' => 'back', 'upper_traps' => 'back', 'mid_traps' => 'back', 'lower_traps' => 'back', 'lats' => 'back', 'lower_back' => 'back'],
         'legs' => [
             'glute_max' => 'back', 'glute_med' => 'back', 'hip_flexors' => 'front', 'adductors' => 'front', 'quads' => 'front',
             'hamstrings_inner' => 'back', 'hamstrings_outer' => 'back', 'gastrocnemius' => 'back', 'soleus' => 'back', 'tibialis' => 'front',
@@ -41,7 +41,7 @@ class MuscleSeederTest extends TestCase
     public function test_it_seeds_the_areas_and_muscles_in_order(): void
     {
         $this->assertSame(6, MuscleArea::count());
-        $this->assertSame(29, Muscle::count());
+        $this->assertSame(30, Muscle::count());
 
         $this->assertSame(array_keys(self::EXPECTED), MuscleArea::orderBy('sort_order')->pluck('key')->all());
 
@@ -76,7 +76,7 @@ class MuscleSeederTest extends TestCase
         $this->seed(MuscleSeeder::class);
 
         $this->assertSame(6, MuscleArea::count());
-        $this->assertSame(29, Muscle::count());
+        $this->assertSame(30, Muscle::count());
         $this->assertSame($areaIds, MuscleArea::orderBy('key')->pluck('id', 'key')->all());
         $this->assertSame($muscleIds, Muscle::orderBy('key')->pluck('id', 'key')->all());
     }

@@ -10,12 +10,13 @@ use App\Modules\Training\Enums\PhotoSource;
 use App\Modules\Training\Models\Equipment;
 use App\Modules\Training\Models\Muscle;
 use Database\Seeders\EquipmentSeeder;
+use Database\Seeders\ExerciseSeeder;
 use Database\Seeders\MuscleSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
- * Checks `database/data/exercises.json` against the tagging rules in `docs/exercise-tagging.md` (SPEC 08).
+ * Checks the catalog files in `database/data/exercises` against the tagging rules in `docs/exercise-tagging.md` (SPEC 08, SPEC 09).
  */
 class ExerciseCatalogTest extends TestCase
 {
@@ -35,6 +36,7 @@ class ExerciseCatalogTest extends TestCase
      */
     private const COVERAGE_EXCEPTIONS = [
         ['forearm_extensors', 'bodyweight'],
+        ['neck', 'dumbbell'],
     ];
 
     /**
@@ -48,7 +50,7 @@ class ExerciseCatalogTest extends TestCase
 
         $this->seed([MuscleSeeder::class, EquipmentSeeder::class]);
 
-        $this->exercises = json_decode(file_get_contents(database_path('data/exercises.json')), true, flags: JSON_THROW_ON_ERROR);
+        $this->exercises = ExerciseSeeder::entries();
     }
 
     public function test_keys_are_unique_snake_case_and_source_ids_are_unique(): void

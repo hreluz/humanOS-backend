@@ -28,7 +28,7 @@ class ExerciseSeederTest extends TestCase
 
     public function test_it_seeds_every_exercise_in_the_file(): void
     {
-        $entries = json_decode(file_get_contents(database_path('data/exercises.json')), true);
+        $entries = ExerciseSeeder::entries();
 
         $this->assertGreaterThanOrEqual(138, count($entries));
         $this->assertSame(count($entries), Exercise::count());
@@ -86,28 +86,37 @@ class ExerciseSeederTest extends TestCase
         $this->assertContains('serratus', $exercise->secondaryMuscles->pluck('key')->all());
     }
 
-    public function test_an_unknown_muscle_key_throws_and_writes_nothing(): void
+    public function test_it_loads_every_file_in_the_directory_except_the_skip_list(): void
     {
-        $entry = fn (string $key, string $muscle) => [
-            'key' => $key, 'name' => $key, 'equipment' => 'body_only', 'category' => 'strength',
-            'level' => null, 'mechanic' => null, 'force' => null, 'cue' => null, 'instructions' => null, 'source_id' => null,
-            'primary' => [$muscle], 'secondary' => [], 'photos' => [],
-        ];
-        $path = tempnam(sys_get_temp_dir(), 'exercises');
-        file_put_contents($path, json_encode([$entry('valid_exercise', 'quads'), $entry('broken_exercise', 'neck')]));
-        $count = Exercise::count();
+        $directory = $this->directory([
+            'a.json' => [$this->entry('first_exercise', 'quads')],
+            'b.json' => [$this->entry('second_exercise', 'lats')],
+            ExerciseSeeder::SKIPPED_FILE => [['source_id' => 'Some_Exercise', 'reason' => 'Duplicate']],
+        ]);
 
         try {
-            (new ExerciseSeeder($path))->run();
-            $this->fail('The seeder accepted an unknown muscle key.');
-        } catch (InvalidArgumentException $e) {
-            $this->assertStringContainsString('unknown muscle [neck]', $e->getMessage());
+            (new ExerciseSeeder($directory))->run();
         } finally {
-            unlink($path);
+            $this->removeDirectory($directory);
         }
 
-        $this->assertSame($count, Exercise::count());
-        $this->assertFalse(Exercise::where('key', 'valid_exercise')->exists());
+        $this->assertTrue(Exercise::where('key', 'first_exercise')->exists());
+        $this->assertTrue(Exercise::where('key', 'second_exercise')->exists());
+    }
+
+    public function test_an_unknown_muscle_key_throws_and_writes_nothing(): void
+    {
+        $this->assertSeedingFails([
+            'a.json' => [$this->entry('valid_exercise', 'quads'), $this->entry('broken_exercise', 'rotator_cuff')],
+        ], 'unknown muscle [rotator_cuff]');
+    }
+
+    public function test_a_key_listed_in_two_files_throws_and_writes_nothing(): void
+    {
+        $this->assertSeedingFails([
+            'a.json' => [$this->entry('valid_exercise', 'quads')],
+            'b.json' => [$this->entry('valid_exercise', 'lats')],
+        ], 'Exercise [valid_exercise]: listed 2 times');
     }
 
     public function test_a_muscle_used_by_an_exercise_cannot_be_deleted(): void
@@ -137,5 +146,61 @@ class ExerciseSeederTest extends TestCase
         $wger = new ExercisePhoto(['source' => PhotoSource::Wger, 'path' => 'exercise-images/91/Crunches-1.png']);
         config(['services.exercise_photos.wger' => 'https://wger.example.com/media']);
         $this->assertSame('https://wger.example.com/media/exercise-images/91/Crunches-1.png', $wger->url);
+    }
+
+    /**
+     * Seeds from a temporary directory holding `$files` and expects it to throw `$message` without writing anything.
+     *
+     * @param  array<string, list<array<string, mixed>>>  $files
+     */
+    private function assertSeedingFails(array $files, string $message): void
+    {
+        $directory = $this->directory($files);
+        $count = Exercise::count();
+
+        try {
+            (new ExerciseSeeder($directory))->run();
+            $this->fail('The seeder accepted an invalid catalog.');
+        } catch (InvalidArgumentException $e) {
+            $this->assertStringContainsString($message, $e->getMessage());
+        } finally {
+            $this->removeDirectory($directory);
+        }
+
+        $this->assertSame($count, Exercise::count());
+        $this->assertFalse(Exercise::where('key', 'valid_exercise')->exists());
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function entry(string $key, string $muscle): array
+    {
+        return [
+            'key' => $key, 'name' => $key, 'equipment' => 'body_only', 'category' => 'strength',
+            'level' => null, 'mechanic' => null, 'force' => null, 'cue' => null, 'instructions' => null, 'source_id' => null,
+            'primary' => [$muscle], 'secondary' => [], 'photos' => [],
+        ];
+    }
+
+    /**
+     * @param  array<string, list<array<string, mixed>>>  $files
+     */
+    private function directory(array $files): string
+    {
+        $directory = sys_get_temp_dir().'/exercises-'.uniqid();
+        mkdir($directory);
+
+        foreach ($files as $name => $entries) {
+            file_put_contents("{$directory}/{$name}", json_encode($entries));
+        }
+
+        return $directory;
+    }
+
+    private function removeDirectory(string $directory): void
+    {
+        array_map(unlink(...), glob("{$directory}/*"));
+        rmdir($directory);
     }
 }

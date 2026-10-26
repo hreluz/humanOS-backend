@@ -16,19 +16,44 @@ use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 
 /**
- * The exercise catalog, read from `database/data/exercises.json` (SPEC 08). Tagging rules are in `docs/exercise-tagging.md`.
+ * The exercise catalog, read from the files in `database/data/exercises` (SPEC 08, SPEC 09). Tagging rules are in `docs/exercise-tagging.md`.
  *
  * Exercises are upserted by `key`, so running it again updates them in place and keeps their ids.
- * Each exercise's muscle tags and photos are rebuilt from the file. It never deletes exercises.
- * The whole file is checked before anything is written; an unknown key throws and writes nothing.
+ * Each exercise's muscle tags and photos are rebuilt from the files. It never deletes exercises.
+ * All files are checked before anything is written; an unknown or duplicate key throws and writes nothing.
  */
 class ExerciseSeeder extends Seeder
 {
-    public function __construct(private ?string $path = null) {}
+    /**
+     * Lists the free-exercise-db exercises left out of the catalog on purpose. The seeder doesn't load it.
+     */
+    public const SKIPPED_FILE = 'skipped.json';
+
+    public function __construct(private ?string $directory = null) {}
+
+    /**
+     * Every entry in the catalog files, file by file in name order.
+     *
+     * @return list<array<string, mixed>>
+     */
+    public static function entries(?string $directory = null): array
+    {
+        $files = glob(($directory ?? database_path('data/exercises')).'/*.json');
+        sort($files);
+
+        $entries = [];
+        foreach ($files as $file) {
+            if (basename($file) !== self::SKIPPED_FILE) {
+                array_push($entries, ...json_decode(file_get_contents($file), true, flags: JSON_THROW_ON_ERROR));
+            }
+        }
+
+        return $entries;
+    }
 
     public function run(): void
     {
-        $exercises = $this->build($this->load());
+        $exercises = $this->build(self::entries($this->directory));
 
         DB::transaction(function () use ($exercises) {
             foreach ($exercises as ['attributes' => $attributes, 'muscles' => $muscles, 'photos' => $photos]) {
@@ -42,17 +67,7 @@ class ExerciseSeeder extends Seeder
     }
 
     /**
-     * @return list<array<string, mixed>>
-     */
-    private function load(): array
-    {
-        $path = $this->path ?? database_path('data/exercises.json');
-
-        return json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR);
-    }
-
-    /**
-     * Turns the file's entries into rows, failing on any key the catalog doesn't know.
+     * Turns the entries into rows, failing on a duplicate exercise key or any key the catalog doesn't know.
      *
      * @param  list<array<string, mixed>>  $entries
      * @return list<array{attributes: array<string, mixed>, muscles: array<int, array{role: string, sort_order: int}>, photos: list<array<string, mixed>>}>
@@ -61,6 +76,12 @@ class ExerciseSeeder extends Seeder
     {
         $muscleIds = Muscle::pluck('id', 'key');
         $equipmentIds = Equipment::pluck('id', 'key');
+
+        foreach (array_count_values(array_column($entries, 'key')) as $key => $count) {
+            if ($count > 1) {
+                throw new InvalidArgumentException("Exercise [{$key}]: listed {$count} times.");
+            }
+        }
 
         return array_map(function (array $entry) use ($muscleIds, $equipmentIds) {
             $key = $entry['key'];

@@ -9,7 +9,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 /**
- * The muscle catalog drawn by the clients' body map (SPEC 06).
+ * The muscle catalog drawn by the clients' body map (SPEC 06, plus `neck` from SPEC 09).
  *
  * Rows are upserted by `key`, so running it again updates them in place and keeps their ids.
  * It never deletes: a removed muscle gets its own migration.
@@ -45,6 +45,7 @@ class MuscleSeeder extends Seeder
             'obliques' => ['Obliques', BodyView::Front],
         ]],
         'back' => ['label' => 'Back', 'muscles' => [
+            'neck' => ['Neck', BodyView::Back],
             'upper_traps' => ['Upper traps', BodyView::Back],
             'mid_traps' => ['Mid traps', BodyView::Back],
             'lower_traps' => ['Lower traps', BodyView::Back],
