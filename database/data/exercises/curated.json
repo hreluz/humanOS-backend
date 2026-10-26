@@ -2950,7 +2950,7 @@
     "key": "superman",
     "name": "Superman",
     "equipment": "body_only",
-    "category": "stretching",
+    "category": "strength",
     "level": "beginner",
     "mechanic": "compound",
     "force": "static",

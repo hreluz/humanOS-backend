@@ -115,6 +115,15 @@ class ExerciseCatalogTest extends TestCase
         }
     }
 
+    public function test_stretches_tag_only_the_stretched_muscles(): void
+    {
+        foreach ($this->exercises as $exercise) {
+            if ($exercise['category'] === ExerciseCategory::Stretching->value) {
+                $this->assertSame([], $exercise['secondary'], "Secondary of {$exercise['key']}");
+            }
+        }
+    }
+
     public function test_photo_entries_are_well_formed_and_credited(): void
     {
         foreach ($this->exercises as $exercise) {
@@ -149,8 +158,13 @@ class ExerciseCatalogTest extends TestCase
     {
         $groupOf = Equipment::with('group')->get()->mapWithKeys(fn (Equipment $item) => [$item->key => $item->group->key]);
 
+        // A stretch doesn't train the muscle it stretches (SPEC 09)
         $covered = [];
         foreach ($this->exercises as $exercise) {
+            if ($exercise['category'] === ExerciseCategory::Stretching->value) {
+                continue;
+            }
+
             foreach ($exercise['primary'] as $muscle) {
                 $covered["{$muscle}:{$groupOf[$exercise['equipment']]}"] = true;
             }

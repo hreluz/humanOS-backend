@@ -81,7 +81,7 @@ How a free-exercise-db exercise becomes an entry (SPEC 09). A script may draft t
 
 ## Coverage
 
-Every muscle needs at least one exercise that lists it as primary in each of the `gym`, `dumbbell` and `bodyweight` equipment groups. `ExerciseCatalogTest` checks this. A new exercise added to close a gap must be a recognised exercise; use the free-exercise-db version when one exists.
+Every muscle needs at least one exercise that lists it as primary in each of the `gym`, `dumbbell` and `bodyweight` equipment groups. Stretches don't count: a stretch doesn't train the muscle it stretches. `ExerciseCatalogTest` checks this. A new exercise added to close a gap must be a recognised exercise; use the free-exercise-db version when one exists.
 
 When no recognised exercise makes a muscle the primary mover with a group's equipment, the pair becomes a documented exception in `ExerciseCatalogTest` instead of an invented exercise or a stretched tag. Current exceptions:
 

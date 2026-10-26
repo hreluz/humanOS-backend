@@ -22,5 +22,25 @@
   {
     "source_id": "Seated_Dumbbell_Press",
     "reason": "Duplicate of curated seated_dumbbell_press (source Dumbbell_Shoulder_Press)"
+  },
+  {
+    "source_id": "Brachialis-SMR",
+    "reason": "Brachialis; the catalog has no brachialis muscle (SPEC 06)"
+  },
+  {
+    "source_id": "Foot-SMR",
+    "reason": "Foot muscles; the catalog has none"
+  },
+  {
+    "source_id": "Peroneals-SMR",
+    "reason": "Peroneals; the catalog has no peroneal muscle"
+  },
+  {
+    "source_id": "Peroneals_Stretch",
+    "reason": "Peroneals; the catalog has no peroneal muscle"
+  },
+  {
+    "source_id": "Posterior_Tibialis_Stretch",
+    "reason": "Posterior tibialis; the catalog has no posterior tibialis muscle"
   }
 ]
