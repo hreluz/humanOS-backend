@@ -4,7 +4,7 @@
 > **Depends on:** none
 > **Date:** 2026-10-11
 > **Objective:** Let any humanOS client register, log in and manage its session through Sanctum bearer tokens under `/api/v1/auth`, including email verification, password reset, per-device token revocation and a basic user/admin role.
-> **Note:** Envelope updated by SPEC 04.
+> **Note:** Envelope updated by SPEC 04. Mail goes to Mailpit in Docker (SPEC 03). Auth rate limits configurable via `AUTH_THROTTLE_*`.
 
 ## Why this spec exists
 
@@ -251,33 +251,33 @@ All commands below run inside the `app` container (see "Running the project (Doc
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes against the `laravel_testing` MySQL database, and `docker compose exec app vendor/bin/pint --test` reports no issues.
-- [ ] `docker compose exec app php artisan migrate:fresh` succeeds against the `mysql` service.
-- [ ] `docker compose exec app php artisan route:list --path=api/v1/auth` lists exactly the 11 routes in the endpoints table.
-- [ ] `POST /api/v1/auth/register` with valid data returns 201 with a `data.token` and a `data.user` whose `role` is `"user"`.
-- [ ] `POST /api/v1/auth/register` with `"role": "admin"` in the body still creates a user with `role` `"user"`.
-- [ ] Register and login without `device_name` store the `User-Agent` value as the token name.
-- [ ] `POST /api/v1/auth/login` with a wrong password returns 422 with an `errors.email` key.
-- [ ] The 6th failed login within one minute for the same email and IP returns 429.
-- [ ] `GET /api/v1/auth/me` returns 401 without a token and 200 with a valid one.
-- [ ] After `POST /logout`, the same token gets 401 on `/me`, and the user's other tokens still work.
-- [ ] A token older than `SANCTUM_EXPIRATION` minutes gets 401.
-- [ ] `GET /tokens` marks exactly one token as `is_current: true`.
-- [ ] `DELETE /tokens/{id}` for another user's token returns 404 and deletes nothing.
-- [ ] `DELETE /tokens` leaves the user with zero tokens.
-- [ ] The verification email link starts with `FRONTEND_URL` + `/verify-email?`.
-- [ ] Calling the verify endpoint with the link's parameters sets `email_verified_at`.
-- [ ] Calling the verify endpoint with a tampered signature returns 403.
-- [ ] A route with the `verified` middleware returns 403 for an unverified user.
-- [ ] `POST /forgot-password` returns the same status and body for an existing and a non-existing email.
-- [ ] The reset email link starts with `FRONTEND_URL` + `/reset-password?token=`.
-- [ ] A successful `POST /reset-password` lets the user log in with the new password and deletes all previous tokens.
-- [ ] A route with the `admin` middleware returns 403 for a `user` and 200 for an `admin`.
-- [ ] `docker compose exec app php artisan users:promote ana@example.com` sets the role to `admin`. Adding `--demote` sets it back to `user`. An unknown email exits with a non-zero code.
-- [ ] `routes/console.php` schedules `sanctum:prune-expired`.
-- [ ] `CLAUDE.md` no longer says Sanctum is not installed or that `routes/api.php` is missing.
-- [ ] `docs/docker.md` documents `FRONTEND_URL`, `SANCTUM_EXPIRATION`, how to read emails from the log, and that the scheduler does not run in the stack.
-- [ ] The step 11 Docker smoke test completes with the expected status codes at every step.
+- [x] `docker compose exec app composer test` passes against the `laravel_testing` MySQL database, and `docker compose exec app vendor/bin/pint --test` reports no issues.
+- [x] `docker compose exec app php artisan migrate:fresh` succeeds against the `mysql` service.
+- [x] `docker compose exec app php artisan route:list --path=api/v1/auth` lists exactly the 11 routes in the endpoints table.
+- [x] `POST /api/v1/auth/register` with valid data returns 201 with a `data.token` and a `data.user` whose `role` is `"user"`.
+- [x] `POST /api/v1/auth/register` with `"role": "admin"` in the body still creates a user with `role` `"user"`.
+- [x] Register and login without `device_name` store the `User-Agent` value as the token name.
+- [x] `POST /api/v1/auth/login` with a wrong password returns 422 with an `errors.email` key.
+- [x] The 6th failed login within one minute for the same email and IP returns 429.
+- [x] `GET /api/v1/auth/me` returns 401 without a token and 200 with a valid one.
+- [x] After `POST /logout`, the same token gets 401 on `/me`, and the user's other tokens still work.
+- [x] A token older than `SANCTUM_EXPIRATION` minutes gets 401.
+- [x] `GET /tokens` marks exactly one token as `is_current: true`.
+- [x] `DELETE /tokens/{id}` for another user's token returns 404 and deletes nothing.
+- [x] `DELETE /tokens` leaves the user with zero tokens.
+- [x] The verification email link starts with `FRONTEND_URL` + `/verify-email?`.
+- [x] Calling the verify endpoint with the link's parameters sets `email_verified_at`.
+- [x] Calling the verify endpoint with a tampered signature returns 403.
+- [x] A route with the `verified` middleware returns 403 for an unverified user.
+- [x] `POST /forgot-password` returns the same status and body for an existing and a non-existing email.
+- [x] The reset email link starts with `FRONTEND_URL` + `/reset-password?token=`.
+- [x] A successful `POST /reset-password` lets the user log in with the new password and deletes all previous tokens.
+- [x] A route with the `admin` middleware returns 403 for a `user` and 200 for an `admin`.
+- [x] `docker compose exec app php artisan users:promote ana@example.com` sets the role to `admin`. Adding `--demote` sets it back to `user`. An unknown email exits with a non-zero code.
+- [x] `routes/console.php` schedules `sanctum:prune-expired`.
+- [x] `CLAUDE.md` no longer says Sanctum is not installed or that `routes/api.php` is missing.
+- [x] `docs/docker.md` documents `FRONTEND_URL`, `SANCTUM_EXPIRATION`, how to read emails from the log, and that the scheduler does not run in the stack.
+- [x] The step 11 Docker smoke test completes with the expected status codes at every step.
 
 ## Decisions
 
