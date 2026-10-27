@@ -1,6 +1,6 @@
 # SPEC 07 — Equipment catalog
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** none
 > **Date:** 2026-10-25
 > **Objective:** Store the equipment catalog (6 groups, 12 pieces of equipment) in two database tables, filled by an idempotent seeder. Exercises can then reference equipment by foreign key, and clients can filter by group.
@@ -118,13 +118,13 @@ All commands run inside the `app` container (`docker compose exec app …`). Bra
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] `php artisan migrate` creates `equipment_groups` and `equipment`, and rolling back drops them.
-- [ ] After `php artisan db:seed --class=EquipmentSeeder`, the database holds exactly the rows in the seed table.
-- [ ] Running the seeder a second time changes no ids and adds no rows.
-- [ ] `php artisan db:seed` also seeds the catalog.
-- [ ] Deleting an `equipment_groups` row that has equipment fails.
-- [ ] `docs/openapi/v1.json` is unchanged (no API change).
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] `php artisan migrate` creates `equipment_groups` and `equipment`, and rolling back drops them.
+- [x] After `php artisan db:seed --class=EquipmentSeeder`, the database holds exactly the rows in the seed table.
+- [x] Running the seeder a second time changes no ids and adds no rows.
+- [x] `php artisan db:seed` also seeds the catalog.
+- [x] Deleting an `equipment_groups` row that has equipment fails.
+- [x] `docs/openapi/v1.json` is unchanged (no API change).
 
 ## Decisions
 
