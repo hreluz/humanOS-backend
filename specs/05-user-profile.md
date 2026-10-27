@@ -1,6 +1,6 @@
 # SPEC 05 — User profile
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 01, SPEC 02, SPEC 04
 > **Date:** 2026-10-11
 > **Objective:** Add a `Profile` module where an authenticated user saves their birth date, sex, height, weight, target weight and activity level in metric or imperial units, with every saved weight and target weight kept as readable history.
@@ -220,20 +220,20 @@ All commands run inside the `app` container (`docker compose exec app …`). Bra
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] `ProfileServiceProvider` is listed in `bootstrap/providers.php` and the four routes appear in `php artisan route:list` under `api/v1/profile`.
-- [ ] All four endpoints return 401 without a bearer token.
-- [ ] `GET /api/v1/profile` returns 404 for a user with no profile.
-- [ ] The `profiles` table has no `weight_kg` or `target_weight_kg` column.
-- [ ] `PUT /api/v1/profile` with a complete metric body returns 200 and `{ data: { ... } }` with every field in the `ProfileResource` example, including a computed `age`.
-- [ ] A second PUT replaces the profile values; the user still has exactly one `profiles` row, and `GET /profile` returns the second PUT's weight and target weight.
-- [ ] A PUT with `unit_system: imperial`, `height: 65`, `weight: 154.3` stores `height_cm = 165.1` and a weight entry with `weight_kg = 69.99`, and the response returns `height: 65.0`, `weight: 154.3`.
-- [ ] An imperial `weight: 180` is stored as `weight_kg = 81.65` and returned as `weight: 180.0`; every weight or target weight with at most 1 decimal comes back exactly as entered, in either unit system.
-- [ ] Every successful PUT adds exactly one `weight_entries` row and one `target_weight_entries` row with the same `recorded_at`, including when the values are unchanged; a failed (422) PUT adds none.
-- [ ] PUT returns 422 when any field is missing, an enum value is unknown, a value is outside the bounds (checked in both unit systems), or the birth date makes the user younger than 13 or older than 120.
-- [ ] `GET /api/v1/profile/weight-entries` and `GET /api/v1/profile/target-weight-entries` each return only the caller's entries, newest first, with values in their `unit_system`, and `{ "data": [] }` when there are none.
-- [ ] Deleting a user deletes their profile, weight entries and target weight entries.
-- [ ] `docs/openapi/v1.json` is identical to a fresh export and lists the four operations under the `Profile` tag.
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] `ProfileServiceProvider` is listed in `bootstrap/providers.php` and the four routes appear in `php artisan route:list` under `api/v1/profile`.
+- [x] All four endpoints return 401 without a bearer token.
+- [x] `GET /api/v1/profile` returns 404 for a user with no profile.
+- [x] The `profiles` table has no `weight_kg` or `target_weight_kg` column.
+- [x] `PUT /api/v1/profile` with a complete metric body returns 200 and `{ data: { ... } }` with every field in the `ProfileResource` example, including a computed `age`.
+- [x] A second PUT replaces the profile values; the user still has exactly one `profiles` row, and `GET /profile` returns the second PUT's weight and target weight.
+- [x] A PUT with `unit_system: imperial`, `height: 65`, `weight: 154.3` stores `height_cm = 165.1` and a weight entry with `weight_kg = 69.99`, and the response returns `height: 65.0`, `weight: 154.3`.
+- [x] An imperial `weight: 180` is stored as `weight_kg = 81.65` and returned as `weight: 180.0`; every weight or target weight with at most 1 decimal comes back exactly as entered, in either unit system.
+- [x] Every successful PUT adds exactly one `weight_entries` row and one `target_weight_entries` row with the same `recorded_at`, including when the values are unchanged; a failed (422) PUT adds none.
+- [x] PUT returns 422 when any field is missing, an enum value is unknown, a value is outside the bounds (checked in both unit systems), or the birth date makes the user younger than 13 or older than 120.
+- [x] `GET /api/v1/profile/weight-entries` and `GET /api/v1/profile/target-weight-entries` each return only the caller's entries, newest first, with values in their `unit_system`, and `{ "data": [] }` when there are none.
+- [x] Deleting a user deletes their profile, weight entries and target weight entries.
+- [x] `docs/openapi/v1.json` is identical to a fresh export and lists the four operations under the `Profile` tag.
 
 ## Decisions
 

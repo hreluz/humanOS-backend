@@ -102,16 +102,16 @@ All commands run inside the `app` container (`docker compose exec app …`). Wor
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes, and `docker compose exec app vendor/bin/pint --test` reports no issues.
-- [ ] `POST /api/v1/auth/register` returns 201 with `data.token` and `data.user`, and no top-level `token` or `user`.
-- [ ] `POST /api/v1/auth/login` returns 200 with `data.token` and `data.user`, and no top-level `token` or `user`.
-- [ ] `app/Modules/Auth/Http/Resources/AuthTokenResource.php` exists, and both controllers return it.
-- [ ] `docs/openapi/v1.json` is identical to a fresh export, and its login/register success schemas have `data.token` (with an example) and `data.user`.
-- [ ] `test_success_responses_use_the_envelope` exists and passes.
-- [ ] Reverting either controller to a top-level `{ token, user }` body and re-exporting makes that test fail.
-- [ ] `docs/code-conventions.md` has an "API responses" section with the envelope table, snake_case for requests and responses, and the no-`success`-field, timestamp and enum rules.
-- [ ] `specs/01-api-authentication.md` and `specs/02-api-docs-scramble.md` no longer describe an unwrapped `{ token, user }`, and both point to SPEC 04.
-- [ ] `/me`, `/tokens`, logout, email verification and password reset responses are unchanged.
+- [x] `docker compose exec app composer test` passes, and `docker compose exec app vendor/bin/pint --test` reports no issues.
+- [x] `POST /api/v1/auth/register` returns 201 with `data.token` and `data.user`, and no top-level `token` or `user`.
+- [x] `POST /api/v1/auth/login` returns 200 with `data.token` and `data.user`, and no top-level `token` or `user`.
+- [x] `app/Modules/Auth/Http/Resources/AuthTokenResource.php` exists, and both controllers return it.
+- [x] `docs/openapi/v1.json` is identical to a fresh export, and its login/register success schemas have `data.token` (with an example) and `data.user`.
+- [x] `test_success_responses_use_the_envelope` exists and passes.
+- [x] Reverting either controller to a top-level `{ token, user }` body and re-exporting makes that test fail.
+- [x] `docs/code-conventions.md` has an "API responses" section with the envelope table, snake_case for requests and responses, and the no-`success`-field, timestamp and enum rules.
+- [x] `specs/01-api-authentication.md` and `specs/02-api-docs-scramble.md` no longer describe an unwrapped `{ token, user }`, and both point to SPEC 04.
+- [x] `/me`, `/tokens`, logout, email verification and password reset responses are unchanged.
 
 ## Decisions
 

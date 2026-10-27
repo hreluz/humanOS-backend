@@ -47,6 +47,12 @@ The tests use PHPUnit 12, not Pest.
 
 Follow `docs/code-conventions.md` for coding rules (Laravel and container usage, API documentation with Scramble). Read it before writing code.
 
+## Specs
+
+Each feature is planned in `specs/NN-<name>.md`. The `Status` in its header moves from Draft to Approved to Implemented. A spec is closed as Implemented once every acceptance criterion has been checked and ticked.
+
+A spec is a record of what was decided and verified, not living documentation. The current state lives in `CLAUDE.md`, `docs/` and `docs/openapi/v1.json`. When a later spec changes something an older spec describes, don't rewrite the older spec's body. Add one line to its header: `> **Note:** <what changed> by SPEC NN.` The one exception is a change to the API contract (paths, request or response shapes): then also update the older spec's endpoint tables and response shapes in place, as SPEC 04 did for SPEC 01 and 02.
+
 <laravel-boost-guidelines>
 # Laravel Application
 
