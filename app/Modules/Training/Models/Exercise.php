@@ -7,7 +7,9 @@ use App\Modules\Training\Enums\ExerciseForce;
 use App\Modules\Training\Enums\ExerciseLevel;
 use App\Modules\Training\Enums\ExerciseMechanic;
 use App\Modules\Training\Enums\MuscleRole;
+use App\Modules\Training\Http\Requests\ListExercisesRequest;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -80,6 +82,29 @@ class Exercise extends Model
     public function photos(): HasMany
     {
         return $this->hasMany(ExercisePhoto::class)->orderBy('position');
+    }
+
+    /**
+     * The list query: the validated filters, sorted by name then key.
+     *
+     * @param  Builder<Exercise>  $query
+     * @return Builder<Exercise>
+     */
+    public function scopeFilter(Builder $query, ListExercisesRequest $filters): Builder
+    {
+        return $query
+            ->when($filters->validated('equipment_group'), fn (Builder $query, array $groups) => $query
+                ->whereHas('equipment.group', fn (Builder $query) => $query->whereIn('key', $groups)))
+            ->when($filters->validated('equipment'), fn (Builder $query, array $equipment) => $query
+                ->whereHas('equipment', fn (Builder $query) => $query->whereIn('key', $equipment)))
+            ->when($filters->validated('category'), fn (Builder $query, array $categories) => $query
+                ->whereIn('category', $categories))
+            ->when($filters->validated('level'), fn (Builder $query, array $levels) => $query
+                ->whereIn('level', $levels))
+            ->when($filters->validated('search'), fn (Builder $query, string $search) => $query
+                ->whereLike('name', '%'.addcslashes($search, '\\%_').'%'))
+            ->orderBy('name')
+            ->orderBy('key');
     }
 
     /**

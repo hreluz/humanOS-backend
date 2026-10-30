@@ -820,6 +820,304 @@
                     }
                 }
             }
+        },
+        "/v1/training/exercises": {
+            "get": {
+                "operationId": "exercise.index",
+                "description": "Returns the exercise catalog, paginated and sorted by name. Filters combine with AND, and\nvalues inside one array filter combine with OR. `instructions` and `source_id` are only\nreturned by the detail endpoint.",
+                "summary": "List exercises",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "equipment_group[]",
+                        "in": "query",
+                        "description": "Only exercises whose equipment is in one of these groups. Keys come from `/equipment-groups`.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "example": [
+                            "kettlebell",
+                            "bands"
+                        ]
+                    },
+                    {
+                        "name": "equipment[]",
+                        "in": "query",
+                        "description": "Only exercises with one of these pieces of equipment. Keys come from `/equipment-groups`.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "example": [
+                            "barbell",
+                            "cable"
+                        ]
+                    },
+                    {
+                        "name": "category[]",
+                        "in": "query",
+                        "description": "Only these categories.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/components/schemas/ExerciseCategory"
+                            }
+                        },
+                        "example": [
+                            "strength",
+                            "cardio"
+                        ]
+                    },
+                    {
+                        "name": "level[]",
+                        "in": "query",
+                        "description": "Only these levels.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/components/schemas/ExerciseLevel"
+                            }
+                        },
+                        "example": [
+                            "beginner",
+                            "intermediate"
+                        ]
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Case-insensitive match anywhere in the name.",
+                        "schema": {
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 100
+                        },
+                        "example": "bench"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number. Defaults to 1.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "example": 1
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Page size. Defaults to 50.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 100
+                        },
+                        "example": 50
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Paginated set of `ExerciseResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/ExerciseResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "type": "object",
+                                            "properties": {
+                                                "first": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "last": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "prev": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "next": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [
+                                                "first",
+                                                "last",
+                                                "prev",
+                                                "next"
+                                            ]
+                                        },
+                                        "meta": {
+                                            "type": "object",
+                                            "properties": {
+                                                "current_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "from": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "minimum": 1
+                                                },
+                                                "last_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "links": {
+                                                    "type": "array",
+                                                    "description": "Generated paginator links.",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "url": {
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ]
+                                                            },
+                                                            "label": {
+                                                                "type": "string"
+                                                            },
+                                                            "active": {
+                                                                "type": "boolean"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "url",
+                                                            "label",
+                                                            "active"
+                                                        ]
+                                                    }
+                                                },
+                                                "path": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Base path for paginator generated URLs."
+                                                },
+                                                "per_page": {
+                                                    "type": "integer",
+                                                    "description": "Number of items shown per page.",
+                                                    "minimum": 0
+                                                },
+                                                "to": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "description": "Number of the last item in the slice.",
+                                                    "minimum": 1
+                                                },
+                                                "total": {
+                                                    "type": "integer",
+                                                    "description": "Total number of items being paginated.",
+                                                    "minimum": 0
+                                                }
+                                            },
+                                            "required": [
+                                                "current_page",
+                                                "from",
+                                                "last_page",
+                                                "links",
+                                                "path",
+                                                "per_page",
+                                                "to",
+                                                "total"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "data",
+                                        "links",
+                                        "meta"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/exercises/{exercise}": {
+            "get": {
+                "operationId": "exercise.show",
+                "description": "Returns one exercise by its key, with its photos and instructions. Muscles and equipment are\nkeys: clients get their labels from `/muscle-areas` and `/equipment-groups`.",
+                "summary": "Show an exercise",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise",
+                        "in": "path",
+                        "required": true,
+                        "description": "The exercise key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "`ExerciseResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/ExerciseResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -919,6 +1217,267 @@
                     "label"
                 ],
                 "title": "EquipmentResource"
+            },
+            "ExerciseCategory": {
+                "type": "string",
+                "enum": [
+                    "strength",
+                    "powerlifting",
+                    "olympic_weightlifting",
+                    "strongman",
+                    "plyometrics",
+                    "cardio",
+                    "stretching"
+                ],
+                "title": "ExerciseCategory"
+            },
+            "ExerciseForce": {
+                "type": "string",
+                "enum": [
+                    "push",
+                    "pull",
+                    "static"
+                ],
+                "title": "ExerciseForce"
+            },
+            "ExerciseLevel": {
+                "type": "string",
+                "enum": [
+                    "beginner",
+                    "intermediate",
+                    "expert"
+                ],
+                "title": "ExerciseLevel"
+            },
+            "ExerciseMechanic": {
+                "type": "string",
+                "enum": [
+                    "compound",
+                    "isolation"
+                ],
+                "title": "ExerciseMechanic"
+            },
+            "ExercisePhotoResource": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "description": "Full URL of the photo.",
+                        "examples": [
+                            "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg"
+                        ]
+                    },
+                    "caption": {
+                        "type": "string",
+                        "examples": [
+                            "Start"
+                        ]
+                    },
+                    "source": {
+                        "description": "Where the photo comes from.",
+                        "examples": [
+                            "free_exercise_db"
+                        ],
+                        "$ref": "#/components/schemas/PhotoSource"
+                    },
+                    "license": {
+                        "type": "string",
+                        "examples": [
+                            "Unlicense"
+                        ]
+                    },
+                    "author": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Photo author, only set for wger photos. Clients must show it when set.",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "credit_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Link to the photo's source, only set for wger photos. Clients must show it when set.",
+                        "examples": [
+                            null
+                        ]
+                    }
+                },
+                "required": [
+                    "url",
+                    "caption",
+                    "source",
+                    "license",
+                    "author",
+                    "credit_url"
+                ],
+                "title": "ExercisePhotoResource"
+            },
+            "ExerciseResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used in the URL.",
+                        "examples": [
+                            "barbell_bench_press"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "examples": [
+                            "Barbell Bench Press"
+                        ]
+                    },
+                    "category": {
+                        "examples": [
+                            "strength"
+                        ],
+                        "$ref": "#/components/schemas/ExerciseCategory"
+                    },
+                    "level": {
+                        "anyOf": [
+                            {
+                                "examples": [
+                                    "beginner"
+                                ],
+                                "$ref": "#/components/schemas/ExerciseLevel"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "mechanic": {
+                        "anyOf": [
+                            {
+                                "examples": [
+                                    "compound"
+                                ],
+                                "$ref": "#/components/schemas/ExerciseMechanic"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "force": {
+                        "anyOf": [
+                            {
+                                "examples": [
+                                    "push"
+                                ],
+                                "$ref": "#/components/schemas/ExerciseForce"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "cue": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "One-line coaching cue.",
+                        "examples": [
+                            "Shoulder blades pinned back, bar to mid-chest."
+                        ]
+                    },
+                    "equipment": {
+                        "type": "string",
+                        "description": "Equipment key. The label comes from `/equipment-groups`.",
+                        "examples": [
+                            "barbell"
+                        ]
+                    },
+                    "equipment_group": {
+                        "type": "string",
+                        "description": "Equipment group key. The label comes from `/equipment-groups`.",
+                        "examples": [
+                            "gym"
+                        ]
+                    },
+                    "primary": {
+                        "type": "array",
+                        "description": "Keys of the muscles the exercise mainly trains, most direct first. The labels come from `/muscle-areas`.",
+                        "examples": [
+                            [
+                                "lower_chest",
+                                "upper_chest"
+                            ]
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "secondary": {
+                        "type": "array",
+                        "description": "Keys of the muscles that assist, in order. The labels come from `/muscle-areas`.",
+                        "examples": [
+                            [
+                                "front_delts",
+                                "triceps_lateral",
+                                "triceps_long"
+                            ]
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "photos": {
+                        "type": "array",
+                        "description": "Photos in display order.",
+                        "items": {
+                            "$ref": "#/components/schemas/ExercisePhotoResource"
+                        }
+                    },
+                    "instructions": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "description": "Step-by-step instructions. Only returned by the detail endpoint.",
+                        "examples": [
+                            [
+                                "Lie back on a flat bench.",
+                                "Lower the bar to your chest."
+                            ]
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "source_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "The free-exercise-db id. Only returned by the detail endpoint.",
+                        "examples": [
+                            "Barbell_Bench_Press_-_Medium_Grip"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "name",
+                    "category",
+                    "level",
+                    "mechanic",
+                    "force",
+                    "cue",
+                    "equipment",
+                    "equipment_group",
+                    "primary",
+                    "secondary",
+                    "photos"
+                ],
+                "title": "ExerciseResource"
             },
             "ForgotPasswordRequest": {
                 "type": "object",
@@ -1028,6 +1587,14 @@
                     "body_view"
                 ],
                 "title": "MuscleResource"
+            },
+            "PhotoSource": {
+                "type": "string",
+                "enum": [
+                    "free_exercise_db",
+                    "wger"
+                ],
+                "title": "PhotoSource"
             },
             "ProfileResource": {
                 "type": "object",

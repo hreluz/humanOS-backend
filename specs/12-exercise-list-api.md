@@ -1,6 +1,6 @@
 # SPEC 12 — Exercise list API
 
-> **Status:** Draft
+> **Status:** Approved
 > **Depends on:** SPEC 04, SPEC 11
 > **Date:** 2026-10-26
 > **Objective:** Add `GET /api/v1/training/exercises`: the exercise catalog, paginated, sorted by name, with equipment, category, level and name filters.
