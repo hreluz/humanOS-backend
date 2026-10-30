@@ -15,9 +15,9 @@ class ExerciseController
     /**
      * List exercises.
      *
-     * Returns the exercise catalog, paginated and sorted by name. Filters combine with AND, and
-     * values inside one array filter combine with OR. `instructions` and `source_id` are only
-     * returned by the detail endpoint.
+     * Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when
+     * `muscle` is set. Filters combine with AND, and values inside one array filter combine with
+     * OR. `instructions` and `source_id` are only returned by the detail endpoint.
      */
     public function index(ListExercisesRequest $request): AnonymousResourceCollection
     {

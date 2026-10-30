@@ -1,6 +1,6 @@
 # SPEC 13 — Exercise list: muscle filter and ranking
 
-> **Status:** Draft
+> **Status:** Approved
 > **Depends on:** SPEC 12
 > **Date:** 2026-10-26
 > **Objective:** Add `muscle` and `role` filters to `GET /api/v1/training/exercises`, ranked the way the frontend's `getExercises` does it today, in SQL so pagination stays correct.

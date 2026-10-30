@@ -155,6 +155,9 @@ class ExerciseListApiTest extends TestCase
             'unknown category' => ['category[]=nope', 'category.0'],
             'unknown level' => ['level[]=nope', 'level.0'],
             'filter that is not an array' => ['category=strength', 'category'],
+            'unknown muscle' => ['muscle=nope', 'muscle'],
+            'unknown role' => ['muscle=quads&role=nope', 'role'],
+            'role without muscle' => ['role=primary', 'muscle'],
         ];
     }
 
@@ -201,6 +204,88 @@ class ExerciseListApiTest extends TestCase
         $this->assertSame($small, $large);
     }
 
+    public function test_the_muscle_filter_lists_primaries_before_secondaries(): void
+    {
+        $this->createTaggedExercise('a_assists', 'A Assists', secondary: ['quads']);
+        $this->createTaggedExercise('z_targets', 'Z Targets', primary: ['quads']);
+        $this->createTaggedExercise('other', 'Other', primary: ['biceps']);
+
+        $response = $this->list('muscle=quads')->assertOk();
+
+        $this->assertSame(['z_targets', 'a_assists'], array_column($response->json('data'), 'key'));
+        $this->assertSame(['quads'], $response->json('data.0.primary'));
+        $this->assertSame(['quads'], $response->json('data.1.secondary'));
+    }
+
+    public function test_primaries_rank_by_position_then_fewest_primaries_then_name(): void
+    {
+        $this->createTaggedExercise('second_position', 'A Second Position', primary: ['glute_max', 'quads']);
+        $this->createTaggedExercise('first_with_two', 'B First With Two', primary: ['quads', 'glute_max']);
+        $this->createTaggedExercise('first_alone_z', 'Z First Alone', primary: ['quads']);
+        $this->createTaggedExercise('first_alone_c', 'C First Alone', primary: ['quads']);
+
+        $this->assertKeys(['first_alone_c', 'first_alone_z', 'first_with_two', 'second_position'], 'muscle=quads');
+    }
+
+    public function test_secondaries_are_sorted_by_name_only(): void
+    {
+        // Position and primary count would reverse this order if they applied to secondaries.
+        $this->createTaggedExercise('a_late', 'A Late', primary: ['biceps', 'triceps_long'], secondary: ['glute_max', 'quads']);
+        $this->createTaggedExercise('b_early', 'B Early', primary: ['biceps'], secondary: ['quads']);
+
+        $this->assertKeys(['a_late', 'b_early'], 'muscle=quads');
+    }
+
+    public function test_role_narrows_the_list_to_one_group(): void
+    {
+        $this->createTaggedExercise('targets', 'Targets', primary: ['quads']);
+        $this->createTaggedExercise('assists', 'Assists', secondary: ['quads']);
+
+        $this->assertKeys(['targets'], 'muscle=quads&role=primary');
+        $this->assertKeys(['assists'], 'muscle=quads&role=secondary');
+    }
+
+    public function test_the_muscle_filter_combines_with_the_other_filters(): void
+    {
+        $this->createTaggedExercise('kb_squat', 'Kettlebell Squat', primary: ['quads'], equipment: 'kettlebell');
+        $this->createTaggedExercise('bar_squat', 'Barbell Squat', primary: ['quads'], equipment: 'barbell');
+        $this->createTaggedExercise('kb_curl', 'Kettlebell Curl', primary: ['biceps'], equipment: 'kettlebell');
+
+        $this->assertKeys(['kb_squat'], 'muscle=quads&equipment_group[]=kettlebell');
+    }
+
+    public function test_the_muscle_order_holds_across_pages(): void
+    {
+        // Same name, position and count across groups, so only the full order keeps pages stable.
+        foreach (range(1, 20) as $number) {
+            $this->createTaggedExercise(sprintf('primary_%02d', $number), 'Same Name', primary: $number % 2 === 0 ? ['quads'] : ['quads', 'glute_max']);
+            $this->createTaggedExercise(sprintf('secondary_%02d', $number), 'Same Name', primary: ['biceps'], secondary: ['quads']);
+        }
+
+        $paged = [];
+        foreach ([1, 2, 3] as $page) {
+            $response = $this->list("muscle=quads&per_page=10&page={$page}")->assertOk();
+            $paged = [...$paged, ...array_column($response->json('data'), 'key')];
+        }
+
+        $whole = array_column($this->list('muscle=quads&per_page=30')->assertOk()->json('data'), 'key');
+
+        $this->assertCount(30, $paged);
+        $this->assertSame($whole, $paged);
+    }
+
+    public function test_the_query_count_with_a_muscle_does_not_depend_on_the_page_size(): void
+    {
+        foreach (range(1, 30) as $number) {
+            $this->createTaggedExercise("exercise_{$number}", "Exercise {$number}", primary: ['quads'], equipment: $number % 2 === 0 ? 'barbell' : 'kettlebell');
+        }
+
+        $small = $this->countQueries('muscle=quads&per_page=10', 10);
+        $large = $this->countQueries('muscle=quads&per_page=100', 30);
+
+        $this->assertSame($small, $large);
+    }
+
     private function countQueries(string $query, int $expectedItems): int
     {
         DB::flushQueryLog();
@@ -228,6 +313,28 @@ class ExerciseListApiTest extends TestCase
     {
         return $this->actingAs(User::factory()->create())
             ->getJson("/api/v1/training/exercises?{$query}");
+    }
+
+    /**
+     * @param  list<string>  $primary
+     * @param  list<string>  $secondary
+     */
+    private function createTaggedExercise(
+        string $key,
+        string $name,
+        array $primary = [],
+        array $secondary = [],
+        string $equipment = 'barbell',
+    ): Exercise {
+        $exercise = $this->createExercise($key, $name, $equipment);
+
+        foreach ([MuscleRole::Primary->value => $primary, MuscleRole::Secondary->value => $secondary] as $role => $muscles) {
+            foreach ($muscles as $index => $muscle) {
+                $exercise->muscles()->attach(Muscle::where('key', $muscle)->sole()->id, ['role' => $role, 'sort_order' => $index + 1]);
+            }
+        }
+
+        return $exercise;
     }
 
     /**

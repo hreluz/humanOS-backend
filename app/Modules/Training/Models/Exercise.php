@@ -85,7 +85,7 @@ class Exercise extends Model
     }
 
     /**
-     * The list query: the validated filters, sorted by name then key.
+     * The list query: the validated filters, ranked by muscle when one is given, then sorted by name and key.
      *
      * @param  Builder<Exercise>  $query
      * @return Builder<Exercise>
@@ -103,8 +103,32 @@ class Exercise extends Model
                 ->whereIn('level', $levels))
             ->when($filters->validated('search'), fn (Builder $query, string $search) => $query
                 ->whereLike('name', '%'.addcslashes($search, '\\%_').'%'))
+            ->when($filters->validated('muscle'), fn (Builder $query, string $muscle) => $query
+                ->rankedByMuscle($muscle, $filters->validated('role')))
             ->orderBy('name')
             ->orderBy('key');
+    }
+
+    /**
+     * Only exercises tagged with the muscle: primaries first (by the muscle's position, then fewest primaries), then secondaries.
+     *
+     * @param  Builder<Exercise>  $query
+     * @return Builder<Exercise>
+     */
+    public function scopeRankedByMuscle(Builder $query, string $muscle, ?string $role = null): Builder
+    {
+        $primary = MuscleRole::Primary->value;
+
+        return $query
+            ->select('exercises.*')
+            ->join('exercise_muscle as ranked', 'ranked.exercise_id', '=', 'exercises.id')
+            ->where('ranked.muscle_id', Muscle::where('key', $muscle)->select('id'))
+            ->when($role, fn (Builder $query, string $role) => $query->where('ranked.role', $role))
+            ->withCount('primaryMuscles')
+            // Position and count only rank primaries: secondaries go straight to name and key.
+            ->orderBy('ranked.role')
+            ->orderByRaw('CASE WHEN ranked.role = ? THEN ranked.sort_order END', [$primary])
+            ->orderByRaw('CASE WHEN ranked.role = ? THEN primary_muscles_count END', [$primary]);
     }
 
     /**

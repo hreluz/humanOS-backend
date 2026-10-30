@@ -4,6 +4,7 @@ namespace App\Modules\Training\Http\Requests;
 
 use App\Modules\Training\Enums\ExerciseCategory;
 use App\Modules\Training\Enums\ExerciseLevel;
+use App\Modules\Training\Enums\MuscleRole;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
@@ -54,6 +55,18 @@ class ListExercisesRequest extends FormRequest
              * @example bench
              */
             'search' => ['sometimes', 'string', 'min:2', 'max:100'],
+            /**
+             * Only exercises tagged with this muscle, primary or secondary. Primaries come first, ranked by the muscle's position and then by fewest primaries; secondaries follow, sorted by name. Keys come from `/muscle-areas`.
+             *
+             * @example quads
+             */
+            'muscle' => ['required_with:role', 'string', Rule::exists('muscles', 'key')],
+            /**
+             * Only exercises where `muscle` has this role. Needs `muscle`.
+             *
+             * @example primary
+             */
+            'role' => ['sometimes', Rule::enum(MuscleRole::class)],
             /**
              * Page number. Defaults to 1.
              *

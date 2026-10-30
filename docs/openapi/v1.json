@@ -824,7 +824,7 @@
         "/v1/training/exercises": {
             "get": {
                 "operationId": "exercise.index",
-                "description": "Returns the exercise catalog, paginated and sorted by name. Filters combine with AND, and\nvalues inside one array filter combine with OR. `instructions` and `source_id` are only\nreturned by the detail endpoint.",
+                "description": "Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when\n`muscle` is set. Filters combine with AND, and values inside one array filter combine with\nOR. `instructions` and `source_id` are only returned by the detail endpoint.",
                 "summary": "List exercises",
                 "tags": [
                     "Training"
@@ -900,6 +900,24 @@
                             "maxLength": 100
                         },
                         "example": "bench"
+                    },
+                    {
+                        "name": "muscle",
+                        "in": "query",
+                        "description": "Only exercises tagged with this muscle, primary or secondary. Primaries come first, ranked by the muscle's position and then by fewest primaries; secondaries follow, sorted by name. Keys come from `/muscle-areas`.",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "quads"
+                    },
+                    {
+                        "name": "role",
+                        "in": "query",
+                        "description": "Only exercises where `muscle` has this role. Needs `muscle`.",
+                        "schema": {
+                            "$ref": "#/components/schemas/MuscleRole"
+                        },
+                        "example": "primary"
                     },
                     {
                         "name": "page",
@@ -1404,7 +1422,7 @@
                     },
                     "primary": {
                         "type": "array",
-                        "description": "Keys of the muscles the exercise mainly trains, most direct first. The labels come from `/muscle-areas`.",
+                        "description": "Keys of the muscles doing most of the work, most direct first. Every exercise has at least one. A muscle appears in `primary` or `secondary`, never both, and muscles that only stabilise are in neither. For example, the chest does the pressing in a barbell bench press, so `lower_chest` and `upper_chest` are primary. The labels come from `/muscle-areas`.",
                         "examples": [
                             [
                                 "lower_chest",
@@ -1417,7 +1435,7 @@
                     },
                     "secondary": {
                         "type": "array",
-                        "description": "Keys of the muscles that assist, in order. The labels come from `/muscle-areas`.",
+                        "description": "Keys of the muscles that assist the primary ones, in order. Can be empty: stretching and foam-rolling exercises have none. For example, the front delts and triceps help the chest in a barbell bench press, so `front_delts`, `triceps_lateral` and `triceps_long` are secondary. The labels come from `/muscle-areas`.",
                         "examples": [
                             [
                                 "front_delts",
@@ -1587,6 +1605,14 @@
                     "body_view"
                 ],
                 "title": "MuscleResource"
+            },
+            "MuscleRole": {
+                "type": "string",
+                "enum": [
+                    "primary",
+                    "secondary"
+                ],
+                "title": "MuscleRole"
             },
             "PhotoSource": {
                 "type": "string",

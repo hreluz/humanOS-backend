@@ -68,7 +68,7 @@ class ExerciseResource extends JsonResource
              */
             'equipment_group' => $this->equipment->group->key,
             /**
-             * Keys of the muscles the exercise mainly trains, most direct first. The labels come from `/muscle-areas`.
+             * Keys of the muscles doing most of the work, most direct first. Every exercise has at least one. A muscle appears in `primary` or `secondary`, never both, and muscles that only stabilise are in neither. For example, the chest does the pressing in a barbell bench press, so `lower_chest` and `upper_chest` are primary. The labels come from `/muscle-areas`.
              *
              * @var list<string>
              *
@@ -76,7 +76,7 @@ class ExerciseResource extends JsonResource
              */
             'primary' => $this->muscleKeys(MuscleRole::Primary),
             /**
-             * Keys of the muscles that assist, in order. The labels come from `/muscle-areas`.
+             * Keys of the muscles that assist the primary ones, in order. Can be empty: stretching and foam-rolling exercises have none. For example, the front delts and triceps help the chest in a barbell bench press, so `front_delts`, `triceps_lateral` and `triceps_long` are secondary. The labels come from `/muscle-areas`.
              *
              * @var list<string>
              *
