@@ -8,6 +8,7 @@ use App\Modules\Training\Enums\ExerciseLevel;
 use App\Modules\Training\Enums\ExerciseMechanic;
 use App\Modules\Training\Enums\PhotoSource;
 use App\Modules\Training\Models\Equipment;
+use App\Modules\Training\Models\Exercise;
 use App\Modules\Training\Models\Muscle;
 use Database\Seeders\EquipmentSeeder;
 use Database\Seeders\ExerciseSeeder;
@@ -16,7 +17,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
- * Checks the catalog files in `database/data/exercises` against the tagging rules in `docs/exercise-tagging.md` (SPEC 08, SPEC 09).
+ * Checks the catalog files in `database/data/exercises` against the tagging rules in `docs/exercise-tagging.md` (SPEC 08, SPEC 09, SPEC 14).
  */
 class ExerciseCatalogTest extends TestCase
 {
@@ -146,6 +147,41 @@ class ExerciseCatalogTest extends TestCase
                 $this->assertSame([], $exercise['secondary'], "Secondary of {$exercise['key']}");
             }
         }
+    }
+
+    public function test_every_exercise_has_a_cue(): void
+    {
+        foreach ($this->exercises as $exercise) {
+            $this->assertNotEmpty($exercise['cue'], "Cue of {$exercise['key']}");
+        }
+
+        $this->seed(ExerciseSeeder::class);
+
+        $this->assertSame(0, Exercise::whereNull('cue')->count(), 'Seeded exercises with no cue');
+    }
+
+    public function test_cues_follow_the_format_rules(): void
+    {
+        foreach ($this->exercises as $exercise) {
+            $key = $exercise['key'];
+            $cue = $exercise['cue'];
+
+            if ($cue === null) {
+                continue;
+            }
+
+            $this->assertLessThanOrEqual(90, mb_strlen($cue), "Length of the cue of {$key}");
+            $this->assertDoesNotMatchRegularExpression('/[\r\n]/', $cue, "Line break in the cue of {$key}");
+            $this->assertMatchesRegularExpression('/^\p{Lu}/u', $cue, "Capital letter at the start of the cue of {$key}");
+            $this->assertStringEndsWith('.', $cue, "Period at the end of the cue of {$key}");
+        }
+    }
+
+    public function test_no_cue_appears_on_more_than_three_exercises(): void
+    {
+        $counts = array_count_values(array_filter(array_column($this->exercises, 'cue')));
+
+        $this->assertSame([], array_filter($counts, fn (int $count) => $count > 3), 'Cues on more than three exercises');
     }
 
     public function test_photo_entries_are_well_formed_and_credited(): void

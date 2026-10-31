@@ -4,6 +4,7 @@
 > **Depends on:** SPEC 08
 > **Date:** 2026-10-25
 > **Objective:** Add the 770 free-exercise-db exercises that SPEC 08 didn't port to the exercise catalog, tagged with the rules in `docs/exercise-tagging.md` and in the same data format. Add a `neck` muscle, and extend the coverage check to the `kettlebell`, `bands` and `accessories` groups. No schema change and no API change.
+> **Note:** Import rule 9 changed from `null` to "write a cue" by SPEC 14.
 
 ## Why this spec exists
 
@@ -104,7 +105,7 @@ These go into `docs/exercise-tagging.md` next to SPEC 08's rules.
 6. **Self-myofascial release (foam roll, `-SMR`):** primary = the muscle being rolled. No secondary. Category `stretching`, as free-exercise-db has it.
 7. **Plyometrics, cardio, olympic, strongman:** tag the main movers as for strength. For whole-body lifts (clean, snatch, atlas stone), list at most three primaries, most direct first.
 8. **Photos:** the exercise's own two photos only; no variants. An exercise without photos gets a wger image if one matches (SPEC 08 rule 8), or none.
-9. **Cue:** `null`.
+9. **Cue:** write a cue (rules in `docs/exercise-tagging.md`, SPEC 14).
 
 ## Coverage
 

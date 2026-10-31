@@ -7,7 +7,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Lean forward and step, then press your hands straight out on each pause.",
     "instructions": [
       "Attach a dual handled chain or rope attachment to the sled. You should be facing away from the sled, holding a handle in each hand.",
       "Begin the movement by moving forward for one step. Leaning forward, extend through the legs and hips to move, pausing with each step to extend through the elbows, pressing your hands forward. Step forward until you return to the start position prepared to press."
@@ -37,7 +37,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Get one bell head behind the shoulder, lean slightly away as you press.",
     "instructions": [
       "The circus bell is an oversized dumbbell with a thick handle. Begin with the dumbbell between your feet, and grip the handle with both hands.",
       "Clean the dumbbell by extending through your hips and knees to deliver the implement to the desired shoulder, letting go with the extra hand.",
@@ -70,7 +70,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "force": "static",
-    "cue": null,
+    "cue": "Arms out to the sides, keep them parallel to the ground as you hold.",
     "instructions": [
       "In the crucifix, you statically hold weights out to the side for time. While the event can be practiced using dumbbells, it is best to practice with one of the various implements used, such as axes and hammers, as it feels different.",
       "Begin standing, and raise your arms out to the side holding the implements. Your arms should be parallel to the ground. In competition, judges or sensors are used to let you know when you break parallel. Hold for as long as you can. Typically, the weights should be heavy enough that you fail in 30-60 seconds."
@@ -97,7 +97,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Torso vertical in the dip, drive off the rear foot into a full split.",
     "instructions": [
       "This drill helps you learn to drive yourself low enough during the jerk and corrects those who move backward during the movement. Begin with the bar racked in the jerk position, with the shoulders forward, torso upright, and the feet split slightly apart.",
       "Initiate the movement as you would a normal jerk, dipping at the knees while keeping your torso vertical, and driving back up forcefully, using momentum and not your arms to elevate the weight.",
@@ -129,7 +129,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Push your head back to shelve the log, then dip and drive it overhead.",
     "instructions": [
       "Begin standing with the log in front of you. Grasp the handles, and begin to clean the log. As you are bent over to start the clean, attempt to get the log as high as possible, pulling it into your chest. Extend through the hips and knees to bring it up to complete the clean.",
       "Push your head back and look up, creating a shelf on your chest to rest the log. Begin the press by dipping, flexing slightly through the knees and reversing the motion. This push press will generate momentum to start the log moving vertically. Continue by extending through the elbows to press the log above your head. There are no strict rules on form, so use whatever techniques you are most efficient with. As the log is pressed, ensure that you push your head through on each repetition, looking forward.",
@@ -161,7 +161,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Short dip with the hips still, land in a wider stance with locked arms.",
     "instructions": [
       "Standing with the weight racked on the front of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible.",
       "Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the shoulders.",
@@ -195,7 +195,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Short dip with a vertical torso, drive with the legs and finish with the arms.",
     "instructions": null,
     "source_id": "Push_Press",
     "primary": [
@@ -222,7 +222,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Bar on the back of the shoulders, dip short and drive it straight up.",
     "instructions": [
       "Standing with the weight racked on the back of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward. Go down only slightly, and reverse direction as powerfully as possible. Drive through the heels create as much speed and force as possible, moving the bar in a vertical path.",
       "Using the momentum generated, finish pressing the weight overhead be extending through the arms.",
@@ -253,7 +253,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Dip short, then snap the feet into a split and catch with locked arms.",
     "instructions": [
       "Standing with the weight racked on the front of the shoulders, begin with the dip. With your feet directly under your hips, flex the knees without moving the hips backward.",
       "Go down only slightly, and reverse direction as powerfully as possible. Drive through the heels create as much speed and force as possible, and be sure to move your head out of the way as the bar leaves the shoulders. At this moment as the feet leave the floor, the feet must be placed into the receiving position as quickly as possible.",
@@ -286,7 +286,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": null,
-    "cue": null,
+    "cue": "Back straight and head up, take short quick steps.",
     "instructions": [
       "There are various implements that can be used for the farmers walk. These can also be performed with heavy dumbbells or short bars if these implements aren't available. Begin by standing between the implements.",
       "After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up.",
@@ -315,7 +315,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": null,
-    "cue": null,
+    "cue": "Lift through the heels with your chest up, walk with quick controlled steps.",
     "instructions": [
       "Position the frame at the starting point, and load with the appropriate weight. Standing in the center of the frame, begin by gripping the handles and driving through your heels to lift the frame. Ensure your chest and head are up and your back is straight.",
       "Immediately begin walking briskly with quick, controlled steps. Keep your chest up and head forward, and make sure you continue breathing. Bring the frame to the ground after you have reached the end point."
@@ -344,7 +344,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Bar at mid-thigh with a shoulder-width grip, shrug fast toward your ears.",
     "instructions": [
       "Begin with a shoulder width, double overhand or hook grip, with the bar hanging at the mid thigh position. Your back should be straight and inclined slightly forward.",
       "Shrug your shoulders towards your ears. While this exercise can usually by loaded with heavier weight than a clean, avoid overloading to the point that the execution slows down."
@@ -371,7 +371,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Rotate the elbows around the bar, keep it close and relax your grip.",
     "instructions": [
       "This drill teaches the delivery of the barbell to the rack position on the shoulders. Begin holding a bar in the scarecrow position, with the upper arms parallel to the floor, and the forearms hanging down. Use a hook grip, with your fingers wrapped over your thumbs.",
       "Begin by rotating the elbows around the bar, delivering the bar to the shoulders. As your elbows come forward, relax your grip. The shoulders should be protracted, providing a shelf for the bar, which should lightly contact the throat.",
@@ -400,7 +400,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Wide grip at mid-thigh, shrug toward your ears without slowing down.",
     "instructions": [
       "Begin with a wide grip, with the bar hanging at the mid thigh position. You can use a hook or overhand grip. Your back should be straight and inclined slightly forward.",
       "Shrug your shoulders towards your ears. While this exercise can usually by loaded with heavier weight than a snatch, avoid overloading to the point that the execution slows down."
@@ -427,7 +427,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Lap the weight on your thighs, hug it tight and drive the hips up.",
     "instructions": [
       "This trainer is effective for developing Atlas Stone strength for those who don't have access to stones, and are typically made from bar ends or heavy pipe.",
       "Begin by loading the desired weight onto the bar. Straddle the weight, wrapping your arms around the implement, bending at the hips.",
@@ -461,7 +461,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Lap the stone, change your grip over the top and stand through the hips.",
     "instructions": [
       "Begin with the atlas stone between your feet. Bend at the hips to wrap your arms vertically around the Atlas Stone, attempting to get your fingers underneath the stone. Many stones will have a small flat portion on the bottom, which will make the stone easier to hold.",
       "Pulling the stone into your torso, drive through the back half of your feet to pull the stone from the ground.",
@@ -496,7 +496,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Shins on the axle and chest up, drive the hips into it once past the knees.",
     "instructions": [
       "Approach the bar so that it is centered over your feet. You feet should be about hip width apart. Bend at the hip to grip the bar at shoulder width, allowing your shoulder blades to protract. Typically, you would use an over/under grip.",
       "With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward.",
@@ -530,7 +530,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Lean back and take short, quick steps.",
     "instructions": [
       "Load a sled with the desired weight, attaching a rope or straps to the sled that you can hold onto.",
       "Begin the exercise by moving backwards for a given distance. Leaning back, extend through the legs for short steps to move as quickly as possible."
@@ -558,7 +558,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Back flat and knees bent, drive with the legs and use your hands for balance.",
     "instructions": [
       "Wearing either a harness or a loose weight belt, attach the chain to the back so that you will be facing away from the sled. Bend down so that your hands are on the ground. Your back should be flat and knees bent. This is your starting position.",
       "Begin by driving with legs, alternating left and right. Use your hands to maintain balance and to help pull. Try to keep your back flat as you move over a given distance."
@@ -587,7 +587,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Stand between the handles or slightly back, chest up and drive through the heels.",
     "instructions": [
       "This event apparatus typically has neutral grip handles, however some have a straight bar that you can approach like a normal deadlift. The apparatus can be loaded with a vehicle or other heavy objects such as tractor tires or kegs.",
       "Center yourself between the handles if you are a strong squatter, or back a couple inches if you are a strong deadlifter. You feet should be about hip width apart. Bend at the hip to grip the handles. With your feet and your grip set, take a big breath and then lower your hips and flex the knees.",
@@ -621,7 +621,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Keep the back angle until above the knees, then jump and pull under the bar.",
     "instructions": [
       "With a barbell on the floor close to the shins, take an overhand (or hook) grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "",
@@ -656,7 +656,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Rack the clean on your shoulders, then dip short and split under the jerk.",
     "instructions": [
       "With a barbell on the floor close to the shins, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees.",
@@ -695,7 +695,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Hold the back angle as the bar rises, flare the knees out of its path.",
     "instructions": [
       "Begin standing with a barbell close to your shins. Your feet should be directly under your hips with your feet turned out slightly. Grip the bar with a double overhand grip or hook grip, about shoulder width apart. Squat down to the bar. Your spine should be in full extension, with a back angle that places your shoulders in front of the bar and your back as vertical as possible.",
       "Begin by driving through the floor through the front of your heels. As the bar travels upward, maintain a constant back angle. Flare your knees out to the side to help keep them out of the bar's path.",
@@ -728,7 +728,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Shoulders just ahead of the bar, extend hard and pull under into a front squat.",
     "instructions": [
       "With a barbell on boxes or stands of the desired height, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight with the elbows pointed out.",
@@ -761,7 +761,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Arms straight until full extension, finish with a sharp jump of the hips.",
     "instructions": [
       "With a barbell on the floor close to the shins, take an overhand or hook grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight and elbows out. Move the weight with control as you continue to above the knees.",
@@ -793,7 +793,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": null,
-    "cue": null,
+    "cue": "Bar in the crook of the elbow, walk upright with short fast steps.",
     "instructions": [
       "With the weight loaded, take a zurcher hold on the end of the implement. Place the bar in the crook of the elbow and hold onto your wrist. Try to keep the weight off of the forearms.",
       "Begin by lifting the weight from the ground. Keep a tight, upright posture as you being to walk, taking short, fast steps. Look up and away as you turn in a circle. Do not hold your breath during the event. Continue walking until you complete one or more complete turns."
@@ -823,7 +823,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Arms out in front, shoulders forward so the bar stays on its shelf.",
     "instructions": [
       "This drill teaches you the proper positioning of both the bar and your body during the clean and front squat.",
       "Place the barbell on the front of the shoulders, releasing your grip and extending your arms out in front of you. The shoulders should be pushed forward to create a shelf, and the bar should be in contact with the throat. Ensure that you only move your shoulder blades forward; don't round the thoracic spine.",
@@ -853,7 +853,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Start at mid-thigh, extend hips, knees and ankles and shrug hard.",
     "instructions": [
       "Begin with a shoulder width, double overhand or hook grip, with the bar hanging at the mid thigh position. Your back should be straight and inclined slightly forward.",
       "Begin by aggressively extending through the hips, knees and ankles, driving the weight upward. As you do so, shrug your shoulders towards your ears.",
@@ -885,7 +885,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Start just below the knees, extend hard and pull under into a front squat.",
     "instructions": [
       "Begin with a shoulder width, double overhand or hook grip, with the bar hanging just below the knees. Your back should be straight and inclined slightly forward.",
       "Begin by aggressively extending through the hips, knees and ankles, driving the weight upward. As you do so, shrug your shoulders towards your ears. As full extension is achieved, transition into the third pull by aggressively shrugging and flexing the arms with the elbows up and out.",
@@ -918,7 +918,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Bar at the hips with a wide grip, extend hard and pull under to locked arms.",
     "instructions": [
       "Begin with a wide grip on the bar, with an overhand or hook grip. The feet should be directly below the hips with the feet turned out. Your knees should be slightly bent, and the torso inclined forward. The spine should be fully extended and the head facing forward. The bar should be at the hips. This will be your starting position.",
       "Aggressively extend through the legs and hips. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
@@ -952,7 +952,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Bar just below the knees, extend through the hips and catch low with locked arms.",
     "instructions": [
       "Begin with a wide grip on the bar, with an overhand or hook grip. The feet should be directly below the hips with the feet turned out. Your knees should be slightly bent, and the torso inclined forward. The spine should be fully extended and the head facing forward. The bar should be just below the knees. This will be your starting position.",
       "Aggressively extend through the legs and hips. At peak extension, shrug the shoulders and allow the elbows to flex to the side.",
@@ -986,7 +986,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Pop the bar off your shoulders, drive under it into a full squat.",
     "instructions": [
       "This drill helps you learn the snatch. Begin by holding a light weight across the back of the shoulders. Your feet should be slightly wider than hip width apart with the feet turned out, the same position that you would perform a squat with.",
       "Begin by dipping with the knees slightly, and popping back up to briefly unload the bar. Drive yourself underneath the bar, elevating it overhead as you descend into a full squat.",
@@ -1017,7 +1017,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Torso vertical, let the knees travel forward without moving the hips back.",
     "instructions": [
       "This movement strengthens the dip portion of the jerk. Begin with the bar racked in the jerk position, with the shoulders forward to create a shelf and the bar lightly contacting the throat. The feet should be directly under the hips, with the feet turned out as is comfortable.",
       "Keeping the torso vertical, dip by flexing the knees, allowing them to travel forward and without moving the hips to the rear. The dip should not be excessive. Return the weight to the starting position by driving forcefully though the feet."
@@ -1044,7 +1044,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Tilt the keg and grab its bottom edge, lift it high on your chest and move fast.",
     "instructions": [
       "To load kegs, place the desired number a distance from the loading platform, typically 30-50 feet.",
       "Begin by grabbing the close handle of the first keg, tilting it onto its side to grab the opposite edge of the bottom of the keg. Lift the keg up to your chest.",
@@ -1078,7 +1078,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Sit back to your feet, explode with the hips to land with feet flat.",
     "instructions": [
       "Begin kneeling on the floor with a barbell racked across the back of your shoulders, or you can use your body weight for this exercise. This can be done inside of a power rack to make unracking easier.",
       "Sit back with your hips until your glutes touch your feet, keeping your head and chest up.",
@@ -1109,7 +1109,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Keep the bar close and press it overhead without rebending the knees.",
     "instructions": [
       "Begin with a loaded barbell held at the mid thigh position with a wide grip. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
       "Begin the pull by driving through the front of the heels, raising the bar. Transition into the second pull by extending through the hips knees and ankles, driving the bar up as quickly as possible. The bar should be close to the body.",
@@ -1142,7 +1142,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Bar on the traps, let the knees travel forward and keep the torso upright.",
     "instructions": [
       "Begin with a barbell supported on top of the traps. The chest should be up, and the head facing forward. Adopt a hip width stance with the feet turned out as needed.",
       "Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward; ensure that they stay aligned with the feet. The goal is to keep the torso as upright as possible. Continue all the way down, keeping the weight on the front of the heel.",
@@ -1171,7 +1171,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Arms locked overhead and slightly behind the head, back straight as you lower.",
     "instructions": [
       "Start out by having a barbell in front of you on the floor. Your feet should be wider than shoulder width apart from each other.",
       "Bend the knees and use a pronated grip (palms facing you) to grab the barbell. Your hands should be at a wider than shoulder width apart from each other before lifting. Once you are positioned, lift the barbell up until you can rest it on your chest.",
@@ -1205,7 +1205,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Jump through the hips, pull under just far enough to rack the bar.",
     "instructions": [
       "With a barbell on boxes of the desired height, take a grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. As the bar approaches the mid-thigh position, begin extending through the hips.",
@@ -1239,7 +1239,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Bar close to the body, catch it locked out overhead in a partial squat.",
     "instructions": [
       "Begin with a loaded barbell on the floor. The bar should be close to or touching the shins, and a wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
       "Begin the first pull by driving through the front of the heels, raising the bar from the ground. The back angle should stay the same until the bar passes the knees.",
@@ -1274,7 +1274,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Start from the boxes with elbows out, catch above a full squat with locked arms.",
     "instructions": [
       "Begin with a loaded barbell on boxes or stands of the desired height. A wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar, with the elbows pointed out. This will be the starting position.",
       "Begin the first pull by driving through the front of the heels, raising the bar from the boxes.",
@@ -1309,7 +1309,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Feet wide and chest up, lean back and swing the weight onto the stair.",
     "instructions": [
       "In the power stairs, implements are moved up a staircase. For training purposes, these can be performed with a tire or box.",
       "Begin by taking the implement with both hands. Set your feet wide, with your head and chest up. Drive through the ground with your heels, extending your knees and hips to raise the weight from the ground.",
@@ -1342,7 +1342,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Center in the frame, pull your shoulder blades together as the hips drive forward.",
     "instructions": [
       "Load the frame with the desired weight. Center yourself between the handles. You feet should be about hip width apart. Bend at the hips to grip the handles, allowing your shoulder blades to protract.",
       "With your feet and your grip set, take a big breath and then lower your hips and flex the knees. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.",
@@ -1375,7 +1375,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Stand on the platform, push your butt back with the bar touching your legs.",
     "instructions": [
       "Begin standing while holding a bar at arm's length in front of you. You can stand on a raised platform to increase the range of motion.",
       "Begin by flexing the knees slightly, and then flex at the hip, moving your butt back as far as possible, lowering the torso as far as flexibility allows. The back should remain in absolute extension at all times, and the bar should remain in contact with the legs. If done properly, there should be heavy tension felt in the hamstrings.",
@@ -1405,7 +1405,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Reach far around the bag, extend the hips and knees to pull it up high.",
     "instructions": [
       "To load sandbags or other objects, begin with the implements placed a distance from the loading platform, typically 50 feet.",
       "Begin by lifting the sandbag. Sandbags are extremely awkward, and the manner of lifting them can vary depending on the particular sandbag used. Reach as far around it as possible, extending through the hips and knees to pull it up high. Shouldering is usually not allowed.",
@@ -1439,7 +1439,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Lean in the direction of travel, extend through the hips and knees.",
     "instructions": [
       "To begin, load the sled with the desired weight and attach the pulling strap. You can pull with handles, use a harness, or attach the pulling strap to a weight belt.",
       "Whether pulling forwards or backwards, lean in the direction of travel and progress by extending through the hips and knees."
@@ -1467,7 +1467,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Arms extended and leaning in, drive each step from the hips and knees.",
     "instructions": [
       "Load your pushing sled with the desired weight.",
       "Take an athletic posture, leaning into the sled with your arms fully extended, grasping the handles. Push the sled as fast as possible, focusing on extending your hips and knees to strengthen your posterior chain."
@@ -1496,7 +1496,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Keep the bar close to your legs and elbows high, then drop under with locked arms.",
     "instructions": [
       "Place your feet at a shoulder width stance with the barbell resting right above the connection between the toes and the rest of the foot.",
       "With a palms facing down grip, bend at the knees and keeping the back flat grab the bar using a wider than shoulder width grip. Bring the hips down and make sure that your body drops as if you were going to sit on a chair. This will be your starting position.",
@@ -1533,7 +1533,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "push",
-    "cue": null,
+    "cue": "Dip and pop the bar, drive under it with a vertical torso and locked arms.",
     "instructions": [
       "Begin with the feet in the pulling position, the bar racked across the back of the shoulders, and the hands placed in a wide snatch grip.",
       "Pop the bar with an abrupt dip and drive of the knees, and aggressively drive under the bar, transitioning the feet into the receiving position.",
@@ -1565,7 +1565,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "With a wide grip hold the back angle past the knees, then drive the hips through.",
     "instructions": [
       "The snatch deadlift strengthens the first pull of the snatch. Begin with a wide snatch grip with the barbell placed on the platform. The feet should be directly under the hips, with the feet turned out. Squat down to the bar, keeping the back in absolute extension with the head facing forward.",
       "Initiate the movement by driving through the heels, raising the hips. The back angle should remain the same until the bar passes the knees.",
@@ -1598,7 +1598,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Start from the boxes, pull yourself as low as you can under locked arms.",
     "instructions": [
       "Begin with a loaded barbell on boxes or stands of the desired height. A wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar, with the elbows pointed out. This will be the starting position.",
       "Begin the first pull by driving through the front of the heels, raising the bar from the boxes.",
@@ -1633,7 +1633,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Rack the bar as the feet split, one forward and one back, torso upright.",
     "instructions": [
       "With a barbell on the floor close to the shins, take an overhand grip just outside the legs. Lower your hips with the weight focused on the heels, back straight, head facing forward, chest up, with your shoulders just in front of the bar. This will be your starting position.",
       "Begin the first pull by driving through the heels, extending your knees. Your back angle should stay the same, and your arms should remain straight. Move the weight with control as you continue to above the knees.",
@@ -1668,7 +1668,7 @@
     "level": "expert",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Snap the feet into a split as you pull under, arms locked overhead.",
     "instructions": [
       "Begin with a loaded barbell on the floor. The bar should be close to or touching the shins, and a wide grip should be taken on the bar. The feet should be directly below the hips, with the feet turned out as needed. Lower the hips, with the chest up and the head looking forward. The shoulders should be just in front of the bar. This will be the starting position.",
       "Begin the first pull by driving through the front of the heels, raising the bar from the ground. The back angle should stay the same until the bar passes the knees.",
@@ -1704,7 +1704,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Drive your chest into the tire, then step in and knee it as it rises.",
     "instructions": [
       "Begin by gripping the bottom of the tire on the tread, and position your feet back a bit. Your chest should be driving into the tire.",
       "To lift the tire, extend through the hips, knees, and ankles, driving into the tire and up.",
@@ -1738,7 +1738,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": "pull",
-    "cue": null,
+    "cue": "Wide stance with legs nearly straight, drive the hips forward to stand.",
     "instructions": [
       "Begin with a barbell loaded on the floor. Adopt a wide stance, and then bend at the hips to grab the bar. Your hips should be as far back as possible, and your legs nearly straight. Keep your back straight, and your head and chest up. This will be your starting position.",
       "Begin the movement be engaging the hips, driving them forward as you allow the arms to hang straight. Continue until you are standing straight up, and then slowly return the weight to the starting position. For successive reps, the weight need not touch the floor."
@@ -1768,7 +1768,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "force": null,
-    "cue": null,
+    "cue": "Rack it across your shoulders, walk fast with short quick steps.",
     "instructions": [
       "The yoke is usually done with a yoke apparatus, but is sometimes seen with refrigerators or other heavy objects.",
       "Begin by racking the apparatus across the back of the shoulders. With your head looking forward and back arched, lift the yoke by driving through the heels.",
