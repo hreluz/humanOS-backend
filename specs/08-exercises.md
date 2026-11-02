@@ -1,9 +1,10 @@
 # SPEC 08 — Exercise catalog with muscle tags and photos
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 06, SPEC 07
 > **Date:** 2026-10-25
 > **Objective:** Store the frontend's 138 curated exercises, plus new ones so that every muscle has an exercise for gym, dumbbell and bodyweight, in database tables. Each exercise has its exact equipment, its primary and secondary muscle tags and an ordered list of photo references (free-exercise-db first, wger for gaps), and is loaded from a committed data file by an idempotent seeder.
+> **Note:** SPEC 09 moved `database/data/exercises.json` to `database/data/exercises/curated.json` (the seeder loads every file in that directory), added the `neck` muscle and extended coverage to `kettlebell`, `bands` and `accessories`.
 
 ## Why this spec exists
 
@@ -274,19 +275,19 @@ All commands run inside the `app` container (`docker compose exec app …`). Bra
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] `php artisan migrate` creates `exercises`, `exercise_muscle` and `exercise_photos`, and rolling back drops them.
-- [ ] `php artisan db:seed` seeds muscles, equipment and exercises. The exercise count equals the number of entries in `database/data/exercises.json` and is at least 138.
-- [ ] Every one of the frontend's 138 exercises is in the data file, under its snake_case name.
-- [ ] Every muscle × `gym`/`dumbbell`/`bodyweight` pair has at least one exercise with that muscle as primary, except the documented exceptions in `docs/exercise-tagging.md` (today only `forearm_extensors` × bodyweight). Enforced by the coverage test.
-- [ ] The three SPEC 06 exercise fixes are in the data and covered by tests.
-- [ ] Running `ExerciseSeeder` a second time changes no exercise ids and adds no exercises.
-- [ ] Every exercise references exact equipment (no group-level equipment).
-- [ ] `php artisan exercises:check-photos` exits with `0` against the real sources.
-- [ ] Every wger photo has a CC-BY-SA or CC0 license, an author and a credit URL.
-- [ ] `docs/exercise-tagging.md` exists and holds the tagging rules.
-- [ ] `EXERCISE_PHOTOS_FREE_EXERCISE_DB_URL` and `EXERCISE_PHOTOS_WGER_URL` are in both `.env.example` and `.env.development`.
-- [ ] `docs/openapi/v1.json` is unchanged (no API change).
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] `php artisan migrate` creates `exercises`, `exercise_muscle` and `exercise_photos`, and rolling back drops them.
+- [x] `php artisan db:seed` seeds muscles, equipment and exercises. The exercise count equals the number of entries in `database/data/exercises.json` and is at least 138.
+- [x] Every one of the frontend's 138 exercises is in the data file, under its snake_case name.
+- [x] Every muscle × `gym`/`dumbbell`/`bodyweight` pair has at least one exercise with that muscle as primary, except the documented exceptions in `docs/exercise-tagging.md` (today only `forearm_extensors` × bodyweight). Enforced by the coverage test.
+- [x] The three SPEC 06 exercise fixes are in the data and covered by tests.
+- [x] Running `ExerciseSeeder` a second time changes no exercise ids and adds no exercises.
+- [x] Every exercise references exact equipment (no group-level equipment).
+- [x] `php artisan exercises:check-photos` exits with `0` against the real sources.
+- [x] Every wger photo has a CC-BY-SA or CC0 license, an author and a credit URL.
+- [x] `docs/exercise-tagging.md` exists and holds the tagging rules.
+- [x] `EXERCISE_PHOTOS_FREE_EXERCISE_DB_URL` and `EXERCISE_PHOTOS_WGER_URL` are in both `.env.example` and `.env.development`.
+- [x] `docs/openapi/v1.json` is unchanged (no API change).
 
 ## Decisions
 

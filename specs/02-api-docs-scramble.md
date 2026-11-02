@@ -4,7 +4,7 @@
 > **Depends on:** SPEC 01
 > **Date:** 2026-10-11
 > **Objective:** Generate a fully documented OpenAPI spec of the `/api/v1` endpoints with Scramble, viewable locally at `/docs/api` and committed as `docs/openapi/v1.json` so client apps can generate their API clients from it.
-> **Note:** Envelope updated by SPEC 04.
+> **Note:** Envelope updated by SPEC 04. Later specs (05, 10) add operations beyond the 11 auth ones; the auth table below still holds.
 
 ## Why this spec exists
 
@@ -161,22 +161,22 @@ All commands run inside the `app` container (`docker compose exec app …`), fol
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes, and `docker compose exec app vendor/bin/pint --test` reports no issues.
-- [ ] `composer.json` requires `dedoc/scramble`, and `config/scramble.php` exists.
-- [ ] `GET /docs/api` and `GET /docs/api.json` return 200 with `APP_ENV=local` and 403 with `APP_ENV=production`.
-- [ ] `/docs/api.json` has `info.title` `"humanOS API"`, `info.version` `"1.0.0"` and a relative server URL `"api"`.
-- [ ] The document declares a bearer HTTP security scheme applied globally.
-- [ ] `register`, `login`, `email/verify/{id}/{hash}`, `forgot-password` and `reset-password` have `security: []`. Every other auth operation does not.
-- [ ] The document contains exactly the 11 operations in the table, all tagged `Auth`, each with a non-empty summary.
-- [ ] Each operation documents exactly the response statuses listed in the table.
-- [ ] `UserResource`, `TokenResource` and the register/login `{ data: { token, user } }` responses show example values in the schema.
-- [ ] Every field of the four auth FormRequests has an example value.
-- [ ] `docs/openapi/v1.json` is committed and identical to a fresh `php artisan scramble:export`.
-- [ ] Editing any endpoint's PHPDoc without re-exporting makes `composer test` fail with a message naming the export command.
-- [ ] No test-only route appears in `docs/openapi/v1.json`.
-- [ ] The `Tests` GitHub Actions workflow passes on the PR, drift test included.
-- [ ] `CLAUDE.md` documents the docs URL and the export command, and links `docs/code-conventions.md`, which holds the "follow Scramble, document every endpoint" convention.
-- [ ] The step 11 Docker smoke check completes with the expected results.
+- [x] `docker compose exec app composer test` passes, and `docker compose exec app vendor/bin/pint --test` reports no issues.
+- [x] `composer.json` requires `dedoc/scramble`, and `config/scramble.php` exists.
+- [x] `GET /docs/api` and `GET /docs/api.json` return 200 with `APP_ENV=local` and 403 with `APP_ENV=production`.
+- [x] `/docs/api.json` has `info.title` `"humanOS API"`, `info.version` `"1.0.0"` and a relative server URL `"api"`.
+- [x] The document declares a bearer HTTP security scheme applied globally.
+- [x] `register`, `login`, `email/verify/{id}/{hash}`, `forgot-password` and `reset-password` have `security: []`. Every other auth operation does not.
+- [x] The document contains exactly the 11 operations in the table, all tagged `Auth`, each with a non-empty summary.
+- [x] Each operation documents exactly the response statuses listed in the table.
+- [x] `UserResource`, `TokenResource` and the register/login `{ data: { token, user } }` responses show example values in the schema.
+- [x] Every field of the four auth FormRequests has an example value.
+- [x] `docs/openapi/v1.json` is committed and identical to a fresh `php artisan scramble:export`.
+- [x] Editing any endpoint's PHPDoc without re-exporting makes `composer test` fail with a message naming the export command.
+- [x] No test-only route appears in `docs/openapi/v1.json`.
+- [x] The `Tests` GitHub Actions workflow passes on the PR, drift test included.
+- [x] `CLAUDE.md` documents the docs URL and the export command, and links `docs/code-conventions.md`, which holds the "follow Scramble, document every endpoint" convention.
+- [x] The step 11 Docker smoke check completes with the expected results.
 
 ## Decisions
 

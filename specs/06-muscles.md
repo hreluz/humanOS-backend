@@ -1,9 +1,10 @@
 # SPEC 06 — Muscle catalog
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** none
 > **Date:** 2026-10-25
 > **Objective:** Store the muscle catalog that the frontend's Body section draws (6 areas, 29 muscles) in two database tables, filled by an idempotent seeder, so later features can reference muscles by foreign key.
+> **Note:** `neck` muscle added to the `back` area by SPEC 09 (29 → 30 muscles). The `TrainingServiceProvider` and API arrive with SPEC 10.
 
 ## Why this spec exists
 
@@ -165,14 +166,14 @@ All commands run inside the `app` container (`docker compose exec app …`). Bra
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] `php artisan migrate` creates `muscle_areas` and `muscles`, and rolling back drops them.
-- [ ] After `php artisan db:seed --class=MuscleSeeder`, the database holds exactly the 6 areas and 29 muscles in the seed tables, with the same keys, labels, views and order.
-- [ ] `forearm_extensors` is labelled "Brachioradialis & forearm extensors".
-- [ ] Running the seeder a second time changes no ids and adds no rows.
-- [ ] `php artisan db:seed` (the `DatabaseSeeder`) also seeds the catalog.
-- [ ] Deleting a `muscle_areas` row that has muscles fails.
-- [ ] `docs/openapi/v1.json` is unchanged (no API change).
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] `php artisan migrate` creates `muscle_areas` and `muscles`, and rolling back drops them.
+- [x] After `php artisan db:seed --class=MuscleSeeder`, the database holds exactly the 6 areas and 29 muscles in the seed tables, with the same keys, labels, views and order.
+- [x] `forearm_extensors` is labelled "Brachioradialis & forearm extensors".
+- [x] Running the seeder a second time changes no ids and adds no rows.
+- [x] `php artisan db:seed` (the `DatabaseSeeder`) also seeds the catalog.
+- [x] Deleting a `muscle_areas` row that has muscles fails.
+- [x] `docs/openapi/v1.json` is unchanged (no API change).
 
 ## Decisions
 

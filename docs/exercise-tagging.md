@@ -45,7 +45,7 @@ Each file is a JSON array with one object per exercise, sorted by muscle area an
 - `key` is the name in snake_case (`Push-up` → `push_up`). Keys are permanent: a rename needs a migration that updates the row in place.
 - `source_id` is the free-exercise-db `id` of the exercise itself, or `null` when free-exercise-db doesn't have it. Two exercises can't share a `source_id`.
 - `level`, `mechanic`, `force` and `instructions` are copied from free-exercise-db when `source_id` is set. Otherwise set `level` and `mechanic` by hand; `force` and `instructions` may be `null`.
-- `cue` is one line, imperative, about form (`Lead with the elbow, stop at shoulder height.`).
+- `cue` is one line, imperative, about form (`Lead with the elbow, stop at shoulder height.`). See [Cues](#cues).
 
 ### Photo entries
 
@@ -77,7 +77,23 @@ How a free-exercise-db exercise becomes an entry (SPEC 09). A script may draft t
 6. **Self-myofascial release** (foam roll, `-SMR`): primary = the muscle being rolled. No secondary. Category `stretching`.
 7. **Plyometrics, cardio, olympic, strongman:** tag the main movers as for strength. Whole-body lifts (clean, snatch, atlas stone) get at most three primaries, most direct first.
 8. **Photos:** the exercise's own two photos, no variants. Without photos, a matching wger image, or none.
-9. **Cue:** `null`. Exercises added by hand to close a gap get a cue.
+9. **Cue:** write a cue by the rules in [Cues](#cues). Exercises added by hand to close a gap get one too.
+
+## Cues
+
+Rules for the `cue` of every exercise in the catalog (SPEC 14). The curated cues are the style reference. A cue may be drafted with an LLM from the exercise's name, tags and `instructions`, but every cue is read and corrected by hand against these rules before it's committed.
+
+1. **One line, imperative, about form.** It is the one thing to remember during the set: the position, the path or the most common mistake. (`Hinge with a flat back until you feel the hamstrings.`)
+2. **At most 90 characters**, one sentence or two short clauses joined by a comma, ending with a period.
+3. **Specific to the exercise.** A cue that fits every exercise of its kind (`Keep good form.`, `Control the weight.`) is not allowed. Variants of one movement get cues that name what makes them different (the grip, the stance, the bench angle).
+4. **No numbers or programming:** no reps, sets, tempo counts or seconds. Holds and stretches say what to feel or where to stop, not how long.
+5. **No medical or safety claims** (`protects your knees`). Say what to do, not why it is safe.
+6. **Plain words.** Muscle names only when they help the athlete feel the movement (`feel it in the hamstrings`). No anatomy jargon.
+7. **Stretches and foam rolling:** where to feel it, or how to move into it (`Sink the hips forward until the front of the hip opens.`, `Roll slowly, pause on tender spots.`).
+8. **Whole-body lifts:** the single most important point of the lift (`Bar close, drive the hips through before you pull.`).
+9. **Grounded in the instructions.** A cue must agree with free-exercise-db's `instructions` for that exercise. It can't contradict them or add a technique they don't describe.
+
+`ExerciseCatalogTest` checks that every exercise has a cue, the format (length, one line, capital letter, final period) and that no cue appears on more than three exercises. The `cue` column stays nullable for future user-created exercises; only the seeded catalog requires one.
 
 ## Coverage
 

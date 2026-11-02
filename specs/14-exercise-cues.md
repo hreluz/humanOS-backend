@@ -1,6 +1,6 @@
 # SPEC 14 — Coaching cues for every exercise
 
-> **Status:** Draft
+> **Status:** Approved
 > **Depends on:** SPEC 08, SPEC 09, SPEC 11
 > **Date:** 2026-10-26
 > **Objective:** Give each of the 759 imported exercises with no `cue` a one-line coaching cue in the style of the curated ones, written to rules in `docs/exercise-tagging.md`, and make `cue` required in the catalog test.
@@ -49,7 +49,7 @@ The curated exercises (SPEC 08) and the 23 exercises added by hand to close cove
 
 ## Process
 
-- A cue for each exercise is drafted from its name, tags and `instructions`, then read and corrected by hand against the rules. Drafting can be done with an LLM, but nothing is committed without that review, the same standard SPEC 09 used for tags.
+- A cue for each exercise is drafted from its name, tags and `instructions`, then read and corrected by hand against the rules. Approveding can be done with an LLM, but nothing is committed without that review, the same standard SPEC 09 used for tags.
 - One PR per batch, so each diff is reviewable:
 
 | PR | File | Cues |

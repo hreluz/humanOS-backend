@@ -1,6 +1,6 @@
 # SPEC 11 — Exercise detail API
 
-> **Status:** Draft
+> **Status:** Approved
 > **Depends on:** SPEC 04, SPEC 08, SPEC 09, SPEC 10
 > **Date:** 2026-10-26
 > **Objective:** Add `GET /api/v1/training/exercises/{key}` and the exercise and photo resources that the list endpoint (SPEC 12) reuses.

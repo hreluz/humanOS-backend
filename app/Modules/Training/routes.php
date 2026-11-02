@@ -1,6 +1,7 @@
 <?php
 
 use App\Modules\Training\Http\Controllers\EquipmentGroupController;
+use App\Modules\Training\Http\Controllers\ExerciseController;
 use App\Modules\Training\Http\Controllers\MuscleAreaController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,3 +9,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/muscle-areas', MuscleAreaController::class);
 Route::get('/equipment-groups', EquipmentGroupController::class);
+Route::get('/exercises', [ExerciseController::class, 'index']);
+Route::get('/exercises/{exercise:key}', [ExerciseController::class, 'show']);

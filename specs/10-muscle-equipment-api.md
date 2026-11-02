@@ -1,6 +1,6 @@
 # SPEC 10 — Muscle areas and equipment groups API
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 04, SPEC 06, SPEC 07, SPEC 09
 > **Date:** 2026-10-26
 > **Objective:** Open the Training module's API under `/api/v1/training` with two read-only, authenticated endpoints that return the muscle and equipment catalogs as trees, documented by Scramble.
@@ -115,12 +115,12 @@ All commands run inside the `app` container. Branch from `master`.
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] `php artisan route:list --path=api/v1/training` lists the two routes, both behind `auth:sanctum`.
-- [ ] Both endpoints return 401 without a bearer token.
-- [ ] `/muscle-areas` returns 6 areas and 30 muscles in display order.
-- [ ] `/equipment-groups` returns 6 groups and 12 pieces of equipment in display order, without `source_key`.
-- [ ] `docs/openapi/v1.json` is re-exported and documents both operations under `Training`.
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] `php artisan route:list --path=api/v1/training` lists the two routes, both behind `auth:sanctum`.
+- [x] Both endpoints return 401 without a bearer token.
+- [x] `/muscle-areas` returns 6 areas and 30 muscles in display order.
+- [x] `/equipment-groups` returns 6 groups and 12 pieces of equipment in display order, without `source_key`.
+- [x] `docs/openapi/v1.json` is re-exported and documents both operations under `Training`.
 
 ## Decisions
 

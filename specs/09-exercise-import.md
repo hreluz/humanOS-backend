@@ -1,9 +1,10 @@
 # SPEC 09 — Import the rest of free-exercise-db
 
-> **Status:** Approved
+> **Status:** Implemented
 > **Depends on:** SPEC 08
 > **Date:** 2026-10-25
 > **Objective:** Add the 770 free-exercise-db exercises that SPEC 08 didn't port to the exercise catalog, tagged with the rules in `docs/exercise-tagging.md` and in the same data format. Add a `neck` muscle, and extend the coverage check to the `kettlebell`, `bands` and `accessories` groups. No schema change and no API change.
+> **Note:** Import rule 9 changed from `null` to "write a cue" by SPEC 14.
 
 ## Why this spec exists
 
@@ -104,7 +105,7 @@ These go into `docs/exercise-tagging.md` next to SPEC 08's rules.
 6. **Self-myofascial release (foam roll, `-SMR`):** primary = the muscle being rolled. No secondary. Category `stretching`, as free-exercise-db has it.
 7. **Plyometrics, cardio, olympic, strongman:** tag the main movers as for strength. For whole-body lifts (clean, snatch, atlas stone), list at most three primaries, most direct first.
 8. **Photos:** the exercise's own two photos only; no variants. An exercise without photos gets a wger image if one matches (SPEC 08 rule 8), or none.
-9. **Cue:** `null`.
+9. **Cue:** write a cue (rules in `docs/exercise-tagging.md`, SPEC 14).
 
 ## Coverage
 
@@ -146,16 +147,16 @@ Tests added or changed:
 
 ## Acceptance criteria
 
-- [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
-- [ ] Every free-exercise-db id at the pinned commit is in the catalog or in `skipped.json` with a reason.
-- [ ] `php artisan db:seed --class=ExerciseSeeder` loads at least 900 exercises, and running it twice changes no ids.
-- [ ] The 145 curated exercises keep their ids and tags (except the `source_id` fixes from rule 2).
-- [ ] `MuscleSeeder` seeds 30 muscles, including `neck` first in the `back` area, with no muscle id changed.
-- [ ] Every muscle × group pair (30 muscles, all six groups) has an exercise with that muscle as primary, or a documented exception.
-- [ ] Every muscle has at least one stretch, or a documented exception.
-- [ ] `php artisan exercises:check-photos` exits with `0`.
-- [ ] `docs/exercise-tagging.md` has the import rules and the full exception table.
-- [ ] `docs/openapi/v1.json` is unchanged.
+- [x] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
+- [x] Every free-exercise-db id at the pinned commit is in the catalog or in `skipped.json` with a reason.
+- [x] `php artisan db:seed --class=ExerciseSeeder` loads at least 900 exercises, and running it twice changes no ids.
+- [x] The 145 curated exercises keep their ids and tags (except the `source_id` fixes from rule 2).
+- [x] `MuscleSeeder` seeds 30 muscles, including `neck` first in the `back` area, with no muscle id changed.
+- [x] Every muscle × group pair (30 muscles, all six groups) has an exercise with that muscle as primary, or a documented exception.
+- [x] Every muscle has at least one stretch, or a documented exception.
+- [x] `php artisan exercises:check-photos` exits with `0`.
+- [x] `docs/exercise-tagging.md` has the import rules and the full exception table.
+- [x] `docs/openapi/v1.json` is unchanged.
 
 ## Decisions
 

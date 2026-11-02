@@ -165,6 +165,26 @@ class ProfileTest extends TestCase
             ->assertJsonPath('data.target_weight_kg', null);
     }
 
+    public function test_deleting_the_user_deletes_the_profile_and_entries(): void
+    {
+        $other = User::factory()->create();
+
+        foreach ([$this->user, $other] as $user) {
+            Profile::factory()->for($user)->create();
+            WeightEntry::factory()->count(2)->for($user)->create();
+            TargetWeightEntry::factory()->count(2)->for($user)->create();
+        }
+
+        $this->user->delete();
+
+        $this->assertDatabaseMissing('profiles', ['user_id' => $this->user->id]);
+        $this->assertDatabaseMissing('weight_entries', ['user_id' => $this->user->id]);
+        $this->assertDatabaseMissing('target_weight_entries', ['user_id' => $this->user->id]);
+        $this->assertDatabaseCount('profiles', 1);
+        $this->assertDatabaseCount('weight_entries', 2);
+        $this->assertDatabaseCount('target_weight_entries', 2);
+    }
+
     public function test_update_requires_a_token(): void
     {
         $this->putJson('/api/v1/profile', self::metricBody())->assertUnauthorized();

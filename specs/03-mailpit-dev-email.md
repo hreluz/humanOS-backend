@@ -101,19 +101,19 @@ MAIL_PORT=1025
 
 ## Acceptance criteria
 
-- [ ] `docker compose config` succeeds, and `docker compose up -d` starts `app`, `mysql`, `phpmyadmin` and `mailpit`.
-- [ ] `docker compose up -d app` also starts `mailpit`.
-- [ ] http://localhost:8025 serves the Mailpit UI, and SMTP accepts connections on `localhost:1025`.
-- [ ] `MAILPIT_UI_PORT` and `MAILPIT_SMTP_PORT` change the published ports.
-- [ ] With `.env` copied from `.env.development`, registering a user puts the verification email in Mailpit.
-- [ ] With the same `.env`, `forgot-password` puts the reset email in Mailpit.
-- [ ] Captured emails survive `docker compose restart mailpit` and `docker compose down` + `up`.
-- [ ] Captured emails are gone after `docker compose down -v`.
-- [ ] `.env.development` is tracked by git and differs from `.env.example` only in the `DB_*` and `MAIL_*` lines listed above.
-- [ ] `.env.example` still has `MAIL_MAILER=log`.
-- [ ] `docs/docker.md` uses `cp .env.development .env` for setup and documents the Mailpit inbox first, with the log mailer as a fallback.
-- [ ] `CLAUDE.md` lists Mailpit on :8025.
-- [ ] `docker compose exec app composer test` still passes.
+- [x] `docker compose config` succeeds, and `docker compose up -d` starts `app`, `mysql`, `phpmyadmin` and `mailpit`.
+- [x] `docker compose up -d app` also starts `mailpit`.
+- [x] http://localhost:8025 serves the Mailpit UI, and SMTP accepts connections on `localhost:1025`.
+- [x] `MAILPIT_UI_PORT` and `MAILPIT_SMTP_PORT` change the published ports.
+- [x] With `.env` copied from `.env.development`, registering a user puts the verification email in Mailpit.
+- [x] With the same `.env`, `forgot-password` puts the reset email in Mailpit.
+- [x] Captured emails survive `docker compose restart mailpit` and `docker compose down` + `up`.
+- [x] Captured emails are gone after `docker compose down -v`.
+- [x] `.env.development` is tracked by git and differs from `.env.example` only in the `DB_*` and `MAIL_*` lines listed above.
+- [x] `.env.example` still has `MAIL_MAILER=log`.
+- [x] `docs/docker.md` uses `cp .env.development .env` for setup and documents the Mailpit inbox first, with the log mailer as a fallback.
+- [x] `CLAUDE.md` lists Mailpit on :8025.
+- [x] `docker compose exec app composer test` still passes.
 
 ## Decisions
 
