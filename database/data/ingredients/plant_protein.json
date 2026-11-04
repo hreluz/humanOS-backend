@@ -1,0 +1,296 @@
+[
+  {
+    "key": "edamame_cooked",
+    "name": "Edamame, cooked",
+    "category": "plant_protein",
+    "source": "usda_sr_legacy",
+    "source_id": "168411",
+    "kcal": 121,
+    "protein": 11.9,
+    "carbs": 8.91,
+    "fat": 5.2,
+    "fiber": 5.2,
+    "nutrients": {
+      "sugars": 2.18,
+      "saturated_fat": 0.62,
+      "monounsaturated_fat": 1.28,
+      "polyunsaturated_fat": 2.16,
+      "trans_fat": 0.009,
+      "cholesterol": 0,
+      "calcium": 63,
+      "iron": 2.27,
+      "magnesium": 64,
+      "phosphorus": 169,
+      "potassium": 436,
+      "sodium": 6,
+      "zinc": 1.37,
+      "copper": 0.345,
+      "manganese": 1.02,
+      "selenium": 0.8,
+      "vitamin_a": 15,
+      "vitamin_c": 6.1,
+      "vitamin_d": 0,
+      "vitamin_e": 0.68,
+      "vitamin_k": 26.7,
+      "thiamin": 0.2,
+      "riboflavin": 0.155,
+      "niacin": 0.915,
+      "pantothenic_acid": 0.395,
+      "vitamin_b6": 0.1,
+      "folate": 311,
+      "vitamin_b12": 0,
+      "choline": 56.3
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 155,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Edamame, cocido"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "edamame_frozen",
+    "name": "Edamame, frozen",
+    "category": "plant_protein",
+    "source": "usda_sr_legacy",
+    "source_id": "168410",
+    "kcal": 109,
+    "protein": 11.2,
+    "carbs": 7.61,
+    "fat": 4.73,
+    "fiber": 4.8,
+    "nutrients": {
+      "sugars": 2.48,
+      "trans_fat": 0,
+      "calcium": 60,
+      "iron": 2.11,
+      "magnesium": 61,
+      "phosphorus": 161,
+      "potassium": 482,
+      "sodium": 6,
+      "zinc": 1.32,
+      "copper": 0.324,
+      "manganese": 1.01,
+      "vitamin_c": 9.7,
+      "vitamin_e": 0.72,
+      "vitamin_k": 31.4,
+      "thiamin": 0.15,
+      "riboflavin": 0.265,
+      "niacin": 0.925,
+      "pantothenic_acid": 0.535,
+      "vitamin_b6": 0.135,
+      "folate": 303,
+      "choline": 56
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 118,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Edamame, congelado"
+    },
+    "aliases": {
+      "es": [
+        "frijol de soya verde"
+      ]
+    }
+  },
+  {
+    "key": "tofu_firm",
+    "name": "Tofu, firm",
+    "category": "plant_protein",
+    "source": "usda_sr_legacy",
+    "source_id": "172475",
+    "kcal": 144,
+    "protein": 17.3,
+    "carbs": 2.78,
+    "fat": 8.72,
+    "fiber": 2.3,
+    "nutrients": {
+      "saturated_fat": 1.26,
+      "monounsaturated_fat": 1.92,
+      "polyunsaturated_fat": 4.92,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 683,
+      "iron": 2.66,
+      "magnesium": 58,
+      "phosphorus": 190,
+      "potassium": 237,
+      "sodium": 14,
+      "zinc": 1.57,
+      "copper": 0.378,
+      "manganese": 1.18,
+      "selenium": 17.4,
+      "vitamin_c": 0.2,
+      "vitamin_d": 0,
+      "thiamin": 0.158,
+      "riboflavin": 0.102,
+      "niacin": 0.381,
+      "pantothenic_acid": 0.133,
+      "vitamin_b6": 0.092,
+      "folate": 29,
+      "vitamin_b12": 0
+    },
+    "portions": [
+      {
+        "key": "half_cup",
+        "label": "½ cup",
+        "grams": 126,
+        "translations": {
+          "es": "½ taza"
+        }
+      },
+      {
+        "key": "quarter_block",
+        "label": "¼ block",
+        "grams": 81,
+        "translations": {
+          "es": "¼ de bloque"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tofu firme"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "tofu_soft",
+    "name": "Tofu, soft",
+    "category": "plant_protein",
+    "source": "usda_sr_legacy",
+    "source_id": "172449",
+    "kcal": 61,
+    "protein": 7.17,
+    "carbs": 1.18,
+    "fat": 3.69,
+    "fiber": 0.2,
+    "nutrients": {
+      "sugars": 0.7,
+      "saturated_fat": 0.533,
+      "monounsaturated_fat": 0.814,
+      "polyunsaturated_fat": 2.08,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 111,
+      "iron": 1.11,
+      "magnesium": 27,
+      "phosphorus": 92,
+      "potassium": 120,
+      "sodium": 8,
+      "zinc": 0.64,
+      "copper": 0.157,
+      "manganese": 0.389,
+      "selenium": 8.9,
+      "vitamin_a": 0,
+      "vitamin_c": 0.2,
+      "vitamin_d": 0,
+      "vitamin_e": 0.01,
+      "vitamin_k": 2,
+      "thiamin": 0.047,
+      "riboflavin": 0.037,
+      "niacin": 0.535,
+      "pantothenic_acid": 0.051,
+      "vitamin_b6": 0.052,
+      "folate": 44,
+      "vitamin_b12": 0,
+      "choline": 27.4
+    },
+    "portions": [
+      {
+        "key": "cup_cubes",
+        "label": "1 cup, cubed",
+        "grams": 248,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "quarter_block",
+        "label": "¼ block",
+        "grams": 116,
+        "translations": {
+          "es": "¼ de bloque"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tofu suave"
+    },
+    "aliases": {
+      "en": [
+        "silken tofu"
+      ],
+      "es": [
+        "tofu sedoso"
+      ]
+    }
+  },
+  {
+    "key": "vital_wheat_gluten",
+    "name": "Vital wheat gluten",
+    "category": "plant_protein",
+    "source": "usda_sr_legacy",
+    "source_id": "168147",
+    "kcal": 370,
+    "protein": 75.2,
+    "carbs": 13.8,
+    "fat": 1.85,
+    "fiber": 0.6,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.272,
+      "monounsaturated_fat": 0.156,
+      "polyunsaturated_fat": 0.81,
+      "cholesterol": 0,
+      "calcium": 142,
+      "iron": 5.2,
+      "magnesium": 25,
+      "phosphorus": 260,
+      "potassium": 100,
+      "sodium": 29,
+      "zinc": 0.85,
+      "copper": 0.182,
+      "selenium": 39.7,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Gluten de trigo"
+    },
+    "aliases": {
+      "en": [
+        "seitan flour"
+      ],
+      "es": [
+        "gluten de trigo vital"
+      ]
+    }
+  }
+]

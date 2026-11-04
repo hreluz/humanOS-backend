@@ -1,0 +1,218 @@
+[
+  {
+    "key": "egg_white_raw",
+    "name": "Egg white, raw",
+    "category": "eggs",
+    "source": "usda_foundation",
+    "source_id": "747997",
+    "kcal": 55,
+    "protein": 10.7,
+    "carbs": 2.36,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "selenium": 17.9,
+      "riboflavin": 0.391
+    },
+    "portions": [
+      {
+        "key": "large",
+        "label": "White of 1 large egg",
+        "grams": 33,
+        "translations": {
+          "es": "Clara de 1 huevo grande"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 243,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Clara de huevo, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "egg_yolk_raw",
+    "name": "Egg yolk, raw",
+    "category": "eggs",
+    "source": "usda_foundation",
+    "source_id": "748236",
+    "kcal": 334,
+    "protein": 16.2,
+    "carbs": 1.02,
+    "fat": 28.8,
+    "fiber": 0,
+    "nutrients": {
+      "selenium": 55.8,
+      "vitamin_e": 5.64,
+      "riboflavin": 0.467
+    },
+    "portions": [
+      {
+        "key": "large",
+        "label": "Yolk of 1 large egg",
+        "grams": 17,
+        "translations": {
+          "es": "Yema de 1 huevo grande"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Yema de huevo, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "egg_whole_hard_boiled",
+    "name": "Egg, whole, hard-boiled",
+    "category": "eggs",
+    "source": "usda_sr_legacy",
+    "source_id": "173424",
+    "kcal": 155,
+    "protein": 12.6,
+    "carbs": 1.12,
+    "fat": 10.6,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 1.12,
+      "saturated_fat": 3.27,
+      "monounsaturated_fat": 4.08,
+      "polyunsaturated_fat": 1.41,
+      "cholesterol": 373,
+      "calcium": 50,
+      "iron": 1.19,
+      "magnesium": 10,
+      "phosphorus": 172,
+      "potassium": 126,
+      "sodium": 124,
+      "zinc": 1.05,
+      "copper": 0.013,
+      "manganese": 0.026,
+      "selenium": 30.8,
+      "vitamin_a": 149,
+      "vitamin_c": 0,
+      "vitamin_d": 2.2,
+      "vitamin_e": 1.03,
+      "vitamin_k": 0.3,
+      "thiamin": 0.066,
+      "riboflavin": 0.513,
+      "niacin": 0.064,
+      "pantothenic_acid": 1.4,
+      "vitamin_b6": 0.121,
+      "folate": 44,
+      "vitamin_b12": 1.11,
+      "choline": 294
+    },
+    "portions": [
+      {
+        "key": "large",
+        "label": "1 large egg",
+        "grams": 50,
+        "translations": {
+          "es": "1 huevo grande"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 136,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Huevo entero, duro"
+    },
+    "aliases": {
+      "en": [
+        "boiled egg"
+      ],
+      "es": [
+        "huevo cocido",
+        "huevo sancochado"
+      ]
+    }
+  },
+  {
+    "key": "egg_whole_raw",
+    "name": "Egg, whole, raw",
+    "category": "eggs",
+    "source": "usda_foundation",
+    "source_id": "748967",
+    "kcal": 148,
+    "protein": 12.4,
+    "carbs": 0.96,
+    "fat": 9.96,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.2,
+      "saturated_fat": 3.2,
+      "monounsaturated_fat": 3.63,
+      "polyunsaturated_fat": 1.82,
+      "cholesterol": 411,
+      "calcium": 48,
+      "iron": 1.67,
+      "magnesium": 11.4,
+      "phosphorus": 184,
+      "potassium": 132,
+      "sodium": 129,
+      "zinc": 1.24,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 31.1,
+      "vitamin_a": 180,
+      "vitamin_d": 2.46,
+      "thiamin": 0.077,
+      "riboflavin": 0.419,
+      "niacin": 0,
+      "vitamin_b6": 0.063,
+      "vitamin_b12": 1.02,
+      "choline": 335
+    },
+    "portions": [
+      {
+        "key": "large",
+        "label": "1 large egg",
+        "grams": 50,
+        "translations": {
+          "es": "1 huevo grande"
+        }
+      },
+      {
+        "key": "medium",
+        "label": "1 medium egg",
+        "grams": 44,
+        "translations": {
+          "es": "1 huevo mediano"
+        }
+      },
+      {
+        "key": "extra_large",
+        "label": "1 extra-large egg",
+        "grams": 56,
+        "translations": {
+          "es": "1 huevo extra grande"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 243,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Huevo entero, crudo"
+    },
+    "aliases": {}
+  }
+]

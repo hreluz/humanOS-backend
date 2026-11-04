@@ -1,0 +1,748 @@
+[
+  {
+    "key": "black_beans_boiled",
+    "name": "Black beans, boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173735",
+    "kcal": 132,
+    "protein": 8.86,
+    "carbs": 23.7,
+    "fat": 0.54,
+    "fiber": 8.7,
+    "nutrients": {
+      "sugars": 0.32,
+      "saturated_fat": 0.139,
+      "monounsaturated_fat": 0.047,
+      "polyunsaturated_fat": 0.231,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 27,
+      "iron": 2.1,
+      "magnesium": 70,
+      "phosphorus": 140,
+      "potassium": 355,
+      "sodium": 1,
+      "zinc": 1.12,
+      "copper": 0.209,
+      "manganese": 0.444,
+      "selenium": 1.2,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.87,
+      "vitamin_k": 3.3,
+      "thiamin": 0.244,
+      "riboflavin": 0.059,
+      "niacin": 0.505,
+      "pantothenic_acid": 0.242,
+      "vitamin_b6": 0.069,
+      "folate": 149,
+      "vitamin_b12": 0,
+      "choline": 32.6
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 172,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles negros, cocidos"
+    },
+    "aliases": {
+      "es": [
+        "porotos negros cocidos",
+        "caraotas negras cocidas"
+      ]
+    }
+  },
+  {
+    "key": "black_beans_dry",
+    "name": "Black beans, dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173734",
+    "kcal": 341,
+    "protein": 21.6,
+    "carbs": 62.4,
+    "fat": 1.42,
+    "fiber": 15.5,
+    "nutrients": {
+      "sugars": 2.12,
+      "saturated_fat": 0.366,
+      "monounsaturated_fat": 0.123,
+      "polyunsaturated_fat": 0.61,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 123,
+      "iron": 5.02,
+      "magnesium": 171,
+      "phosphorus": 352,
+      "potassium": 1480,
+      "sodium": 5,
+      "zinc": 3.65,
+      "copper": 0.841,
+      "manganese": 1.06,
+      "selenium": 3.2,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.21,
+      "vitamin_k": 5.6,
+      "thiamin": 0.9,
+      "riboflavin": 0.193,
+      "niacin": 1.96,
+      "pantothenic_acid": 0.899,
+      "vitamin_b6": 0.286,
+      "folate": 444,
+      "vitamin_b12": 0,
+      "choline": 66.4
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 194,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles negros, secos"
+    },
+    "aliases": {
+      "en": [
+        "turtle beans"
+      ],
+      "es": [
+        "porotos negros",
+        "caraotas negras",
+        "alubias negras",
+        "judías negras"
+      ]
+    }
+  },
+  {
+    "key": "chickpeas_boiled",
+    "name": "Chickpeas, boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173757",
+    "kcal": 164,
+    "protein": 8.86,
+    "carbs": 27.4,
+    "fat": 2.59,
+    "fiber": 7.6,
+    "nutrients": {
+      "sugars": 4.8,
+      "saturated_fat": 0.269,
+      "monounsaturated_fat": 0.583,
+      "polyunsaturated_fat": 1.16,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 49,
+      "iron": 2.89,
+      "magnesium": 48,
+      "phosphorus": 168,
+      "potassium": 291,
+      "sodium": 7,
+      "zinc": 1.53,
+      "copper": 0.352,
+      "manganese": 1.03,
+      "selenium": 3.7,
+      "vitamin_a": 1,
+      "vitamin_c": 1.3,
+      "vitamin_d": 0,
+      "vitamin_e": 0.35,
+      "vitamin_k": 4,
+      "thiamin": 0.116,
+      "riboflavin": 0.063,
+      "niacin": 0.526,
+      "pantothenic_acid": 0.286,
+      "vitamin_b6": 0.139,
+      "folate": 172,
+      "vitamin_b12": 0,
+      "choline": 42.8
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 164,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Garbanzos, cocidos"
+    },
+    "aliases": {
+      "en": [
+        "garbanzo beans, cooked"
+      ]
+    }
+  },
+  {
+    "key": "chickpeas_dry",
+    "name": "Chickpeas, dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173756",
+    "kcal": 378,
+    "protein": 20.5,
+    "carbs": 63,
+    "fat": 6.04,
+    "fiber": 12.2,
+    "nutrients": {
+      "sugars": 10.7,
+      "saturated_fat": 0.603,
+      "monounsaturated_fat": 1.38,
+      "polyunsaturated_fat": 2.73,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 57,
+      "iron": 4.31,
+      "magnesium": 79,
+      "phosphorus": 252,
+      "potassium": 718,
+      "sodium": 24,
+      "zinc": 2.76,
+      "copper": 0.656,
+      "manganese": 4.15,
+      "selenium": 0,
+      "vitamin_a": 3,
+      "vitamin_c": 4,
+      "vitamin_d": 0,
+      "vitamin_e": 0.82,
+      "vitamin_k": 9,
+      "thiamin": 0.477,
+      "riboflavin": 0.212,
+      "niacin": 1.54,
+      "pantothenic_acid": 1.59,
+      "vitamin_b6": 0.535,
+      "folate": 557,
+      "vitamin_b12": 0,
+      "choline": 99.3
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 200,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Garbanzos, secos"
+    },
+    "aliases": {
+      "en": [
+        "garbanzo beans"
+      ]
+    }
+  },
+  {
+    "key": "kidney_beans_boiled",
+    "name": "Kidney beans, boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173740",
+    "kcal": 127,
+    "protein": 8.67,
+    "carbs": 22.8,
+    "fat": 0.5,
+    "fiber": 6.4,
+    "nutrients": {
+      "sugars": 0.32,
+      "saturated_fat": 0.073,
+      "monounsaturated_fat": 0.039,
+      "polyunsaturated_fat": 0.278,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 35,
+      "iron": 2.22,
+      "magnesium": 42,
+      "phosphorus": 138,
+      "potassium": 405,
+      "sodium": 1,
+      "zinc": 1,
+      "copper": 0.216,
+      "manganese": 0.43,
+      "selenium": 1.1,
+      "vitamin_a": 0,
+      "vitamin_c": 1.2,
+      "vitamin_d": 0,
+      "vitamin_e": 0.03,
+      "vitamin_k": 8.4,
+      "thiamin": 0.16,
+      "riboflavin": 0.058,
+      "niacin": 0.578,
+      "pantothenic_acid": 0.22,
+      "vitamin_b6": 0.12,
+      "folate": 130,
+      "vitamin_b12": 0,
+      "choline": 30.5
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 177,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles rojos, cocidos"
+    },
+    "aliases": {
+      "en": [
+        "red beans, cooked"
+      ],
+      "es": [
+        "porotos rojos cocidos"
+      ]
+    }
+  },
+  {
+    "key": "kidney_beans_dry",
+    "name": "Kidney beans, dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "175193",
+    "kcal": 333,
+    "protein": 23.6,
+    "carbs": 60,
+    "fat": 0.83,
+    "fiber": 24.9,
+    "nutrients": {
+      "sugars": 2.23,
+      "saturated_fat": 0.12,
+      "monounsaturated_fat": 0.064,
+      "polyunsaturated_fat": 0.457,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 143,
+      "iron": 8.2,
+      "magnesium": 140,
+      "phosphorus": 407,
+      "potassium": 1410,
+      "sodium": 24,
+      "zinc": 2.79,
+      "copper": 0.958,
+      "manganese": 1.02,
+      "selenium": 3.2,
+      "vitamin_a": 0,
+      "vitamin_c": 4.5,
+      "vitamin_d": 0,
+      "vitamin_e": 0.22,
+      "vitamin_k": 19,
+      "thiamin": 0.529,
+      "riboflavin": 0.219,
+      "niacin": 2.06,
+      "pantothenic_acid": 0.78,
+      "vitamin_b6": 0.397,
+      "folate": 394,
+      "vitamin_b12": 0
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 184,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles rojos, secos"
+    },
+    "aliases": {
+      "en": [
+        "red beans"
+      ],
+      "es": [
+        "porotos rojos",
+        "alubias rojas",
+        "judías rojas"
+      ]
+    }
+  },
+  {
+    "key": "lentils_boiled",
+    "name": "Lentils, boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "172421",
+    "kcal": 116,
+    "protein": 9.02,
+    "carbs": 20.1,
+    "fat": 0.38,
+    "fiber": 7.9,
+    "nutrients": {
+      "sugars": 1.8,
+      "saturated_fat": 0.053,
+      "monounsaturated_fat": 0.064,
+      "polyunsaturated_fat": 0.175,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 19,
+      "iron": 3.33,
+      "magnesium": 36,
+      "phosphorus": 180,
+      "potassium": 369,
+      "sodium": 2,
+      "zinc": 1.27,
+      "copper": 0.251,
+      "manganese": 0.494,
+      "selenium": 2.8,
+      "vitamin_a": 0,
+      "vitamin_c": 1.5,
+      "vitamin_d": 0,
+      "vitamin_e": 0.11,
+      "vitamin_k": 1.7,
+      "thiamin": 0.169,
+      "riboflavin": 0.073,
+      "niacin": 1.06,
+      "pantothenic_acid": 0.638,
+      "vitamin_b6": 0.178,
+      "folate": 181,
+      "vitamin_b12": 0,
+      "choline": 32.7
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 198,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lentejas, cocidas"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "lentils_dry",
+    "name": "Lentils, dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "172420",
+    "kcal": 352,
+    "protein": 24.6,
+    "carbs": 63.4,
+    "fat": 1.06,
+    "fiber": 10.7,
+    "nutrients": {
+      "sugars": 2.03,
+      "saturated_fat": 0.154,
+      "monounsaturated_fat": 0.193,
+      "polyunsaturated_fat": 0.526,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 35,
+      "iron": 6.51,
+      "magnesium": 47,
+      "phosphorus": 281,
+      "potassium": 677,
+      "sodium": 6,
+      "zinc": 3.27,
+      "copper": 0.754,
+      "manganese": 1.39,
+      "selenium": 0.1,
+      "vitamin_a": 2,
+      "vitamin_c": 4.5,
+      "vitamin_d": 0,
+      "vitamin_e": 0.49,
+      "vitamin_k": 5,
+      "thiamin": 0.873,
+      "riboflavin": 0.211,
+      "niacin": 2.6,
+      "pantothenic_acid": 2.14,
+      "vitamin_b6": 0.54,
+      "folate": 479,
+      "vitamin_b12": 0,
+      "choline": 96.4
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 192,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lentejas, secas"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "split_peas_boiled",
+    "name": "Split peas, boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "172429",
+    "kcal": 118,
+    "protein": 8.34,
+    "carbs": 21.1,
+    "fat": 0.39,
+    "fiber": 8.3,
+    "nutrients": {
+      "sugars": 2.9,
+      "saturated_fat": 0.054,
+      "monounsaturated_fat": 0.081,
+      "polyunsaturated_fat": 0.165,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 14,
+      "iron": 1.29,
+      "magnesium": 36,
+      "phosphorus": 99,
+      "potassium": 362,
+      "sodium": 2,
+      "zinc": 1,
+      "copper": 0.181,
+      "manganese": 0.396,
+      "selenium": 0.6,
+      "vitamin_a": 0,
+      "vitamin_c": 0.4,
+      "vitamin_d": 0,
+      "vitamin_e": 0.03,
+      "vitamin_k": 5,
+      "thiamin": 0.19,
+      "riboflavin": 0.056,
+      "niacin": 0.89,
+      "pantothenic_acid": 0.595,
+      "vitamin_b6": 0.048,
+      "folate": 65,
+      "vitamin_b12": 0,
+      "choline": 32.8
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 196,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Arvejas partidas, cocidas"
+    },
+    "aliases": {
+      "es": [
+        "guisantes partidos cocidos"
+      ]
+    }
+  },
+  {
+    "key": "split_peas_dry",
+    "name": "Split peas, dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "172428",
+    "kcal": 364,
+    "protein": 23.1,
+    "carbs": 61.6,
+    "fat": 3.89,
+    "fiber": 22.2,
+    "nutrients": {
+      "sugars": 3.14,
+      "saturated_fat": 0.408,
+      "monounsaturated_fat": 0.615,
+      "polyunsaturated_fat": 1.02,
+      "trans_fat": 0.004,
+      "cholesterol": 0,
+      "calcium": 46,
+      "iron": 4.73,
+      "magnesium": 63,
+      "phosphorus": 334,
+      "potassium": 852,
+      "sodium": 5,
+      "zinc": 3.49,
+      "copper": 0.809,
+      "manganese": 1.19,
+      "selenium": 10.7,
+      "vitamin_a": 7,
+      "vitamin_c": 1.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.12,
+      "vitamin_k": 15.9,
+      "thiamin": 0.719,
+      "riboflavin": 0.244,
+      "niacin": 3.61,
+      "pantothenic_acid": 0.962,
+      "vitamin_b6": 0.14,
+      "folate": 15,
+      "vitamin_b12": 0,
+      "choline": 157
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 196,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Arvejas partidas, secas"
+    },
+    "aliases": {
+      "es": [
+        "guisantes partidos",
+        "chícharos secos"
+      ]
+    }
+  },
+  {
+    "key": "navy_beans_boiled",
+    "name": "White beans (navy), boiled",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173746",
+    "kcal": 140,
+    "protein": 8.23,
+    "carbs": 26,
+    "fat": 0.62,
+    "fiber": 10.5,
+    "nutrients": {
+      "sugars": 0.37,
+      "saturated_fat": 0.098,
+      "monounsaturated_fat": 0.142,
+      "polyunsaturated_fat": 0.49,
+      "trans_fat": 0,
+      "calcium": 69,
+      "iron": 2.36,
+      "magnesium": 53,
+      "phosphorus": 144,
+      "potassium": 389,
+      "sodium": 0,
+      "zinc": 1.03,
+      "copper": 0.21,
+      "manganese": 0.527,
+      "selenium": 2.9,
+      "vitamin_a": 0,
+      "vitamin_c": 0.9,
+      "vitamin_d": 0,
+      "vitamin_e": 0.01,
+      "vitamin_k": 0.6,
+      "thiamin": 0.237,
+      "riboflavin": 0.066,
+      "niacin": 0.649,
+      "pantothenic_acid": 0.266,
+      "vitamin_b6": 0.138,
+      "folate": 140,
+      "vitamin_b12": 0,
+      "choline": 44.7
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 182,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles blancos, cocidos"
+    },
+    "aliases": {
+      "en": [
+        "navy beans, cooked"
+      ],
+      "es": [
+        "alubias blancas cocidas",
+        "porotos blancos cocidos"
+      ]
+    }
+  },
+  {
+    "key": "navy_beans_dry",
+    "name": "White beans (navy), dry",
+    "category": "legumes",
+    "source": "usda_sr_legacy",
+    "source_id": "173745",
+    "kcal": 337,
+    "protein": 22.3,
+    "carbs": 60.8,
+    "fat": 1.5,
+    "fiber": 15.3,
+    "nutrients": {
+      "sugars": 3.88,
+      "saturated_fat": 0.17,
+      "monounsaturated_fat": 0.128,
+      "polyunsaturated_fat": 0.873,
+      "trans_fat": 0,
+      "calcium": 147,
+      "iron": 5.49,
+      "magnesium": 175,
+      "phosphorus": 407,
+      "potassium": 1180,
+      "sodium": 5,
+      "zinc": 3.65,
+      "copper": 0.834,
+      "manganese": 1.42,
+      "selenium": 11,
+      "vitamin_a": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.02,
+      "vitamin_k": 2.5,
+      "thiamin": 0.775,
+      "riboflavin": 0.164,
+      "niacin": 2.19,
+      "pantothenic_acid": 0.744,
+      "vitamin_b6": 0.428,
+      "folate": 364,
+      "vitamin_b12": 0,
+      "choline": 87.4
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 208,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frijoles blancos, secos"
+    },
+    "aliases": {
+      "en": [
+        "navy beans",
+        "haricot beans"
+      ],
+      "es": [
+        "alubias blancas",
+        "porotos blancos",
+        "judías blancas"
+      ]
+    }
+  }
+]

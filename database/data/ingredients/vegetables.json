@@ -1,0 +1,2391 @@
+[
+  {
+    "key": "arugula",
+    "name": "Arugula",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2710822",
+    "kcal": 25.9,
+    "protein": 1.65,
+    "carbs": 5.37,
+    "fat": 0.325,
+    "fiber": 2.28,
+    "nutrients": {
+      "calcium": 204,
+      "iron": 1.39,
+      "magnesium": 42.6,
+      "phosphorus": 51.2,
+      "potassium": 407,
+      "sodium": 86.9,
+      "zinc": 0.348,
+      "copper": 0.083,
+      "manganese": 0.514,
+      "vitamin_c": 101
+    },
+    "portions": [
+      {
+        "key": "half_cup",
+        "label": "½ cup",
+        "grams": 10,
+        "translations": {
+          "es": "½ taza"
+        }
+      },
+      {
+        "key": "leaf",
+        "label": "1 leaf",
+        "grams": 2,
+        "translations": {
+          "es": "1 hoja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Rúcula"
+    },
+    "aliases": {
+      "en": [
+        "rocket"
+      ],
+      "es": [
+        "rúgula",
+        "arúgula"
+      ]
+    }
+  },
+  {
+    "key": "avocado",
+    "name": "Avocado",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "171705",
+    "kcal": 160,
+    "protein": 2,
+    "carbs": 8.53,
+    "fat": 14.7,
+    "fiber": 6.7,
+    "nutrients": {
+      "sugars": 0.66,
+      "saturated_fat": 2.13,
+      "monounsaturated_fat": 9.8,
+      "polyunsaturated_fat": 1.82,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 12,
+      "iron": 0.55,
+      "magnesium": 29,
+      "phosphorus": 52,
+      "potassium": 485,
+      "sodium": 7,
+      "zinc": 0.64,
+      "copper": 0.19,
+      "manganese": 0.142,
+      "selenium": 0.4,
+      "vitamin_a": 7,
+      "vitamin_c": 10,
+      "vitamin_d": 0,
+      "vitamin_e": 2.07,
+      "vitamin_k": 21,
+      "thiamin": 0.067,
+      "riboflavin": 0.13,
+      "niacin": 1.74,
+      "pantothenic_acid": 1.39,
+      "vitamin_b6": 0.257,
+      "folate": 81,
+      "vitamin_b12": 0,
+      "choline": 14.2
+    },
+    "portions": [
+      {
+        "key": "whole",
+        "label": "1 avocado",
+        "grams": 201,
+        "translations": {
+          "es": "1 aguacate"
+        }
+      },
+      {
+        "key": "cup_cubes",
+        "label": "1 cup, cubed",
+        "grams": 150,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 146,
+        "translations": {
+          "es": "1 taza, en láminas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aguacate"
+    },
+    "aliases": {
+      "es": [
+        "palta"
+      ]
+    }
+  },
+  {
+    "key": "beet_raw",
+    "name": "Beet, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685576",
+    "kcal": 41,
+    "protein": 1.69,
+    "carbs": 8.79,
+    "fat": 0.302,
+    "fiber": 3.12,
+    "nutrients": {
+      "sugars": 5.1,
+      "calcium": 13.8,
+      "iron": 0.428,
+      "magnesium": 21,
+      "phosphorus": 33.6,
+      "potassium": 342,
+      "sodium": 112,
+      "zinc": 0.31,
+      "copper": 0.161,
+      "manganese": 0.257,
+      "vitamin_c": 4.6
+    },
+    "portions": [
+      {
+        "key": "beet",
+        "label": "1 beet (2 in)",
+        "grams": 82,
+        "translations": {
+          "es": "1 remolacha (5 cm)"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 136,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Remolacha, cruda"
+    },
+    "aliases": {
+      "en": [
+        "beetroot"
+      ],
+      "es": [
+        "betarraga",
+        "betabel"
+      ]
+    }
+  },
+  {
+    "key": "broccoli_boiled",
+    "name": "Broccoli, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169967",
+    "kcal": 35,
+    "protein": 2.38,
+    "carbs": 7.18,
+    "fat": 0.41,
+    "fiber": 3.3,
+    "nutrients": {
+      "sugars": 1.39,
+      "saturated_fat": 0.079,
+      "monounsaturated_fat": 0.04,
+      "polyunsaturated_fat": 0.17,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 40,
+      "iron": 0.67,
+      "magnesium": 21,
+      "phosphorus": 67,
+      "potassium": 293,
+      "sodium": 41,
+      "zinc": 0.45,
+      "copper": 0.061,
+      "manganese": 0.194,
+      "selenium": 1.6,
+      "vitamin_a": 77,
+      "vitamin_c": 64.9,
+      "vitamin_d": 0,
+      "vitamin_e": 1.45,
+      "vitamin_k": 141,
+      "thiamin": 0.063,
+      "riboflavin": 0.123,
+      "niacin": 0.553,
+      "pantothenic_acid": 0.616,
+      "vitamin_b6": 0.2,
+      "folate": 108,
+      "vitamin_b12": 0,
+      "choline": 40.1
+    },
+    "portions": [
+      {
+        "key": "half_cup_chopped",
+        "label": "½ cup, chopped",
+        "grams": 78,
+        "translations": {
+          "es": "½ taza, picado"
+        }
+      },
+      {
+        "key": "stalk_medium",
+        "label": "1 medium stalk",
+        "grams": 180,
+        "translations": {
+          "es": "1 tallo mediano"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Brócoli, hervido"
+    },
+    "aliases": {
+      "en": [
+        "broccoli, steamed"
+      ],
+      "es": [
+        "brócoli al vapor"
+      ]
+    }
+  },
+  {
+    "key": "broccoli_raw",
+    "name": "Broccoli, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "747447",
+    "kcal": 31,
+    "protein": 2.57,
+    "carbs": 6.27,
+    "fat": 0.34,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 1.4,
+      "saturated_fat": 0.039,
+      "monounsaturated_fat": 0.011,
+      "polyunsaturated_fat": 0.017,
+      "calcium": 46,
+      "iron": 0.69,
+      "magnesium": 21,
+      "phosphorus": 67,
+      "potassium": 303,
+      "sodium": 36,
+      "zinc": 0.42,
+      "copper": 0.059,
+      "manganese": 0.197,
+      "selenium": 1.6,
+      "vitamin_a": 8,
+      "vitamin_c": 91.3,
+      "vitamin_e": 0.15,
+      "vitamin_k": 102,
+      "thiamin": 0.077,
+      "riboflavin": 0.114,
+      "niacin": 0.639,
+      "pantothenic_acid": 0.61,
+      "vitamin_b6": 0.191
+    },
+    "portions": [
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 91,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      },
+      {
+        "key": "stalk",
+        "label": "1 stalk",
+        "grams": 151,
+        "translations": {
+          "es": "1 tallo"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Brócoli, crudo"
+    },
+    "aliases": {
+      "es": [
+        "brécol"
+      ]
+    }
+  },
+  {
+    "key": "cabbage_raw",
+    "name": "Cabbage, raw",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169975",
+    "kcal": 25,
+    "protein": 1.28,
+    "carbs": 5.8,
+    "fat": 0.1,
+    "fiber": 2.5,
+    "nutrients": {
+      "sugars": 3.2,
+      "saturated_fat": 0.034,
+      "monounsaturated_fat": 0.017,
+      "polyunsaturated_fat": 0.017,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 40,
+      "iron": 0.47,
+      "magnesium": 12,
+      "phosphorus": 26,
+      "potassium": 170,
+      "sodium": 18,
+      "zinc": 0.18,
+      "copper": 0.019,
+      "manganese": 0.16,
+      "selenium": 0.3,
+      "vitamin_a": 5,
+      "vitamin_c": 36.6,
+      "vitamin_d": 0,
+      "vitamin_e": 0.15,
+      "vitamin_k": 76,
+      "thiamin": 0.061,
+      "riboflavin": 0.04,
+      "niacin": 0.234,
+      "pantothenic_acid": 0.212,
+      "vitamin_b6": 0.124,
+      "folate": 43,
+      "vitamin_b12": 0,
+      "choline": 10.7
+    },
+    "portions": [
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 89,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      },
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 70,
+        "translations": {
+          "es": "1 taza, rallado"
+        }
+      },
+      {
+        "key": "leaf",
+        "label": "1 leaf",
+        "grams": 15,
+        "translations": {
+          "es": "1 hoja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Repollo, crudo"
+    },
+    "aliases": {
+      "es": [
+        "col"
+      ]
+    }
+  },
+  {
+    "key": "carrot_boiled",
+    "name": "Carrot, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170394",
+    "kcal": 35,
+    "protein": 0.76,
+    "carbs": 8.22,
+    "fat": 0.18,
+    "fiber": 3,
+    "nutrients": {
+      "sugars": 3.45,
+      "saturated_fat": 0.03,
+      "monounsaturated_fat": 0.006,
+      "polyunsaturated_fat": 0.089,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 30,
+      "iron": 0.34,
+      "magnesium": 10,
+      "phosphorus": 30,
+      "potassium": 235,
+      "sodium": 58,
+      "zinc": 0.2,
+      "copper": 0.017,
+      "manganese": 0.155,
+      "selenium": 0.7,
+      "vitamin_a": 852,
+      "vitamin_c": 3.6,
+      "vitamin_d": 0,
+      "vitamin_e": 1.03,
+      "vitamin_k": 13.7,
+      "thiamin": 0.066,
+      "riboflavin": 0.044,
+      "niacin": 0.645,
+      "pantothenic_acid": 0.232,
+      "vitamin_b6": 0.153,
+      "folate": 14,
+      "vitamin_b12": 0,
+      "choline": 8.8
+    },
+    "portions": [
+      {
+        "key": "carrot",
+        "label": "1 carrot",
+        "grams": 46,
+        "translations": {
+          "es": "1 zanahoria"
+        }
+      },
+      {
+        "key": "half_cup_slices",
+        "label": "½ cup, sliced",
+        "grams": 78,
+        "translations": {
+          "es": "½ taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Zanahoria, hervida"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "carrot_raw",
+    "name": "Carrot, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2258586",
+    "kcal": 45,
+    "protein": 0.941,
+    "carbs": 10.3,
+    "fat": 0.351,
+    "fiber": 3.1,
+    "nutrients": {
+      "calcium": 30.5,
+      "iron": 0.15,
+      "magnesium": 12.4,
+      "phosphorus": 39.8,
+      "potassium": 280,
+      "sodium": 86.6,
+      "zinc": 0.236,
+      "copper": 0.061,
+      "manganese": 0.13,
+      "selenium": 0,
+      "thiamin": 0.065,
+      "riboflavin": 0.095,
+      "niacin": 1.41,
+      "vitamin_b6": 0.146
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium carrot",
+        "grams": 61,
+        "translations": {
+          "es": "1 zanahoria mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large carrot",
+        "grams": 72,
+        "translations": {
+          "es": "1 zanahoria grande"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 128,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "cup_grated",
+        "label": "1 cup, grated",
+        "grams": 110,
+        "translations": {
+          "es": "1 taza, rallada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Zanahoria, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cauliflower_boiled",
+    "name": "Cauliflower, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170397",
+    "kcal": 23,
+    "protein": 1.84,
+    "carbs": 4.11,
+    "fat": 0.45,
+    "fiber": 2.3,
+    "nutrients": {
+      "sugars": 2.08,
+      "saturated_fat": 0.07,
+      "monounsaturated_fat": 0.032,
+      "polyunsaturated_fat": 0.217,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 16,
+      "iron": 0.32,
+      "magnesium": 9,
+      "phosphorus": 32,
+      "potassium": 142,
+      "sodium": 15,
+      "zinc": 0.17,
+      "copper": 0.018,
+      "manganese": 0.132,
+      "selenium": 0.6,
+      "vitamin_a": 1,
+      "vitamin_c": 44.3,
+      "vitamin_d": 0,
+      "vitamin_e": 0.07,
+      "vitamin_k": 13.8,
+      "thiamin": 0.042,
+      "riboflavin": 0.052,
+      "niacin": 0.41,
+      "pantothenic_acid": 0.508,
+      "vitamin_b6": 0.173,
+      "folate": 44,
+      "vitamin_b12": 0,
+      "choline": 39.1
+    },
+    "portions": [
+      {
+        "key": "half_cup",
+        "label": "½ cup",
+        "grams": 62,
+        "translations": {
+          "es": "½ taza"
+        }
+      },
+      {
+        "key": "three_florets",
+        "label": "3 florets",
+        "grams": 54,
+        "translations": {
+          "es": "3 floretes"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Coliflor, hervida"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cauliflower_raw",
+    "name": "Cauliflower, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685573",
+    "kcal": 22.9,
+    "protein": 1.64,
+    "carbs": 4.72,
+    "fat": 0.238,
+    "fiber": 1.95,
+    "nutrients": {
+      "calcium": 20.4,
+      "iron": 0.334,
+      "magnesium": 14.2,
+      "phosphorus": 39.7,
+      "potassium": 274,
+      "sodium": 20,
+      "zinc": 0.234,
+      "copper": 0.024,
+      "manganese": 0.141,
+      "vitamin_c": 67.1
+    },
+    "portions": [
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 107,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "floret",
+        "label": "1 floret",
+        "grams": 13,
+        "translations": {
+          "es": "1 florete"
+        }
+      },
+      {
+        "key": "head_medium",
+        "label": "1 medium head",
+        "grams": 588,
+        "translations": {
+          "es": "1 cabeza mediana"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Coliflor, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "celery",
+    "name": "Celery",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169988",
+    "kcal": 14,
+    "protein": 0.69,
+    "carbs": 2.97,
+    "fat": 0.17,
+    "fiber": 1.6,
+    "nutrients": {
+      "sugars": 1.34,
+      "saturated_fat": 0.042,
+      "monounsaturated_fat": 0.032,
+      "polyunsaturated_fat": 0.079,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 40,
+      "iron": 0.2,
+      "magnesium": 11,
+      "phosphorus": 24,
+      "potassium": 260,
+      "sodium": 80,
+      "zinc": 0.13,
+      "copper": 0.035,
+      "manganese": 0.103,
+      "selenium": 0.4,
+      "vitamin_a": 22,
+      "vitamin_c": 3.1,
+      "vitamin_d": 0,
+      "vitamin_e": 0.27,
+      "vitamin_k": 29.3,
+      "thiamin": 0.021,
+      "riboflavin": 0.057,
+      "niacin": 0.32,
+      "pantothenic_acid": 0.246,
+      "vitamin_b6": 0.074,
+      "folate": 36,
+      "vitamin_b12": 0,
+      "choline": 6.1
+    },
+    "portions": [
+      {
+        "key": "stalk_medium",
+        "label": "1 medium stalk",
+        "grams": 40,
+        "translations": {
+          "es": "1 tallo mediano"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 101,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Apio"
+    },
+    "aliases": {
+      "es": [
+        "apio españa"
+      ]
+    }
+  },
+  {
+    "key": "cilantro",
+    "name": "Cilantro",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169997",
+    "kcal": 23,
+    "protein": 2.13,
+    "carbs": 3.67,
+    "fat": 0.52,
+    "fiber": 2.8,
+    "nutrients": {
+      "sugars": 0.87,
+      "saturated_fat": 0.014,
+      "monounsaturated_fat": 0.275,
+      "polyunsaturated_fat": 0.04,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 67,
+      "iron": 1.77,
+      "magnesium": 26,
+      "phosphorus": 48,
+      "potassium": 521,
+      "sodium": 46,
+      "zinc": 0.5,
+      "copper": 0.225,
+      "manganese": 0.426,
+      "selenium": 0.9,
+      "vitamin_a": 337,
+      "vitamin_c": 27,
+      "vitamin_d": 0,
+      "vitamin_e": 2.5,
+      "vitamin_k": 310,
+      "thiamin": 0.067,
+      "riboflavin": 0.162,
+      "niacin": 1.11,
+      "pantothenic_acid": 0.57,
+      "vitamin_b6": 0.149,
+      "folate": 62,
+      "vitamin_b12": 0,
+      "choline": 12.8
+    },
+    "portions": [
+      {
+        "key": "quarter_cup",
+        "label": "¼ cup",
+        "grams": 4,
+        "translations": {
+          "es": "¼ de taza"
+        }
+      },
+      {
+        "key": "nine_sprigs",
+        "label": "9 sprigs",
+        "grams": 20,
+        "translations": {
+          "es": "9 ramitas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cilantro"
+    },
+    "aliases": {
+      "en": [
+        "coriander leaves"
+      ],
+      "es": [
+        "culantro"
+      ]
+    }
+  },
+  {
+    "key": "cucumber",
+    "name": "Cucumber",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "168409",
+    "kcal": 15,
+    "protein": 0.65,
+    "carbs": 3.63,
+    "fat": 0.11,
+    "fiber": 0.5,
+    "nutrients": {
+      "sugars": 1.67,
+      "saturated_fat": 0.037,
+      "monounsaturated_fat": 0.005,
+      "polyunsaturated_fat": 0.032,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 16,
+      "iron": 0.28,
+      "magnesium": 13,
+      "phosphorus": 24,
+      "potassium": 147,
+      "sodium": 2,
+      "zinc": 0.2,
+      "copper": 0.041,
+      "manganese": 0.079,
+      "selenium": 0.3,
+      "vitamin_a": 5,
+      "vitamin_c": 2.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.03,
+      "vitamin_k": 16.4,
+      "thiamin": 0.027,
+      "riboflavin": 0.033,
+      "niacin": 0.098,
+      "pantothenic_acid": 0.259,
+      "vitamin_b6": 0.04,
+      "folate": 7,
+      "vitamin_b12": 0,
+      "choline": 6
+    },
+    "portions": [
+      {
+        "key": "whole",
+        "label": "1 cucumber (8 in)",
+        "grams": 301,
+        "translations": {
+          "es": "1 pepino (21 cm)"
+        }
+      },
+      {
+        "key": "half_cup_slices",
+        "label": "½ cup, sliced",
+        "grams": 52,
+        "translations": {
+          "es": "½ taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pepino"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "eggplant",
+    "name": "Eggplant",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685577",
+    "kcal": 22.4,
+    "protein": 0.852,
+    "carbs": 5.4,
+    "fat": 0.12,
+    "fiber": 2.45,
+    "nutrients": {
+      "sugars": 2.35,
+      "calcium": 11.1,
+      "iron": 0,
+      "magnesium": 13.5,
+      "phosphorus": 22.8,
+      "potassium": 222,
+      "sodium": 0.442,
+      "zinc": 0.119,
+      "copper": 0.061,
+      "manganese": 0.106,
+      "vitamin_c": 0.8
+    },
+    "portions": [
+      {
+        "key": "cup_cubes",
+        "label": "1 cup, cubed",
+        "grams": 82,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Berenjena"
+    },
+    "aliases": {
+      "en": [
+        "aubergine"
+      ]
+    }
+  },
+  {
+    "key": "garlic",
+    "name": "Garlic",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "1104647",
+    "kcal": 143,
+    "protein": 6.62,
+    "carbs": 28.2,
+    "fat": 0.38,
+    "fiber": 2.7,
+    "nutrients": {
+      "selenium": 9.8,
+      "vitamin_c": 10
+    },
+    "portions": [
+      {
+        "key": "clove",
+        "label": "1 clove",
+        "grams": 3,
+        "translations": {
+          "es": "1 diente"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.8,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Ajo"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "ginger_root",
+    "name": "Ginger root",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169231",
+    "kcal": 80,
+    "protein": 1.82,
+    "carbs": 17.8,
+    "fat": 0.75,
+    "fiber": 2,
+    "nutrients": {
+      "sugars": 1.7,
+      "saturated_fat": 0.203,
+      "monounsaturated_fat": 0.154,
+      "polyunsaturated_fat": 0.154,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 16,
+      "iron": 0.6,
+      "magnesium": 43,
+      "phosphorus": 34,
+      "potassium": 415,
+      "sodium": 13,
+      "zinc": 0.34,
+      "copper": 0.226,
+      "manganese": 0.229,
+      "selenium": 0.7,
+      "vitamin_a": 0,
+      "vitamin_c": 5,
+      "vitamin_d": 0,
+      "vitamin_e": 0.26,
+      "vitamin_k": 0.1,
+      "thiamin": 0.025,
+      "riboflavin": 0.034,
+      "niacin": 0.75,
+      "pantothenic_acid": 0.203,
+      "vitamin_b6": 0.16,
+      "folate": 11,
+      "vitamin_b12": 0,
+      "choline": 28.8
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "five_slices",
+        "label": "5 slices (1 in across)",
+        "grams": 11,
+        "translations": {
+          "es": "5 rodajas (2,5 cm)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Jengibre"
+    },
+    "aliases": {
+      "es": [
+        "kion"
+      ]
+    }
+  },
+  {
+    "key": "green_beans_boiled",
+    "name": "Green beans, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169141",
+    "kcal": 35,
+    "protein": 1.89,
+    "carbs": 7.88,
+    "fat": 0.28,
+    "fiber": 3.2,
+    "nutrients": {
+      "sugars": 3.63,
+      "saturated_fat": 0.064,
+      "monounsaturated_fat": 0.011,
+      "polyunsaturated_fat": 0.145,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 44,
+      "iron": 0.65,
+      "magnesium": 18,
+      "phosphorus": 29,
+      "potassium": 146,
+      "sodium": 1,
+      "zinc": 0.25,
+      "copper": 0.057,
+      "manganese": 0.285,
+      "selenium": 0.2,
+      "vitamin_a": 32,
+      "vitamin_c": 9.7,
+      "vitamin_d": 0,
+      "vitamin_e": 0.46,
+      "vitamin_k": 47.9,
+      "thiamin": 0.074,
+      "riboflavin": 0.097,
+      "niacin": 0.614,
+      "pantothenic_acid": 0.074,
+      "vitamin_b6": 0.056,
+      "folate": 33,
+      "vitamin_b12": 0,
+      "choline": 16.9
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 125,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Judías verdes, hervidas"
+    },
+    "aliases": {
+      "es": [
+        "ejotes cocidos",
+        "vainitas cocidas",
+        "chauchas cocidas"
+      ]
+    }
+  },
+  {
+    "key": "green_beans_raw",
+    "name": "Green beans, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2346400",
+    "kcal": 33.6,
+    "protein": 1.97,
+    "carbs": 7.41,
+    "fat": 0.275,
+    "fiber": 3.01,
+    "nutrients": {
+      "sugars": 2.33,
+      "calcium": 40,
+      "iron": 0.652,
+      "magnesium": 28.2,
+      "phosphorus": 41.2,
+      "potassium": 290,
+      "sodium": 0,
+      "zinc": 0.35,
+      "copper": 0.098,
+      "manganese": 0.332,
+      "vitamin_k": 43.9,
+      "thiamin": 0.06,
+      "niacin": 0.731,
+      "vitamin_b6": 0.121
+    },
+    "portions": [
+      {
+        "key": "cup_cut",
+        "label": "1 cup, cut",
+        "grams": 100,
+        "translations": {
+          "es": "1 taza, en trozos"
+        }
+      },
+      {
+        "key": "ten_beans",
+        "label": "10 beans",
+        "grams": 55,
+        "translations": {
+          "es": "10 judías verdes"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Judías verdes, crudas"
+    },
+    "aliases": {
+      "en": [
+        "string beans"
+      ],
+      "es": [
+        "ejotes",
+        "vainitas",
+        "chauchas",
+        "habichuelas"
+      ]
+    }
+  },
+  {
+    "key": "bell_pepper_green",
+    "name": "Green bell pepper",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2258588",
+    "kcal": 19.7,
+    "protein": 0.715,
+    "carbs": 4.78,
+    "fat": 0.106,
+    "fiber": 0.942,
+    "nutrients": {
+      "calcium": 7.5,
+      "iron": 0.186,
+      "magnesium": 9,
+      "phosphorus": 16.8,
+      "potassium": 163,
+      "sodium": 0,
+      "zinc": 0.126,
+      "copper": 0.058,
+      "manganese": 0.1,
+      "selenium": 0,
+      "vitamin_c": 99.5,
+      "thiamin": 0.039,
+      "riboflavin": 0.089,
+      "niacin": 0.636,
+      "vitamin_b6": 0.247
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium pepper",
+        "grams": 119,
+        "translations": {
+          "es": "1 pimiento mediano"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small pepper",
+        "grams": 74,
+        "translations": {
+          "es": "1 pimiento pequeño"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 149,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 92,
+        "translations": {
+          "es": "1 taza, en tiras"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pimiento verde"
+    },
+    "aliases": {
+      "en": [
+        "green capsicum"
+      ],
+      "es": [
+        "pimentón verde",
+        "chile morrón verde",
+        "ají morrón verde"
+      ]
+    }
+  },
+  {
+    "key": "green_onion",
+    "name": "Green onion",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170005",
+    "kcal": 32,
+    "protein": 1.83,
+    "carbs": 7.34,
+    "fat": 0.19,
+    "fiber": 2.6,
+    "nutrients": {
+      "sugars": 2.33,
+      "saturated_fat": 0.032,
+      "monounsaturated_fat": 0.027,
+      "polyunsaturated_fat": 0.074,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 72,
+      "iron": 1.48,
+      "magnesium": 20,
+      "phosphorus": 37,
+      "potassium": 276,
+      "sodium": 16,
+      "zinc": 0.39,
+      "copper": 0.083,
+      "manganese": 0.16,
+      "selenium": 0.6,
+      "vitamin_a": 50,
+      "vitamin_c": 18.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.55,
+      "vitamin_k": 207,
+      "thiamin": 0.055,
+      "riboflavin": 0.08,
+      "niacin": 0.525,
+      "pantothenic_acid": 0.075,
+      "vitamin_b6": 0.061,
+      "folate": 64,
+      "vitamin_b12": 0,
+      "choline": 5.7
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium green onion",
+        "grams": 15,
+        "translations": {
+          "es": "1 cebolla verde mediana"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 100,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "tbsp_chopped",
+        "label": "1 tablespoon, chopped",
+        "grams": 6,
+        "translations": {
+          "es": "1 cucharada, picada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cebolla verde"
+    },
+    "aliases": {
+      "en": [
+        "scallion",
+        "spring onion"
+      ],
+      "es": [
+        "cebollín",
+        "cebolleta",
+        "cebolla de verdeo",
+        "cebolla china"
+      ]
+    }
+  },
+  {
+    "key": "peas_green_boiled",
+    "name": "Green peas, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170017",
+    "kcal": 78,
+    "protein": 5.15,
+    "carbs": 14.3,
+    "fat": 0.27,
+    "fiber": 4.5,
+    "nutrients": {
+      "sugars": 4.4,
+      "saturated_fat": 0.049,
+      "monounsaturated_fat": 0.024,
+      "polyunsaturated_fat": 0.129,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 24,
+      "iron": 1.52,
+      "magnesium": 22,
+      "phosphorus": 77,
+      "potassium": 110,
+      "sodium": 72,
+      "zinc": 0.67,
+      "copper": 0.105,
+      "manganese": 0.279,
+      "selenium": 1,
+      "vitamin_a": 105,
+      "vitamin_c": 9.9,
+      "vitamin_d": 0,
+      "vitamin_e": 0.03,
+      "vitamin_k": 24,
+      "thiamin": 0.283,
+      "riboflavin": 0.1,
+      "niacin": 1.48,
+      "pantothenic_acid": 0.142,
+      "vitamin_b6": 0.113,
+      "folate": 59,
+      "vitamin_b12": 0,
+      "choline": 27.5
+    },
+    "portions": [
+      {
+        "key": "half_cup",
+        "label": "½ cup",
+        "grams": 80,
+        "translations": {
+          "es": "½ taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Arvejas, hervidas"
+    },
+    "aliases": {
+      "es": [
+        "guisantes cocidos",
+        "chícharos cocidos"
+      ]
+    }
+  },
+  {
+    "key": "peas_green_frozen",
+    "name": "Green peas, frozen",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170016",
+    "kcal": 77,
+    "protein": 5.22,
+    "carbs": 13.6,
+    "fat": 0.4,
+    "fiber": 4.5,
+    "nutrients": {
+      "sugars": 5,
+      "saturated_fat": 0.066,
+      "monounsaturated_fat": 0.033,
+      "polyunsaturated_fat": 0.175,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 22,
+      "iron": 1.53,
+      "magnesium": 26,
+      "phosphorus": 82,
+      "potassium": 153,
+      "sodium": 108,
+      "zinc": 0.82,
+      "copper": 0.124,
+      "manganese": 0.336,
+      "selenium": 1.9,
+      "vitamin_a": 103,
+      "vitamin_c": 18,
+      "vitamin_d": 0,
+      "vitamin_e": 0.02,
+      "vitamin_k": 27.9,
+      "thiamin": 0.259,
+      "riboflavin": 0.1,
+      "niacin": 1.72,
+      "pantothenic_acid": 0.547,
+      "vitamin_b6": 0.083,
+      "folate": 53,
+      "vitamin_b12": 0,
+      "choline": 27
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 134,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Arvejas, congeladas"
+    },
+    "aliases": {
+      "es": [
+        "guisantes",
+        "chícharos"
+      ]
+    }
+  },
+  {
+    "key": "lettuce_iceberg",
+    "name": "Iceberg lettuce",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169248",
+    "kcal": 14,
+    "protein": 0.9,
+    "carbs": 2.97,
+    "fat": 0.14,
+    "fiber": 1.2,
+    "nutrients": {
+      "sugars": 1.97,
+      "saturated_fat": 0.018,
+      "monounsaturated_fat": 0.006,
+      "polyunsaturated_fat": 0.074,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 18,
+      "iron": 0.41,
+      "magnesium": 7,
+      "phosphorus": 20,
+      "potassium": 141,
+      "sodium": 10,
+      "zinc": 0.15,
+      "copper": 0.025,
+      "manganese": 0.125,
+      "selenium": 0.1,
+      "vitamin_a": 25,
+      "vitamin_c": 2.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.18,
+      "vitamin_k": 24.1,
+      "thiamin": 0.041,
+      "riboflavin": 0.025,
+      "niacin": 0.123,
+      "pantothenic_acid": 0.091,
+      "vitamin_b6": 0.042,
+      "folate": 29,
+      "vitamin_b12": 0,
+      "choline": 6.7
+    },
+    "portions": [
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 72,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "leaf_medium",
+        "label": "1 medium leaf",
+        "grams": 8,
+        "translations": {
+          "es": "1 hoja mediana"
+        }
+      },
+      {
+        "key": "head_medium",
+        "label": "1 medium head",
+        "grams": 539,
+        "translations": {
+          "es": "1 cabeza mediana"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lechuga iceberg"
+    },
+    "aliases": {
+      "es": [
+        "lechuga americana",
+        "lechuga repollada"
+      ]
+    }
+  },
+  {
+    "key": "kale",
+    "name": "Kale",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "323505",
+    "kcal": 35,
+    "protein": 2.92,
+    "carbs": 4.42,
+    "fat": 1.49,
+    "fiber": 4.1,
+    "nutrients": {
+      "sugars": 0.8,
+      "calcium": 254,
+      "iron": 1.6,
+      "magnesium": 32.7,
+      "phosphorus": 55,
+      "potassium": 348,
+      "sodium": 53,
+      "zinc": 0.39,
+      "copper": 0.053,
+      "manganese": 0.92,
+      "vitamin_a": 241,
+      "vitamin_c": 93.4,
+      "vitamin_e": 0.66,
+      "vitamin_k": 390,
+      "thiamin": 0.113,
+      "riboflavin": 0.347,
+      "niacin": 1.18,
+      "pantothenic_acid": 0.37,
+      "vitamin_b6": 0.147
+    },
+    "portions": [
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 21,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Col rizada"
+    },
+    "aliases": {
+      "es": [
+        "kale"
+      ]
+    }
+  },
+  {
+    "key": "onion_raw",
+    "name": "Onion, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "790646",
+    "kcal": 38,
+    "protein": 0.83,
+    "carbs": 8.61,
+    "fat": 0.05,
+    "fiber": 1.9,
+    "nutrients": {
+      "sugars": 5.82,
+      "calcium": 15,
+      "iron": 0.28,
+      "magnesium": 9,
+      "phosphorus": 34,
+      "potassium": 182,
+      "sodium": 1,
+      "zinc": 0.2,
+      "copper": 0.035,
+      "manganese": 0.144,
+      "selenium": 0,
+      "vitamin_c": 8.2
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium onion",
+        "grams": 110,
+        "translations": {
+          "es": "1 cebolla mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large onion",
+        "grams": 150,
+        "translations": {
+          "es": "1 cebolla grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small onion",
+        "grams": 70,
+        "translations": {
+          "es": "1 cebolla pequeña"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 160,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "tbsp_chopped",
+        "label": "1 tablespoon, chopped",
+        "grams": 10,
+        "translations": {
+          "es": "1 cucharada, picada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cebolla, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "pumpkin_raw",
+    "name": "Pumpkin, raw",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "168448",
+    "kcal": 26,
+    "protein": 1,
+    "carbs": 6.5,
+    "fat": 0.1,
+    "fiber": 0.5,
+    "nutrients": {
+      "sugars": 2.76,
+      "saturated_fat": 0.052,
+      "monounsaturated_fat": 0.013,
+      "polyunsaturated_fat": 0.005,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 21,
+      "iron": 0.8,
+      "magnesium": 12,
+      "phosphorus": 44,
+      "potassium": 340,
+      "sodium": 1,
+      "zinc": 0.32,
+      "copper": 0.127,
+      "manganese": 0.125,
+      "selenium": 0.3,
+      "vitamin_a": 426,
+      "vitamin_c": 9,
+      "vitamin_d": 0,
+      "vitamin_e": 1.06,
+      "vitamin_k": 1.1,
+      "thiamin": 0.05,
+      "riboflavin": 0.11,
+      "niacin": 0.6,
+      "pantothenic_acid": 0.298,
+      "vitamin_b6": 0.061,
+      "folate": 16,
+      "vitamin_b12": 0,
+      "choline": 8.2
+    },
+    "portions": [
+      {
+        "key": "cup_cubes",
+        "label": "1 cup, cubed",
+        "grams": 116,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Calabaza, cruda"
+    },
+    "aliases": {
+      "en": [
+        "squash"
+      ],
+      "es": [
+        "zapallo",
+        "auyama",
+        "ahuyama"
+      ]
+    }
+  },
+  {
+    "key": "bell_pepper_red",
+    "name": "Red bell pepper",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2258590",
+    "kcal": 27,
+    "protein": 0.896,
+    "carbs": 6.65,
+    "fat": 0.126,
+    "fiber": 1.16,
+    "nutrients": {
+      "calcium": 6.36,
+      "iron": 0.353,
+      "magnesium": 11,
+      "phosphorus": 26.6,
+      "potassium": 213,
+      "sodium": 0,
+      "zinc": 0.202,
+      "copper": 0.04,
+      "manganese": 0.133,
+      "selenium": 0,
+      "vitamin_c": 142,
+      "thiamin": 0.055,
+      "riboflavin": 0.142,
+      "niacin": 1.02,
+      "vitamin_b6": 0.303
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium pepper",
+        "grams": 119,
+        "translations": {
+          "es": "1 pimiento mediano"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large pepper",
+        "grams": 164,
+        "translations": {
+          "es": "1 pimiento grande"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 149,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 92,
+        "translations": {
+          "es": "1 taza, en tiras"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pimiento rojo"
+    },
+    "aliases": {
+      "en": [
+        "red capsicum"
+      ],
+      "es": [
+        "pimentón rojo",
+        "chile morrón rojo",
+        "ají morrón rojo"
+      ]
+    }
+  },
+  {
+    "key": "lettuce_romaine",
+    "name": "Romaine lettuce",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "746769",
+    "kcal": 17,
+    "protein": 1.24,
+    "carbs": 3.24,
+    "fat": 0.26,
+    "fiber": 1.8,
+    "nutrients": {
+      "sugars": 1.19,
+      "calcium": 35,
+      "iron": 0.95,
+      "magnesium": 13.7,
+      "phosphorus": 30,
+      "potassium": 253,
+      "zinc": 0.25,
+      "copper": 0.048,
+      "manganese": 0.127,
+      "selenium": 0.4,
+      "vitamin_a": 436,
+      "vitamin_c": 4.6,
+      "vitamin_e": 0.14,
+      "vitamin_k": 102,
+      "thiamin": 0.079,
+      "riboflavin": 0.072,
+      "niacin": 0.323,
+      "pantothenic_acid": 0.145,
+      "vitamin_b6": 0.078
+    },
+    "portions": [
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 47,
+        "translations": {
+          "es": "1 taza, picada"
+        }
+      },
+      {
+        "key": "leaf_outer",
+        "label": "1 outer leaf",
+        "grams": 28,
+        "translations": {
+          "es": "1 hoja exterior"
+        }
+      },
+      {
+        "key": "head",
+        "label": "1 head",
+        "grams": 626,
+        "translations": {
+          "es": "1 cabeza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lechuga romana"
+    },
+    "aliases": {
+      "en": [
+        "cos lettuce"
+      ],
+      "es": [
+        "lechuga orejona"
+      ]
+    }
+  },
+  {
+    "key": "spinach_boiled",
+    "name": "Spinach, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "168463",
+    "kcal": 23,
+    "protein": 2.97,
+    "carbs": 3.75,
+    "fat": 0.26,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 0.43,
+      "saturated_fat": 0.043,
+      "monounsaturated_fat": 0.006,
+      "polyunsaturated_fat": 0.109,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 136,
+      "iron": 3.57,
+      "magnesium": 87,
+      "phosphorus": 56,
+      "potassium": 466,
+      "sodium": 70,
+      "zinc": 0.76,
+      "copper": 0.174,
+      "manganese": 0.935,
+      "selenium": 1.5,
+      "vitamin_a": 524,
+      "vitamin_c": 9.8,
+      "vitamin_d": 0,
+      "vitamin_e": 2.08,
+      "vitamin_k": 494,
+      "thiamin": 0.095,
+      "riboflavin": 0.236,
+      "niacin": 0.49,
+      "pantothenic_acid": 0.145,
+      "vitamin_b6": 0.242,
+      "folate": 146,
+      "vitamin_b12": 0,
+      "choline": 19.7
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 180,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Espinaca, hervida"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "spinach_raw",
+    "name": "Spinach, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "1999633",
+    "kcal": 21.6,
+    "protein": 2.91,
+    "carbs": 2.64,
+    "fat": 0.604,
+    "fiber": 1.59,
+    "nutrients": {
+      "calcium": 66.6,
+      "iron": 1.05,
+      "magnesium": 93,
+      "phosphorus": 40.6,
+      "potassium": 460,
+      "sodium": 107,
+      "zinc": 0.423,
+      "copper": 0.079,
+      "manganese": 0.426,
+      "selenium": 0,
+      "vitamin_a": 306,
+      "vitamin_c": 30.3,
+      "thiamin": 0.076,
+      "riboflavin": 0.192,
+      "niacin": 0.51,
+      "vitamin_b6": 0.214
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 30,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "leaf",
+        "label": "1 leaf",
+        "grams": 10,
+        "translations": {
+          "es": "1 hoja"
+        }
+      },
+      {
+        "key": "bunch",
+        "label": "1 bunch",
+        "grams": 340,
+        "translations": {
+          "es": "1 atado"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Espinaca, cruda"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "corn_sweet_boiled",
+    "name": "Sweet corn, boiled",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "169999",
+    "kcal": 96,
+    "protein": 3.41,
+    "carbs": 21,
+    "fat": 1.5,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 4.54,
+      "saturated_fat": 0.197,
+      "monounsaturated_fat": 0.374,
+      "polyunsaturated_fat": 0.603,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 3,
+      "iron": 0.45,
+      "magnesium": 26,
+      "phosphorus": 77,
+      "potassium": 218,
+      "sodium": 1,
+      "zinc": 0.62,
+      "copper": 0.049,
+      "manganese": 0.167,
+      "selenium": 0.2,
+      "vitamin_a": 13,
+      "vitamin_c": 5.5,
+      "vitamin_d": 0,
+      "vitamin_e": 0.09,
+      "vitamin_k": 0.4,
+      "thiamin": 0.093,
+      "riboflavin": 0.057,
+      "niacin": 1.68,
+      "pantothenic_acid": 0.792,
+      "vitamin_b6": 0.139,
+      "folate": 23,
+      "vitamin_b12": 0,
+      "choline": 29.1
+    },
+    "portions": [
+      {
+        "key": "ear_medium",
+        "label": "Kernels from 1 medium ear",
+        "grams": 103,
+        "translations": {
+          "es": "Granos de 1 mazorca mediana"
+        }
+      },
+      {
+        "key": "cup_kernels",
+        "label": "1 cup, kernels",
+        "grams": 149,
+        "translations": {
+          "es": "1 taza, granos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Maíz dulce, hervido"
+    },
+    "aliases": {
+      "en": [
+        "corn on the cob"
+      ],
+      "es": [
+        "choclo cocido",
+        "elote cocido"
+      ]
+    }
+  },
+  {
+    "key": "corn_sweet_raw",
+    "name": "Sweet corn, raw",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2710826",
+    "kcal": 72.9,
+    "protein": 2.79,
+    "carbs": 14.7,
+    "fat": 1.63,
+    "fiber": 2.43,
+    "nutrients": {
+      "sugars": 7.37,
+      "calcium": 0.656,
+      "iron": 0.388,
+      "magnesium": 25.8,
+      "phosphorus": 75.5,
+      "potassium": 237,
+      "sodium": 0,
+      "zinc": 0.556,
+      "copper": 0.056,
+      "manganese": 0.19,
+      "thiamin": 0.079,
+      "riboflavin": 0.138,
+      "niacin": 1.59,
+      "vitamin_b6": 0.15
+    },
+    "portions": [
+      {
+        "key": "cup_kernels",
+        "label": "1 cup, kernels",
+        "grams": 145,
+        "translations": {
+          "es": "1 taza, granos"
+        }
+      },
+      {
+        "key": "ear_medium",
+        "label": "Kernels from 1 medium ear",
+        "grams": 102,
+        "translations": {
+          "es": "Granos de 1 mazorca mediana"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Maíz dulce, crudo"
+    },
+    "aliases": {
+      "en": [
+        "corn"
+      ],
+      "es": [
+        "choclo",
+        "elote",
+        "mazorca"
+      ]
+    }
+  },
+  {
+    "key": "tomato_paste",
+    "name": "Tomato paste",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685580",
+    "kcal": 88.5,
+    "protein": 4.23,
+    "carbs": 20.2,
+    "fat": 0.732,
+    "fiber": 4.7,
+    "nutrients": {
+      "sugars": 11.7,
+      "calcium": 36.8,
+      "iron": 3.18,
+      "magnesium": 49.6,
+      "phosphorus": 91.2,
+      "potassium": 972,
+      "sodium": 61.2,
+      "zinc": 0.511,
+      "copper": 0.295,
+      "manganese": 0.332,
+      "vitamin_c": 18.4
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 16,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 262,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pasta de tomate"
+    },
+    "aliases": {
+      "es": [
+        "concentrado de tomate"
+      ]
+    }
+  },
+  {
+    "key": "tomato_raw",
+    "name": "Tomato, raw",
+    "category": "vegetables",
+    "source": "usda_sr_legacy",
+    "source_id": "170457",
+    "kcal": 18,
+    "protein": 0.88,
+    "carbs": 3.89,
+    "fat": 0.2,
+    "fiber": 1.2,
+    "nutrients": {
+      "sugars": 2.63,
+      "saturated_fat": 0.028,
+      "monounsaturated_fat": 0.031,
+      "polyunsaturated_fat": 0.083,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 10,
+      "iron": 0.27,
+      "magnesium": 11,
+      "phosphorus": 24,
+      "potassium": 237,
+      "sodium": 5,
+      "zinc": 0.17,
+      "copper": 0.059,
+      "manganese": 0.114,
+      "selenium": 0,
+      "vitamin_a": 42,
+      "vitamin_c": 13.7,
+      "vitamin_d": 0,
+      "vitamin_e": 0.54,
+      "vitamin_k": 7.9,
+      "thiamin": 0.037,
+      "riboflavin": 0.019,
+      "niacin": 0.594,
+      "pantothenic_acid": 0.089,
+      "vitamin_b6": 0.08,
+      "folate": 15,
+      "vitamin_b12": 0,
+      "choline": 6.7
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium tomato",
+        "grams": 123,
+        "translations": {
+          "es": "1 tomate mediano"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large tomato",
+        "grams": 182,
+        "translations": {
+          "es": "1 tomate grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small tomato",
+        "grams": 91,
+        "translations": {
+          "es": "1 tomate pequeño"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped or sliced",
+        "grams": 180,
+        "translations": {
+          "es": "1 taza, picado o en rodajas"
+        }
+      },
+      {
+        "key": "cherry",
+        "label": "1 cherry tomato",
+        "grams": 17,
+        "translations": {
+          "es": "1 tomate cherry"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tomate, crudo"
+    },
+    "aliases": {
+      "es": [
+        "jitomate"
+      ]
+    }
+  },
+  {
+    "key": "tomatoes_crushed_canned",
+    "name": "Tomatoes, crushed, canned",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685581",
+    "kcal": 32.3,
+    "protein": 1.44,
+    "carbs": 7.14,
+    "fat": 0.398,
+    "fiber": 1.94,
+    "nutrients": {
+      "sugars": 3.74,
+      "calcium": 19.2,
+      "iron": 2.27,
+      "magnesium": 18.6,
+      "phosphorus": 32.9,
+      "potassium": 346,
+      "sodium": 140,
+      "zinc": 0.201,
+      "copper": 0.104,
+      "manganese": 0.153,
+      "vitamin_c": 9.1
+    },
+    "portions": [],
+    "translations": {
+      "es": "Tomate triturado, enlatado"
+    },
+    "aliases": {
+      "es": [
+        "tomate en lata"
+      ]
+    }
+  },
+  {
+    "key": "mushrooms_white",
+    "name": "White mushrooms",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "1999629",
+    "kcal": 24.9,
+    "protein": 2.89,
+    "carbs": 4.08,
+    "fat": 0.371,
+    "fiber": 1.72,
+    "nutrients": {
+      "calcium": 5.46,
+      "iron": 0.227,
+      "magnesium": 10.2,
+      "phosphorus": 93,
+      "potassium": 373,
+      "sodium": 6.44,
+      "zinc": 0.511,
+      "copper": 0.389,
+      "manganese": 0.054,
+      "selenium": 20,
+      "vitamin_d": 0.022,
+      "thiamin": 0.065,
+      "riboflavin": 0.444,
+      "niacin": 3.88,
+      "vitamin_b6": 0.077
+    },
+    "portions": [
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 70,
+        "translations": {
+          "es": "1 taza, en láminas"
+        }
+      },
+      {
+        "key": "cup_whole",
+        "label": "1 cup, whole",
+        "grams": 96,
+        "translations": {
+          "es": "1 taza, enteros"
+        }
+      },
+      {
+        "key": "medium",
+        "label": "1 medium mushroom",
+        "grams": 18,
+        "translations": {
+          "es": "1 champiñón mediano"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Champiñones"
+    },
+    "aliases": {
+      "en": [
+        "button mushrooms"
+      ],
+      "es": [
+        "hongos",
+        "setas"
+      ]
+    }
+  },
+  {
+    "key": "zucchini",
+    "name": "Zucchini",
+    "category": "vegetables",
+    "source": "usda_foundation",
+    "source_id": "2685568",
+    "kcal": 16,
+    "protein": 0.984,
+    "carbs": 3.27,
+    "fat": 0.205,
+    "fiber": 0.752,
+    "nutrients": {
+      "calcium": 20.8,
+      "iron": 0.194,
+      "magnesium": 15.3,
+      "phosphorus": 32.9,
+      "potassium": 226,
+      "sodium": 0,
+      "zinc": 0.26,
+      "copper": 0.064,
+      "manganese": 0.149,
+      "vitamin_c": 15
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium zucchini",
+        "grams": 196,
+        "translations": {
+          "es": "1 calabacín mediano"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small zucchini",
+        "grams": 118,
+        "translations": {
+          "es": "1 calabacín pequeño"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 124,
+        "translations": {
+          "es": "1 taza, picado"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 113,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Calabacín"
+    },
+    "aliases": {
+      "en": [
+        "courgette"
+      ],
+      "es": [
+        "zapallito",
+        "zapallo italiano",
+        "calabacita"
+      ]
+    }
+  }
+]

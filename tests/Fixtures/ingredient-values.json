@@ -1,0 +1,399 @@
+[
+  {
+    "key": "egg_whole_raw",
+    "source_id": "748967",
+    "kcal": 148,
+    "protein": 12.4,
+    "carbs": 0.96,
+    "fat": 9.96,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 129,
+      "calcium": 48
+    }
+  },
+  {
+    "key": "egg_whole_hard_boiled",
+    "source_id": "173424",
+    "kcal": 155,
+    "protein": 12.58,
+    "carbs": 1.12,
+    "fat": 10.61,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 124,
+      "calcium": 50
+    }
+  },
+  {
+    "key": "milk_whole",
+    "source_id": "746782",
+    "kcal": 60,
+    "protein": 3.27,
+    "carbs": 4.63,
+    "fat": 3.2,
+    "nutrients": {
+      "sodium": 38,
+      "calcium": 123
+    }
+  },
+  {
+    "key": "cheese_cheddar",
+    "source_id": "328637",
+    "kcal": 408,
+    "protein": 23.3,
+    "carbs": 2.44,
+    "fat": 34,
+    "nutrients": {
+      "sodium": 654,
+      "calcium": 707
+    }
+  },
+  {
+    "key": "greek_yogurt_plain_nonfat",
+    "source_id": "330137",
+    "kcal": 61,
+    "protein": 10.3,
+    "carbs": 3.64,
+    "fat": 0.37,
+    "nutrients": {
+      "sodium": 36,
+      "calcium": 111
+    }
+  },
+  {
+    "key": "chicken_breast_raw",
+    "source_id": "2646170",
+    "kcal": 112.2,
+    "protein": 22.525,
+    "carbs": 0,
+    "fat": 1.934,
+    "nutrients": {
+      "sodium": 65.75,
+      "calcium": 3.939
+    }
+  },
+  {
+    "key": "chicken_breast_roasted",
+    "source_id": "171477",
+    "kcal": 165,
+    "protein": 31.02,
+    "carbs": 0,
+    "fat": 3.57,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 74,
+      "calcium": 15
+    }
+  },
+  {
+    "key": "beef_ground_90_cooked",
+    "source_id": "171794",
+    "kcal": 230,
+    "protein": 28.45,
+    "carbs": 0,
+    "fat": 12.04,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 87,
+      "calcium": 16
+    }
+  },
+  {
+    "key": "salmon_farmed_raw",
+    "source_id": "2684441",
+    "kcal": 203.11,
+    "protein": 20.319,
+    "carbs": 0,
+    "fat": 13.11,
+    "nutrients": {
+      "sodium": 49.49,
+      "calcium": 9.423
+    }
+  },
+  {
+    "key": "tuna_light_canned_water",
+    "source_id": "334194",
+    "kcal": 90,
+    "protein": 19,
+    "carbs": 0.08,
+    "fat": 0.94,
+    "nutrients": {
+      "sodium": 219,
+      "calcium": 18
+    }
+  },
+  {
+    "key": "tofu_firm",
+    "source_id": "172475",
+    "kcal": 144,
+    "protein": 17.27,
+    "carbs": 2.78,
+    "fat": 8.72,
+    "fiber": 2.3,
+    "nutrients": {
+      "sodium": 14,
+      "calcium": 683
+    }
+  },
+  {
+    "key": "edamame_cooked",
+    "source_id": "168411",
+    "kcal": 121,
+    "protein": 11.91,
+    "carbs": 8.91,
+    "fat": 5.2,
+    "fiber": 5.2,
+    "nutrients": {
+      "sodium": 6,
+      "calcium": 63
+    }
+  },
+  {
+    "key": "lentils_boiled",
+    "source_id": "172421",
+    "kcal": 116,
+    "protein": 9.02,
+    "carbs": 20.13,
+    "fat": 0.38,
+    "fiber": 7.9,
+    "nutrients": {
+      "sodium": 2,
+      "calcium": 19
+    }
+  },
+  {
+    "key": "black_beans_boiled",
+    "source_id": "173735",
+    "kcal": 132,
+    "protein": 8.86,
+    "carbs": 23.71,
+    "fat": 0.54,
+    "fiber": 8.7,
+    "nutrients": {
+      "sodium": 1,
+      "calcium": 27
+    }
+  },
+  {
+    "key": "rice_white_cooked",
+    "source_id": "169757",
+    "kcal": 130,
+    "protein": 2.69,
+    "carbs": 28.17,
+    "fat": 0.28,
+    "fiber": 0.4,
+    "nutrients": {
+      "sodium": 1,
+      "calcium": 10
+    }
+  },
+  {
+    "key": "oats_rolled",
+    "source_id": "173904",
+    "kcal": 379,
+    "protein": 13.15,
+    "carbs": 67.7,
+    "fat": 6.52,
+    "fiber": 10.1,
+    "nutrients": {
+      "sodium": 6,
+      "calcium": 52
+    }
+  },
+  {
+    "key": "potato_raw",
+    "source_id": "170026",
+    "kcal": 77,
+    "protein": 2.05,
+    "carbs": 17.49,
+    "fat": 0.09,
+    "fiber": 2.1,
+    "nutrients": {
+      "sodium": 6,
+      "calcium": 12
+    }
+  },
+  {
+    "key": "broccoli_raw",
+    "source_id": "747447",
+    "kcal": 31,
+    "protein": 2.57,
+    "carbs": 6.27,
+    "fat": 0.34,
+    "fiber": 2.4,
+    "nutrients": {
+      "sodium": 36,
+      "calcium": 46
+    }
+  },
+  {
+    "key": "avocado",
+    "source_id": "171705",
+    "kcal": 160,
+    "protein": 2,
+    "carbs": 8.53,
+    "fat": 14.66,
+    "fiber": 6.7,
+    "nutrients": {
+      "sodium": 7,
+      "calcium": 12
+    }
+  },
+  {
+    "key": "spinach_raw",
+    "source_id": "1999633",
+    "kcal": 21.58,
+    "protein": 2.906,
+    "carbs": 2.641,
+    "fat": 0.604,
+    "fiber": 1.588,
+    "nutrients": {
+      "sodium": 106.6,
+      "calcium": 66.64
+    }
+  },
+  {
+    "key": "banana",
+    "source_id": "1105314",
+    "kcal": 97,
+    "protein": 0.74,
+    "carbs": 23,
+    "fat": 0.29,
+    "fiber": 1.7,
+    "nutrients": {
+      "sodium": 0,
+      "calcium": 5
+    }
+  },
+  {
+    "key": "apple",
+    "source_id": "171688",
+    "kcal": 52,
+    "protein": 0.26,
+    "carbs": 13.81,
+    "fat": 0.17,
+    "fiber": 2.4,
+    "nutrients": {
+      "sodium": 1,
+      "calcium": 6
+    }
+  },
+  {
+    "key": "olive_oil",
+    "source_id": "171413",
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 2,
+      "calcium": 1
+    }
+  },
+  {
+    "key": "almonds",
+    "source_id": "2346393",
+    "kcal": 583.6,
+    "protein": 21.45,
+    "carbs": 20.035,
+    "fat": 51.09,
+    "fiber": 10.78,
+    "nutrients": {
+      "sodium": 0,
+      "calcium": 253.6
+    }
+  },
+  {
+    "key": "peanut_butter",
+    "source_id": "2262072",
+    "kcal": 589.38,
+    "protein": 23.991,
+    "carbs": 22.704,
+    "fat": 49.43,
+    "fiber": 6.323,
+    "nutrients": {
+      "sodium": 220.7,
+      "calcium": 49.85
+    }
+  },
+  {
+    "key": "honey",
+    "source_id": "169640",
+    "kcal": 304,
+    "protein": 0.3,
+    "carbs": 82.4,
+    "fat": 0,
+    "fiber": 0.2,
+    "nutrients": {
+      "sodium": 4,
+      "calcium": 6
+    }
+  },
+  {
+    "key": "soy_sauce",
+    "source_id": "174277",
+    "kcal": 53,
+    "protein": 8.14,
+    "carbs": 4.93,
+    "fat": 0.57,
+    "fiber": 0.8,
+    "nutrients": {
+      "sodium": 5493,
+      "calcium": 33
+    }
+  },
+  {
+    "key": "whey_protein_powder",
+    "source_id": "173180",
+    "kcal": 352,
+    "protein": 78.13,
+    "carbs": 6.25,
+    "fat": 1.56,
+    "fiber": 3.1,
+    "nutrients": {
+      "sodium": 156,
+      "calcium": 469
+    }
+  },
+  {
+    "key": "soy_protein_powder",
+    "source_id": "173181",
+    "kcal": 388,
+    "protein": 55.56,
+    "carbs": 28.89,
+    "fat": 5.56,
+    "fiber": 6.7,
+    "nutrients": {
+      "sodium": 733,
+      "calcium": 178
+    }
+  },
+  {
+    "key": "coffee_brewed",
+    "source_id": "171890",
+    "kcal": 1,
+    "protein": 0.12,
+    "carbs": 0,
+    "fat": 0.02,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 2,
+      "calcium": 2
+    }
+  },
+  {
+    "key": "red_wine",
+    "source_id": "173190",
+    "kcal": 85,
+    "protein": 0.07,
+    "carbs": 2.61,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sodium": 4,
+      "calcium": 8
+    }
+  }
+]

@@ -1,0 +1,808 @@
+[
+  {
+    "key": "cheese_cheddar",
+    "name": "Cheddar cheese",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "328637",
+    "kcal": 408,
+    "protein": 23.3,
+    "carbs": 2.44,
+    "fat": 34,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.33,
+      "saturated_fat": 19.2,
+      "monounsaturated_fat": 7.44,
+      "polyunsaturated_fat": 1.18,
+      "trans_fat": 1.14,
+      "cholesterol": 100,
+      "calcium": 707,
+      "iron": 0.16,
+      "magnesium": 26.8,
+      "phosphorus": 458,
+      "potassium": 77,
+      "sodium": 654,
+      "zinc": 3.67,
+      "copper": 0.033,
+      "manganese": 0.026,
+      "selenium": 28.3,
+      "vitamin_a": 316,
+      "vitamin_e": 0.75,
+      "vitamin_k": 2.4,
+      "thiamin": 0.029,
+      "riboflavin": 0.441,
+      "niacin": 0.052,
+      "pantothenic_acid": 0.413,
+      "vitamin_b6": 0.069,
+      "vitamin_b12": 1.06
+    },
+    "portions": [
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 113,
+        "translations": {
+          "es": "1 taza, rallado"
+        }
+      },
+      {
+        "key": "cup_diced",
+        "label": "1 cup, diced",
+        "grams": 132,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "cubic_inch",
+        "label": "1 cubic inch",
+        "grams": 17,
+        "translations": {
+          "es": "1 cubo de 1 pulgada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso cheddar"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cottage_cheese",
+    "name": "Cottage cheese, 2% fat",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "328841",
+    "kcal": 84,
+    "protein": 11,
+    "carbs": 4.31,
+    "fat": 2.3,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 4.1,
+      "saturated_fat": 1.26,
+      "monounsaturated_fat": 0.469,
+      "polyunsaturated_fat": 0.072,
+      "trans_fat": 0.069,
+      "cholesterol": 12,
+      "calcium": 103,
+      "iron": 0.13,
+      "magnesium": 8.9,
+      "phosphorus": 148,
+      "potassium": 120,
+      "sodium": 321,
+      "zinc": 0.61,
+      "copper": 0.03,
+      "manganese": 0.015,
+      "selenium": 14.6,
+      "vitamin_a": 69,
+      "vitamin_e": 0.08,
+      "thiamin": 0.02,
+      "riboflavin": 0.234,
+      "niacin": 0.09,
+      "pantothenic_acid": 0.508,
+      "vitamin_b6": 0.057,
+      "vitamin_b12": 0.42
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 226,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso cottage, 2 % de grasa"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cream_cheese",
+    "name": "Cream cheese",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2346385",
+    "kcal": 337,
+    "protein": 5.79,
+    "carbs": 4.56,
+    "fat": 33.5,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 19.7,
+      "monounsaturated_fat": 6.92,
+      "cholesterol": 101,
+      "calcium": 97.1,
+      "iron": 0,
+      "magnesium": 8.91,
+      "phosphorus": 108,
+      "potassium": 125,
+      "sodium": 368,
+      "zinc": 0.589,
+      "copper": 0,
+      "manganese": 0,
+      "vitamin_k": 2.4,
+      "thiamin": 0.038,
+      "niacin": 0.092,
+      "vitamin_b6": 0.039,
+      "vitamin_b12": 0
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 14.5,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 232,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso crema"
+    },
+    "aliases": {
+      "es": [
+        "queso untable"
+      ]
+    }
+  },
+  {
+    "key": "cheese_feta",
+    "name": "Feta cheese",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2259796",
+    "kcal": 273,
+    "protein": 19.7,
+    "carbs": 5.58,
+    "fat": 19.1,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 1.63,
+      "saturated_fat": 11.2,
+      "monounsaturated_fat": 4.18,
+      "cholesterol": 57.5,
+      "calcium": 371,
+      "iron": 0.068,
+      "magnesium": 17.7,
+      "phosphorus": 328,
+      "potassium": 105,
+      "sodium": 1030,
+      "zinc": 2.35,
+      "copper": 0.032,
+      "manganese": 0.02,
+      "vitamin_d": 0,
+      "vitamin_k": 1.2,
+      "thiamin": 0.056,
+      "riboflavin": 0.444,
+      "niacin": 0.264,
+      "vitamin_b6": 0.038
+    },
+    "portions": [
+      {
+        "key": "cup_crumbled",
+        "label": "1 cup, crumbled",
+        "grams": 150,
+        "translations": {
+          "es": "1 taza, desmenuzado"
+        }
+      },
+      {
+        "key": "cubic_inch",
+        "label": "1 cubic inch",
+        "grams": 17,
+        "translations": {
+          "es": "1 cubo de 1 pulgada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso feta"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "queso_fresco",
+    "name": "Fresh cheese (queso fresco)",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2647442",
+    "kcal": 297,
+    "protein": 18.9,
+    "carbs": 2.96,
+    "fat": 23.4,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 14,
+      "monounsaturated_fat": 4.96,
+      "cholesterol": 76.1,
+      "calcium": 602,
+      "iron": 0,
+      "magnesium": 27.6,
+      "phosphorus": 390,
+      "potassium": 126,
+      "sodium": 626,
+      "zinc": 2.91,
+      "copper": 0,
+      "manganese": 0,
+      "vitamin_d": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Queso fresco"
+    },
+    "aliases": {
+      "en": [
+        "queso fresco"
+      ],
+      "es": [
+        "queso blanco"
+      ]
+    }
+  },
+  {
+    "key": "greek_yogurt_plain_nonfat",
+    "name": "Greek yogurt, plain, nonfat",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "330137",
+    "kcal": 61,
+    "protein": 10.3,
+    "carbs": 3.64,
+    "fat": 0.37,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 3.27,
+      "saturated_fat": 0.108,
+      "monounsaturated_fat": 0.043,
+      "polyunsaturated_fat": 0.011,
+      "trans_fat": 0.005,
+      "cholesterol": 5,
+      "calcium": 111,
+      "iron": 0.07,
+      "magnesium": 10.7,
+      "phosphorus": 136,
+      "potassium": 141,
+      "sodium": 36,
+      "zinc": 0.53,
+      "copper": 0.017,
+      "manganese": 0.009,
+      "selenium": 9.9,
+      "vitamin_a": 1,
+      "vitamin_d": 0,
+      "vitamin_e": 0.01,
+      "vitamin_k": 0,
+      "thiamin": 0.022,
+      "riboflavin": 0.281,
+      "niacin": 0.211,
+      "pantothenic_acid": 0.332,
+      "vitamin_b6": 0.064,
+      "vitamin_b12": 0.7,
+      "choline": 15.1
+    },
+    "portions": [
+      {
+        "key": "container",
+        "label": "1 container",
+        "grams": 170,
+        "translations": {
+          "es": "1 envase"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Yogur griego natural, descremado"
+    },
+    "aliases": {
+      "es": [
+        "yogurt griego",
+        "yogur griego desnatado"
+      ]
+    }
+  },
+  {
+    "key": "cream_heavy",
+    "name": "Heavy cream",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2346386",
+    "kcal": 336,
+    "protein": 2.02,
+    "carbs": 3.8,
+    "fat": 35.6,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 20.4,
+      "monounsaturated_fat": 7.34,
+      "cholesterol": 103,
+      "calcium": 61.2,
+      "iron": 0,
+      "magnesium": 5.97,
+      "phosphorus": 57,
+      "potassium": 96.9,
+      "sodium": 20.6,
+      "zinc": 0.223,
+      "copper": 0,
+      "manganese": 0,
+      "vitamin_k": 2.4,
+      "thiamin": 0.032,
+      "niacin": 0.061,
+      "vitamin_b6": 0.031,
+      "vitamin_b12": 0
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 15,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup, liquid",
+        "grams": 238,
+        "translations": {
+          "es": "1 taza, líquida"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Crema de leche"
+    },
+    "aliases": {
+      "en": [
+        "whipping cream"
+      ],
+      "es": [
+        "nata",
+        "crema para batir"
+      ]
+    }
+  },
+  {
+    "key": "milk_whole",
+    "name": "Milk, whole",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "746782",
+    "kcal": 60,
+    "protein": 3.27,
+    "carbs": 4.63,
+    "fat": 3.2,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 4.81,
+      "saturated_fat": 1.86,
+      "monounsaturated_fat": 0.688,
+      "polyunsaturated_fat": 0.108,
+      "trans_fat": 0.112,
+      "cholesterol": 12,
+      "calcium": 123,
+      "iron": 0,
+      "magnesium": 11.9,
+      "phosphorus": 101,
+      "potassium": 150,
+      "sodium": 38,
+      "zinc": 0.42,
+      "copper": 0.001,
+      "manganese": 0,
+      "selenium": 1.9,
+      "vitamin_a": 32,
+      "vitamin_d": 0.96,
+      "vitamin_e": 0.05,
+      "thiamin": 0.056,
+      "riboflavin": 0.138,
+      "niacin": 0.105,
+      "pantothenic_acid": 0.362,
+      "vitamin_b6": 0.061,
+      "vitamin_b12": 0.54,
+      "choline": 17.8
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 244,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 15,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Leche entera"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cheese_mozzarella",
+    "name": "Mozzarella cheese, low moisture",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "329370",
+    "kcal": 298,
+    "protein": 23.7,
+    "carbs": 4.44,
+    "fat": 20.4,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 1.81,
+      "saturated_fat": 11.7,
+      "monounsaturated_fat": 4.65,
+      "polyunsaturated_fat": 0.744,
+      "trans_fat": 0.705,
+      "cholesterol": 65,
+      "calcium": 693,
+      "iron": 0.2,
+      "magnesium": 27.2,
+      "phosphorus": 533,
+      "potassium": 116,
+      "sodium": 699,
+      "zinc": 3.62,
+      "copper": 0.035,
+      "manganese": 0.035,
+      "selenium": 26.7,
+      "vitamin_a": 203,
+      "vitamin_e": 0.51,
+      "vitamin_k": 1.3,
+      "thiamin": 0.023,
+      "riboflavin": 0.36,
+      "niacin": 0.101,
+      "pantothenic_acid": 0.415,
+      "vitamin_b6": 0.09,
+      "vitamin_b12": 1.65,
+      "choline": 13.5
+    },
+    "portions": [
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 113,
+        "translations": {
+          "es": "1 taza, rallado"
+        }
+      },
+      {
+        "key": "cup_diced",
+        "label": "1 cup, diced",
+        "grams": 132,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "cubic_inch",
+        "label": "1 cubic inch",
+        "grams": 18,
+        "translations": {
+          "es": "1 cubo de 1 pulgada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso mozzarella, semiduro"
+    },
+    "aliases": {
+      "es": [
+        "mozarela"
+      ]
+    }
+  },
+  {
+    "key": "cheese_parmesan_grated",
+    "name": "Parmesan cheese, grated",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "325036",
+    "kcal": 421,
+    "protein": 29.6,
+    "carbs": 12.4,
+    "fat": 28,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.07,
+      "saturated_fat": 15.5,
+      "monounsaturated_fat": 6.4,
+      "polyunsaturated_fat": 1.2,
+      "trans_fat": 0.896,
+      "cholesterol": 87,
+      "calcium": 884,
+      "iron": 0.45,
+      "magnesium": 34.9,
+      "phosphorus": 634,
+      "potassium": 184,
+      "sodium": 1750,
+      "zinc": 4.33,
+      "copper": 0.04,
+      "manganese": 0.066,
+      "selenium": 35,
+      "vitamin_a": 228,
+      "vitamin_e": 0.51,
+      "vitamin_k": 1.7,
+      "thiamin": 0.027,
+      "riboflavin": 0.345,
+      "niacin": 0.078,
+      "pantothenic_acid": 0.457,
+      "vitamin_b6": 0.081,
+      "vitamin_b12": 1.35,
+      "choline": 14.1
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 5,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 100,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso parmesano, rallado"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "cheese_ricotta",
+    "name": "Ricotta cheese",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "746766",
+    "kcal": 157,
+    "protein": 7.81,
+    "carbs": 6.86,
+    "fat": 11,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 6.97,
+      "monounsaturated_fat": 2.56,
+      "polyunsaturated_fat": 0.389,
+      "trans_fat": 0.351,
+      "cholesterol": 48,
+      "calcium": 224,
+      "iron": 0.1,
+      "magnesium": 19.7,
+      "phosphorus": 162,
+      "potassium": 230,
+      "sodium": 105,
+      "zinc": 0.56,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 5.5,
+      "vitamin_a": 127,
+      "vitamin_e": 0.27,
+      "vitamin_k": 0.6,
+      "thiamin": 0.043,
+      "riboflavin": 0.327,
+      "niacin": 0.168,
+      "pantothenic_acid": 0.673,
+      "vitamin_b6": 0.099,
+      "vitamin_b12": 0.78
+    },
+    "portions": [
+      {
+        "key": "half_cup",
+        "label": "½ cup",
+        "grams": 124,
+        "translations": {
+          "es": "½ taza"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 246,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Queso ricota"
+    },
+    "aliases": {
+      "es": [
+        "ricotta",
+        "requesón"
+      ]
+    }
+  },
+  {
+    "key": "sour_cream",
+    "name": "Sour cream",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2346387",
+    "kcal": 193,
+    "protein": 3.07,
+    "carbs": 5.56,
+    "fat": 18,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 10.7,
+      "monounsaturated_fat": 3.8,
+      "cholesterol": 52.7,
+      "calcium": 107,
+      "iron": 0,
+      "magnesium": 10.1,
+      "phosphorus": 102,
+      "potassium": 154,
+      "sodium": 50,
+      "zinc": 0.392,
+      "copper": 0,
+      "manganese": 0,
+      "vitamin_k": 1.2,
+      "thiamin": 0.043,
+      "niacin": 0.1,
+      "vitamin_b6": 0.038,
+      "vitamin_b12": 0.062
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 12,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 230,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Crema agria"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "condensed_milk",
+    "name": "Sweetened condensed milk",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2758990",
+    "kcal": 336,
+    "protein": 7.38,
+    "carbs": 57.9,
+    "fat": 8.33,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 54.1,
+      "saturated_fat": 4.82,
+      "monounsaturated_fat": 1.9,
+      "polyunsaturated_fat": 0.301,
+      "trans_fat": 0.259,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "riboflavin": 0.47,
+      "vitamin_b6": 0.039,
+      "vitamin_b12": 0.52
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 306,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Leche condensada"
+    },
+    "aliases": {}
+  },
+  {
+    "key": "yogurt_plain_whole",
+    "name": "Yogurt, plain, whole milk",
+    "category": "dairy",
+    "source": "usda_foundation",
+    "source_id": "2259793",
+    "kcal": 77.3,
+    "protein": 3.82,
+    "carbs": 5.57,
+    "fat": 4.48,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 4.09,
+      "saturated_fat": 2.32,
+      "monounsaturated_fat": 0.874,
+      "cholesterol": 14.2,
+      "calcium": 127,
+      "iron": 0,
+      "magnesium": 11.4,
+      "phosphorus": 101,
+      "potassium": 164,
+      "sodium": 41.8,
+      "zinc": 0.428,
+      "copper": 0.003,
+      "manganese": 0.002,
+      "vitamin_d": 0.778,
+      "vitamin_k": 0.2,
+      "thiamin": 0.055,
+      "riboflavin": 0.243,
+      "niacin": 0.135,
+      "vitamin_b6": 0.045
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 245,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "container_6oz",
+        "label": "1 container (6 oz)",
+        "grams": 170,
+        "translations": {
+          "es": "1 envase (170 g)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Yogur natural, entero"
+    },
+    "aliases": {
+      "es": [
+        "yogurt natural"
+      ]
+    }
+  }
+]
