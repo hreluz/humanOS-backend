@@ -1,11 +1,10 @@
 ---
-name: local-db-setup
-description: Prepares the local Docker database for humanOS. Runs pending migrations, seeds the muscle, equipment and exercise catalogs, and ensures a verified test user exists. Use when asked to set up, seed or refresh the local database or create the local test user. Safe to re-run.
-tools: Bash
+description: Prepare the local Docker database. Runs pending migrations, seeds the exercise and ingredient catalogs, and ensures a verified test user exists. Safe to re-run.
+allowed-tools: Bash(docker compose:*), Bash(HOST_UID=*), Bash(id:*), Bash(test:*)
 model: haiku
 ---
 
-You prepare the **local** humanOS database. Run the steps below in order, from the repository root, and stop at the first failure. Everything runs inside the `app` container, because the `mysql` host only resolves on the compose network.
+Prepare the **local** humanOS database. Run the steps below in order, from the repository root, and stop at the first failure. Everything runs inside the `app` container, because the `mysql` host only resolves on the compose network.
 
 ## Rules
 
@@ -36,27 +35,29 @@ You prepare the **local** humanOS database. Run the steps below in order, from t
    docker compose exec -T app php artisan migrate --no-interaction
    ```
 
-4. **Seed the catalogs**, in this order, because exercises reference muscles and equipment. These seeders upsert by `key`, so re-running them is safe.
+4. **Seed the catalogs**, in this order: exercises reference muscles and equipment, and ingredients reference nutrients. These seeders upsert by `key`, so re-running them is safe and keeps the ids. `IngredientSeeder` also removes ingredients that are no longer in `database/data/ingredients`, soft-deleting any that something references.
 
    ```sh
    docker compose exec -T app php artisan db:seed --class=MuscleSeeder --no-interaction
    docker compose exec -T app php artisan db:seed --class=EquipmentSeeder --no-interaction
    docker compose exec -T app php artisan db:seed --class=ExerciseSeeder --no-interaction
+   docker compose exec -T app php artisan db:seed --class=NutrientSeeder --no-interaction
+   docker compose exec -T app php artisan db:seed --class=IngredientSeeder --no-interaction
    ```
 
 5. **Create or update the test user, then verify it.** The `HOME` override stops PsySH from warning about its config directory. The user is keyed by email, so this never creates a duplicate. `email_verified_at` isn't fillable, which is why the command uses `forceFill`.
 
    ```sh
-   docker compose exec -T -e HOME=/tmp app php artisan tinker --execute='$u = App\Models\User::firstOrNew(["email" => "test@example.com"]); $u->forceFill(["name" => "Test User", "password" => "password", "email_verified_at" => $u->email_verified_at ?? now()])->save(); echo json_encode(["id" => $u->id, "email" => $u->email, "verified" => $u->fresh()->hasVerifiedEmail(), "password_ok" => Illuminate\Support\Facades\Hash::check("password", $u->fresh()->password), "muscles" => App\Modules\Training\Models\Muscle::count(), "equipment" => App\Modules\Training\Models\Equipment::count(), "exercises" => App\Modules\Training\Models\Exercise::count()]), PHP_EOL;'
+   docker compose exec -T -e HOME=/tmp app php artisan tinker --execute='$u = App\Models\User::firstOrNew(["email" => "test@example.com"]); $u->forceFill(["name" => "Test User", "password" => "password", "email_verified_at" => $u->email_verified_at ?? now()])->save(); echo json_encode(["id" => $u->id, "email" => $u->email, "verified" => $u->fresh()->hasVerifiedEmail(), "password_ok" => Illuminate\Support\Facades\Hash::check("password", $u->fresh()->password), "muscles" => App\Modules\Training\Models\Muscle::count(), "equipment" => App\Modules\Training\Models\Equipment::count(), "exercises" => App\Modules\Training\Models\Exercise::count(), "nutrients" => App\Modules\Nutrition\Models\Nutrient::count(), "ingredients" => App\Modules\Nutrition\Models\Ingredient::count()]), PHP_EOL;'
    ```
 
-   Treat the run as failed unless `verified` and `password_ok` are `true` and all three catalog counts are above zero.
+   Treat the run as failed unless `verified` and `password_ok` are `true`, `nutrients` is 29, and the muscle, equipment, exercise and ingredient counts are above zero.
 
 ## Report
 
 Reply briefly with:
 
 - how many migrations ran, or that there were none pending
-- the muscle, equipment and exercise counts
+- the muscle, equipment, exercise, nutrient and ingredient counts
 - the test user: `test@example.com` / `password`, and whether it is verified
 - for a failure: the step, the exact error, and that later steps did not run
