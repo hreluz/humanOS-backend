@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Modules\Nutrition\Http\Resources;
+
+use App\Modules\Nutrition\Models\Ingredient;
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+/**
+ * @mixin Ingredient
+ */
+class IngredientResource extends JsonResource
+{
+    private bool $withDetails = false;
+
+    /**
+     * Include the fields only the detail view shows.
+     */
+    public function withDetails(): static
+    {
+        $this->withDetails = true;
+
+        return $this;
+    }
+
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        return [
+            /**
+             * Stable identifier, used in the URL.
+             *
+             * @example egg_whole_raw
+             */
+            'key' => $this->key,
+            /**
+             * English name.
+             *
+             * @example Egg, whole, raw
+             */
+            'name' => $this->name,
+            /** @example eggs */
+            'category' => $this->category,
+            /**
+             * Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams.
+             *
+             * @example {"kcal": 148, "protein": 12.4, "carbs": 0.96, "fat": 9.96, "fiber": 0}
+             */
+            'per_100g' => [
+                'kcal' => $this->kcal,
+                'protein' => $this->protein,
+                'carbs' => $this->carbs,
+                'fat' => $this->fat,
+                'fiber' => $this->fiber,
+            ],
+            /** Portions in display order. Can be empty. */
+            'portions' => IngredientPortionResource::collection($this->portions),
+            /** Measured nutrients per 100 g, in display order. Unmeasured ones are left out. Only returned by the detail endpoint. */
+            'nutrients' => $this->when($this->withDetails, fn () => IngredientNutrientResource::collection($this->nutrients)),
+            /**
+             * Where the values come from: the USDA FoodData Central dataset and the FDC id. Only returned by the detail endpoint.
+             *
+             * @example {"type": "usda_foundation", "id": "748967"}
+             */
+            'source' => $this->when($this->withDetails, fn () => [
+                'type' => $this->source,
+                'id' => $this->source_id,
+            ]),
+        ];
+    }
+}

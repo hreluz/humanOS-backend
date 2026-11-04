@@ -4,7 +4,9 @@ namespace App\Modules\Nutrition\Models;
 
 use App\Modules\Nutrition\Enums\IngredientCategory;
 use App\Modules\Nutrition\Enums\IngredientSource;
+use App\Modules\Nutrition\Http\Requests\SearchIngredientsRequest;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -76,5 +78,35 @@ class Ingredient extends Model
     public function aliases(): HasMany
     {
         return $this->hasMany(IngredientAlias::class);
+    }
+
+    /**
+     * The search query: the category filter, a match anywhere in the English name or an English alias, then
+     * ranked by the name (exact, prefix, word prefix, the rest), then sorted by name and key.
+     *
+     * Case and accents are ignored through the `utf8mb4_unicode_ci` collation.
+     *
+     * @param  Builder<Ingredient>  $query
+     * @return Builder<Ingredient>
+     */
+    public function scopeSearch(Builder $query, SearchIngredientsRequest $filters): Builder
+    {
+        $search = (string) $filters->validated('search');
+        $term = addcslashes($search, '\\%_');
+
+        return $query
+            ->when($filters->validated('category'), fn (Builder $query, array $categories) => $query
+                ->whereIn('ingredients.category', $categories))
+            ->where(fn (Builder $query) => $query
+                ->whereLike('ingredients.name', "%{$term}%")
+                ->orWhereHas('aliases', fn (Builder $query) => $query
+                    ->where('ingredient_aliases.locale', 'en')
+                    ->whereLike('ingredient_aliases.name', "%{$term}%")))
+            ->orderByRaw(
+                'CASE WHEN ingredients.name = ? THEN 0 WHEN ingredients.name LIKE ? THEN 1 WHEN ingredients.name LIKE ? THEN 2 ELSE 3 END',
+                [$search, "{$term}%", "% {$term}%"],
+            )
+            ->orderBy('ingredients.name')
+            ->orderBy('ingredients.key');
     }
 }

@@ -25,7 +25,7 @@ class IngredientSeeder extends Seeder
 {
     /**
      * Locales an ingredient or portion may be translated to. English is the main table's `name` or `label`.
-     * Moves to `config('nutrition.locales')` in SPEC 16.
+     * Moves to `config('nutrition.locales')` in the language spec.
      *
      * @var list<string>
      */

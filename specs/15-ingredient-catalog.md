@@ -4,6 +4,7 @@
 > **Depends on:** None
 > **Date:** 2026-11-03
 > **Objective:** Store about 200 reviewed basic ingredients available anywhere in the world in database tables, with nutrition per 100 g, portions, and English and Spanish names, loaded from committed data files by an idempotent seeder.
+> **Note:** Moving IngredientSeeder's locales to config was deferred from SPEC 16 to the language spec by SPEC 16.
 
 ## Why this spec exists
 
