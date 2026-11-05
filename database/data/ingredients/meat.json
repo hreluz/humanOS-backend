@@ -59,7 +59,21 @@
         "tocineta frita",
         "beicon frito"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Two_slices_of_raw_bacon_and_parsley_on_the_wooden_board._Two_tomatoes_next_to_it.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Close-up_of_the_piled_slices_of_raw_bacon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      }
+    ]
   },
   {
     "key": "bacon_raw",
@@ -122,7 +136,21 @@
         "beicon",
         "panceta ahumada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Two_slices_of_raw_bacon_and_parsley_on_the_wooden_board._Two_tomatoes_next_to_it.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Close-up_of_the_piled_slices_of_raw_bacon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      }
+    ]
   },
   {
     "key": "beef_chuck_braised",
@@ -176,7 +204,21 @@
       "es": [
         "estofado de res"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Braised_Beef_Cheek.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ceeseven"
+      },
+      {
+        "file": "Braised_Beef_Tongue_with_Spaghetti.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ceeseven"
+      }
+    ]
   },
   {
     "key": "beef_chuck_raw",
@@ -217,7 +259,15 @@
         "aguja de res",
         "carne de res para guisar"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Högrev,_rå.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Hangsna"
+      }
+    ]
   },
   {
     "key": "beef_liver_fried",
@@ -278,7 +328,21 @@
       "es": [
         "hígado de vacuno frito"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Liver_dish,_Hattenheim.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gerda Arendt"
+      },
+      {
+        "file": "Hähnchen-Leber_Fröschbrunna_Kronach.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      }
+    ]
   },
   {
     "key": "beef_liver_raw",
@@ -330,7 +394,15 @@
       "es": [
         "hígado de vacuno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Raw_veal_liver,_2010.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Javier Lastras"
+      }
+    ]
   },
   {
     "key": "beef_sirloin_broiled",
@@ -383,7 +455,21 @@
       "es": [
         "bistec de res a la plancha"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Milestone_-_Top_Sirloin_with_Peppercorn_Sauce_(5853156226).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Calgary Reviews from Calgary, Canada"
+      },
+      {
+        "file": "Sirloin_Steak,_Otawara.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Miyuki Meinaka"
+      }
+    ]
   },
   {
     "key": "beef_sirloin_raw",
@@ -421,7 +507,15 @@
         "cuadril",
         "aguayón"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "대통령상에_빛나는_행주한우.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "고양축산농협"
+      }
+    ]
   },
   {
     "key": "chicken_breast_raw",
@@ -463,7 +557,15 @@
     "translations": {
       "es": "Pechuga de pollo, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "CHICKEN_BREAST.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "MrBeastRapper"
+      }
+    ]
   },
   {
     "key": "chicken_breast_roasted",
@@ -536,7 +638,15 @@
         "pechuga de pollo a la plancha",
         "pechuga de pollo al horno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Pan_Roasted_Chicken_Breasts,_Garlic_Mashed_Potatoes,_Fiddlehead_Ferns_and_Sauce_Supreme.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "John Herschell"
+      }
+    ]
   },
   {
     "key": "chicken_drumstick_raw",
@@ -597,7 +707,21 @@
       "es": [
         "jamoncito de pollo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Raw_chicken_drumsticks_(3312851753).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Geoff Peters from Vancouver, BC, Canada"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_with_potatoes,_onion,_garlic,_and_rosemary_before_roasting.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "chicken_drumstick_roasted",
@@ -649,7 +773,21 @@
       "es": [
         "jamoncito de pollo asado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_Drumstick_with_Jalapeño.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      },
+      {
+        "file": "Fırında_Domates_Soslu_Tavuk_Baget.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samizambak"
+      }
+    ]
   },
   {
     "key": "chicken_liver_raw",
@@ -706,7 +844,21 @@
     "translations": {
       "es": "Hígado de pollo, crudo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Preparing_Chicken_Liver_01.JPG",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Poupou l'quourouce"
+      },
+      {
+        "file": "Preparing_Chicken_Liver_02.JPG",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Poupou l'quourouce"
+      }
+    ]
   },
   {
     "key": "chicken_liver_simmered",
@@ -763,7 +915,15 @@
     "translations": {
       "es": "Hígado de pollo, hervido"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_Liver_with_Chestnuts_and_Rice.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "chicken_thigh_raw",
@@ -809,7 +969,15 @@
       "es": [
         "contramuslo de pollo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Raw_chicken_thighs.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "gran"
+      }
+    ]
   },
   {
     "key": "chicken_thigh_roasted",
@@ -873,7 +1041,15 @@
       "es": [
         "contramuslo de pollo asado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Roast_Chicken_Legs_and_Thighs_(31196736704).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Willis Lam"
+      }
+    ]
   },
   {
     "key": "beef_ground_90_cooked",
@@ -928,7 +1104,15 @@
       "es": [
         "carne picada de vacuno cocida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ground_beef_frying.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "BrokenSphere"
+      }
+    ]
   },
   {
     "key": "beef_ground_90_raw",
@@ -969,7 +1153,15 @@
         "carne picada de vacuno",
         "carne de res molida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ground_Beef.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Julia033"
+      }
+    ]
   },
   {
     "key": "lamb_ground_broiled",
@@ -1020,7 +1212,21 @@
       "es": [
         "carne picada de cordero cocida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "20240809_Kabab_koobideh_&_Kabuli_Pulao_Restaurant_Safrani_Berlin_anagoria.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Anagoria"
+      },
+      {
+        "file": "Dinner_30_07_2019_Lamb_Koftas_with_salad,_a_sourdough_and_linseed_wrap_with_onion_&_garlic_dip_(48162583727).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "CharmaineZoe's Marvelous Melange from England"
+      }
+    ]
   },
   {
     "key": "lamb_ground_raw",
@@ -1074,7 +1280,21 @@
       "es": [
         "carne picada de cordero"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "20240809_Kabab_koobideh_&_Kabuli_Pulao_Restaurant_Safrani_Berlin_anagoria.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Anagoria"
+      },
+      {
+        "file": "Dinner_30_07_2019_Lamb_Koftas_with_salad,_a_sourdough_and_linseed_wrap_with_onion_&_garlic_dip_(48162583727).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "CharmaineZoe's Marvelous Melange from England"
+      }
+    ]
   },
   {
     "key": "pork_ground_cooked",
@@ -1125,7 +1345,15 @@
       "es": [
         "carne picada de cerdo cocida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "DSCF1165_Crispy_fried_pork_with_peanuts_fresh_green_chilies_and_kaffir_lime_leaves_-_a_spicy_crunchy_Thai-style_appetizer.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "PattayaPatrol"
+      }
+    ]
   },
   {
     "key": "pork_ground_raw",
@@ -1162,7 +1390,15 @@
       "es": [
         "carne picada de cerdo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "DSCF1165_Crispy_fried_pork_with_peanuts_fresh_green_chilies_and_kaffir_lime_leaves_-_a_spicy_crunchy_Thai-style_appetizer.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "PattayaPatrol"
+      }
+    ]
   },
   {
     "key": "turkey_ground_cooked",
@@ -1209,7 +1445,15 @@
       "es": [
         "pavo molido cocido"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ground_turkey_(4515834437).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
   },
   {
     "key": "turkey_ground_raw",
@@ -1246,7 +1490,15 @@
       "es": [
         "pavo molido"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ground_turkey_(4515834437).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
   },
   {
     "key": "ham_sliced",
@@ -1311,7 +1563,21 @@
         "jamón en rebanadas",
         "jamón inglés"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Sliced_cooked_ham.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Anna.Massini"
+      },
+      {
+        "file": "Glazed_and_sliced_ham.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
   },
   {
     "key": "pork_loin_raw",
@@ -1358,7 +1624,21 @@
         "lomo de chancho",
         "lomo de puerco"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Pork_loin.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Pannet"
+      },
+      {
+        "file": "Pork_loin_(1027276219).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Father.Jack from Coventry, UK"
+      }
+    ]
   },
   {
     "key": "pork_loin_roasted",
@@ -1419,7 +1699,21 @@
         "lomo de chancho asado",
         "lomo de puerco asado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Smoked_Pork_Loin_Roast_(3153427521).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "brian gautreau from Colorado Springs, USA"
+      },
+      {
+        "file": "Pork_loin_with_apricots.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "MOs810"
+      }
+    ]
   },
   {
     "key": "turkey_breast_raw",
@@ -1471,7 +1765,15 @@
         "pechuga de pavita",
         "pechuga de guajolote"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Krůtí_prsa.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Dezidor"
+      }
+    ]
   },
   {
     "key": "turkey_breast_roasted",
@@ -1523,6 +1825,14 @@
       "es": [
         "pechuga de pavita asada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cooked_turkey_breast_-_November_2023_-_Sarah_Stierch.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Missvain"
+      }
+    ]
   }
 ]

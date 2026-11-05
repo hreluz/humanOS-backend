@@ -51,7 +51,14 @@
         "rúgula",
         "arúgula"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Eruca_vesicaria._Big_Bend_National_Park,_Hwy_1776._March_2004_(49A15BEC92014D7D8D7C401B4C201BB5).JPG",
+        "license": "Public domain",
+        "author": "Betty Alex ( US National Park Service )"
+      }
+    ]
   },
   {
     "key": "avocado",
@@ -128,7 +135,21 @@
       "es": [
         "palta"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Avocado_Hass_-_single_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Avocado_Halves.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "beet_raw",
@@ -183,7 +204,21 @@
         "betarraga",
         "betabel"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Beetroot(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kiwima"
+      },
+      {
+        "file": "Beetroot_jm27942.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "© Jörgens.mi"
+      }
+    ]
   },
   {
     "key": "broccoli_boiled",
@@ -255,7 +290,21 @@
       "es": [
         "brócoli al vapor"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Steamed_Broccoli.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      },
+      {
+        "file": "Fox's_salmon_steak,_same_mushroom_sauce,_roasted_carrots_and_steamed_broccoli._-mycookingadventures_(50103299871).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "transcendancing"
+      }
+    ]
   },
   {
     "key": "broccoli_raw",
@@ -318,7 +367,15 @@
       "es": [
         "brécol"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Broccoli_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "পাপৰি বৰা"
+      }
+    ]
   },
   {
     "key": "cabbage_raw",
@@ -395,7 +452,14 @@
       "es": [
         "col"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Brassica_oleracea_2011_G1.jpg",
+        "license": "Public domain",
+        "author": "George Chernilevsky"
+      }
+    ]
   },
   {
     "key": "carrot_boiled",
@@ -460,7 +524,15 @@
     "translations": {
       "es": "Zanahoria, hervida"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Carrots_and_potatoes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "E4024"
+      }
+    ]
   },
   {
     "key": "carrot_raw",
@@ -526,7 +598,20 @@
     "translations": {
       "es": "Zanahoria, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Carrots_at_Ljubljana_Central_Market.JPG",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "domdomegg"
+      },
+      {
+        "file": "Carrots_of_many_colors.jpg",
+        "license": "Public domain",
+        "author": "Stephen Ausmus"
+      }
+    ]
   },
   {
     "key": "cauliflower_boiled",
@@ -591,7 +676,15 @@
     "translations": {
       "es": "Coliflor, hervida"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Jajka_sadzone_z_ziemniakami_i_kalafiorem_-_2023.05.27.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Aw58"
+      }
+    ]
   },
   {
     "key": "cauliflower_raw",
@@ -645,7 +738,21 @@
     "translations": {
       "es": "Coliflor, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Brassica_oleracea_var._botrytis_(Coliflor).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rjcastillo"
+      },
+      {
+        "file": "Brassica_oleracea_var_in_pabna.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "DelwarHossain"
+      }
+    ]
   },
   {
     "key": "celery",
@@ -714,7 +821,20 @@
       "es": [
         "apio españa"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Celery_(1).jpg",
+        "license": "Public domain",
+        "author": "Renee Comet (Photographer)"
+      },
+      {
+        "file": "Celery_(177029685).jpeg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Chuck Spidell"
+      }
+    ]
   },
   {
     "key": "cilantro",
@@ -786,7 +906,21 @@
       "es": [
         "culantro"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Coriander_Leaves.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rupeshm364"
+      },
+      {
+        "file": "Coriander_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "ShahadatHossain"
+      }
+    ]
   },
   {
     "key": "cucumber",
@@ -851,7 +985,21 @@
     "translations": {
       "es": "Pepino"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Greek_yoghurt_cucumbers_garlic.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Nikodem Nijaki"
+      },
+      {
+        "file": "Ryerson_Market_cucumbers_on_sale.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Jason Zhang"
+      }
+    ]
   },
   {
     "key": "eggplant",
@@ -894,7 +1042,21 @@
       "en": [
         "aubergine"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Aubergine-Varianten.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Grey Geezer"
+      },
+      {
+        "file": "Eggplant_aubergine_brinjal.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "A3 Baard"
+      }
+    ]
   },
   {
     "key": "garlic",
@@ -932,7 +1094,21 @@
     "translations": {
       "es": "Ajo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Garlic_bulbs_and_cloves.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Garlic.JPG",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Challiyan at Malayalam Wikipedia"
+      }
+    ]
   },
   {
     "key": "ginger_root",
@@ -1001,7 +1177,15 @@
       "es": [
         "kion"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ginger_Root.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      }
+    ]
   },
   {
     "key": "green_beans_boiled",
@@ -1064,7 +1248,21 @@
         "vainitas cocidas",
         "chauchas cocidas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "How_to_cook_green_beans.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "E4024"
+      },
+      {
+        "file": "Green_beans_in_Turkey.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "E4024"
+      }
+    ]
   },
   {
     "key": "green_beans_raw",
@@ -1124,7 +1322,21 @@
         "chauchas",
         "habichuelas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Macro_of_Fresh_Green_Beans_Buncis.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Undeka 11"
+      },
+      {
+        "file": "Four_Different_Varieties_of_Green_Beans_(Phaseolus_vulgaris).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Christopher Franz"
+      }
+    ]
   },
   {
     "key": "bell_pepper_green",
@@ -1200,7 +1412,15 @@
         "chile morrón verde",
         "ají morrón verde"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Green_Bell_Pepper.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gaurav Dhwaj Khadka"
+      }
+    ]
   },
   {
     "key": "green_onion",
@@ -1284,7 +1504,20 @@
         "cebolla de verdeo",
         "cebolla china"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "CSA-Red-Spring-Onions.jpg",
+        "license": "Public domain",
+        "author": "Evan-Amos"
+      },
+      {
+        "file": "-2021-11-06_Harvest_of_Scallions_(spring_onions),_Trimingham,_Norfolk.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kolforn"
+      }
+    ]
   },
   {
     "key": "peas_green_boiled",
@@ -1346,7 +1579,15 @@
         "guisantes cocidos",
         "chícharos cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Green_peas_batch.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Fd52"
+      }
+    ]
   },
   {
     "key": "peas_green_frozen",
@@ -1408,7 +1649,15 @@
         "guisantes",
         "chícharos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Frozen_Peas_(8042519481).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Paul Wilkinson from London, United Kingdom"
+      }
+    ]
   },
   {
     "key": "lettuce_iceberg",
@@ -1486,7 +1735,21 @@
         "lechuga americana",
         "lechuga repollada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Iceberg_lettuce_in_Poplar_Farmhouse.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Zolfeqar Fatihzadeh"
+      },
+      {
+        "file": "Iceberg_lettuce_in_Poplar_Farmhouse_(87696).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Zolfeqar Fatihzadeh"
+      }
+    ]
   },
   {
     "key": "kale",
@@ -1537,7 +1800,14 @@
       "es": [
         "kale"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "CSA-Red-Russian-Kale.jpg",
+        "license": "Public domain",
+        "author": "Evan-Amos"
+      }
+    ]
   },
   {
     "key": "onion_raw",
@@ -1609,7 +1879,21 @@
     "translations": {
       "es": "Cebolla, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Mixed_onions.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "© User:Colin / Wikimedia Commons"
+      },
+      {
+        "file": "Indian_Onion.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jubair Bin Iqbal"
+      }
+    ]
   },
   {
     "key": "pumpkin_raw",
@@ -1675,7 +1959,20 @@
         "auyama",
         "ahuyama"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cucurbita_2011_G1.jpg",
+        "license": "Public domain",
+        "author": "George Chernilevsky"
+      },
+      {
+        "file": "Pumpkin_2108-1292.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Mozzihh"
+      }
+    ]
   },
   {
     "key": "bell_pepper_red",
@@ -1751,7 +2048,21 @@
         "chile morrón rojo",
         "ají morrón rojo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Red_bell_pepper.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "AntanO"
+      },
+      {
+        "file": "Red_bell_peppers_for_sale_at_Safeway.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Grendelkhan"
+      }
+    ]
   },
   {
     "key": "lettuce_romaine",
@@ -1821,7 +2132,21 @@
       "es": [
         "lechuga orejona"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Starr_070730-7911_Lactuca_sativa.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Forest & Kim Starr"
+      },
+      {
+        "file": "Romaine_lettuce_J2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jamain"
+      }
+    ]
   },
   {
     "key": "spinach_boiled",
@@ -1878,7 +2203,15 @@
     "translations": {
       "es": "Espinaca, hervida"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Sauteed_spinach_and_tomatoes_(41368303650).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Joey Doll"
+      }
+    ]
   },
   {
     "key": "spinach_raw",
@@ -1938,7 +2271,21 @@
     "translations": {
       "es": "Espinaca, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Spinach_leaves.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Nillerdk"
+      },
+      {
+        "file": "Spinach_leaves_and_stems.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Nillerdk"
+      }
+    ]
   },
   {
     "key": "corn_sweet_boiled",
@@ -2011,7 +2358,21 @@
         "choclo cocido",
         "elote cocido"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Boiled_corn_on_a_white_plate.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "TudorTulok"
+      },
+      {
+        "file": "Boiled_corn_cob_in_Araku_Valley,_Andhra_Pradesh_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Satdeep Gill"
+      }
+    ]
   },
   {
     "key": "corn_sweet_raw",
@@ -2070,7 +2431,21 @@
         "elote",
         "mazorca"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Boiled_sweet_corn_on_the_cob_in_Indonesia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Undeka 11"
+      },
+      {
+        "file": "Wisconsin_sweet_corn_June_2026.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Heidi Meudt"
+      }
+    ]
   },
   {
     "key": "tomato_paste",
@@ -2121,7 +2496,21 @@
       "es": [
         "concentrado de tomate"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Tomato_Industrial_Museum_D._Nomikos_-_Santorini_tomato_paste.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Lajmmoore"
+      },
+      {
+        "file": "Tomato_paste_on_spoon.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "SKopp"
+      }
+    ]
   },
   {
     "key": "tomato_raw",
@@ -2214,7 +2603,21 @@
       "es": [
         "jitomate"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Tomatoes_2026_G1.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "George Chernilevsky"
+      },
+      {
+        "file": "Organic_home-grown_tomatoes_-_unripe_to_ripe.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Michal Klajban"
+      }
+    ]
   },
   {
     "key": "tomatoes_crushed_canned",
@@ -2248,7 +2651,21 @@
       "es": [
         "tomate en lata"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Canning_tomatoes_(14925454038).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Karen and Brad Emerson"
+      },
+      {
+        "file": "Canning_tomatoes_(15109021331).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Karen and Brad Emerson"
+      }
+    ]
   },
   {
     "key": "mushrooms_white",
@@ -2315,7 +2732,21 @@
         "hongos",
         "setas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Corner_shop_mushrooms_in_Haringey,_London,_England.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Acabashi"
+      },
+      {
+        "file": "Button_mushroom_in_Yuen_Long.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Peachyeung316"
+      }
+    ]
   },
   {
     "key": "zucchini",
@@ -2386,6 +2817,14 @@
         "zapallo italiano",
         "calabacita"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cucurbita_pepo_zucchini_group_'Green_Tiger'.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Eric Polk"
+      }
+    ]
   }
 ]

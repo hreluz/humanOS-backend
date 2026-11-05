@@ -35,7 +35,15 @@
     "translations": {
       "es": "Clara de huevo, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Bowl_of_egg_whites_no_bg.png",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Douglas P Perkins"
+      }
+    ]
   },
   {
     "key": "egg_yolk_raw",
@@ -66,7 +74,20 @@
     "translations": {
       "es": "Yema de huevo, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Raw_egg.jpg",
+        "license": "Public domain",
+        "author": "by jefras a.k.a Joăo Estęvăo A. de Freitas . \"There are no usage restrictions for this photo.\""
+      },
+      {
+        "file": "Yolks.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Paul Goyette"
+      }
+    ]
   },
   {
     "key": "egg_whole_hard_boiled",
@@ -138,7 +159,21 @@
         "huevo cocido",
         "huevo sancochado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Boiled_Egg_-_Crossection.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Ramesh NG"
+      },
+      {
+        "file": "Hard_boiled_egg_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "3steph14"
+      }
+    ]
   },
   {
     "key": "egg_whole_raw",
@@ -213,6 +248,19 @@
     "translations": {
       "es": "Huevo entero, crudo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "6-Pack-Chicken-Eggs.jpg",
+        "license": "Public domain",
+        "author": "Evan-Amos"
+      },
+      {
+        "file": "Egg_cartons_with_chicken_eggs_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Krzysztof Golik"
+      }
+    ]
   }
 ]

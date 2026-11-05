@@ -53,7 +53,21 @@
     "translations": {
       "es": "Bacalao fresco, al horno"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Baked_cod_fillet.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      },
+      {
+        "file": "Ling_Cod_with_Baked_Potato_(15988408872).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA"
+      }
+    ]
   },
   {
     "key": "cod_raw",
@@ -96,7 +110,15 @@
     "translations": {
       "es": "Bacalao fresco, crudo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Cod_fillet.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      }
+    ]
   },
   {
     "key": "mackerel_baked",
@@ -151,7 +173,21 @@
       "es": [
         "macarela al horno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Grilled_mackerel_on_a_BBQ.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Kernow Skies"
+      },
+      {
+        "file": "Uskumru_(grilled).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "E4024"
+      }
+    ]
   },
   {
     "key": "mackerel_raw",
@@ -212,7 +248,21 @@
         "macarela",
         "verdel"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Atlantic_mackerel_(Scomber_scombrus).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Homemade_fish_smoking_-_Raw_mackerel_prepared_for_smoking.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Natalka Ukraine"
+      }
+    ]
   },
   {
     "key": "trout_rainbow_baked",
@@ -276,7 +326,21 @@
       "es": [
         "trucha cocida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Baked_trout.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Forelle_gebacken_Haueis_Hermes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      }
+    ]
   },
   {
     "key": "trout_rainbow_raw",
@@ -340,7 +404,21 @@
       "es": [
         "trucha"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Forelle_gebacken_Haueis_Hermes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      },
+      {
+        "file": "Baked_trout.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      }
+    ]
   },
   {
     "key": "salmon_farmed_baked",
@@ -403,7 +481,21 @@
       "es": [
         "salmón a la plancha"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Baked_salmon_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      },
+      {
+        "file": "02021_0611_(2)_Baked_salmon_and_chips.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Silar"
+      }
+    ]
   },
   {
     "key": "salmon_farmed_raw",
@@ -450,7 +542,15 @@
       "en": [
         "atlantic salmon"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Salmon_fillet.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "BrokenSphere"
+      }
+    ]
   },
   {
     "key": "sardines_canned_oil",
@@ -510,7 +610,21 @@
       "es": [
         "sardinas en lata"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Canned_sardines_with_lemon.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Pannet"
+      },
+      {
+        "file": "2014_03_19_397_Eingelegte_Fische.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "© Friedrich Haag / Wikimedia Commons"
+      }
+    ]
   },
   {
     "key": "shrimp_boiled",
@@ -575,7 +689,21 @@
         "gambas cocidas",
         "langostinos cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Fried_mushrooms_and_cooked_shrimp_with_sauces.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jeffreyw"
+      },
+      {
+        "file": "Cooked_shrimp_on_a_plate.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Leon Brocard"
+      }
+    ]
   },
   {
     "key": "shrimp_raw",
@@ -631,7 +759,21 @@
         "gambas",
         "langostinos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Fresh_jumbo_shrimp_from_San_Francisco_farmers_market.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      },
+      {
+        "file": "Raw_Shrimp_on_Plate_1_2017-01-22.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "F ASTILY"
+      }
+    ]
   },
   {
     "key": "squid_raw",
@@ -669,7 +811,15 @@
       "en": [
         "calamari"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Calamari_Dahab09.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Magellan"
+      }
+    ]
   },
   {
     "key": "tilapia_baked",
@@ -725,7 +875,21 @@
     "translations": {
       "es": "Tilapia, al horno"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Fried_Tilapia,_Jul_2024.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ralff Nestor Nacor"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Fried_Tilapia_with_Roasted_Potatoes_and_Onions.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "tilapia_raw",
@@ -768,7 +932,15 @@
     "translations": {
       "es": "Tilapia, cruda"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Raw_Tilapia_Prepared_for_Baking.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "tuna_light_canned_water",
@@ -827,6 +999,20 @@
         "atún en lata",
         "atún al natural"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Lata_de_atún-Albo.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Tamorlan"
+      },
+      {
+        "file": "Pirkka_Sweet_Chili_canned_tuna.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "JIP"
+      }
+    ]
   }
 ]

@@ -78,7 +78,21 @@
     "translations": {
       "es": "Manzana"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Red_Apple.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Abhijit Tembhekar from Mumbai, India"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Red_Apple_(Whole_Fruit).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "banana",
@@ -155,7 +169,21 @@
         "guineo",
         "cambur"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Bananas_on_black_background_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Krzysztof Golik"
+      },
+      {
+        "file": "Banana_on_whitebackground.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Filo gèn'"
+      }
+    ]
   },
   {
     "key": "blueberries",
@@ -217,7 +245,21 @@
         "arándanos azules",
         "moras azules"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Dish_of_blueberries.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Blueberries_in_harvest_season.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marc-Lautenbacher"
+      }
+    ]
   },
   {
     "key": "cantaloupe",
@@ -279,7 +321,20 @@
       "es": [
         "melón"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cucumis_melo_var._reticulatus_(photo_by_Scott_Bauer).jpg",
+        "license": "Public domain",
+        "author": "USDA photo by Scott Bauer. Image Number K7355-11."
+      },
+      {
+        "file": "Nationalist_product_labeling_of_a_cantaloupe_2024.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Bartleby08"
+      }
+    ]
   },
   {
     "key": "cherries",
@@ -344,7 +399,20 @@
     "translations": {
       "es": "Cerezas"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Bing_Cherries_(USDA_ARS).jpg",
+        "license": "Public domain",
+        "author": "Peggy Greb, USDA ARS"
+      },
+      {
+        "file": "Silver_bracelet_and_cherries_by_ASQ.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "W.carter"
+      }
+    ]
   },
   {
     "key": "coconut_meat",
@@ -415,7 +483,21 @@
       "es": [
         "coco"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Coconuts_-_single_and_cracked_open.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Coconut_meat,_Andamans.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "© Vyacheslav Argenberg"
+      }
+    ]
   },
   {
     "key": "dates",
@@ -480,7 +562,21 @@
     "translations": {
       "es": "Dátiles"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Pile_of_Wet_Dates_at_Barkin_Dogo_Market,_Kaduna_North.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samsule2"
+      },
+      {
+        "file": "Dates_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ayshamarjana"
+      }
+    ]
   },
   {
     "key": "grapes",
@@ -545,7 +641,20 @@
     "translations": {
       "es": "Uvas"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Green_Grape_3.jpg",
+        "license": "Public domain",
+        "author": "Martin Kozák"
+      },
+      {
+        "file": "Pinot_Grigio-20201027-RM-114053.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Reinhold Möller"
+      }
+    ]
   },
   {
     "key": "guava",
@@ -610,7 +719,21 @@
     "translations": {
       "es": "Guayaba"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Goiaba_vermelha.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rodrigo.Argenton"
+      },
+      {
+        "file": "GUAVA_FRUIT.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "GTSPACE"
+      }
+    ]
   },
   {
     "key": "kiwi",
@@ -670,7 +793,21 @@
       "en": [
         "kiwifruit"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg",
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "I, Luc Viatour"
+      },
+      {
+        "file": "Kiwifruit_cross_section.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "lemon",
@@ -739,7 +876,21 @@
       "es": [
         "limón"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Lemon.jpg",
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "André Karwath aka Aka"
+      },
+      {
+        "file": "Lemon_-_whole_and_split.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "lime",
@@ -801,7 +952,21 @@
         "limón verde",
         "limón sutil"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Lime_-_whole_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Lime_Drops_(4269384402).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "THOR"
+      }
+    ]
   },
   {
     "key": "mandarin",
@@ -871,7 +1036,21 @@
       "es": [
         "tangerina"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "2023_Mandarynki.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "Mandarin_Oranges_(Citrus_Reticulata).jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Joe Ravi"
+      }
+    ]
   },
   {
     "key": "mango",
@@ -936,7 +1115,21 @@
     "translations": {
       "es": "Mango"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Mangos_-_single_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Mango_fruit_Nam_Dok_Mai.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "orange",
@@ -1009,7 +1202,19 @@
     "translations": {
       "es": "Naranja"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Oranges_-_whole-halved-segment.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Ambersweet_oranges.jpg",
+        "license": "Public domain"
+      }
+    ]
   },
   {
     "key": "papaya",
@@ -1079,7 +1284,21 @@
         "lechosa",
         "fruta bomba"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Papaya_-_longitudinal_section.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Papaya_-_longitudinal_section_close-up_view.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "passion_fruit",
@@ -1147,7 +1366,21 @@
         "parchita",
         "fruta de la pasión"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Passiflora_Edulis_Open_Fruit2.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Alexander Klink"
+      },
+      {
+        "file": "Passion_fruits_-_whole_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "peach",
@@ -1222,7 +1455,20 @@
       "es": [
         "melocotón"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Autumn_Red_peaches.jpg",
+        "license": "Public domain",
+        "author": "Jack Dykinga, USDA"
+      },
+      {
+        "file": "Peach_fruit_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Prianxi"
+      }
+    ]
   },
   {
     "key": "pear",
@@ -1303,7 +1549,21 @@
     "translations": {
       "es": "Pera"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "D'anjou_pear.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rhododendrites"
+      },
+      {
+        "file": "Pear_DS.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Augustus Binu"
+      }
+    ]
   },
   {
     "key": "pineapple",
@@ -1357,7 +1617,21 @@
       "es": [
         "ananá"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Pineapple-fruit.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "UneksAbdullahi"
+      },
+      {
+        "file": "Pineapple_Chunks.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gaurav Dhwaj Khadka"
+      }
+    ]
   },
   {
     "key": "plantain_ripe_baked",
@@ -1418,7 +1692,21 @@
       "es": [
         "plátano maduro al horno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ripe_plantains.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Vis M"
+      },
+      {
+        "file": "Ripe_plantains_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Vis M"
+      }
+    ]
   },
   {
     "key": "plantain_ripe_raw",
@@ -1472,7 +1760,15 @@
         "plátano maduro",
         "maduro"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ripe_Plantain_for_sale.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Iwai-Dialax"
+      }
+    ]
   },
   {
     "key": "raisins",
@@ -1540,7 +1836,21 @@
       "es": [
         "uvas pasas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "2023_Rodzynki_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "2023_Rodzynki_(2).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
   },
   {
     "key": "raspberries",
@@ -1605,7 +1915,21 @@
     "translations": {
       "es": "Frambuesas"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Raspberry_-_whole_(Rubus_idaeus).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Clover_flower_on_bed_of_raspberries.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "grendelkhan from USA"
+      }
+    ]
   },
   {
     "key": "strawberries",
@@ -1690,7 +2014,21 @@
       "es": [
         "frutillas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Garden_strawberry_(Fragaria_×_ananassa)_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "watermelon",
@@ -1755,6 +2093,20 @@
     "translations": {
       "es": "Sandía"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Slice_of_Watermelon_from_Wilson_Farm,_Lexington_MA.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "John Phelan"
+      },
+      {
+        "file": "Slices_of_watermelon.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Funmoring46"
+      }
+    ]
   }
 ]

@@ -59,6 +59,11 @@ class IngredientResource extends JsonResource
             ],
             /** Portions in display order. Can be empty. */
             'portions' => IngredientPortionResource::collection($this->portions),
+            /**
+             * Photos in display order. The first is the main photo, for lists and thumbnails. Can be empty. Clients must
+             * show each photo's `author`, license and a link to `credit_url` wherever they show it.
+             */
+            'photos' => IngredientPhotoResource::collection($this->photos),
             /** Measured nutrients per 100 g, in display order. Unmeasured ones are left out. Only returned by the detail endpoint. */
             'nutrients' => $this->when($this->withDetails, fn () => IngredientNutrientResource::collection($this->nutrients)),
             /**

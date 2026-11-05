@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Nutrition\Concerns;
 
+use App\Modules\Nutrition\Models\IngredientPhoto;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\NutrientSeeder;
 
@@ -64,6 +65,79 @@ trait SeedsIngredientFixtures
             'aliases' => [],
             ...$overrides,
         ];
+    }
+
+    /**
+     * A `CC BY-SA 4.0` photo entry with every field set.
+     *
+     * @param  array<string, mixed>  $overrides
+     * @return array<string, mixed>
+     */
+    protected function photo(string $file, array $overrides = []): array
+    {
+        return [
+            'file' => $file,
+            'license' => 'CC BY-SA 4.0',
+            'license_url' => 'https://creativecommons.org/licenses/by-sa/4.0',
+            'author' => 'Example Author',
+            ...$overrides,
+        ];
+    }
+
+    /**
+     * Two photos for an entry: a `CC BY-SA 4.0` one with a file name to encode, and a `CC0` one with no author
+     * or license URL.
+     *
+     * @return list<array<string, mixed>>
+     */
+    protected function twoPhotos(): array
+    {
+        return [
+            $this->photo('Egg, whole (brown).jpg'),
+            $this->photo('Egg_cracked.jpg', ['license' => 'CC0 1.0', 'license_url' => null, 'author' => null]),
+        ];
+    }
+
+    /**
+     * The response items for `twoPhotos()`, swapped by `swapPhotoPositions()` when `$swapped`.
+     *
+     * @return list<array<string, mixed>>
+     */
+    protected function expectedTwoPhotos(bool $swapped = false): array
+    {
+        $base = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+        $photos = [
+            [
+                'url' => $base.'Egg%2C_whole_%28brown%29.jpg?width=960',
+                'thumbnail_url' => $base.'Egg%2C_whole_%28brown%29.jpg?width=330',
+                'license' => 'CC BY-SA 4.0',
+                'license_url' => 'https://creativecommons.org/licenses/by-sa/4.0',
+                'author' => 'Example Author',
+                'credit_url' => 'https://commons.wikimedia.org/wiki/File:Egg%2C_whole_%28brown%29.jpg',
+            ],
+            [
+                'url' => $base.'Egg_cracked.jpg?width=960',
+                'thumbnail_url' => $base.'Egg_cracked.jpg?width=330',
+                'license' => 'CC0 1.0',
+                'license_url' => null,
+                'author' => null,
+                'credit_url' => 'https://commons.wikimedia.org/wiki/File:Egg_cracked.jpg',
+            ],
+        ];
+
+        return $swapped ? array_reverse($photos) : $photos;
+    }
+
+    /**
+     * Swaps an ingredient's first two photos in the table, so only the `position` order can put them right.
+     */
+    protected function swapPhotoPositions(string $key): void
+    {
+        $photos = IngredientPhoto::whereRelation('ingredient', 'key', $key)->orderBy('position')->get();
+
+        $photos[0]->update(['position' => 99]);
+        $photos[1]->update(['position' => 1]);
+        $photos[0]->update(['position' => 2]);
     }
 
     /**

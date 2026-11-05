@@ -3,6 +3,7 @@
 > **Status:** Approved
 > **Depends on:** SPEC 04, SPEC 15
 > **Date:** 2026-11-03
+> **Note:** both endpoints gain `photos` on every ingredient, and the search runs three queries instead of two, by SPEC 17.
 > **Objective:** Add authenticated `GET /api/v1/nutrition/ingredients?search=` and `GET /api/v1/nutrition/ingredients/{key}` endpoints so clients can search the ingredient catalog by name and read an ingredient's nutrition data, in English.
 
 ## Scope
@@ -69,6 +70,16 @@ The category filter and the search combine with AND, and values inside `category
       "portions": [
         { "key": "large", "label": "1 large egg", "grams": 50 },
         { "key": "medium", "label": "1 medium egg", "grams": 44 }
+      ],
+      "photos": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_egg_whole.jpg?width=960",
+          "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_egg_whole.jpg?width=330",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Example Author",
+          "credit_url": "https://commons.wikimedia.org/wiki/File:Example_egg_whole.jpg"
+        }
       ]
     }
   ]
@@ -78,8 +89,9 @@ The category filter and the search combine with AND, and values inside `category
 - `portions[].key` is the portion's stable key from the data files (SPEC 15 rule 7). It identifies the portion within its ingredient, and later specs (meal logging) use it.
 - `portions` are in `position` order, and may be empty (28 catalog entries have none).
 - Every number (`per_100g.*`, `grams`) is a JSON number, not a string. Clients round for display.
+- `photos` are in `position` order, the first being the main photo, and may be empty. The fields, their nullability and the credit clients must show are in SPEC 17 ("API").
 
-**Queries:** two, whatever the number of matches: the ingredients, and their portions. No N+1.
+**Queries:** three, whatever the number of matches: the ingredients, their portions and their photos. No N+1.
 
 ### `GET /api/v1/nutrition/ingredients/{key}`
 
@@ -93,6 +105,16 @@ Route model binding on `key`. 404 in the SPEC 04 envelope if no ingredient has t
     "category": "eggs",
     "per_100g": { "kcal": 148, "protein": 12.4, "carbs": 0.96, "fat": 9.96, "fiber": 0 },
     "portions": [{ "key": "large", "label": "1 large egg", "grams": 50 }],
+    "photos": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_egg_whole.jpg?width=960",
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Example_egg_whole.jpg?width=330",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Example Author",
+        "credit_url": "https://commons.wikimedia.org/wiki/File:Example_egg_whole.jpg"
+      }
+    ],
     "nutrients": [
       { "key": "cholesterol", "label": "Cholesterol", "group": "fats_and_sugars", "unit": "mg", "amount": 411 }
     ],

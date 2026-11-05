@@ -57,7 +57,15 @@
     "translations": {
       "es": "Almendras"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "butter",
@@ -134,7 +142,21 @@
       "es": [
         "manteca"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "2023_Masło_w_maselniczce.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "Butter_at_the_Borough_Market.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Charles Haynes from Bangalore, India"
+      }
+    ]
   },
   {
     "key": "canola_oil",
@@ -214,7 +236,21 @@
       "es": [
         "aceite de colza"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Canola_Oil_(4107885913).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Veganbaking.net from USA"
+      },
+      {
+        "file": "Great_value_canola_oil_in_a_bottle.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Philipp Michel Reichold"
+      }
+    ]
   },
   {
     "key": "cashews",
@@ -249,7 +285,15 @@
         "marañón",
         "nueces de la india"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cashew_nuts_in_West_Bengal_of_India.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Billjones94"
+      }
+    ]
   },
   {
     "key": "chia_seeds",
@@ -293,7 +337,21 @@
       "es": [
         "chía"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Chia_Seeds_with_the_word_Chia_spelled_out.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "formulatehealth"
+      },
+      {
+        "file": "Chia_seeds_in_a_cup.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Zenyrgarden"
+      }
+    ]
   },
   {
     "key": "coconut_oil",
@@ -352,7 +410,15 @@
     "translations": {
       "es": "Aceite de coco"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Coconut_oil_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      }
+    ]
   },
   {
     "key": "flaxseed_ground",
@@ -413,7 +479,21 @@
       "es": [
         "semillas de lino"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Linum_Usitatissimum_(Brown_linseed).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Guytn"
+      },
+      {
+        "file": "Brown_flaxseed_on_spoon.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Dvortygirl"
+      }
+    ]
   },
   {
     "key": "ghee",
@@ -485,7 +565,21 @@
       "es": [
         "ghee"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Butterschmalz-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Rainer Z ..."
+      },
+      {
+        "file": "Pure_Ghee-Homemade-Maharashtra.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Phadke09"
+      }
+    ]
   },
   {
     "key": "hazelnuts",
@@ -535,7 +629,21 @@
       "en": [
         "filberts"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Hazelnuts_(Corylus_avellana)_-_whole_with_kernels.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Hazelnuts_(Corylus_avellana).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   },
   {
     "key": "olive_oil",
@@ -607,7 +715,15 @@
     "translations": {
       "es": "Aceite de oliva"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "2023_Oliwa_z_oliwek_Iliada_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
   },
   {
     "key": "peanut_butter",
@@ -667,7 +783,20 @@
         "mantequilla de cacahuete",
         "pasta de maní"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Peanut_butter_knife.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "\"Peanut Butter\" by Dr Stephen Dann is licensed under CC BY-SA 2.0"
+      },
+      {
+        "file": "Peanut-Butter-Jelly-Sandwich.jpg",
+        "license": "Public domain",
+        "author": "Evan-Amos"
+      }
+    ]
   },
   {
     "key": "peanuts_dry_roasted",
@@ -737,7 +866,21 @@
         "cacahuates tostados",
         "cacahuetes tostados"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Roasted_Peanuts_with_shell.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      },
+      {
+        "file": "Dry_Roasted_Virginia_Peanuts.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gogerr"
+      }
+    ]
   },
   {
     "key": "peanuts_raw",
@@ -780,7 +923,21 @@
         "cacahuates",
         "cacahuetes"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Raw_peanuts_with_skin_on_white_plate.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Undeka 11"
+      },
+      {
+        "file": "Raw_peanuts.JPG",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Sakurai Midori"
+      }
+    ]
   },
   {
     "key": "pecans",
@@ -836,7 +993,21 @@
       "es": [
         "nueces pecanas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Pekan_nuts_9578.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Henning Schlottmann (User:H-stt)"
+      },
+      {
+        "file": "Pecan_halves.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bubba73"
+      }
+    ]
   },
   {
     "key": "pistachios",
@@ -882,7 +1053,15 @@
     "translations": {
       "es": "Pistachos"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Pistachio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Kobi Schutz"
+      }
+    ]
   },
   {
     "key": "pumpkin_seeds",
@@ -927,7 +1106,21 @@
       "es": [
         "pepitas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Pumpkin_seed._img_016.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      },
+      {
+        "file": "Pumpkin_Seeds_macro_1.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Daniel Schwen"
+      }
+    ]
   },
   {
     "key": "sesame_seeds",
@@ -995,7 +1188,20 @@
       "es": [
         "ajonjolí"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Sesame-Seeds.jpg",
+        "license": "Public domain",
+        "author": "No machine-readable author provided. Ies assumed (based on copyright claims)."
+      },
+      {
+        "file": "Sesame_seeds2.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Tiia Monto"
+      }
+    ]
   },
   {
     "key": "sunflower_oil",
@@ -1066,7 +1272,21 @@
     "translations": {
       "es": "Aceite de girasol"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Sunflower_oil_and_sunflower.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "torange.biz"
+      },
+      {
+        "file": "Bottle_1_liter_Sunflower_refined_oil.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Exgsp Gmbh LLC BOTTLE 1 liter Sunflower refined oil"
+      }
+    ]
   },
   {
     "key": "sunflower_seeds",
@@ -1108,7 +1328,21 @@
       "es": [
         "pipas de girasol"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Sunflower_seeds._img_004.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      },
+      {
+        "file": "Sunflower_seeds._img_012.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      }
+    ]
   },
   {
     "key": "tahini",
@@ -1158,7 +1392,15 @@
       "es": [
         "tahina"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Tahina.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Gilabrand"
+      }
+    ]
   },
   {
     "key": "soybean_oil",
@@ -1240,7 +1482,21 @@
         "aceite de soya",
         "aceite de soja"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Soybean_Oil,_Meal_and_Beans_(10059732523).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "United Soybean Board"
+      },
+      {
+        "file": "Soybean_Oil_(10059657806).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "United Soybean Board"
+      }
+    ]
   },
   {
     "key": "walnuts",
@@ -1296,6 +1552,14 @@
       "es": [
         "nueces de nogal"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Walnuts_-_whole_and_open_with_halved_kernel.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
   }
 ]

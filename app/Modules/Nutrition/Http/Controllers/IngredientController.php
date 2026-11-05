@@ -19,13 +19,13 @@ class IngredientController
      * accents, in one unpaginated list. Ranked by the name: an exact match first, then names starting with
      * the term, then names with a word starting with it, then the rest (mid-word or alias-only matches);
      * ties sort by name, then key. Values are per 100 g. `nutrients` and `source` are only returned by the
-     * detail endpoint.
+     * detail endpoint. Each ingredient's first photo is its main photo; use its `thumbnail_url` in lists.
      */
     public function index(SearchIngredientsRequest $request): AnonymousResourceCollection
     {
         $ingredients = Ingredient::query()
             ->search($request)
-            ->with('portions')
+            ->with(['portions', 'photos'])
             ->get();
 
         return IngredientResource::collection($ingredients);
@@ -41,7 +41,7 @@ class IngredientController
      */
     public function show(Ingredient $ingredient): IngredientResource
     {
-        $ingredient->load(['portions', 'nutrients']);
+        $ingredient->load(['portions', 'photos', 'nutrients']);
 
         return IngredientResource::make($ingredient)->withDetails();
     }

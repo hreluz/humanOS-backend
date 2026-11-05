@@ -2,9 +2,12 @@
 
 namespace Tests\Feature\Nutrition;
 
+use App\Models\User;
 use App\Modules\Nutrition\Enums\IngredientCategory;
+use App\Modules\Nutrition\Enums\IngredientPhotoSource;
 use App\Modules\Nutrition\Enums\IngredientSource;
 use App\Modules\Nutrition\Models\Ingredient;
+use App\Modules\Nutrition\Models\IngredientPhoto;
 use App\Modules\Nutrition\Models\IngredientPortion;
 use App\Modules\Nutrition\Models\Nutrient;
 use Closure;
@@ -28,7 +31,7 @@ class IngredientSeederTest extends TestCase
      *
      * @var list<string>
      */
-    private const CHILD_TABLES = ['ingredient_nutrient', 'ingredient_portions', 'ingredient_portion_translations', 'ingredient_translations', 'ingredient_aliases'];
+    private const CHILD_TABLES = ['ingredient_nutrient', 'ingredient_portions', 'ingredient_portion_translations', 'ingredient_translations', 'ingredient_aliases', 'ingredient_photos'];
 
     /**
      * @var list<string>
@@ -239,6 +242,22 @@ class IngredientSeederTest extends TestCase
             'unknown portion locale' => [fn (self $t) => ['a.json' => [$t->egg(['portions' => [$t->portion('large', ['sp' => 'uno'])]])]], 'portion [large] translation locale [sp]'],
             'missing macro' => [fn (self $t) => ['a.json' => [array_diff_key($t->egg(), ['fiber' => true])]], 'missing macro [fiber]'],
             'null macro' => [fn (self $t) => ['a.json' => [$t->egg(['protein' => null])]], 'missing macro [protein]'],
+            'non-commercial license' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'CC BY-NC 4.0'])]), "photo [A.jpg] has a license that isn't allowed [CC BY-NC 4.0]"],
+            'no-derivatives license' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'CC BY-ND 4.0'])]), "license that isn't allowed [CC BY-ND 4.0]"],
+            'GFDL license' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'GFDL'])]), "license that isn't allowed [GFDL]"],
+            'missing license' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => null])]), 'photo [A.jpg] has no license'],
+            'missing file' => [fn (self $t) => $t->withPhotos([$t->photo('')]), 'photo 1 has no file'],
+            'missing author under CC BY' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'CC BY 4.0', 'author' => null])]), 'photo [A.jpg] needs author under [CC BY 4.0]'],
+            'missing author under CC BY-SA' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['author' => null])]), 'photo [A.jpg] needs author under [CC BY-SA 4.0]'],
+            'missing license url under CC BY' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'CC BY 2.0', 'license_url' => null])]), 'photo [A.jpg] needs license_url under [CC BY 2.0]'],
+            'missing license url under CC BY-SA' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license' => 'CC BY-SA 3.0 de', 'license_url' => null])]), 'photo [A.jpg] needs license_url under [CC BY-SA 3.0 de]'],
+            'author of 256 characters' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['author' => str_repeat('é', 256)])]), 'photo [A.jpg] author is longer than 255 characters'],
+            'ftp license url' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license_url' => 'ftp://creativecommons.org/licenses/by-sa/4.0'])]), 'photo [A.jpg] license_url is not an http or https URL'],
+            'license url that is not a url' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg', ['license_url' => 'creativecommons by-sa'])]), 'photo [A.jpg] license_url is not an http or https URL'],
+            'four photos' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg'), $t->photo('B.jpg'), $t->photo('C.jpg'), $t->photo('D.jpg')]), 'has 4 photos, at most 3 allowed'],
+            'same file twice' => [fn (self $t) => $t->withPhotos([$t->photo('A.jpg'), $t->photo('A.jpg')]), 'photo [A.jpg] listed twice'],
+            'same file spelled differently' => [fn (self $t) => $t->withPhotos([$t->photo('Avocado Hass.jpg'), $t->photo('avocado_Hass.jpg')]), 'photo [Avocado_Hass.jpg] listed twice'],
+            'photos not a list' => [fn (self $t) => ['a.json' => [$t->egg(['photos' => ['main' => $t->photo('A.jpg')]])]], 'photos must be a list'],
         ];
     }
 
@@ -249,6 +268,162 @@ class IngredientSeederTest extends TestCase
     public function test_an_invalid_catalog_throws_and_writes_nothing(Closure $files, string $message): void
     {
         $this->assertSeedingFails($files($this), $message);
+    }
+
+    public function test_seeded_ingredients_are_system_ingredients(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg(), $this->entry('egg_white_raw', '747997')]]);
+
+        $this->assertSame([null, null], Ingredient::pluck('user_id')->all());
+        $this->assertSame(2, Ingredient::system()->count());
+    }
+
+    public function test_a_users_ingredient_not_in_the_files_survives_a_seed(): void
+    {
+        $mine = $this->userIngredient('my_granola');
+
+        $this->seedFiles(['eggs.json' => [$this->egg()]]);
+        $this->seedFiles(['eggs.json' => [$this->entry('egg_white_raw', '747997')]]);
+
+        $mine->refresh();
+        $this->assertFalse($mine->trashed());
+        $this->assertSame('my_granola', $mine->name);
+        $this->assertEqualsCanonicalizing(['egg_white_raw', 'my_granola'], Ingredient::pluck('key')->all());
+    }
+
+    public function test_a_key_held_by_a_users_ingredient_throws_and_writes_nothing(): void
+    {
+        $mine = $this->userIngredient('egg_whole_raw');
+
+        try {
+            $this->seedFiles(['eggs.json' => [$this->egg(), $this->entry('egg_white_raw', '747997')]]);
+            $this->fail('The seeder took over a user\'s ingredient.');
+        } catch (InvalidArgumentException $e) {
+            $this->assertStringContainsString("Ingredient key [egg_whole_raw]: belongs to a user's ingredient", $e->getMessage());
+        }
+
+        $this->assertSame([$mine->id], Ingredient::withTrashed()->pluck('id')->all());
+        $this->assertSame(['egg_whole_raw', $mine->user_id], [$mine->fresh()->name, $mine->fresh()->user_id]);
+        $this->assertSame(array_fill_keys(self::CHILD_TABLES, 0), $this->childCounts());
+    }
+
+    public function test_deleting_a_user_deletes_their_ingredients_and_leaves_system_ones(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg()]]);
+        $mine = $this->userIngredient('my_granola');
+        $other = $this->userIngredient('their_granola');
+
+        $mine->user->delete();
+
+        $this->assertNull(Ingredient::withTrashed()->find($mine->id));
+        $this->assertEqualsCanonicalizing(['egg_whole_raw', 'their_granola'], Ingredient::pluck('key')->all());
+        $this->assertNotNull($other->fresh());
+    }
+
+    public function test_an_entry_with_two_photos_loads_both_in_order(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg(['photos' => [
+            $this->photo('Egg_whole.jpg'),
+            $this->photo('Egg_cracked.jpg', ['license' => 'CC0 1.0', 'license_url' => 'https://creativecommons.org/publicdomain/zero/1.0/deed.en', 'author' => null]),
+        ]])]]);
+
+        $egg = Ingredient::with('photos')->firstOrFail();
+
+        $this->assertSame(
+            [
+                [IngredientPhotoSource::Commons, 'Egg_whole.jpg', 'CC BY-SA 4.0', 'https://creativecommons.org/licenses/by-sa/4.0', 'Example Author', 1],
+                [IngredientPhotoSource::Commons, 'Egg_cracked.jpg', 'CC0 1.0', 'https://creativecommons.org/publicdomain/zero/1.0/deed.en', null, 2],
+            ],
+            $egg->photos->map(fn (IngredientPhoto $p) => [$p->source, $p->path, $p->license, $p->license_url, $p->author, $p->position])->all(),
+        );
+        $this->assertNotNull($egg->photos->first()->created_at);
+        $this->assertNotNull($egg->photos->first()->updated_at);
+    }
+
+    public function test_an_entry_without_photos_or_with_an_empty_list_loads_none(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg(), $this->entry('egg_white_raw', '747997') + ['photos' => []]]]);
+
+        $this->assertSame(0, IngredientPhoto::count());
+    }
+
+    public function test_no_author_or_license_url_is_needed_under_cc0_or_public_domain(): void
+    {
+        $this->seedFiles($this->withPhotos([
+            $this->photo('A.jpg', ['license' => 'CC0', 'author' => null, 'license_url' => null]),
+            $this->photo('B.jpg', ['license' => 'Public domain', 'author' => null, 'license_url' => null]),
+        ]));
+
+        $this->assertSame([[null, null], [null, null]], IngredientPhoto::orderBy('position')->get()->map(fn (IngredientPhoto $p) => [$p->author, $p->license_url])->all());
+    }
+
+    public function test_reordering_removing_one_or_all_photos_is_reflected_on_the_next_run(): void
+    {
+        $paths = fn () => Ingredient::firstOrFail()->photos->pluck('path', 'position')->all();
+
+        $this->seedFiles($this->withPhotos([$this->photo('A.jpg'), $this->photo('B.jpg'), $this->photo('C.jpg')]));
+        $this->assertSame([1 => 'A.jpg', 2 => 'B.jpg', 3 => 'C.jpg'], $paths());
+
+        $this->seedFiles($this->withPhotos([$this->photo('C.jpg'), $this->photo('A.jpg'), $this->photo('B.jpg')]));
+        $this->assertSame([1 => 'C.jpg', 2 => 'A.jpg', 3 => 'B.jpg'], $paths());
+
+        $this->seedFiles($this->withPhotos([$this->photo('C.jpg'), $this->photo('B.jpg')]));
+        $this->assertSame([1 => 'C.jpg', 2 => 'B.jpg'], $paths());
+
+        $this->seedFiles(['eggs.json' => [$this->egg()]]);
+        $this->assertSame(0, IngredientPhoto::count());
+    }
+
+    public function test_an_http_license_url_is_stored_as_given(): void
+    {
+        $this->seedFiles($this->withPhotos([$this->photo('A.jpg', ['license' => 'CC BY-SA 3.0', 'license_url' => 'http://creativecommons.org/licenses/by-sa/3.0/'])]));
+
+        $this->assertSame('http://creativecommons.org/licenses/by-sa/3.0/', IngredientPhoto::firstOrFail()->license_url);
+    }
+
+    public function test_a_file_is_stored_in_canonical_form(): void
+    {
+        $this->seedFiles($this->withPhotos([
+            $this->photo('Avocado Hass - halved.jpg'),
+            $this->photo('avocado_whole.jpg'),
+            $this->photo('File:Avocado tree.jpg'),
+        ]));
+
+        $this->assertSame(['Avocado_Hass_-_halved.jpg', 'Avocado_whole.jpg', 'Avocado_tree.jpg'], Ingredient::firstOrFail()->photos->pluck('path')->all());
+    }
+
+    public function test_the_same_file_on_two_ingredients_loads_on_both(): void
+    {
+        $shared = [$this->photo('Chicken_breast.jpg')];
+        $this->seedFiles(['meat.json' => [
+            $this->entry('chicken_breast_grilled', '1') + ['photos' => $shared],
+            $this->entry('chicken_breast_boiled', '2') + ['photos' => $shared],
+        ]]);
+
+        $this->assertSame(2, IngredientPhoto::where('path', 'Chicken_breast.jpg')->distinct()->count('ingredient_id'));
+    }
+
+    public function test_hard_deleting_an_ingredient_deletes_its_photos(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg(['photos' => [$this->photo('A.jpg'), $this->photo('B.jpg')]]), $this->entry('egg_white_raw', '747997')]]);
+        $id = Ingredient::where('key', 'egg_whole_raw')->value('id');
+
+        $this->seedFiles(['eggs.json' => [$this->entry('egg_white_raw', '747997')]]);
+
+        $this->assertNull(Ingredient::withTrashed()->find($id));
+        $this->assertSame(0, IngredientPhoto::where('ingredient_id', $id)->count());
+    }
+
+    public function test_a_soft_deleted_ingredient_keeps_its_photos(): void
+    {
+        $this->seedFiles(['eggs.json' => [$this->egg(['photos' => [$this->photo('A.jpg')]]), $this->entry('egg_white_raw', '747997')]]);
+        $id = Ingredient::where('key', 'egg_whole_raw')->value('id');
+        $this->reference(['ingredient_id' => $id]);
+
+        $this->seedFiles(['eggs.json' => [$this->entry('egg_white_raw', '747997')]]);
+
+        $this->assertTrue(Ingredient::withTrashed()->findOrFail($id)->trashed());
+        $this->assertSame(['A.jpg'], IngredientPhoto::where('ingredient_id', $id)->pluck('path')->all());
     }
 
     public function test_a_soft_deleted_nutrient_counts_as_unknown(): void
@@ -307,6 +482,45 @@ class IngredientSeederTest extends TestCase
     public function portion(string $key, array $translations = ['es' => 'uno']): array
     {
         return ['key' => $key, 'label' => $key, 'grams' => 10, 'translations' => $translations];
+    }
+
+    /**
+     * A `CC BY-SA 4.0` photo with every field set.
+     *
+     * @param  array<string, mixed>  $overrides
+     * @return array<string, mixed>
+     */
+    public function photo(string $file, array $overrides = []): array
+    {
+        return [...[
+            'file' => $file,
+            'license' => 'CC BY-SA 4.0',
+            'license_url' => 'https://creativecommons.org/licenses/by-sa/4.0',
+            'author' => 'Example Author',
+        ], ...$overrides];
+    }
+
+    /**
+     * A catalog of the egg with these photos.
+     *
+     * @param  list<array<string, mixed>>  $photos
+     * @return array<string, list<array<string, mixed>>>
+     */
+    public function withPhotos(array $photos): array
+    {
+        return ['eggs.json' => [$this->egg(['photos' => $photos])]];
+    }
+
+    /**
+     * An ingredient owned by a new user.
+     */
+    private function userIngredient(string $key): Ingredient
+    {
+        return Ingredient::create([
+            'user_id' => User::factory()->create()->id,
+            'key' => $key, 'name' => $key, 'category' => 'other', 'source' => 'usda_sr_legacy', 'source_id' => '1',
+            'kcal' => 400, 'protein' => 10, 'carbs' => 60, 'fat' => 12, 'fiber' => 7,
+        ]);
     }
 
     /**

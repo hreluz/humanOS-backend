@@ -583,7 +583,7 @@
         "/v1/nutrition/ingredients": {
             "get": {
                 "operationId": "ingredient.index",
-                "description": "Returns every ingredient whose English name or English alias contains `search`, ignoring case and\naccents, in one unpaginated list. Ranked by the name: an exact match first, then names starting with\nthe term, then names with a word starting with it, then the rest (mid-word or alias-only matches);\nties sort by name, then key. Values are per 100 g. `nutrients` and `source` are only returned by the\ndetail endpoint.",
+                "description": "Returns every ingredient whose English name or English alias contains `search`, ignoring case and\naccents, in one unpaginated list. Ranked by the name: an exact match first, then names starting with\nthe term, then names with a word starting with it, then the rest (mid-word or alias-only matches);\nties sort by name, then key. Values are per 100 g. `nutrients` and `source` are only returned by the\ndetail endpoint. Each ingredient's first photo is its main photo; use its `thumbnail_url` in lists.",
                 "summary": "Search ingredients",
                 "tags": [
                     "Nutrition"
@@ -1695,6 +1695,74 @@
                 ],
                 "title": "IngredientNutrientResource"
             },
+            "IngredientPhotoResource": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "description": "The photo at the detail-view width. Use it as given; never build photo URLs.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/Special:FilePath/Example_avocado_whole.jpg?width=960"
+                        ]
+                    },
+                    "thumbnail_url": {
+                        "type": "string",
+                        "description": "The photo at the list and card width. Use it as given; never build photo URLs.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/Special:FilePath/Example_avocado_whole.jpg?width=330"
+                        ]
+                    },
+                    "license": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "License short name. Clients must show it wherever they show the photo, linked to `license_url` when set.",
+                        "examples": [
+                            "CC BY-SA 4.0"
+                        ]
+                    },
+                    "license_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Link to the license. `null` only for some `CC0` and `Public domain` photos.",
+                        "examples": [
+                            "https://creativecommons.org/licenses/by-sa/4.0"
+                        ]
+                    },
+                    "author": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Credit for the photo. Clients must show it when set. `null` for `CC0` and `Public domain` photos.",
+                        "examples": [
+                            "Example Author"
+                        ]
+                    },
+                    "credit_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "The photo's source page. Clients must link to it wherever they show the photo.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/File:Example_avocado_whole.jpg"
+                        ]
+                    }
+                },
+                "required": [
+                    "url",
+                    "thumbnail_url",
+                    "license",
+                    "license_url",
+                    "author",
+                    "credit_url"
+                ],
+                "title": "IngredientPhotoResource"
+            },
             "IngredientPortionResource": {
                 "type": "object",
                 "properties": {
@@ -1793,6 +1861,13 @@
                             "$ref": "#/components/schemas/IngredientPortionResource"
                         }
                     },
+                    "photos": {
+                        "type": "array",
+                        "description": "Photos in display order. The first is the main photo, for lists and thumbnails. Can be empty. Clients must\nshow each photo's `author`, license and a link to `credit_url` wherever they show it.",
+                        "items": {
+                            "$ref": "#/components/schemas/IngredientPhotoResource"
+                        }
+                    },
                     "nutrients": {
                         "type": "array",
                         "description": "Measured nutrients per 100 g, in display order. Unmeasured ones are left out. Only returned by the detail endpoint.",
@@ -1828,7 +1903,8 @@
                     "name",
                     "category",
                     "per_100g",
-                    "portions"
+                    "portions",
+                    "photos"
                 ],
                 "title": "IngredientResource"
             },

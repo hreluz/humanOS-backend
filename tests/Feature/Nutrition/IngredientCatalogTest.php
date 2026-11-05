@@ -5,14 +5,16 @@ namespace Tests\Feature\Nutrition;
 use App\Modules\Nutrition\Enums\IngredientCategory;
 use App\Modules\Nutrition\Enums\IngredientSource;
 use App\Modules\Nutrition\Models\Ingredient;
+use App\Modules\Nutrition\Models\IngredientPhoto;
 use App\Modules\Nutrition\Models\IngredientPortion;
+use App\Modules\Nutrition\Support\IngredientPhotoLicense;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\NutrientSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 /**
- * Checks the catalog files in `database/data/ingredients` against the rules in `docs/ingredient-catalog.md` (SPEC 15).
+ * Checks the catalog files in `database/data/ingredients` against the rules in `docs/ingredient-catalog.md` (SPEC 15, SPEC 17).
  */
 class IngredientCatalogTest extends TestCase
 {
@@ -161,6 +163,33 @@ class IngredientCatalogTest extends TestCase
         $covered = array_unique(array_map(fn (array $expected) => $categories[$expected['key']] ?? null, $fixture));
 
         $this->assertEqualsCanonicalizing(array_values(array_unique($categories)), array_values(array_filter($covered)));
+    }
+
+    /**
+     * Rule 10: one to three Commons photos, each with an allowed license and the credit it requires.
+     */
+    public function test_every_entry_has_one_to_three_photos_with_an_allowed_license_and_credit(): void
+    {
+        foreach ($this->ingredients as $entry) {
+            $key = $entry['key'];
+            $photos = $entry['photos'] ?? [];
+
+            $this->assertGreaterThanOrEqual(1, count($photos), "{$key} has no photos");
+            $this->assertLessThanOrEqual(IngredientSeeder::MAX_PHOTOS, count($photos), "{$key} has too many photos");
+
+            $files = array_map(fn (array $photo) => IngredientPhoto::canonicalFile($photo['file']), $photos);
+            $this->assertSame($files, array_values(array_unique($files)), "{$key} repeats a photo");
+
+            foreach ($photos as $photo) {
+                $license = $photo['license'];
+                $this->assertTrue(IngredientPhotoLicense::isAllowed($license), "{$key}: {$photo['file']} has a license that isn't allowed [{$license}]");
+
+                if (IngredientPhotoLicense::requiresAttribution($license)) {
+                    $this->assertNotEmpty($photo['author'] ?? null, "{$key}: {$photo['file']} needs an author");
+                    $this->assertNotEmpty($photo['license_url'] ?? null, "{$key}: {$photo['file']} needs a license_url");
+                }
+            }
+        }
     }
 
     public function test_the_whole_catalog_seeds_and_a_second_run_keeps_the_ids(): void

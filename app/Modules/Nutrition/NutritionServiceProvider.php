@@ -2,6 +2,7 @@
 
 namespace App\Modules\Nutrition;
 
+use App\Modules\Nutrition\Console\CheckIngredientPhotosCommand;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,6 +13,8 @@ class NutritionServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->commands([CheckIngredientPhotosCommand::class]);
+
         Route::prefix('api/v1/nutrition')
             ->middleware(['api', 'auth:sanctum'])
             ->group(__DIR__.'/routes.php');

@@ -2,12 +2,14 @@
 
 namespace App\Modules\Nutrition\Models;
 
+use App\Models\User;
 use App\Modules\Nutrition\Enums\IngredientCategory;
 use App\Modules\Nutrition\Enums\IngredientSource;
 use App\Modules\Nutrition\Http\Requests\SearchIngredientsRequest;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -16,8 +18,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * A catalog ingredient, loaded from `database/data/ingredients` by `IngredientSeeder` (SPEC 15).
  *
  * Every value is per 100 g. Soft-deleted ingredients left the files but are still referenced, so they stay hidden.
+ * `user_id` is `null` for system ingredients, the catalog from the files, and the seeder only touches those (SPEC 17).
  */
-#[Fillable(['key', 'name', 'category', 'kcal', 'protein', 'carbs', 'fat', 'fiber', 'source', 'source_id'])]
+#[Fillable(['user_id', 'key', 'name', 'category', 'kcal', 'protein', 'carbs', 'fat', 'fiber', 'source', 'source_id'])]
 class Ingredient extends Model
 {
     use SoftDeletes;
@@ -38,6 +41,37 @@ class Ingredient extends Model
             'fat' => 'float',
             'fiber' => 'float',
         ];
+    }
+
+    /**
+     * The user who owns the ingredient, or `null` for a system ingredient.
+     *
+     * @return BelongsTo<User, $this>
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * The ingredient's photos in display order. The first is the main photo.
+     *
+     * @return HasMany<IngredientPhoto, $this>
+     */
+    public function photos(): HasMany
+    {
+        return $this->hasMany(IngredientPhoto::class)->orderBy('position');
+    }
+
+    /**
+     * System ingredients only: the catalog loaded from the data files.
+     *
+     * @param  Builder<Ingredient>  $query
+     * @return Builder<Ingredient>
+     */
+    public function scopeSystem(Builder $query): Builder
+    {
+        return $query->whereNull('ingredients.user_id');
     }
 
     /**

@@ -54,7 +54,15 @@
     "translations": {
       "es": "Arroz integral de grano largo, cocido"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Par_cooked_brown_rice_-_stonesoup_cropped.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jules / stonesoup"
+      }
+    ]
   },
   {
     "key": "rice_brown_raw",
@@ -96,7 +104,21 @@
     "translations": {
       "es": "Arroz integral de grano largo, crudo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Germinated_brown_rice_-_long_grain.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chouk Khmer"
+      },
+      {
+        "file": "Brown_rice_(whole_grain_rice)_photographed_in_West_Bengal,_India.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Billjones94"
+      }
+    ]
   },
   {
     "key": "cassava_raw",
@@ -169,7 +191,21 @@
       "es": [
         "mandioca"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cassava_tubers_being_cleaned.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "BishopNana"
+      },
+      {
+        "file": "Cassava_tubers_1.2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Hajia Hijjah"
+      }
+    ]
   },
   {
     "key": "masa_harina",
@@ -207,7 +243,15 @@
       "es": [
         "masa harina"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Flour_for_tortilla_production_MASECA_brand.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Armando Gómez"
+      }
+    ]
   },
   {
     "key": "tortilla_corn",
@@ -256,7 +300,15 @@
     "translations": {
       "es": "Tortilla de maíz"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Stacks_of_corn_tortillas_and_flour_tortillas,_top_view.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Vigilantcosmicpenguin"
+      }
+    ]
   },
   {
     "key": "cornmeal_yellow",
@@ -321,7 +373,21 @@
         "polenta",
         "sémola de maíz"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Polenta_uncooked.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Popo le Chien"
+      },
+      {
+        "file": "Polenta_avant_cuisson.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Frédérique Voisin-Demery"
+      }
+    ]
   },
   {
     "key": "tortilla_flour",
@@ -386,7 +452,19 @@
       "es": [
         "tortilla de trigo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "NCI_flour_tortillas.jpg",
+        "license": "Public domain"
+      },
+      {
+        "file": "Corn_tortilla,_medium_flour_tortilla,_and_large_flour_tortilla,_stacked.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Vigilantcosmicpenguin"
+      }
+    ]
   },
   {
     "key": "oatmeal_cooked",
@@ -451,7 +529,21 @@
         "gachas de avena",
         "porridge"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Banana_blueberry_oatmeal.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      },
+      {
+        "file": "Oatmeal_porridge_with_fruits.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      }
+    ]
   },
   {
     "key": "oats_rolled",
@@ -524,7 +616,21 @@
         "copos de avena",
         "avena arrollada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Rolled_oats_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Yonygg"
+      },
+      {
+        "file": "Rolled_oats_in_bowl_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bodhi Peace"
+      }
+    ]
   },
   {
     "key": "pasta_cooked",
@@ -597,7 +703,21 @@
         "fideos cocidos",
         "espaguetis cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Spaghetti,_cooked,_in_bowl.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bodhi Peace"
+      },
+      {
+        "file": "Cooked_spaghetti_(horizontal).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kevin Todora"
+      }
+    ]
   },
   {
     "key": "pasta_dry",
@@ -658,7 +778,15 @@
         "tallarines",
         "macarrones"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Spaghetti_measure_macro.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bodhi Peace"
+      }
+    ]
   },
   {
     "key": "potato_boiled",
@@ -728,7 +856,15 @@
         "patata cocida",
         "papa sancochada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Asparagus_with_potatoes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kritzolina"
+      }
+    ]
   },
   {
     "key": "potato_raw",
@@ -813,7 +949,21 @@
       "es": [
         "patata"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Solanum_tuberosum_Red_Scarlett20170523_7825.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Photo: Bff / Wikimedia Commons"
+      },
+      {
+        "file": "Solanales_-_Solanum_tuberosum_-_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "DenesFeri"
+      }
+    ]
   },
   {
     "key": "quinoa_cooked",
@@ -872,7 +1022,15 @@
       "es": [
         "quinoa cocida"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Quinoa_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "ProjectManhattan"
+      }
+    ]
   },
   {
     "key": "quinoa_raw",
@@ -930,7 +1088,21 @@
       "es": [
         "quinoa"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Quinoa_closeup.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Pom²"
+      },
+      {
+        "file": "Colored_quinoa_Genebank_INIA_Juliaca.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Michael Hermann"
+      }
+    ]
   },
   {
     "key": "rice_noodles_cooked",
@@ -986,7 +1158,21 @@
     "translations": {
       "es": "Fideos de arroz, cocidos"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Thick_rice_noodles_cooked_in_small_pot_in_Kunming_(20210323074612).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "N509FZ"
+      },
+      {
+        "file": "Homemade_fried_rice_noodles_in_cantonese_style.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Geoffreyrabbit"
+      }
+    ]
   },
   {
     "key": "rice_noodles_dry",
@@ -1033,7 +1219,21 @@
     "translations": {
       "es": "Fideos de arroz, secos"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Rice_vermicelli.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Popo le Chien"
+      },
+      {
+        "file": "Whole-grain_rice_vermicelli_noodles_(Thai).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Susan Slater"
+      }
+    ]
   },
   {
     "key": "sweet_potato_baked",
@@ -1119,7 +1319,15 @@
         "batata al horno",
         "boniato al horno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Baked_potato,_baked_sweet_potato,_and_steamed_kale.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "© O'Dea at Wikimedia Commons, CC BY-SA 4.0"
+      }
+    ]
   },
   {
     "key": "sweet_potato_raw",
@@ -1190,7 +1398,15 @@
         "boniato",
         "papa dulce"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Sweet_Potato.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gaurav Dhwaj Khadka"
+      }
+    ]
   },
   {
     "key": "flour_wheat_all_purpose",
@@ -1231,7 +1447,21 @@
         "harina de trigo",
         "harina común"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "All-Purpose_Flour_(4107895947).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Veganbaking.net from USA"
+      },
+      {
+        "file": "Whole_wheat_grain_flour_being_scooped.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Margaret Hoogstrate"
+      }
+    ]
   },
   {
     "key": "bread_white",
@@ -1287,7 +1517,21 @@
       "es": [
         "pan de molde"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Transparent_Slice_of_Sara_Lee_white_whole_grain_bread_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.png",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "User:Famartin"
+      },
+      {
+        "file": "Homemade_White_Bread_with_Strawberry_Jam.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Evan Swigart from Chicago, USA"
+      }
+    ]
   },
   {
     "key": "rice_white_cooked",
@@ -1347,7 +1591,21 @@
       "es": [
         "arroz graneado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "White_rice_at_a_restaurant.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Calgary Reviews from Calgary, Canada"
+      },
+      {
+        "file": "A_food_flask_of_cooked_white_rice.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Halima Waziri"
+      }
+    ]
   },
   {
     "key": "rice_white_raw",
@@ -1389,7 +1647,21 @@
     "translations": {
       "es": "Arroz blanco de grano largo, crudo"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Uncooked_ST25_rice_on_bamboo_surface.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "VinhNguyen.1257"
+      },
+      {
+        "file": "Basmati_Rice_India,_raw.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "cookbookman17"
+      }
+    ]
   },
   {
     "key": "bread_whole_wheat",
@@ -1445,7 +1717,21 @@
       "es": [
         "pan de molde integral"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Whole_wheat_options.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Stacy Spensley from San Diego"
+      },
+      {
+        "file": "Vegan_no-knead_whole_wheat_bread_loaf,_September_2010.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Veganbaking.net"
+      }
+    ]
   },
   {
     "key": "pasta_whole_wheat_cooked",
@@ -1514,7 +1800,15 @@
       "es": [
         "fideos integrales cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Whole_wheat_penne,_cooked_and_uncooked.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ragesoss"
+      }
+    ]
   },
   {
     "key": "pasta_whole_wheat_dry",
@@ -1561,6 +1855,14 @@
       "es": [
         "fideos integrales"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Whole_wheat_penne,_cooked_and_uncooked.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ragesoss"
+      }
+    ]
   }
 ]

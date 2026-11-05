@@ -52,6 +52,7 @@ class IngredientShowApiTest extends TestCase
                 ['key' => 'medium', 'label' => '1 medium egg', 'grams' => 44],
                 ['key' => 'large', 'label' => '1 large egg', 'grams' => 50],
             ],
+            'photos' => [],
             'nutrients' => [
                 ['key' => 'sugars', 'label' => 'Sugars', 'group' => 'fats_and_sugars', 'unit' => 'g', 'amount' => 0],
                 ['key' => 'cholesterol', 'label' => 'Cholesterol', 'group' => 'fats_and_sugars', 'unit' => 'mg', 'amount' => 411],
@@ -95,6 +96,39 @@ class IngredientShowApiTest extends TestCase
         $this->seedIngredients([$this->egg(['portions' => []])]);
 
         $this->assertSame([], $this->show('egg_whole_raw')->json('data.portions'));
+    }
+
+    public function test_it_returns_the_photos_in_position_order(): void
+    {
+        $this->seedIngredients([$this->egg(['photos' => $this->twoPhotos()])]);
+
+        $this->assertSame($this->expectedTwoPhotos(), $this->show('egg_whole_raw')->assertOk()->json('data.photos'));
+
+        $this->swapPhotoPositions('egg_whole_raw');
+
+        $this->assertSame($this->expectedTwoPhotos(swapped: true), $this->show('egg_whole_raw')->assertOk()->json('data.photos'));
+    }
+
+    public function test_the_photo_urls_follow_the_config(): void
+    {
+        config([
+            'services.ingredient_photos.base_url' => 'https://images.example.test/files',
+            'services.ingredient_photos.width' => 1280,
+            'services.ingredient_photos.thumbnail_width' => 250,
+        ]);
+        $this->seedIngredients([$this->egg(['photos' => [$this->photo('Egg_cracked.jpg')]])]);
+
+        $photo = $this->show('egg_whole_raw')->json('data.photos.0');
+
+        $this->assertSame('https://images.example.test/files/Egg_cracked.jpg?width=1280', $photo['url']);
+        $this->assertSame('https://images.example.test/files/Egg_cracked.jpg?width=250', $photo['thumbnail_url']);
+    }
+
+    public function test_an_ingredient_with_no_photos_returns_an_empty_list(): void
+    {
+        $this->seedIngredients([$this->egg()]);
+
+        $this->assertSame([], $this->show('egg_whole_raw')->json('data.photos'));
     }
 
     public function test_a_soft_deleted_ingredient_gives_404(): void

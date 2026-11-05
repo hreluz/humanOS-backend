@@ -27,7 +27,10 @@ An entry, with its nutrients and portions shortened:
     { "key": "large", "label": "1 large egg", "grams": 50, "translations": { "es": "1 huevo grande" } }
   ],
   "translations": { "es": "Huevo entero, crudo" },
-  "aliases": {}
+  "aliases": {},
+  "photos": [
+    { "file": "Example_egg_whole.jpg", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "author": "Example Author" }
+  ]
 }
 ```
 
@@ -37,8 +40,10 @@ An entry, with its nutrients and portions shortened:
 - A portion's `position` is its order in the array. Its `grams` is the weight of the measure; there is no ml or density.
 - `translations` holds the name (and each portion's label) in every language but English; only `es` is accepted for now. `aliases` holds other names to search by, in `en` or `es`.
 - Keys are permanent. A renamed ingredient or portion key is a removal plus a new entry: the old row is hard-deleted, or soft-deleted if something references it.
+- `photos` lists the Commons photos, main photo first (SPEC 17). `file` is the Commons file name without `File:`; any spelling Commons accepts works, and the seeder stores one canonical form. `author` and `license_url` are required unless the license is `CC0` or `Public domain`. Photos are rebuilt on every seed.
+- The files hold system ingredients only (`user_id` `null`). The seeder never touches a user's ingredient, and rejects a key a user's ingredient already holds.
 
-`IngredientSeeder` rejects the whole catalog, writing nothing, on a duplicate key or `source_id`, a missing `source_id` or macro, a duplicate portion key, an unknown category, source, nutrient or locale.
+`IngredientSeeder` rejects the whole catalog, writing nothing, on a duplicate key or `source_id`, a missing `source_id` or macro, a duplicate portion key, an unknown category, source, nutrient or locale, a key held by a user's ingredient, or a photo problem: a license that isn't allowed, a missing author or license URL where the license requires one, an author over 255 characters, a `license_url` that isn't an `http` or `https` URL, more than three photos, or the same file twice on one ingredient.
 
 ## Rules
 
@@ -51,6 +56,7 @@ An entry, with its nutrients and portions shortened:
 7. **Portions** come from USDA's measures, with the grams copied. A Foundation entry may take its measures from the SR Legacy entry for the same food, since Foundation lists few household measures. An ingredient may have none, because grams always work: measures in ounces, pounds, packages and USDA's reference amounts (RACC, NLEA serving) are left out. Each portion has a short snake_case `key` describing the measure (`large`, `cup_chopped`). Keys aren't renamed once committed.
 8. **Spanish** names are neutral and widely understood. Regional words go in `aliases` (`palta` under Avocado, `choclo` under Sweet corn). English alternatives go there too (`coriander leaves` under Cilantro).
 9. **Nutrition values are copied, never estimated.** They are stored at the column's precision: 2 decimals for `kcal` and `grams`, 3 for macros and nutrients.
+10. **Photos** come from Wikimedia Commons, under `CC0`, `Public domain`, `CC BY` or `CC BY-SA`. Non-commercial and no-derivatives licenses aren't allowed. Every ingredient has one to three photos. The first is the main photo: it shows the food itself, recognisably, in the ingredient's form where possible. The others add something the first doesn't show, such as the food cut open, cooked, or in a common serving. Every photo shows the same food, never a different one. A cooked entry may use photos of the raw food when Commons has none of its own form. A variant may reuse photos of the same food. License, license URL and author come from the Commons API, never typed by hand. The author is the file's `Attribution` text when the uploader set one, and its `Artist` otherwise. An author longer than 255 characters is shortened by hand to an accurate credit.
 
 ## Source mapping
 
@@ -75,8 +81,13 @@ Names, category, inclusion, Spanish names, aliases, portion keys and labels may 
 
 `IngredientCatalogTest` checks the files against these rules and against `tests/Fixtures/ingredient-values.json`: values read from FoodData Central's own pages or API for a few foods in every category. When you add a category's first ingredient, add 2–3 entries for it to the fixture.
 
+## Adding photos
+
+A one-off script, not committed, searches Commons for candidate files and reads each one's license (`LicenseShortName`), license URL (`LicenseUrl`) and author (`Attribution`, else `Artist`, HTML stripped) from the API (`prop=imageinfo&iiprop=extmetadata`). A person looks at every photo against rule 10, and its order, before it's committed. `php artisan ingredients:check-photos` then checks that every file still resolves.
+
 ## Sources and credits
 
+- **Wikimedia Commons.** Each photo's author, license and file page are stored with it and returned by the API; clients must show them wherever they show the photo.
 - **USDA FoodData Central.** U.S. Department of Agriculture, Agricultural Research Service. FoodData Central: Foundation Foods (October 2026) and SR Legacy (April 2018). fdc.nal.usda.gov. The data is in the public domain under CC0 1.0 Universal; USDA asks users to list FoodData Central as the source.
 
 The Peruvian food composition table (CENAN/INS, 10th ed., 2017) was considered for foods USDA lacks and left out: its terms forbid reproduction without the Instituto Nacional de Salud's authorization.

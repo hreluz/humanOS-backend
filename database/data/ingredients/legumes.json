@@ -59,7 +59,21 @@
         "porotos negros cocidos",
         "caraotas negras cocidas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Black_beans,_cheese,_tortilla_close-up.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "UserTwoSix"
+      },
+      {
+        "file": "Black_beans,_cheese,_tortilla.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "UserTwoSix"
+      }
+    ]
   },
   {
     "key": "black_beans_dry",
@@ -126,7 +140,21 @@
         "alubias negras",
         "judías negras"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Black_Turtle_Bean.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Sanjay Acharya"
+      },
+      {
+        "file": "2015_1012_Preserved_black_beans_douchi_close-up.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Takeaway"
+      }
+    ]
   },
   {
     "key": "chickpeas_boiled",
@@ -187,7 +215,15 @@
       "en": [
         "garbanzo beans, cooked"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Boiled_sanag_alu27.11.13._(74).JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bhaskaranaidu"
+      }
+    ]
   },
   {
     "key": "chickpeas_dry",
@@ -248,7 +284,15 @@
       "en": [
         "garbanzo beans"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ordinary_chickpeas_in_a_ceramic_bowl.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "AlixSaz"
+      }
+    ]
   },
   {
     "key": "kidney_beans_boiled",
@@ -312,7 +356,15 @@
       "es": [
         "porotos rojos cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Rajma_Red_Kidney_Bean_dish_India.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Scott Veg"
+      }
+    ]
   },
   {
     "key": "kidney_beans_dry",
@@ -377,7 +429,21 @@
         "alubias rojas",
         "judías rojas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Red_Kidney_Beans_(49684142646).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ajay Suresh from New York, NY, USA"
+      },
+      {
+        "file": "Kidney_beans_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      }
+    ]
   },
   {
     "key": "lentils_boiled",
@@ -434,7 +500,15 @@
     "translations": {
       "es": "Lentejas, cocidas"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Cooked_Lentils_with_Caramelized_Onions.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
   },
   {
     "key": "lentils_dry",
@@ -491,7 +565,21 @@
     "translations": {
       "es": "Lentejas, secas"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "3_types_of_lentil.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "User:Justinc"
+      },
+      {
+        "file": "Split_Red_Lentil.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      }
+    ]
   },
   {
     "key": "split_peas_boiled",
@@ -552,7 +640,15 @@
       "es": [
         "guisantes partidos cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Split_Pea_Soup_(4027490495).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Kari Sullivan from Austin, TX"
+      }
+    ]
   },
   {
     "key": "split_peas_dry",
@@ -614,7 +710,21 @@
         "guisantes partidos",
         "chícharos secos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Split_peas_(3145708237).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Liji Jinaraj from San Francisco, USA"
+      },
+      {
+        "file": "Split_Peas_(4970270974)_(2).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Tasha"
+      }
+    ]
   },
   {
     "key": "navy_beans_boiled",
@@ -678,7 +788,21 @@
         "alubias blancas cocidas",
         "porotos blancos cocidos"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Porotos_alubia_blancos_escurridos_en_colador_de_acero_inoxidable.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Horacio Cambeiro"
+      },
+      {
+        "file": "Processus_de_préparation_de_Gnonmlin,_sélection_et_triage_du_haricot_09.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "SMKMAYER"
+      }
+    ]
   },
   {
     "key": "navy_beans_dry",
@@ -743,6 +867,20 @@
         "porotos blancos",
         "judías blancas"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Phaseolus_vulgaris_white_beans,_witte_boon.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Rasbak"
+      },
+      {
+        "file": "Porotos_alubia_blancos_hidratados_en_remojo.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Horacio Cambeiro"
+      }
+    ]
   }
 ]

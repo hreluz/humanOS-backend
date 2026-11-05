@@ -62,7 +62,21 @@
     "translations": {
       "es": "Pimienta negra molida"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Ground_black_pepper.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Eliška Jindříšková"
+      },
+      {
+        "file": "Black_pepper_(ground).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Susan Slater"
+      }
+    ]
   },
   {
     "key": "chili_powder",
@@ -131,7 +145,21 @@
       "es": [
         "ají en polvo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Red_Chili_Powder_(Lall_Mirch)_(49695826571).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ajay Suresh from New York, NY, USA"
+      },
+      {
+        "file": "Tumeric_and_chili_power_spice_at_Bakin_dogo_market,_Kaduna_North.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samsule2"
+      }
+    ]
   },
   {
     "key": "cinnamon",
@@ -196,7 +224,21 @@
     "translations": {
       "es": "Canela molida"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Ground_Cinnamon_Powder_and_a_Cinnamon_Stick.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "formulatehealth"
+      },
+      {
+        "file": "Ground_cinnamon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "TheDeliciousLife"
+      }
+    ]
   },
   {
     "key": "cumin",
@@ -259,7 +301,15 @@
     "translations": {
       "es": "Comino"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Seeds_of_Cumin.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      }
+    ]
   },
   {
     "key": "honey",
@@ -327,7 +377,21 @@
       "es": [
         "miel de abeja"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Dipper_stick_and_honey_in_a_jar.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Three_French_monofloral_honey_jars.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Hayden Soloviev"
+      }
+    ]
   },
   {
     "key": "jam",
@@ -387,7 +451,21 @@
       "en": [
         "preserves"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Jam_created_from_gelling_sugar.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Chris Bohn from Gainesville, FL, USA"
+      },
+      {
+        "file": "90_-_IMG_20150802_010021.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Susan Slater"
+      }
+    ]
   },
   {
     "key": "ketchup",
@@ -460,7 +538,21 @@
         "cátsup",
         "salsa kétchup"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ketchup_20160918_181342.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Kim Holger Kelting"
+      },
+      {
+        "file": "French_Fries_with_Ketchup_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kritzolina"
+      }
+    ]
   },
   {
     "key": "mayonnaise",
@@ -532,7 +624,21 @@
       "es": [
         "mahonesa"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Homemade_mayonnaise_(4059871654).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Stacy Spensley"
+      },
+      {
+        "file": "Mayonnaise_(1).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jules"
+      }
+    ]
   },
   {
     "key": "mustard_yellow",
@@ -588,7 +694,15 @@
       "es": [
         "mostaza"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Senf-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright claims)."
+      }
+    ]
   },
   {
     "key": "oregano_dried",
@@ -645,7 +759,20 @@
     "translations": {
       "es": "Orégano seco"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Oregano_dried.JPG",
+        "license": "Public domain",
+        "author": "Miansari66"
+      },
+      {
+        "file": "Dried_Oregano.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Revital Salomon"
+      }
+    ]
   },
   {
     "key": "paprika",
@@ -714,7 +841,21 @@
       "es": [
         "paprika"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Aleva_paprika.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ljiljana Sundać"
+      },
+      {
+        "file": "Sppon_of_Paprika.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Gnu-Bricoleur"
+      }
+    ]
   },
   {
     "key": "salt",
@@ -783,7 +924,21 @@
       "en": [
         "table salt"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Table_salt_with_salt_shaker_V1.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Poyraz 72"
+      },
+      {
+        "file": "Salt_shaker_on_white_background.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Dubravko Sorić SoraZG on Flickr"
+      }
+    ]
   },
   {
     "key": "soy_sauce",
@@ -856,7 +1011,15 @@
         "sillao",
         "salsa de soja"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Soy_sauce_2.jpg",
+        "license": "CC BY-SA 2.0 kr",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
+        "author": "국립국어원"
+      }
+    ]
   },
   {
     "key": "sugar_brown",
@@ -925,7 +1088,21 @@
         "azúcar rubia",
         "azúcar moreno"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Brown_sugar.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "EstherDje"
+      },
+      {
+        "file": "Brown_sugar_examples.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Moe Rubenzahl"
+      }
+    ]
   },
   {
     "key": "sugar_white",
@@ -978,7 +1155,15 @@
       "es": [
         "azúcar refinada"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Granulated_White_Sugar_with_Large_Crystals,_Bright_Front_Light.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tobias Erbsland"
+      }
+    ]
   },
   {
     "key": "turmeric",
@@ -1047,7 +1232,21 @@
       "es": [
         "palillo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Curcuma_longa_roots.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Simon A. Eugster"
+      },
+      {
+        "file": "Kunyit_Bubuk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Herusutimbul"
+      }
+    ]
   },
   {
     "key": "vinegar_white",
@@ -1116,6 +1315,14 @@
       "en": [
         "distilled vinegar"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Synthetic_vinegar_bottles.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sgroey"
+      }
+    ]
   }
 ]

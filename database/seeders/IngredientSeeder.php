@@ -3,11 +3,14 @@
 namespace Database\Seeders;
 
 use App\Modules\Nutrition\Enums\IngredientCategory;
+use App\Modules\Nutrition\Enums\IngredientPhotoSource;
 use App\Modules\Nutrition\Enums\IngredientSource;
 use App\Modules\Nutrition\Models\Ingredient;
+use App\Modules\Nutrition\Models\IngredientPhoto;
 use App\Modules\Nutrition\Models\IngredientPortion;
 use App\Modules\Nutrition\Models\Nutrient;
 use App\Modules\Nutrition\Support\CatalogRemover;
+use App\Modules\Nutrition\Support\IngredientPhotoLicense;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
@@ -20,6 +23,9 @@ use InvalidArgumentException;
  * the same between runs and a key that comes back restores its old row. Nutrient values, translations, aliases
  * and portion translations are rebuilt from the files. Ingredients and portions no longer in the files are
  * hard-deleted, or soft-deleted when something references them (`CatalogRemover`).
+ *
+ * Only system ingredients (`user_id` `null`) are written or removed, and a key held by a user's ingredient throws.
+ * Photos are rebuilt from each entry's `photos` list as `commons` photos, in list order (SPEC 17).
  */
 class IngredientSeeder extends Seeder
 {
@@ -42,6 +48,11 @@ class IngredientSeeder extends Seeder
      * @var list<string>
      */
     private const MACROS = ['kcal', 'protein', 'carbs', 'fat', 'fiber'];
+
+    /**
+     * The most photos an ingredient may have.
+     */
+    public const MAX_PHOTOS = 3;
 
     public function __construct(private ?string $directory = null) {}
 
@@ -69,6 +80,7 @@ class IngredientSeeder extends Seeder
         $nutrientIds = Nutrient::pluck('id', 'key')->all();
 
         $this->validate($entries, $nutrientIds);
+        $this->rejectUserKeys(array_column($entries, 'key'));
 
         DB::transaction(function () use ($entries, $nutrientIds) {
             $now = now();
@@ -90,12 +102,13 @@ class IngredientSeeder extends Seeder
             );
 
             $keys = array_column($entries, 'key');
-            $ingredientIds = Ingredient::whereIn('key', $keys)->pluck('id', 'key')->all();
+            $ingredientIds = Ingredient::system()->whereIn('key', $keys)->pluck('id', 'key')->all();
 
             $this->writePortions($entries, $ingredientIds);
             $this->writeChildren($entries, $ingredientIds, $nutrientIds);
+            $this->writePhotos($entries, $ingredientIds);
 
-            CatalogRemover::remove(Ingredient::whereNotIn('key', $keys));
+            CatalogRemover::remove(Ingredient::system()->whereNotIn('key', $keys));
         });
     }
 
@@ -191,6 +204,54 @@ class IngredientSeeder extends Seeder
     }
 
     /**
+     * Rebuilds the photos of the listed ingredients. System ingredients only have `commons` photos, so all go.
+     *
+     * @param  list<array<string, mixed>>  $entries
+     * @param  array<string, int>  $ingredientIds
+     */
+    private function writePhotos(array $entries, array $ingredientIds): void
+    {
+        $now = now();
+        $rows = [];
+        foreach ($entries as $entry) {
+            foreach ($entry['photos'] ?? [] as $i => $photo) {
+                $rows[] = [
+                    'ingredient_id' => $ingredientIds[$entry['key']],
+                    'source' => IngredientPhotoSource::Commons->value,
+                    'path' => IngredientPhoto::canonicalFile($photo['file']),
+                    'license' => $photo['license'],
+                    'license_url' => ($photo['license_url'] ?? '') === '' ? null : $photo['license_url'],
+                    'author' => ($photo['author'] ?? '') === '' ? null : $photo['author'],
+                    'position' => $i + 1,
+                    'created_at' => $now,
+                    'updated_at' => $now,
+                ];
+            }
+        }
+
+        foreach (array_chunk(array_values($ingredientIds), 1000) as $chunk) {
+            DB::table('ingredient_photos')->whereIn('ingredient_id', $chunk)->delete();
+        }
+        foreach (array_chunk($rows, 500) as $chunk) {
+            DB::table('ingredient_photos')->insert($chunk);
+        }
+    }
+
+    /**
+     * Throws when a key in the files belongs to a user's ingredient, so the upsert can't take that row over.
+     *
+     * @param  list<string>  $keys
+     */
+    private function rejectUserKeys(array $keys): void
+    {
+        $taken = Ingredient::withTrashed()->whereNotNull('user_id')->whereIn('key', $keys)->orderBy('key')->pluck('key')->all();
+
+        if ($taken !== []) {
+            throw new InvalidArgumentException('Ingredient key ['.implode('], [', $taken)."]: belongs to a user's ingredient.");
+        }
+    }
+
+    /**
      * Checks every entry, failing on the first problem.
      *
      * @param  list<array<string, mixed>>  $entries
@@ -249,6 +310,64 @@ class IngredientSeeder extends Seeder
                     $fail("portion [{$portionKey}] needs a label and grams");
                 }
                 $this->validateLocales($portion['translations'] ?? [], self::TRANSLATION_LOCALES, "portion [{$portionKey}] translation", $fail);
+            }
+
+            $this->validatePhotos($entry['photos'] ?? [], $fail);
+        }
+    }
+
+    /**
+     * Checks an entry's `photos` list: at most `MAX_PHOTOS`, each with a file and an allowed license, the credit
+     * the license requires, and no file twice (compared in canonical form).
+     *
+     * @param  callable(string): never  $fail
+     */
+    private function validatePhotos(mixed $photos, callable $fail): void
+    {
+        if (! is_array($photos) || ! array_is_list($photos)) {
+            $fail('photos must be a list');
+        }
+        if (count($photos) > self::MAX_PHOTOS) {
+            $fail('has '.count($photos).' photos, at most '.self::MAX_PHOTOS.' allowed');
+        }
+
+        $files = [];
+        foreach ($photos as $i => $photo) {
+            $n = $i + 1;
+            $file = is_array($photo) && is_string($photo['file'] ?? null) ? IngredientPhoto::canonicalFile($photo['file']) : '';
+            if ($file === '') {
+                $fail("photo {$n} has no file");
+            }
+            if (isset($files[$file])) {
+                $fail("photo [{$file}] listed twice");
+            }
+            $files[$file] = true;
+
+            $license = $photo['license'] ?? null;
+            if (! is_string($license) || $license === '') {
+                $fail("photo [{$file}] has no license");
+            }
+            if (! IngredientPhotoLicense::isAllowed($license)) {
+                $fail("photo [{$file}] has a license that isn't allowed [{$license}]");
+            }
+
+            $author = $photo['author'] ?? null;
+            $licenseUrl = $photo['license_url'] ?? null;
+            foreach (['author' => $author, 'license_url' => $licenseUrl] as $field => $value) {
+                if ($value !== null && ! is_string($value)) {
+                    $fail("photo [{$file}] {$field} is not a string");
+                }
+                if (($value ?? '') === '' && IngredientPhotoLicense::requiresAttribution($license)) {
+                    $fail("photo [{$file}] needs {$field} under [{$license}]");
+                }
+            }
+
+            if ($author !== null && mb_strlen($author) > 255) {
+                $fail("photo [{$file}] author is longer than 255 characters");
+            }
+            // Stored as Commons returns it: many older licenses come back as `http://`.
+            if (($licenseUrl ?? '') !== '' && (filter_var($licenseUrl, FILTER_VALIDATE_URL) === false || ! in_array(parse_url($licenseUrl, PHP_URL_SCHEME), ['http', 'https'], true))) {
+                $fail("photo [{$file}] license_url is not an http or https URL");
             }
         }
     }

@@ -212,9 +212,21 @@ class IngredientSearchApiTest extends TestCase
                 ['key' => 'large', 'label' => '1 large egg', 'grams' => 50],
                 ['key' => 'medium', 'label' => '1 medium egg', 'grams' => 44],
             ],
+            'photos' => [],
         ], $item);
         $this->assertArrayNotHasKey('nutrients', $item);
         $this->assertArrayNotHasKey('source', $item);
+    }
+
+    public function test_items_carry_their_photos_in_position_order(): void
+    {
+        $this->seedIngredients([$this->egg(['photos' => $this->twoPhotos()]), $this->ingredient('egg_white_raw', 'Egg, white, raw')]);
+        $this->swapPhotoPositions('egg_whole_raw');
+
+        $data = collect($this->search('search=egg')->assertOk()->json('data'))->keyBy('key');
+
+        $this->assertSame($this->expectedTwoPhotos(swapped: true), $data['egg_whole_raw']['photos']);
+        $this->assertSame([], $data['egg_white_raw']['photos']);
     }
 
     public function test_soft_deleted_ingredients_and_portions_are_left_out(): void
@@ -233,17 +245,21 @@ class IngredientSearchApiTest extends TestCase
         $this->assertSame(['large'], array_column($data[0]['portions'], 'key'));
     }
 
-    public function test_the_search_runs_two_queries_whatever_the_number_of_matches(): void
+    public function test_the_search_runs_three_queries_whatever_the_number_of_matches(): void
     {
-        $portions = [['key' => 'cup', 'label' => '1 cup', 'grams' => 100], ['key' => 'tbsp', 'label' => '1 tbsp', 'grams' => 15]];
+        $children = [
+            'portions' => [['key' => 'cup', 'label' => '1 cup', 'grams' => 100], ['key' => 'tbsp', 'label' => '1 tbsp', 'grams' => 15]],
+            'photos' => $this->twoPhotos(),
+        ];
 
         $this->seedIngredients([
-            ...array_map(fn (int $n) => $this->ingredient("few_{$n}", "Few item {$n}", ['portions' => $portions]), range(1, 5)),
-            ...array_map(fn (int $n) => $this->ingredient("many_{$n}", "Many item {$n}", ['portions' => $portions]), range(1, 15)),
+            ...array_map(fn (int $n) => $this->ingredient("few_{$n}", "Few item {$n}", $children), range(1, 5)),
+            ...array_map(fn (int $n) => $this->ingredient("many_{$n}", "Many item {$n}", $children), range(1, 15)),
         ]);
 
-        $this->assertSame(2, $this->countQueries('search=few', 5));
-        $this->assertSame(2, $this->countQueries('search=many', 15));
+        // The ingredients, their portions and their photos.
+        $this->assertSame(3, $this->countQueries('search=few', 5));
+        $this->assertSame(3, $this->countQueries('search=many', 15));
     }
 
     private function countQueries(string $query, int $expectedItems): int

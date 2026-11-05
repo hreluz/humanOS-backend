@@ -151,6 +151,27 @@ class OpenApiDocumentTest extends TestCase
         $this->assertSame([], $offenders, 'These success responses have no top-level `data` or `message` key.');
     }
 
+    /**
+     * The photo credit fields are nullable in the contract, for uploaded photos to come (SPEC 17).
+     */
+    public function test_ingredient_photo_credit_fields_are_nullable(): void
+    {
+        $document = json_decode(file_get_contents(base_path(self::EXPORT_PATH)), true);
+        $properties = $document['components']['schemas']['IngredientPhotoResource']['properties'];
+
+        foreach (['license', 'license_url', 'author', 'credit_url'] as $field) {
+            $this->assertSame(['string', 'null'], $properties[$field]['type'], "{$field} is not nullable.");
+        }
+        foreach (['url', 'thumbnail_url'] as $field) {
+            $this->assertSame('string', $properties[$field]['type'], "{$field} is nullable.");
+        }
+
+        $this->assertSame(
+            '#/components/schemas/IngredientPhotoResource',
+            $document['components']['schemas']['IngredientResource']['properties']['photos']['items']['$ref'],
+        );
+    }
+
     public function test_docs_are_reachable_in_local(): void
     {
         $this->app->detectEnvironment(fn () => 'local');

@@ -56,7 +56,15 @@
       "es": [
         "proteína de soja en polvo"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Protein_Powder_Mix_(44547187900).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Tony Webster from Minneapolis, Minnesota, United States"
+      }
+    ]
   },
   {
     "key": "whey_protein_powder",
@@ -120,6 +128,14 @@
         "whey",
         "proteína whey"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Whey_Protein_Scoop_(49935767168).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ajay Suresh from New York, NY, USA"
+      }
+    ]
   }
 ]

@@ -54,7 +54,21 @@
     "translations": {
       "es": "Edamame, cocido"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Edamame_by_jark.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "jark"
+      },
+      {
+        "file": "Edamame_khas_Jember_1.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Herreads"
+      }
+    ]
   },
   {
     "key": "edamame_frozen",
@@ -107,7 +121,21 @@
       "es": [
         "frijol de soya verde"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Edamame_khas_Jember_1.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Herreads"
+      },
+      {
+        "file": "Edamame_by_jark.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "jark"
+      }
+    ]
   },
   {
     "key": "tofu_firm",
@@ -167,7 +195,15 @@
     "translations": {
       "es": "Tofu firme"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Making_Tofu_-_20170206_-_Spliting.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "DragonSamYU"
+      }
+    ]
   },
   {
     "key": "tofu_soft",
@@ -239,7 +275,15 @@
       "es": [
         "tofu sedoso"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Making_Tofu_-_20170206_-_Spliting.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "DragonSamYU"
+      }
+    ]
   },
   {
     "key": "vital_wheat_gluten",
@@ -291,6 +335,14 @@
       "es": [
         "gluten de trigo vital"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Gluten.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Nickel nitride"
+      }
+    ]
   }
 ]

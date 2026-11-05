@@ -45,7 +45,21 @@
       "es": [
         "leche de almendras"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "002-almondmilk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kjokkenutstyr"
+      },
+      {
+        "file": "Raspberry_bites_and_almond_milk_(33358177692).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "cappi thompson from Gorham, New Hampshire, USA"
+      }
+    ]
   },
   {
     "key": "beer",
@@ -102,7 +116,21 @@
     "translations": {
       "es": "Cerveza"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Von_Trapp_beer_glass_with_beer_2021_001.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Adam S. Keck"
+      },
+      {
+        "file": "Tusker_beer_bottle_with_beer_glass,_Wikimania_2025_(01).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bahnfrend"
+      }
+    ]
   },
   {
     "key": "black_tea_brewed",
@@ -166,7 +194,21 @@
       "es": [
         "té"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Cup_of_black_tea.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "AntanO"
+      },
+      {
+        "file": "A_cup_of_black_tea_from_Srimangal_Bangladesh.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sm faysal"
+      }
+    ]
   },
   {
     "key": "cocoa_powder",
@@ -234,7 +276,21 @@
       "es": [
         "cocoa"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Dutch_process_and_natural_cocoa.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "F_A"
+      },
+      {
+        "file": "Cocoa_powder.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "blair"
+      }
+    ]
   },
   {
     "key": "coffee_brewed",
@@ -300,7 +356,21 @@
         "café de filtro",
         "café negro"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "A_small_cup_of_coffee.JPG",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Julius Schorzman"
+      },
+      {
+        "file": "Cup_of_coffee_(Serbian_cuisine,_Grand_kava).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      }
+    ]
   },
   {
     "key": "dark_chocolate",
@@ -358,7 +428,15 @@
         "chocolate amargo",
         "chocolate oscuro"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "2023_Gorzka_czekolada.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
   },
   {
     "key": "oat_milk",
@@ -399,7 +477,21 @@
       "es": [
         "leche de avena"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Oat_milk_glass_and_bottles.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      },
+      {
+        "file": "Oat_milk_glass.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      }
+    ]
   },
   {
     "key": "orange_juice",
@@ -468,7 +560,20 @@
       "es": [
         "zumo de naranja"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Orange_juice_1_edit1.jpg",
+        "license": "Public domain",
+        "author": "Agency of the United States Department of Agriculture Edited Version by: Arad"
+      },
+      {
+        "file": "Orange_juice_half_glass.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Corn cheese"
+      }
+    ]
   },
   {
     "key": "red_wine",
@@ -525,7 +630,21 @@
     "translations": {
       "es": "Vino tinto"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "020260524_140002_Red_wine_in_glass.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Auctor quaerendae"
+      },
+      {
+        "file": "Offering_a_glass_of_red_wine.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FranHogan"
+      }
+    ]
   },
   {
     "key": "soy_milk",
@@ -575,6 +694,20 @@
         "leche de soya",
         "leche de soja"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Soymilk_can_and_glass_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Stu Spivack, GeeJo"
+      },
+      {
+        "file": "Midori_Soy_Milk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Mr.ちゅらさん"
+      }
+    ]
   }
 ]

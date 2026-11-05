@@ -66,7 +66,14 @@
     "translations": {
       "es": "Queso cheddar"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "White_cheddar_cheese.jpg",
+        "license": "Public domain",
+        "author": "Jon Sullivan"
+      }
+    ]
   },
   {
     "key": "cottage_cheese",
@@ -118,7 +125,21 @@
     "translations": {
       "es": "Queso cottage, 2 % de grasa"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Cottagecheese200px.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "F ASTILY (T ALK )"
+      },
+      {
+        "file": "01._varenyky_with_cheese_-_cottage_cheese.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Валентина Тимків"
+      }
+    ]
   },
   {
     "key": "cream_cheese",
@@ -175,7 +196,15 @@
       "es": [
         "queso untable"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "2019-10-12_15_31_00_A_open_carton_of_Harris_Teeter_Plain_Cream_Cheese_Spread_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Famartin"
+      }
+    ]
   },
   {
     "key": "cheese_feta",
@@ -230,7 +259,20 @@
     "translations": {
       "es": "Queso feta"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Feta_Cheese.jpg",
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "JJ Harrison ( https://www.jjharrison.com.au/ )"
+      },
+      {
+        "file": "Greek_feta.jpg",
+        "license": "Public domain",
+        "author": "Jon Sullivan"
+      }
+    ]
   },
   {
     "key": "queso_fresco",
@@ -269,7 +311,21 @@
       "es": [
         "queso blanco"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Queso_fresco.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Geoff"
+      },
+      {
+        "file": "Homemade_queso_blanco_and_olive_bread_(16215994960).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ruth Hartnup from Vancouver, Canada"
+      }
+    ]
   },
   {
     "key": "greek_yogurt_plain_nonfat",
@@ -329,7 +385,15 @@
         "yogurt griego",
         "yogur griego desnatado"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Turkish_strained_yogurt.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Takeaway"
+      }
+    ]
   },
   {
     "key": "cream_heavy",
@@ -390,7 +454,21 @@
         "nata",
         "crema para batir"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Whipping_Cream.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Bradley Gordon"
+      },
+      {
+        "file": "Whipping_cream_(3372596784).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Miia Ranta from Finland"
+      }
+    ]
   },
   {
     "key": "milk_whole",
@@ -452,7 +530,15 @@
     "translations": {
       "es": "Leche entera"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "A_Cup_of_Cow_Milk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Peachyeung316"
+      }
+    ]
   },
   {
     "key": "cheese_mozzarella",
@@ -526,7 +612,20 @@
       "es": [
         "mozarela"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Mozzarella_di_bufala3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Popo le Chien"
+      },
+      {
+        "file": "Mozzarella_cheese.jpg",
+        "license": "Public domain",
+        "author": "Jon Sullivan"
+      }
+    ]
   },
   {
     "key": "cheese_parmesan_grated",
@@ -588,7 +687,21 @@
     "translations": {
       "es": "Queso parmesano, rallado"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "2019-11-16_02_59_40_A_small_pile_of_Giant_Real_Grated_Parmesan_Cheese_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Famartin"
+      },
+      {
+        "file": "Flickr_-_cyclonebill_-_Parmesan.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "cyclonebill"
+      }
+    ]
   },
   {
     "key": "cheese_ricotta",
@@ -653,7 +766,21 @@
         "ricotta",
         "requesón"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Ricotta_pugliese.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Saggittarius A"
+      },
+      {
+        "file": "Ristorante_Ardigna_-_Ricotta.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Daniele Pugliesi"
+      }
+    ]
   },
   {
     "key": "sour_cream",
@@ -706,7 +833,15 @@
     "translations": {
       "es": "Crema agria"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Sour_Cream.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jules"
+      }
+    ]
   },
   {
     "key": "condensed_milk",
@@ -744,7 +879,15 @@
     "translations": {
       "es": "Leche condensada"
     },
-    "aliases": {}
+    "aliases": {},
+    "photos": [
+      {
+        "file": "HK_Kai_Bo_food_drink_壽星公_Longevity_brand_甜炼奶_Sweetened_Milk_November_2022_Px3_04.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "ChaifatkaGZ Lim"
+      }
+    ]
   },
   {
     "key": "yogurt_plain_whole",
@@ -803,6 +946,20 @@
       "es": [
         "yogurt natural"
       ]
-    }
+    },
+    "photos": [
+      {
+        "file": "Iraqi_Sheep_Yogurt-Mosul.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Abdulsalam Al Dabbagh"
+      },
+      {
+        "file": "Yogurt_made_from_EM_rice_wash.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Zenyrgarden"
+      }
+    ]
   }
 ]
