@@ -8,7 +8,8 @@ use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 
 /**
- * Removes catalog rows that are no longer in the data (SPEC 15, "Removing entries").
+ * Removes catalog rows that are no longer in the data (SPEC 15, "Removing entries"), and users' ingredients and
+ * the portions an edit drops (SPEC 18).
  *
  * Each row is hard-deleted inside a savepoint. If a foreign key declared `ON DELETE RESTRICT` blocks it
  * (directly, or through the cascade to the row's children), the savepoint is rolled back and the row is

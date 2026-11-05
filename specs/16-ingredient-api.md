@@ -4,6 +4,7 @@
 > **Depends on:** SPEC 04, SPEC 15
 > **Date:** 2026-11-03
 > **Note:** both endpoints gain `photos` on every ingredient, and the search runs three queries instead of two, by SPEC 17.
+> **Note:** responses gain is_mine, per_100g.fiber and source.id become nullable, and search includes the caller's own ingredients, by SPEC 18.
 > **Objective:** Add authenticated `GET /api/v1/nutrition/ingredients?search=` and `GET /api/v1/nutrition/ingredients/{key}` endpoints so clients can search the ingredient catalog by name and read an ingredient's nutrition data, in English.
 
 ## Scope
@@ -66,6 +67,7 @@ The category filter and the search combine with AND, and values inside `category
       "key": "egg_whole_raw",
       "name": "Egg, whole, raw",
       "category": "eggs",
+      "is_mine": false,
       "per_100g": { "kcal": 148, "protein": 12.4, "carbs": 0.96, "fat": 9.96, "fiber": 0 },
       "portions": [
         { "key": "large", "label": "1 large egg", "grams": 50 },
@@ -89,13 +91,15 @@ The category filter and the search combine with AND, and values inside `category
 - `portions[].key` is the portion's stable key from the data files (SPEC 15 rule 7). It identifies the portion within its ingredient, and later specs (meal logging) use it.
 - `portions` are in `position` order, and may be empty (28 catalog entries have none).
 - Every number (`per_100g.*`, `grams`) is a JSON number, not a string. Clients round for display.
+- `per_100g.fiber` is a number or `null`. `null` means "no data": clients show it that way and leave it out of totals. Catalog ingredients always have a number; a user's ingredient may not (SPEC 18).
+- `is_mine` is `true` for the caller's own ingredients and `false` for catalog ingredients. The search returns the catalog plus the caller's own ingredients, never another user's, ranked together with no priority (SPEC 18).
 - `photos` are in `position` order, the first being the main photo, and may be empty. The fields, their nullability and the credit clients must show are in SPEC 17 ("API").
 
 **Queries:** three, whatever the number of matches: the ingredients, their portions and their photos. No N+1.
 
 ### `GET /api/v1/nutrition/ingredients/{key}`
 
-Route model binding on `key`. 404 in the SPEC 04 envelope if no ingredient has that key, or if it is soft-deleted. Returns the search item plus two detail-only fields:
+Route model binding on `key`. 404 in the SPEC 04 envelope if no ingredient has that key, if it is soft-deleted, or if it is another user's ingredient (SPEC 18). Returns the search item plus two detail-only fields:
 
 ```json
 {
@@ -103,6 +107,7 @@ Route model binding on `key`. 404 in the SPEC 04 envelope if no ingredient has t
     "key": "egg_whole_raw",
     "name": "Egg, whole, raw",
     "category": "eggs",
+    "is_mine": false,
     "per_100g": { "kcal": 148, "protein": 12.4, "carbs": 0.96, "fat": 9.96, "fiber": 0 },
     "portions": [{ "key": "large", "label": "1 large egg", "grams": 50 }],
     "photos": [
@@ -127,7 +132,7 @@ Route model binding on `key`. 404 in the SPEC 04 envelope if no ingredient has t
 - A nutrient that wasn't measured is left out, never sent as `0`. A nutrient measured as `0` is sent with `amount: 0`. Clients show a missing one as "no data".
 - A soft-deleted nutrient or portion is left out (SPEC 15's removal rule; the `SoftDeletes` scopes do this).
 - `group` and `unit` are raw enum values (`NutrientGroup`, `NutrientUnit`).
-- `source.type` is an `IngredientSource` value and `source.id` is the FDC id. Neither is ever `null`. The USDA credit lives in `docs/ingredient-catalog.md`, not in the response.
+- `source.type` is an `IngredientSource` value. For a catalog ingredient `source.id` is the FDC id and never `null`. A user's ingredient has `source.type` `user` and `source.id` `null` (SPEC 18). The USDA credit lives in `docs/ingredient-catalog.md`, not in the response.
 
 ## Data model
 

@@ -32,13 +32,14 @@ class IngredientResource extends JsonResource
     {
         return [
             /**
-             * Stable identifier, used in the URL.
+             * Stable identifier, used in the URL. Catalog keys are snake_case words; a user's ingredient has a
+             * generated `u_` key.
              *
              * @example egg_whole_raw
              */
             'key' => $this->key,
             /**
-             * English name.
+             * English name for catalog ingredients. A user's ingredient returns its name as written, in any language.
              *
              * @example Egg, whole, raw
              */
@@ -46,7 +47,16 @@ class IngredientResource extends JsonResource
             /** @example eggs */
             'category' => $this->category,
             /**
-             * Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams.
+             * Whether the caller owns the ingredient: `true` for their own, `false` for catalog ingredients.
+             *
+             * @var bool
+             *
+             * @example false
+             */
+            'is_mine' => $request->user() !== null && $this->isOwnedBy($request->user()),
+            /**
+             * Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams. `fiber` is `null` when it
+             * isn't known; clients show it as "no data" and leave it out of totals.
              *
              * @example {"kcal": 148, "protein": 12.4, "carbs": 0.96, "fat": 9.96, "fiber": 0}
              */
@@ -67,7 +77,8 @@ class IngredientResource extends JsonResource
             /** Measured nutrients per 100 g, in display order. Unmeasured ones are left out. Only returned by the detail endpoint. */
             'nutrients' => $this->when($this->withDetails, fn () => IngredientNutrientResource::collection($this->nutrients)),
             /**
-             * Where the values come from: the USDA FoodData Central dataset and the FDC id. Only returned by the detail endpoint.
+             * Where the values come from: the USDA FoodData Central dataset and the FDC id, or `user` with a `null`
+             * id for a user's ingredient. Only returned by the detail endpoint.
              *
              * @example {"type": "usda_foundation", "id": "748967"}
              */

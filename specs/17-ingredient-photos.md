@@ -3,6 +3,7 @@
 > **Status:** Approved
 > **Depends on:** SPEC 15, SPEC 16
 > **Date:** 2026-11-04
+> **Note:** user ingredients, their keys and their source are defined by SPEC 18; photo uploads are still pending.
 > **Objective:** Give every catalog ingredient an ordered list of one to three Wikimedia Commons photo references, each with its license and credit, return them from the ingredient API, and add a command that checks every photo still resolves.
 
 ## Why this spec exists

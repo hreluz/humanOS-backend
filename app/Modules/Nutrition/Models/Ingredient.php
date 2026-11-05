@@ -13,12 +13,16 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 /**
- * A catalog ingredient, loaded from `database/data/ingredients` by `IngredientSeeder` (SPEC 15).
+ * An ingredient: a catalog one, loaded from `database/data/ingredients` by `IngredientSeeder` (SPEC 15), or a
+ * user's private one (SPEC 18).
  *
- * Every value is per 100 g. Soft-deleted ingredients left the files but are still referenced, so they stay hidden.
- * `user_id` is `null` for system ingredients, the catalog from the files, and the seeder only touches those (SPEC 17).
+ * Every value is per 100 g, and a `null` `fiber` means it isn't known. Soft-deleted ingredients were removed but
+ * are still referenced, so they stay hidden. `user_id` is `null` for system ingredients, the catalog from the
+ * files, and the seeder only touches those (SPEC 17). A user's ingredient has a `u_` key, the `user` source and
+ * a `null` `source_id`, and only its owner sees it.
  */
 #[Fillable(['user_id', 'key', 'name', 'category', 'kcal', 'protein', 'carbs', 'fat', 'fiber', 'source', 'source_id'])]
 class Ingredient extends Model
@@ -75,6 +79,47 @@ class Ingredient extends Model
     }
 
     /**
+     * What a user can see: the catalog plus their own ingredients, never another user's (SPEC 18).
+     *
+     * @param  Builder<Ingredient>  $query
+     * @return Builder<Ingredient>
+     */
+    public function scopeVisibleTo(Builder $query, User $user): Builder
+    {
+        return $query->where(fn (Builder $query) => $query
+            ->whereNull('ingredients.user_id')
+            ->orWhere('ingredients.user_id', $user->getKey()));
+    }
+
+    /**
+     * Only the user's own ingredients.
+     *
+     * @param  Builder<Ingredient>  $query
+     * @return Builder<Ingredient>
+     */
+    public function scopeOwnedBy(Builder $query, User $user): Builder
+    {
+        return $query->where('ingredients.user_id', $user->getKey());
+    }
+
+    /**
+     * Whether the user owns this ingredient. A system ingredient has no owner.
+     */
+    public function isOwnedBy(User $user): bool
+    {
+        return $this->user_id !== null && (int) $this->user_id === $user->getKey();
+    }
+
+    /**
+     * A new key for a user's ingredient: `u_` and a lowercase ULID, 28 characters. Catalog keys are snake_case
+     * words, and the seeder rejects `u_` keys, so the two can't clash.
+     */
+    public static function generateUserKey(): string
+    {
+        return 'u_'.Str::lower((string) Str::ulid());
+    }
+
+    /**
      * The measured nutrients beyond the macros, with their `amount` per 100 g. A nutrient not listed wasn't measured.
      *
      * @return BelongsToMany<Nutrient, $this>
@@ -115,7 +160,8 @@ class Ingredient extends Model
     }
 
     /**
-     * The search query: the category filter, a match anywhere in the English name or an English alias, then
+     * The search query: what the request user can see, the category filter, a match anywhere in the English name
+     * or an English alias (a user's ingredient matches on its name only, having no aliases), then
      * ranked by the name (exact, prefix, word prefix, the rest), then sorted by name and key.
      *
      * Case and accents are ignored through the `utf8mb4_unicode_ci` collation.
@@ -129,6 +175,7 @@ class Ingredient extends Model
         $term = addcslashes($search, '\\%_');
 
         return $query
+            ->visibleTo($filters->user())
             ->when($filters->validated('category'), fn (Builder $query, array $categories) => $query
                 ->whereIn('ingredients.category', $categories))
             ->where(fn (Builder $query) => $query

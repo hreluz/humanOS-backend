@@ -207,6 +207,7 @@ class IngredientSearchApiTest extends TestCase
             'key' => 'egg_whole_raw',
             'name' => 'Egg, whole, raw',
             'category' => 'eggs',
+            'is_mine' => false,
             'per_100g' => ['kcal' => 148, 'protein' => 12.4, 'carbs' => 0.96, 'fat' => 9.96, 'fiber' => 0],
             'portions' => [
                 ['key' => 'large', 'label' => '1 large egg', 'grams' => 50],
@@ -243,6 +244,50 @@ class IngredientSearchApiTest extends TestCase
 
         $this->assertSame(['egg_whole_raw'], array_column($data, 'key'));
         $this->assertSame(['large'], array_column($data[0]['portions'], 'key'));
+    }
+
+    public function test_the_callers_ingredients_are_found_and_another_users_are_not(): void
+    {
+        $this->seedIngredients([$this->ingredient('protein_powder_whey', 'Protein powder, whey')]);
+        $caller = User::factory()->create();
+        $mine = $this->userIngredient($caller, 'Protein bar, chocolate', ['portions' => [['p_8k2d4x7q', '1 bar', 45]]]);
+        $this->userIngredient(User::factory()->create(), 'Protein bar, vanilla');
+
+        $data = $this->actingAs($caller)
+            ->getJson('/api/v1/nutrition/ingredients?search=protein')
+            ->assertOk()
+            ->json('data');
+
+        // SPEC 16's ranking applies unchanged: the caller's own get no priority.
+        $this->assertSame([$mine->key, 'protein_powder_whey'], array_column($data, 'key'));
+        $this->assertSame([true, false], array_column($data, 'is_mine'));
+        $this->assertEquals([
+            'key' => $mine->key,
+            'name' => 'Protein bar, chocolate',
+            'category' => 'supplements',
+            'is_mine' => true,
+            'per_100g' => ['kcal' => 380, 'protein' => 33, 'carbs' => 38, 'fat' => 11, 'fiber' => null],
+            'portions' => [['key' => 'p_8k2d4x7q', 'label' => '1 bar', 'grams' => 45]],
+            'photos' => [],
+        ], $data[0]);
+    }
+
+    public function test_another_users_ingredient_is_never_found(): void
+    {
+        $this->userIngredient(User::factory()->create(), 'Granola, homemade');
+
+        $this->assertKeys([], 'search=granola');
+    }
+
+    public function test_the_category_filter_applies_to_the_callers_ingredients(): void
+    {
+        $caller = User::factory()->create();
+        $this->userIngredient($caller, 'Granola, homemade', ['category' => 'grains']);
+
+        $this->actingAs($caller)
+            ->getJson('/api/v1/nutrition/ingredients?search=granola&category[]=fats')
+            ->assertOk()
+            ->assertJsonCount(0, 'data');
     }
 
     public function test_the_search_runs_three_queries_whatever_the_number_of_matches(): void

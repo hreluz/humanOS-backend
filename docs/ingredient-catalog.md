@@ -35,7 +35,9 @@ An entry, with its nutrients and portions shortened:
 ```
 
 - Every value is **per 100 g**, liquids included. `kcal` is copied from the source, never derived from the macros.
-- `source` is `usda_foundation` or `usda_sr_legacy`, and `source_id` is the food's FDC id as a string.
+- `key` is snake_case words and never starts with `u_`, the prefix of users' ingredient keys (SPEC 18).
+- `source` is `usda_foundation` or `usda_sr_legacy`, and `source_id` is the food's FDC id as a string. The `user` source is only for users' ingredients.
+- `fiber` is always set. The column is nullable for users' ingredients, whose labels may not list it, but a catalog entry never leaves it out.
 - `nutrients` lists only what the source reports. A nutrient left out means "not measured"; `0` means "measured as zero".
 - A portion's `position` is its order in the array. Its `grams` is the weight of the measure; there is no ml or density.
 - `translations` holds the name (and each portion's label) in every language but English; only `es` is accepted for now. `aliases` holds other names to search by, in `en` or `es`.
@@ -43,7 +45,7 @@ An entry, with its nutrients and portions shortened:
 - `photos` lists the Commons photos, main photo first (SPEC 17). `file` is the Commons file name without `File:`; any spelling Commons accepts works, and the seeder stores one canonical form. `author` and `license_url` are required unless the license is `CC0` or `Public domain`. Photos are rebuilt on every seed.
 - The files hold system ingredients only (`user_id` `null`). The seeder never touches a user's ingredient, and rejects a key a user's ingredient already holds.
 
-`IngredientSeeder` rejects the whole catalog, writing nothing, on a duplicate key or `source_id`, a missing `source_id` or macro, a duplicate portion key, an unknown category, source, nutrient or locale, a key held by a user's ingredient, or a photo problem: a license that isn't allowed, a missing author or license URL where the license requires one, an author over 255 characters, a `license_url` that isn't an `http` or `https` URL, more than three photos, or the same file twice on one ingredient.
+`IngredientSeeder` rejects the whole catalog, writing nothing, on a duplicate key or `source_id`, a missing `source_id` or macro, a duplicate portion key, an unknown category, source, nutrient or locale, the `user` source, a key starting with `u_`, a key held by a user's ingredient, or a photo problem: a license that isn't allowed, a missing author or license URL where the license requires one, an author over 255 characters, a `license_url` that isn't an `http` or `https` URL, more than three photos, or the same file twice on one ingredient.
 
 ## Rules
 

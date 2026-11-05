@@ -25,6 +25,7 @@ use InvalidArgumentException;
  * hard-deleted, or soft-deleted when something references them (`CatalogRemover`).
  *
  * Only system ingredients (`user_id` `null`) are written or removed, and a key held by a user's ingredient throws.
+ * A catalog entry always has `fiber` and `source_id`, never the `user` source, and no key starting with `u_` (SPEC 18).
  * Photos are rebuilt from each entry's `photos` list as `commons` photos, in list order (SPEC 17).
  */
 class IngredientSeeder extends Seeder
@@ -53,6 +54,11 @@ class IngredientSeeder extends Seeder
      * The most photos an ingredient may have.
      */
     public const MAX_PHOTOS = 3;
+
+    /**
+     * The prefix of users' ingredient keys (SPEC 18), which a catalog key may not start with.
+     */
+    public const USER_KEY_PREFIX = 'u_';
 
     public function __construct(private ?string $directory = null) {}
 
@@ -283,8 +289,15 @@ class IngredientSeeder extends Seeder
                 }
             }
 
+            if (str_starts_with($key, self::USER_KEY_PREFIX)) {
+                $fail('key starts with ['.self::USER_KEY_PREFIX."], which is reserved for users' ingredients");
+            }
+
             IngredientCategory::tryFrom($entry['category'] ?? '') ?? $fail('unknown category ['.($entry['category'] ?? '').']');
-            IngredientSource::tryFrom($entry['source'] ?? '') ?? $fail('unknown source ['.($entry['source'] ?? '').']');
+            $source = IngredientSource::tryFrom($entry['source'] ?? '') ?? $fail('unknown source ['.($entry['source'] ?? '').']');
+            if ($source === IngredientSource::User) {
+                $fail("source [user] is only for users' ingredients");
+            }
 
             foreach ($entry['nutrients'] ?? [] as $nutrient => $amount) {
                 if (! isset($nutrientIds[$nutrient])) {

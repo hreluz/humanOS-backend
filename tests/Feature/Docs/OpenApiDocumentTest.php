@@ -12,7 +12,7 @@ class OpenApiDocumentTest extends TestCase
     private const EXPORT_PATH = 'docs/openapi/v1.json';
 
     /**
-     * The documented operations and their exact response statuses (SPEC 02, SPEC 05, SPEC 10, SPEC 11, SPEC 12, SPEC 16).
+     * The documented operations and their exact response statuses (SPEC 02, SPEC 05, SPEC 10, SPEC 11, SPEC 12, SPEC 16, SPEC 18).
      * Each operation is tagged with its module, the first segment after /v1.
      */
     private const OPERATIONS = [
@@ -37,6 +37,10 @@ class OpenApiDocumentTest extends TestCase
         'GET /v1/training/exercises/{exercise}' => [200, 401, 404],
         'GET /v1/nutrition/ingredients' => [200, 401, 422],
         'GET /v1/nutrition/ingredients/{ingredient}' => [200, 401, 404],
+        'POST /v1/nutrition/ingredients' => [201, 401, 422],
+        'PATCH /v1/nutrition/ingredients/{ingredient}' => [200, 401, 403, 404, 422],
+        'DELETE /v1/nutrition/ingredients/{ingredient}' => [204, 401, 403, 404],
+        'GET /v1/nutrition/my-ingredients' => [200, 401, 422],
     ];
 
     private const GUEST_OPERATIONS = [
@@ -170,6 +174,26 @@ class OpenApiDocumentTest extends TestCase
             '#/components/schemas/IngredientPhotoResource',
             $document['components']['schemas']['IngredientResource']['properties']['photos']['items']['$ref'],
         );
+    }
+
+    /**
+     * `per_100g.fiber` and `source.id` are nullable and `is_mine` is a required boolean, for users' ingredients (SPEC 18).
+     */
+    public function test_ingredient_fields_for_users_ingredients(): void
+    {
+        $document = json_decode(file_get_contents(base_path(self::EXPORT_PATH)), true);
+        $ingredient = $document['components']['schemas']['IngredientResource'];
+
+        $this->assertSame(['number', 'null'], $ingredient['properties']['per_100g']['properties']['fiber']['type']);
+        $this->assertContains('fiber', $ingredient['properties']['per_100g']['required']);
+        $this->assertSame(['string', 'null'], $ingredient['properties']['source']['properties']['id']['type']);
+
+        $this->assertSame('boolean', $ingredient['properties']['is_mine']['type']);
+        $this->assertContains('is_mine', $ingredient['required']);
+
+        foreach (['kcal', 'protein', 'carbs', 'fat'] as $macro) {
+            $this->assertSame('number', $ingredient['properties']['per_100g']['properties'][$macro]['type'], "{$macro} is nullable.");
+        }
     }
 
     public function test_docs_are_reachable_in_local(): void

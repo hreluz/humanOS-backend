@@ -2,6 +2,8 @@
 
 namespace Tests\Feature\Nutrition\Concerns;
 
+use App\Models\User;
+use App\Modules\Nutrition\Models\Ingredient;
 use App\Modules\Nutrition\Models\IngredientPhoto;
 use Database\Seeders\IngredientSeeder;
 use Database\Seeders\NutrientSeeder;
@@ -65,6 +67,34 @@ trait SeedsIngredientFixtures
             'aliases' => [],
             ...$overrides,
         ];
+    }
+
+    /**
+     * A user's ingredient written directly to the database, with its portions in the order given.
+     *
+     * @param  array<string, mixed>  $overrides  Column values; `portions` is a list of `[key, label, grams]`.
+     */
+    protected function userIngredient(User $owner, string $name, array $overrides = []): Ingredient
+    {
+        $portions = $overrides['portions'] ?? [];
+        unset($overrides['portions']);
+
+        $ingredient = Ingredient::create([
+            'user_id' => $owner->id,
+            'key' => Ingredient::generateUserKey(),
+            'name' => $name,
+            'category' => 'supplements',
+            'kcal' => 380, 'protein' => 33, 'carbs' => 38, 'fat' => 11, 'fiber' => null,
+            'source' => 'user',
+            'source_id' => null,
+            ...$overrides,
+        ]);
+
+        foreach (array_values($portions) as $i => [$key, $label, $grams]) {
+            $ingredient->portions()->create(['key' => $key, 'label' => $label, 'grams' => $grams, 'position' => $i + 1]);
+        }
+
+        return $ingredient;
     }
 
     /**

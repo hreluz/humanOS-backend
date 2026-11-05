@@ -62,6 +62,8 @@ class IngredientCatalogTest extends TestCase
         $this->assertSame($keys, array_unique($keys), 'Duplicate keys');
         foreach ($keys as $key) {
             $this->assertMatchesRegularExpression(self::SNAKE_CASE, $key);
+            // `u_` is reserved for users' ingredient keys (SPEC 18).
+            $this->assertStringStartsNotWith(IngredientSeeder::USER_KEY_PREFIX, $key);
         }
 
         $sourceIds = array_column($this->ingredients, 'source_id');
@@ -73,6 +75,7 @@ class IngredientCatalogTest extends TestCase
     {
         foreach ($this->ingredients as $entry) {
             $this->assertNotNull(IngredientSource::tryFrom($entry['source']), "Source of {$entry['key']}");
+            $this->assertNotSame(IngredientSource::User->value, $entry['source'], "Source of {$entry['key']}");
             $this->assertMatchesRegularExpression('/^\d+$/', (string) $entry['source_id'], "FDC id of {$entry['key']}");
         }
     }

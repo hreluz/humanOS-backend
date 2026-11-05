@@ -583,7 +583,7 @@
         "/v1/nutrition/ingredients": {
             "get": {
                 "operationId": "ingredient.index",
-                "description": "Returns every ingredient whose English name or English alias contains `search`, ignoring case and\naccents, in one unpaginated list. Ranked by the name: an exact match first, then names starting with\nthe term, then names with a word starting with it, then the rest (mid-word or alias-only matches);\nties sort by name, then key. Values are per 100 g. `nutrients` and `source` are only returned by the\ndetail endpoint. Each ingredient's first photo is its main photo; use its `thumbnail_url` in lists.",
+                "description": "Returns every ingredient whose English name or English alias contains `search`, ignoring case and\naccents, in one unpaginated list: the catalog plus the caller's own ingredients, never another\nuser's. A user's ingredient matches on its name only. Ranked by the name: an exact match first, then\nnames starting with the term, then names with a word starting with it, then the rest (mid-word or\nalias-only matches); ties sort by name, then key. The caller's own ingredients get no priority and are\nmarked by `is_mine`. Values are per 100 g. `nutrients` and `source` are only returned by the detail\nendpoint. Each ingredient's first photo is its main photo; use its `thumbnail_url` in lists.",
                 "summary": "Search ingredients",
                 "tags": [
                     "Nutrition"
@@ -646,12 +646,56 @@
                         "$ref": "#/components/responses/ValidationException"
                     }
                 }
+            },
+            "post": {
+                "operationId": "ingredient.store",
+                "description": "Creates a private ingredient owned by the caller, with its macros per 100 g as on a food label and\nup to 10 portions. The ingredient gets a generated `u_` key and each portion a generated `p_` key;\nneither changes afterwards. Returns the detail shape.",
+                "summary": "Create an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreIngredientRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "`IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/IngredientResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
             }
         },
         "/v1/nutrition/ingredients/{ingredient}": {
             "get": {
                 "operationId": "ingredient.show",
-                "description": "Returns one ingredient by its key, with every measured nutrient per 100 g and the data source. A\nnutrient that wasn't measured is left out; clients show it as \"no data\".",
+                "description": "Returns one ingredient by its key, with every measured nutrient per 100 g and the data source. A\nnutrient that wasn't measured is left out; clients show it as \"no data\". Another user's ingredient\nis a 404. A user's ingredient has no nutrients or photos yet, and its source is `user` with a `null` id.",
                 "summary": "Show an ingredient",
                 "tags": [
                     "Nutrition"
@@ -691,6 +735,279 @@
                     },
                     "401": {
                         "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "patch": {
+                "operationId": "ingredient.update",
+                "description": "Changes only the fields sent; `fiber: null` clears the fiber. The sum rule is checked with stored\nvalues filling the fields not sent. `portions`, when sent, is the full new list: items with a `key`\nupdate that portion, items without one are new portions, and portions left out are removed. Only the\nowner may edit: a catalog ingredient is a 403, another user's is a 404. Returns the detail shape.",
+                "summary": "Update an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "ingredient",
+                        "in": "path",
+                        "required": true,
+                        "description": "The ingredient key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateIngredientRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "`IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/IngredientResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/AuthorizationException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "ingredient.destroy",
+                "description": "Deletes the caller's own ingredient and its portions. It's gone from every endpoint afterwards. Only\nthe owner may delete: a catalog ingredient is a 403, another user's is a 404.",
+                "summary": "Delete an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "ingredient",
+                        "in": "path",
+                        "required": true,
+                        "description": "The ingredient key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/AuthorizationException"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/nutrition/my-ingredients": {
+            "get": {
+                "operationId": "ingredient.mine",
+                "description": "Returns the caller's own ingredients, paginated and sorted by name, then key. Items have the search\nshape: `nutrients` and `source` are only returned by the detail endpoint.",
+                "summary": "List my ingredients",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number. Defaults to 1.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "example": 1
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Page size. Defaults to 50.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 100
+                        },
+                        "example": 50
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Paginated set of `IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/IngredientResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "type": "object",
+                                            "properties": {
+                                                "first": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "last": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "prev": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "next": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [
+                                                "first",
+                                                "last",
+                                                "prev",
+                                                "next"
+                                            ]
+                                        },
+                                        "meta": {
+                                            "type": "object",
+                                            "properties": {
+                                                "current_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "from": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "minimum": 1
+                                                },
+                                                "last_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "links": {
+                                                    "type": "array",
+                                                    "description": "Generated paginator links.",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "url": {
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ]
+                                                            },
+                                                            "label": {
+                                                                "type": "string"
+                                                            },
+                                                            "active": {
+                                                                "type": "boolean"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "url",
+                                                            "label",
+                                                            "active"
+                                                        ]
+                                                    }
+                                                },
+                                                "path": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Base path for paginator generated URLs."
+                                                },
+                                                "per_page": {
+                                                    "type": "integer",
+                                                    "description": "Number of items shown per page.",
+                                                    "minimum": 0
+                                                },
+                                                "to": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "description": "Number of the last item in the slice.",
+                                                    "minimum": 1
+                                                },
+                                                "total": {
+                                                    "type": "integer",
+                                                    "description": "Total number of items being paginated.",
+                                                    "minimum": 0
+                                                }
+                                            },
+                                            "required": [
+                                                "current_page",
+                                                "from",
+                                                "last_page",
+                                                "links",
+                                                "path",
+                                                "per_page",
+                                                "to",
+                                                "total"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "data",
+                                        "links",
+                                        "meta"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
                     }
                 }
             }
@@ -1799,14 +2116,14 @@
                 "properties": {
                     "key": {
                         "type": "string",
-                        "description": "Stable identifier, used in the URL.",
+                        "description": "Stable identifier, used in the URL. Catalog keys are snake_case words; a user's ingredient has a\ngenerated `u_` key.",
                         "examples": [
                             "egg_whole_raw"
                         ]
                     },
                     "name": {
                         "type": "string",
-                        "description": "English name.",
+                        "description": "English name for catalog ingredients. A user's ingredient returns its name as written, in any language.",
                         "examples": [
                             "Egg, whole, raw"
                         ]
@@ -1817,9 +2134,16 @@
                         ],
                         "$ref": "#/components/schemas/IngredientCategory"
                     },
+                    "is_mine": {
+                        "type": "boolean",
+                        "description": "Whether the caller owns the ingredient: `true` for their own, `false` for catalog ingredients.",
+                        "examples": [
+                            false
+                        ]
+                    },
                     "per_100g": {
                         "type": "object",
-                        "description": "Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams.",
+                        "description": "Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams. `fiber` is `null` when it\nisn't known; clients show it as \"no data\" and leave it out of totals.",
                         "examples": [
                             {
                                 "kcal": 148,
@@ -1843,7 +2167,10 @@
                                 "type": "number"
                             },
                             "fiber": {
-                                "type": "number"
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
                             }
                         },
                         "required": [
@@ -1877,7 +2204,7 @@
                     },
                     "source": {
                         "type": "object",
-                        "description": "Where the values come from: the USDA FoodData Central dataset and the FDC id. Only returned by the detail endpoint.",
+                        "description": "Where the values come from: the USDA FoodData Central dataset and the FDC id, or `user` with a `null`\nid for a user's ingredient. Only returned by the detail endpoint.",
                         "examples": [
                             {
                                 "type": "usda_foundation",
@@ -1889,7 +2216,10 @@
                                 "$ref": "#/components/schemas/IngredientSource"
                             },
                             "id": {
-                                "type": "string"
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
                             }
                         },
                         "required": [
@@ -1902,6 +2232,7 @@
                     "key",
                     "name",
                     "category",
+                    "is_mine",
                     "per_100g",
                     "portions",
                     "photos"
@@ -1910,10 +2241,11 @@
             },
             "IngredientSource": {
                 "type": "string",
-                "description": "The USDA FoodData Central dataset an ingredient's values come from (SPEC 15).\n",
+                "description": "Where an ingredient's values come from: a USDA FoodData Central dataset (SPEC 15), or the user who typed them in (SPEC 18). Catalog entries never use `user`.\n",
                 "enum": [
                     "usda_foundation",
-                    "usda_sr_legacy"
+                    "usda_sr_legacy",
+                    "user"
                 ],
                 "title": "IngredientSource"
             },
@@ -2248,6 +2580,121 @@
                 ],
                 "title": "Sex"
             },
+            "StoreIngredientRequest": {
+                "type": "object",
+                "description": "A new private ingredient, typed in from a food label (SPEC 18). Strings are trimmed by the global middleware.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u2013100 characters after trimming, in any language. Not unique.",
+                        "examples": [
+                            "Protein bar, chocolate"
+                        ],
+                        "maxLength": 100
+                    },
+                    "category": {
+                        "examples": [
+                            "supplements"
+                        ],
+                        "$ref": "#/components/schemas/IngredientCategory"
+                    },
+                    "kcal": {
+                        "type": "number",
+                        "description": "Energy per 100 g, in kcal. Not checked against the macros: labels round, and alcohol or sugar\nalcohols add calories the macros don't explain.",
+                        "examples": [
+                            380
+                        ],
+                        "minimum": 0,
+                        "maximum": 900
+                    },
+                    "protein": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            33
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "carbs": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            38
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fat": {
+                        "type": "number",
+                        "description": "Grams per 100 g. `protein + carbs + fat` may be at most 100.",
+                        "examples": [
+                            11
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fiber": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Grams per 100 g. Leave it out or send `null` when the label doesn't list it. Not in the sum rule.",
+                        "examples": [
+                            9
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "portions": {
+                        "type": "array",
+                        "description": "Measures in display order, at most 10. Keys are generated.",
+                        "examples": [
+                            [
+                                {
+                                    "label": "1 bar",
+                                    "grams": 45
+                                }
+                            ]
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "label": {
+                                    "type": "string",
+                                    "description": "1\u201350 characters after trimming.",
+                                    "examples": [
+                                        "1 bar"
+                                    ],
+                                    "maxLength": 50
+                                },
+                                "grams": {
+                                    "type": "number",
+                                    "description": "Weight of the measure in grams: more than 0, at most 5000.",
+                                    "examples": [
+                                        45
+                                    ],
+                                    "maximum": 5000
+                                }
+                            },
+                            "required": [
+                                "label",
+                                "grams"
+                            ]
+                        },
+                        "maxItems": 10
+                    }
+                },
+                "required": [
+                    "name",
+                    "category",
+                    "kcal",
+                    "protein",
+                    "carbs",
+                    "fat"
+                ],
+                "title": "StoreIngredientRequest"
+            },
             "TargetWeightEntryResource": {
                 "type": "object",
                 "properties": {
@@ -2351,6 +2798,126 @@
                     "imperial"
                 ],
                 "title": "UnitSystem"
+            },
+            "UpdateIngredientRequest": {
+                "type": "object",
+                "description": "A partial edit of the caller's own ingredient (SPEC 18). A field that isn't sent keeps its stored value.\nAuthorization runs before validation, so a catalog ingredient is a 403 whatever the body.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u2013100 characters after trimming, in any language. Not unique.",
+                        "examples": [
+                            "Protein bar, dark chocolate"
+                        ],
+                        "maxLength": 100
+                    },
+                    "category": {
+                        "examples": [
+                            "supplements"
+                        ],
+                        "$ref": "#/components/schemas/IngredientCategory"
+                    },
+                    "kcal": {
+                        "type": "number",
+                        "description": "Energy per 100 g, in kcal.",
+                        "examples": [
+                            380
+                        ],
+                        "minimum": 0,
+                        "maximum": 900
+                    },
+                    "protein": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            33
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "carbs": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            38
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fat": {
+                        "type": "number",
+                        "description": "Grams per 100 g. `protein + carbs + fat`, with stored values filling the fields not sent, may be at most 100.",
+                        "examples": [
+                            11
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fiber": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Grams per 100 g. `null` clears it.",
+                        "examples": [
+                            9
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "portions": {
+                        "type": "array",
+                        "description": "The full new list of portions, in display order, at most 10. Leave it out to keep the portions as they\nare. An item with a `key` updates that portion, an item without one is a new portion, and a portion\nleft out is removed. `[]` removes them all.",
+                        "examples": [
+                            [
+                                {
+                                    "key": "p_8k2d4x7q",
+                                    "label": "1 bar",
+                                    "grams": 45
+                                },
+                                {
+                                    "label": "2 bars",
+                                    "grams": 90
+                                }
+                            ]
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "key": {
+                                    "type": "string",
+                                    "description": "A current portion of this ingredient, at most once. Leave it out for a new portion.",
+                                    "examples": [
+                                        "p_8k2d4x7q"
+                                    ]
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "description": "1\u201350 characters after trimming.",
+                                    "examples": [
+                                        "1 bar"
+                                    ],
+                                    "maxLength": 50
+                                },
+                                "grams": {
+                                    "type": "number",
+                                    "description": "Weight of the measure in grams: more than 0, at most 5000.",
+                                    "examples": [
+                                        45
+                                    ],
+                                    "maximum": 5000
+                                }
+                            },
+                            "required": [
+                                "label",
+                                "grams"
+                            ]
+                        },
+                        "maxItems": 10,
+                        "uniqueItems": true
+                    }
+                },
+                "title": "UpdateIngredientRequest"
             },
             "UpdateProfileRequest": {
                 "type": "object",
@@ -2561,6 +3128,25 @@
             },
             "ModelNotFoundException": {
                 "description": "Not found",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "message": {
+                                    "type": "string",
+                                    "description": "Error overview."
+                                }
+                            },
+                            "required": [
+                                "message"
+                            ]
+                        }
+                    }
+                }
+            },
+            "AuthorizationException": {
+                "description": "Authorization error",
                 "content": {
                     "application/json": {
                         "schema": {

@@ -47,6 +47,7 @@ class IngredientShowApiTest extends TestCase
             'key' => 'egg_whole_raw',
             'name' => 'Egg, whole, raw',
             'category' => 'eggs',
+            'is_mine' => false,
             'per_100g' => ['kcal' => 148, 'protein' => 12.4, 'carbs' => 0.96, 'fat' => 9.96, 'fiber' => 0],
             'portions' => [
                 ['key' => 'medium', 'label' => '1 medium egg', 'grams' => 44],
@@ -153,9 +154,52 @@ class IngredientShowApiTest extends TestCase
         $this->assertSame(['sugars', 'selenium'], array_column($data['nutrients'], 'key'));
     }
 
-    private function show(string $key): TestResponse
+    public function test_it_returns_the_callers_own_ingredient(): void
     {
-        return $this->actingAs(User::factory()->create())
+        $owner = User::factory()->create();
+        $mine = $this->userIngredient($owner, 'Protein bar, chocolate', [
+            'portions' => [['p_8k2d4x7q', '1 bar', 45], ['p_2bars000', '2 bars', 90]],
+        ]);
+
+        $this->assertEquals([
+            'key' => $mine->key,
+            'name' => 'Protein bar, chocolate',
+            'category' => 'supplements',
+            'is_mine' => true,
+            'per_100g' => ['kcal' => 380, 'protein' => 33, 'carbs' => 38, 'fat' => 11, 'fiber' => null],
+            'portions' => [
+                ['key' => 'p_8k2d4x7q', 'label' => '1 bar', 'grams' => 45],
+                ['key' => 'p_2bars000', 'label' => '2 bars', 'grams' => 90],
+            ],
+            'photos' => [],
+            'nutrients' => [],
+            'source' => ['type' => 'user', 'id' => null],
+        ], $this->show($mine->key, $owner)->assertOk()->json('data'));
+    }
+
+    public function test_a_null_fiber_is_returned_as_null(): void
+    {
+        $owner = User::factory()->create();
+        $mine = $this->userIngredient($owner, 'Label food');
+
+        $response = $this->show($mine->key, $owner)->assertOk();
+
+        $this->assertArrayHasKey('fiber', $response->json('data.per_100g'));
+        $this->assertNull($response->json('data.per_100g.fiber'));
+    }
+
+    public function test_another_users_ingredient_gives_404(): void
+    {
+        $theirs = $this->userIngredient(User::factory()->create(), 'Protein bar, chocolate');
+
+        $this->show($theirs->key)
+            ->assertNotFound()
+            ->assertJsonMissingPath('data');
+    }
+
+    private function show(string $key, ?User $user = null): TestResponse
+    {
+        return $this->actingAs($user ?? User::factory()->create())
             ->getJson("/api/v1/nutrition/ingredients/{$key}");
     }
 }
