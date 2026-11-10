@@ -1259,7 +1259,7 @@
         "/v1/training/exercises": {
             "get": {
                 "operationId": "exercise.index",
-                "description": "Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when\n`muscle` is set. Filters combine with AND, and values inside one array filter combine with\nOR. `instructions` and `source_id` are only returned by the detail endpoint.",
+                "description": "Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when\n`muscle` is set. Filters combine with AND, and values inside one array filter combine with\nOR. `location` keeps only the exercises saved at one of the caller's workout locations and combines with\nthe other filters, the muscle ranking included. `instructions` and `source_id` are only returned by the\ndetail endpoint.",
                 "summary": "List exercises",
                 "tags": [
                     "Training"
@@ -1353,6 +1353,15 @@
                             "$ref": "#/components/schemas/MuscleRole"
                         },
                         "example": "primary"
+                    },
+                    {
+                        "name": "location",
+                        "in": "query",
+                        "description": "Only the exercises saved at this workout location. Must be the key of one of the caller's locations, from `/locations`.",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "l_01JC9Z7M4Q8N2R5T6V7W8X9Y0Z"
                     },
                     {
                         "name": "page",
@@ -1562,6 +1571,300 @@
                                 }
                             }
                         }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations": {
+            "get": {
+                "operationId": "workoutLocation.index",
+                "description": "Returns the caller's workout locations, sorted by name, then key, with how many exercises each has. Not\npaginated: a user has at most 20. The exercise keys are only returned by the detail endpoint.",
+                "summary": "List my workout locations",
+                "tags": [
+                    "Training"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/WorkoutLocationResource"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "workoutLocation.store",
+                "description": "Creates a named location for the caller, with no exercises yet. The location gets a generated `l_` key\nthat never changes. A user has at most 20 locations, and names are unique per user, ignoring case and\naccents. Returns the detail shape.",
+                "summary": "Create a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreWorkoutLocationRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations/{workoutLocation}": {
+            "get": {
+                "operationId": "workoutLocation.show",
+                "description": "Returns one of the caller's locations with the keys of its exercises, sorted by exercise name, then key.\nClients use them to mark exercises already at the location. Another user's location is a 404.",
+                "summary": "Show a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "patch": {
+                "operationId": "workoutLocation.update",
+                "description": "Changes only the fields sent; an empty body changes nothing. Keeping the current name is allowed, and\ntaking another of the caller's location names, in any case, is a 422. Another user's location is a 404.\nReturns the detail shape.",
+                "summary": "Update a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateWorkoutLocationRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "workoutLocation.destroy",
+                "description": "Deletes one of the caller's locations and its exercise list. The exercises themselves are not touched.\nAnother user's location is a 404.",
+                "summary": "Delete a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations/{workoutLocation}/exercises/{exercise}": {
+            "put": {
+                "operationId": "workoutLocationExercise.store",
+                "description": "Saves the exercise at one of the caller's locations. Idempotent: an exercise already there is also a 204,\nso a double tap or a retry is safe. The location's `updated_at` only moves when the exercise was added.\nAnother user's location, or an unknown exercise, is a 404.",
+                "summary": "Add an exercise to a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "exercise",
+                        "in": "path",
+                        "required": true,
+                        "description": "The exercise key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "workoutLocationExercise.destroy",
+                "description": "Removes the exercise from one of the caller's locations. Idempotent: an exercise that isn't there is also\na 204. The location's `updated_at` only moves when the exercise was removed. Another user's location, or\nan unknown exercise, is a 404.",
+                "summary": "Remove an exercise from a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "exercise",
+                        "in": "path",
+                        "required": true,
+                        "description": "The exercise key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
                     },
                     "404": {
                         "$ref": "#/components/responses/ModelNotFoundException"
@@ -2695,6 +2998,24 @@
                 ],
                 "title": "StoreIngredientRequest"
             },
+            "StoreWorkoutLocationRequest": {
+                "type": "object",
+                "description": "A new workout location for the caller (SPEC 19). Strings are trimmed by the global middleware.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u201350 characters after trimming. Unique among the caller's locations, ignoring case and accents.",
+                        "examples": [
+                            "Gym Local"
+                        ],
+                        "maxLength": 50
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "title": "StoreWorkoutLocationRequest"
+            },
             "TargetWeightEntryResource": {
                 "type": "object",
                 "properties": {
@@ -2982,6 +3303,21 @@
                 ],
                 "title": "UpdateProfileRequest"
             },
+            "UpdateWorkoutLocationRequest": {
+                "type": "object",
+                "description": "A partial edit of the caller's own workout location (SPEC 19). A field that isn't sent keeps its stored value.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u201350 characters after trimming. Unique among the caller's other locations, ignoring case and accents.\nKeeping the current name is allowed.",
+                        "examples": [
+                            "House workout"
+                        ],
+                        "maxLength": 50
+                    }
+                },
+                "title": "UpdateWorkoutLocationRequest"
+            },
             "UserResource": {
                 "type": "object",
                 "properties": {
@@ -3074,6 +3410,70 @@
                     "recorded_at"
                 ],
                 "title": "WeightEntryResource"
+            },
+            "WorkoutLocationResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used in the URL and in the exercise list's `location` filter. Never changes.",
+                        "examples": [
+                            "l_01JC9Z7M4Q8N2R5T6V7W8X9Y0Z"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "examples": [
+                            "Gym Local"
+                        ]
+                    },
+                    "exercise_count": {
+                        "type": "integer",
+                        "description": "How many exercises are saved at the location.",
+                        "examples": [
+                            2
+                        ]
+                    },
+                    "exercises": {
+                        "type": "array",
+                        "description": "Keys of the exercises saved at the location, sorted by exercise name, then key. Only returned by the\ndetail shape (create, show and update). Full exercise cards come from `/exercises?location=<key>`.",
+                        "examples": [
+                            [
+                                "barbell_bench_press",
+                                "dumbbell_bicep_curl"
+                            ]
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "examples": [
+                            "2026-11-10T10:00:00Z"
+                        ]
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "examples": [
+                            "2026-11-10T10:00:00Z"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "name",
+                    "exercise_count",
+                    "created_at",
+                    "updated_at"
+                ],
+                "title": "WorkoutLocationResource"
             }
         },
         "responses": {

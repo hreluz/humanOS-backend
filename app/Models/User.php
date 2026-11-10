@@ -6,6 +6,7 @@ use App\Modules\Auth\Enums\UserRole;
 use App\Modules\Profile\Models\Profile;
 use App\Modules\Profile\Models\TargetWeightEntry;
 use App\Modules\Profile\Models\WeightEntry;
+use App\Modules\Training\Models\WorkoutLocation;
 use Database\Factories\UserFactory;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
@@ -103,5 +104,15 @@ class User extends Authenticatable implements MustVerifyEmail
     public function latestTargetWeightEntry(): HasOne
     {
         return $this->hasOne(TargetWeightEntry::class)->latestOfMany('recorded_at');
+    }
+
+    /**
+     * The places where the user trains (SPEC 19).
+     *
+     * @return HasMany<WorkoutLocation, $this>
+     */
+    public function workoutLocations(): HasMany
+    {
+        return $this->hasMany(WorkoutLocation::class);
     }
 }

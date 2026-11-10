@@ -1,13 +1,13 @@
-# SPEC 26 — Recipe sharing
+# SPEC 27 — Recipe sharing
 
 > **Status:** Draft
-> **Depends on:** SPEC 19, SPEC 20, SPEC 21, SPEC 22, SPEC 23
+> **Depends on:** SPEC 20, SPEC 21, SPEC 22, SPEC 23, SPEC 24
 > **Date:** 2026-11-05
 > **Objective:** Let a user share one of their recipes through a secret link that any signed-in user can open read-only and save as an independent copy in their own account.
 
 ## Why this spec exists
 
-Recipes are private (SPEC 19). People want to send a recipe to a friend ("try my bolognese"). A share link covers that without a user directory, friend lists or a public catalog. Saving makes a full copy, so the friend's recipe never changes or breaks when the owner edits, deletes or stops sharing theirs.
+Recipes are private (SPEC 20). People want to send a recipe to a friend ("try my bolognese"). A share link covers that without a user directory, friend lists or a public catalog. Saving makes a full copy, so the friend's recipe never changes or breaks when the owner edits, deletes or stops sharing theirs.
 
 ## Scope
 
@@ -50,10 +50,10 @@ Schema::table('recipes', function (Blueprint $table) {
 `app/Modules/Nutrition/Support/RecipeCopier.php` copies a recipe into another user's account, in one transaction:
 
 - **Recipe:** `name`, `servings`, `steps`, `notes`, `prep_minutes`, `cook_minutes`, with a new `r_` key, no share token and new timestamps.
-- **Catalog ingredient lines:** referenced as they are, including soft-deleted catalog ingredients (shown as `deleted: true`, as in SPEC 19).
+- **Catalog ingredient lines:** referenced as they are, including soft-deleted catalog ingredients (shown as `deleted: true`, as in SPEC 20).
 - **The owner's private ingredients:** each is copied once, even when the parent and a sub-recipe both use it, as a new private ingredient of the caller with `name`, `category`, the five macros and every portion the recipe uses plus its current portions. It gets a new `u_` key and new `p_` keys, `source` `user`, and no photos or price. Soft-deleted ones are copied as live ingredients. Lines point to the copies and their portions.
-- **Sub-recipe lines** (SPEC 20): the sub-recipe is copied as a new recipe of the caller with the same rules, and the line points to the copy.
-- **Recipe photos** (SPEC 23): each file is copied on the `photos` disk to the new recipe's folder, under a new `ph_` key, in the same order. If the transaction fails, files copied so far are deleted.
+- **Sub-recipe lines** (SPEC 21): the sub-recipe is copied as a new recipe of the caller with the same rules, and the line points to the copy.
+- **Recipe photos** (SPEC 24): each file is copied on the `photos` disk to the new recipe's folder, under a new `ph_` key, in the same order. If the transaction fails, files copied so far are deleted.
 - **When the caller is the owner:** their own ingredients are referenced, not copied. Sub-recipes are still copied, so the new recipe is independent.
 - Line `quantity` and `grams` are copied as stored.
 
@@ -66,9 +66,9 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 | `POST` | `/recipes/{key}/share` | `200`, `{ "data": { "token": "...", "shared_at": "..." } }` | 404 |
 | `DELETE` | `/recipes/{key}/share` | `204`, no body | 404 |
 | `GET` | `/shared-recipes/{token}` | `200`, the shared view shape | 404 |
-| `POST` | `/shared-recipes/{token}/save` | `201`, the recipe detail shape (SPEC 19), owned by the caller | 404 |
+| `POST` | `/shared-recipes/{token}/save` | `201`, the recipe detail shape (SPEC 20), owned by the caller | 404 |
 
-- `{key}` resolves through SPEC 19's binding, so only the owner can share or stop sharing.
+- `{key}` resolves through SPEC 20's binding, so only the owner can share or stop sharing.
 - `{token}` resolves to a recipe with that token that isn't soft-deleted, or a 404. An unknown, revoked or deleted link look the same.
 - The client builds the link it shows (e.g. `https://app.humanos…/r/<token>`). The API returns only the token.
 - `DELETE` on a recipe that isn't shared is a `204` that changes nothing.
@@ -108,10 +108,10 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 }
 ```
 
-- Macros are live, from the owner's current recipe, as in SPEC 19.
+- Macros are live, from the owner's current recipe, as in SPEC 20.
 - No recipe `key`, no owner data, no `cost`, and no `created_at` or `updated_at`.
 - An ingredient that the viewer can't see (the owner's private one) has `key: null`, `is_mine: false`, and its name, category and macros.
-- A sub-recipe line includes the sub-recipe's own lines, since the viewer can't open the sub-recipe. That's one level, as SPEC 20 allows. The sub-recipe has no `key`.
+- A sub-recipe line includes the sub-recipe's own lines, since the viewer can't open the sub-recipe. That's one level, as SPEC 21 allows. The sub-recipe has no `key`.
 - Photo items have no `key`.
 - The view runs a fixed number of queries, whatever the number of lines.
 
@@ -129,7 +129,7 @@ app/Modules/Nutrition/
   routes.php
 database/migrations/<date>_add_share_token_to_recipes_table.php
 docs/openapi/v1.json
-specs/19-recipes.md                              (header note)
+specs/20-recipes.md                              (header note)
 CLAUDE.md
 tests/Feature/Nutrition/RecipeShareApiTest.php
 tests/Feature/Nutrition/SharedRecipeApiTest.php
@@ -140,7 +140,7 @@ Plus additions to `RecipeDeleteApiTest` and `OpenApiDocumentTest`.
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-23-recipe-photos`, and rebase onto `master` once it's merged.
+All commands run inside the `app` container. Branch from `spec-24-recipe-photos`, and rebase onto `master` once it's merged.
 
 1. **Schema and share toggle.** Add the migration, `RecipeShareController` and the routes. Tests in `RecipeShareApiTest`:
    - 401 without a token, and 404 on another user's recipe;
@@ -165,7 +165,7 @@ All commands run inside the `app` container. Branch from `spec-23-recipe-photos`
    - after the owner deletes the original, its ingredients and its photos, the copy and its files are unchanged;
    - the owner saving their own link references their own ingredients and copies the sub-recipe;
    - a failure inside the transaction leaves no rows and no copied files.
-4. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Add to SPEC 19's header: `> **Note:** recipes can be shared by link and saved as copies, by SPEC 26.` Update `CLAUDE.md`: share tokens, the shared view, and copying.
+4. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Add to SPEC 20's header: `> **Note:** recipes can be shared by link and saved as copies, by SPEC 27.` Update `CLAUDE.md`: share tokens, the shared view, and copying.
 5. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
@@ -177,7 +177,7 @@ All commands run inside the `app` container. Branch from `spec-23-recipe-photos`
 - [ ] Saving creates an independent recipe for the caller, with the owner's private ingredients and sub-recipes copied, catalog ingredients referenced, and recipe photos copied.
 - [ ] Edits and deletes by the owner after saving don't change the copy.
 - [ ] A failed save leaves no rows and no files.
-- [ ] `docs/openapi/v1.json` is re-exported, SPEC 19 has its header note, and `CLAUDE.md` is updated.
+- [ ] `docs/openapi/v1.json` is re-exported, SPEC 20 has its header note, and `CLAUDE.md` is updated.
 
 ## Decisions
 

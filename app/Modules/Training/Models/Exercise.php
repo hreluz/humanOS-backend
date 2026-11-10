@@ -103,6 +103,8 @@ class Exercise extends Model
                 ->whereIn('level', $levels))
             ->when($filters->validated('search'), fn (Builder $query, string $search) => $query
                 ->whereLike('name', '%'.addcslashes($search, '\\%_').'%'))
+            ->when($filters->validated('location'), fn (Builder $query, string $location) => $query
+                ->whereIn('exercises.id', WorkoutLocation::exerciseIds($location, $filters->user())))
             ->when($filters->validated('muscle'), fn (Builder $query, string $muscle) => $query
                 ->rankedByMuscle($muscle, $filters->validated('role')))
             ->orderBy('name')

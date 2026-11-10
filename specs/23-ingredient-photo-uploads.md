@@ -1,13 +1,13 @@
-# SPEC 22 — Ingredient photo uploads
+# SPEC 23 — Ingredient photo uploads
 
 > **Status:** Draft
-> **Depends on:** SPEC 17, SPEC 18, SPEC 19
+> **Depends on:** SPEC 17, SPEC 18, SPEC 20
 > **Date:** 2026-11-05
 > **Objective:** Let a user upload, reorder and delete up to three photos of their own ingredients, stored as metadata-free WebP files in two sizes on a configurable disk.
 
 ## Why this spec exists
 
-SPEC 18 left users' ingredients with `photos: []` and promised uploads in their own spec, next. Users photograph the package to recognize it in search. This spec also builds the upload groundwork (storage disk, validation, re-encoding, file cleanup) that the recipe photos spec (SPEC 23) reuses.
+SPEC 18 left users' ingredients with `photos: []` and promised uploads in their own spec, next. Users photograph the package to recognize it in search. This spec also builds the upload groundwork (storage disk, validation, re-encoding, file cleanup) that the recipe photos spec (SPEC 24) reuses.
 
 ## Scope
 
@@ -20,12 +20,12 @@ SPEC 18 left users' ingredients with `photos: []` and promised uploads in their 
 - `POST`, `DELETE` and a reorder `PATCH` for a user's ingredient's photos, at most 3 per ingredient.
 - `IngredientPhotoSource::Upload`, a photo `key` for uploads, and `url` and `thumbnail_url` for uploads built from the disk.
 - File removal when a photo, its ingredient or its user is deleted.
-- A reusable `Support/PhotoUploader` (validate, re-encode, store, delete after commit) for SPEC 23.
+- A reusable `Support/PhotoUploader` (validate, re-encode, store, delete after commit) for SPEC 24.
 - Feature tests, Scramble docs, and `docs/openapi/v1.json` re-exported.
 
 **Out of scope (for future specs):**
 
-- Recipe photos (SPEC 23).
+- Recipe photos (SPEC 24).
 - Queued processing, which comes with Redis and a queue worker.
 - Uploading photos for catalog ingredients, by any user or admin.
 - Cropping, filters or a choice of focal point.
@@ -136,7 +136,7 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 
 - **Deleting a photo:** row and files, as above.
 - **Deleting an ingredient** (`DELETE /ingredients/{key}`): its photo rows are deleted before `CatalogRemover` runs, and their files after commit. This applies whether the ingredient ends up hard- or soft-deleted, since no response shows a deleted ingredient's photos.
-- **Deleting a user:** the `User` deleting hook (SPEC 19) also collects every upload path of the user's ingredients and deletes the files after commit. The rows go with the cascade.
+- **Deleting a user:** the `User` deleting hook (SPEC 20) also collects every upload path of the user's ingredients and deletes the files after commit. The rows go with the cascade.
 
 ## Files
 
@@ -172,7 +172,7 @@ Plus additions to `UserIngredientDeleteApiTest`, `IngredientSeederTest` and `Ope
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-19-recipes`, and rebase onto `master` once it's merged.
+All commands run inside the `app` container. Branch from `spec-20-recipes`, and rebase onto `master` once it's merged.
 
 1. **Image tooling.** Update the `Dockerfile`, add both packages, and rebuild. Manual check: `php -r 'print_r(Imagick::queryFormats("HEIC"));'` lists `HEIC`.
 2. **Disk and uploader.** Add the `photos` disk, the `PHOTOS_*` variables, `storage:link` in `docs/docker.md`, and `PhotoUploader`. Tests in `PhotoUploaderTest`, on `Storage::fake('photos')`:
@@ -193,7 +193,7 @@ All commands run inside the `app` container. Branch from `spec-19-recipes`, and 
 6. **Cleanup on deletes.** Change `IngredientController::destroy` and the `User` hook. Tests:
    - deleting an ingredient with photos removes rows and files, both when it's hard-deleted and when a recipe line makes it soft-deleted;
    - deleting a user removes every photo file of theirs.
-7. **Docs and records.** PHPDoc and `@example`s (multipart body for `POST`), then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 17's photo shape in place and add to its header: `> **Note:** photos gain key and source, and uploads exist, by SPEC 22.` Add to SPEC 18's header: `> **Note:** users' ingredients can have up to three uploaded photos, by SPEC 22.` Update `CLAUDE.md`: the `photos` disk, uploads, file removal.
+7. **Docs and records.** PHPDoc and `@example`s (multipart body for `POST`), then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 17's photo shape in place and add to its header: `> **Note:** photos gain key and source, and uploads exist, by SPEC 23.` Add to SPEC 18's header: `> **Note:** users' ingredients can have up to three uploaded photos, by SPEC 23.` Update `CLAUDE.md`: the `photos` disk, uploads, file removal.
 8. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
@@ -234,7 +234,7 @@ All commands run inside the `app` container. Branch from `spec-19-recipes`, and 
 
 ## What is **not** in this spec
 
-- Recipe photos (SPEC 23).
+- Recipe photos (SPEC 24).
 - Queued processing.
 - Photos for catalog ingredients.
 - Cropping, moderation, a prune command, quotas and rate limiting.

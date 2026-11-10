@@ -1,7 +1,7 @@
-# SPEC 24 — Ingredient prices and recipe cost
+# SPEC 25 — Ingredient prices and recipe cost
 
 > **Status:** Draft
-> **Depends on:** SPEC 05, SPEC 18, SPEC 19, SPEC 20
+> **Depends on:** SPEC 05, SPEC 18, SPEC 20, SPEC 21
 > **Date:** 2026-11-05
 > **Objective:** Let a user set their own package price on any ingredient they can see, in their profile's currency, and return the cost of each recipe line, the recipe and one serving.
 
@@ -18,7 +18,7 @@ The frontend already shows ingredient prices and recipe cost (frontend SPEC 03 a
 - `price` on every ingredient response.
 - `currency` on the profile: a required field of `PUT /profile`, defaulting to `USD` for existing profiles, with `USD` used when the user has no profile.
 - `cost` on the recipe detail (per line, total, per serving, unpriced count) and on the recipe list.
-- Sub-recipe lines (SPEC 20) costed from the sub-recipe's per-serving cost.
+- Sub-recipe lines (SPEC 21) costed from the sub-recipe's per-serving cost.
 - Feature tests, Scramble docs, and `docs/openapi/v1.json` re-exported.
 
 **Out of scope (for future specs):**
@@ -55,7 +55,7 @@ Schema::table('profiles', function (Blueprint $table) {
 
 - `amount_minor` is the package price in the currency's minor units (349 for $3.49, 3490 for S/ 34.90, 349 for ¥349).
 - A price has no currency column. Its amount is read in the user's current currency. Changing the currency relabels prices and converts nothing.
-- `ingredient_id` cascades instead of using `RESTRICT`. A price is a user's current setting, not a record of something eaten, so it needn't outlive its ingredient. It also mustn't stop the seeder or a user from hard-deleting an ingredient. A soft-deleted ingredient keeps its price, so SPEC 19's deleted recipe lines keep their cost.
+- `ingredient_id` cascades instead of using `RESTRICT`. A price is a user's current setting, not a record of something eaten, so it needn't outlive its ingredient. It also mustn't stop the seeder or a user from hard-deleting an ingredient. A soft-deleted ingredient keeps its price, so SPEC 20's deleted recipe lines keep their cost.
 
 ### Currencies
 
@@ -135,7 +135,7 @@ The recipe detail gains `cost`, and each line gains `cost`:
 - A line's `cost` is a number or `null`.
 - `cost.total` and `cost.per_serving` are `null` when no line has a price. `currency` and `unpriced_count` are always set.
 - The recipe list gains the same `cost` object, computed in its aggregate query. Its query count still doesn't grow with the page size.
-- These are contract changes to SPEC 16, SPEC 18 and SPEC 19's shapes, updated in place.
+- These are contract changes to SPEC 16, SPEC 18 and SPEC 20's shapes, updated in place.
 
 ## Files
 
@@ -164,7 +164,7 @@ docs/openapi/v1.json
 specs/05-user-profile.md                         (header note, request and response)
 specs/16-ingredient-api.md                       (header note, response shapes)
 specs/18-user-ingredients.md                     (header note)
-specs/19-recipes.md                              (header note, response shapes)
+specs/20-recipes.md                              (header note, response shapes)
 CLAUDE.md
 tests/Feature/Nutrition/IngredientPriceApiTest.php
 tests/Feature/Nutrition/RecipeCostApiTest.php
@@ -175,7 +175,7 @@ Plus additions to `IngredientSearchApiTest`, `IngredientShowApiTest`, `MyIngredi
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-20-nested-recipes`, and rebase onto `master` once it's merged.
+All commands run inside the `app` container. Branch from `spec-21-nested-recipes`, and rebase onto `master` once it's merged.
 
 1. **Currencies.** Add `config/currencies.php` and `Currency`. Tests in `CurrencyTest`: 3.49 USD is 349, 349 JPY is 349, 1.234 KWD is 1234, rounding to minor units, and an unknown code throws.
 2. **Profile currency.** Add the migration, `currency` to `UpdateProfileRequest` and `ProfileResource`, and `User::currency()`. Tests:
@@ -200,7 +200,7 @@ All commands run inside the `app` container. Branch from `spec-20-nested-recipes
    - a sub-recipe line costs `quantity × per_serving` of the sub-recipe, and adds its unpriced lines to the count;
    - a soft-deleted ingredient line keeps its cost;
    - the list's `cost` matches the detail's, and its query count doesn't grow with the page size.
-6. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 05, 16 and 19's shapes in place and add header notes to SPEC 05, 16, 18 and 19: `> **Note:** … by SPEC 24.` Update `CLAUDE.md`: prices, currency, cost.
+6. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 05, 16 and 20's shapes in place and add header notes to SPEC 05, 16, 18 and 20: `> **Note:** … by SPEC 25.` Update `CLAUDE.md`: prices, currency, cost.
 7. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
@@ -214,7 +214,7 @@ All commands run inside the `app` container. Branch from `spec-20-nested-recipes
 - [ ] The recipe detail returns a cost per line, `total`, `per_serving`, `currency` and `unpriced_count`, with `total` `null` when nothing is priced.
 - [ ] Sub-recipe lines are costed from the sub-recipe's per-serving cost.
 - [ ] The recipe list returns the same `cost` as the detail, without a query per recipe.
-- [ ] `docs/openapi/v1.json` is re-exported, SPEC 05, 16, 18 and 19 have their header notes and updated shapes, and `CLAUDE.md` is updated.
+- [ ] `docs/openapi/v1.json` is re-exported, SPEC 05, 16, 18 and 20 have their header notes and updated shapes, and `CLAUDE.md` is updated.
 
 ## Decisions
 

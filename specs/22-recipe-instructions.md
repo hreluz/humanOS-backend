@@ -1,13 +1,13 @@
-# SPEC 21 — Recipe instructions
+# SPEC 22 — Recipe instructions
 
 > **Status:** Draft
-> **Depends on:** SPEC 19
+> **Depends on:** SPEC 20
 > **Date:** 2026-11-05
 > **Objective:** Let a user add ordered steps, free-text notes, and prep and cook times to their recipes.
 
 ## Why this spec exists
 
-SPEC 19 recipes say what goes in, not how to make it. A saved recipe the user can't cook from has to be remembered or kept somewhere else. Steps give a client what it needs for a "step 2 of 5" view, notes hold what doesn't fit a step ("works with turkey too"), and the times are what a recipe card shows.
+SPEC 20 recipes say what goes in, not how to make it. A saved recipe the user can't cook from has to be remembered or kept somewhere else. Steps give a client what it needs for a "step 2 of 5" view, notes hold what doesn't fit a step ("works with turkey too"), and the times are what a recipe card shows.
 
 ## Scope
 
@@ -83,7 +83,7 @@ No new endpoints.
 
 - The detail gains `steps` (array of strings, `[]` when none), `notes` (string or `null`), `prep_minutes` and `cook_minutes` (integer or `null`).
 - The list gains `prep_minutes` and `cook_minutes`. It doesn't return `steps` or `notes`.
-- This is a contract change to SPEC 19's response shapes, which get updated in place, following the CLAUDE.md rule.
+- This is a contract change to SPEC 20's response shapes, which get updated in place, following the CLAUDE.md rule.
 
 ## Files
 
@@ -96,7 +96,7 @@ app/Modules/Nutrition/
   Http/Controllers/RecipeController.php          (store and update write the new fields)
 database/migrations/<date>_add_instructions_to_recipes_table.php
 docs/openapi/v1.json
-specs/19-recipes.md                              (header note, response shapes)
+specs/20-recipes.md                              (header note, response shapes)
 CLAUDE.md
 tests/Feature/Nutrition/RecipeInstructionsApiTest.php
 ```
@@ -105,7 +105,7 @@ Plus additions to `RecipeListApiTest` and `OpenApiDocumentTest`.
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-19-recipes`, and rebase onto `master` once SPEC 19 is merged.
+All commands run inside the `app` container. Branch from `spec-20-recipes`, and rebase onto `master` once SPEC 20 is merged.
 
 1. **Schema.** Add the migration and the `steps` cast. Tests: `migrate` and `migrate:rollback` work, and an existing recipe returns `steps: []` and `null` for the other three.
 2. **Create and detail.** Extend `StoreRecipeRequest`, `store` and `RecipeResource`. Tests in `RecipeInstructionsApiTest`:
@@ -120,7 +120,7 @@ All commands run inside the `app` container. Branch from `spec-19-recipes`, and 
    - `notes: null`, `prep_minutes: null` and `cook_minutes: null` clear them;
    - `steps: null` gives 422.
 4. **List.** Extend the list shape. Tests in `RecipeListApiTest`: items have `prep_minutes` and `cook_minutes`, and no `steps` or `notes`.
-5. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest` for the nullable fields. Update SPEC 19's response shapes in place and add to its header: `> **Note:** recipes gain steps, notes, prep_minutes and cook_minutes, by SPEC 21.` Update `CLAUDE.md`.
+5. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest` for the nullable fields. Update SPEC 20's response shapes in place and add to its header: `> **Note:** recipes gain steps, notes, prep_minutes and cook_minutes, by SPEC 22.` Update `CLAUDE.md`.
 6. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
@@ -130,7 +130,7 @@ All commands run inside the `app` container. Branch from `spec-19-recipes`, and 
 - [ ] `PATCH` keeps absent fields, replaces `steps` as a whole, and clears a field sent as `null` (or `steps` sent as `[]`).
 - [ ] The detail returns all four fields, with `steps: []` when there are none.
 - [ ] The list returns `prep_minutes` and `cook_minutes`, and not `steps` or `notes`.
-- [ ] `docs/openapi/v1.json` is re-exported, SPEC 19 has its header note and updated shapes, and `CLAUDE.md` is updated.
+- [ ] `docs/openapi/v1.json` is re-exported, SPEC 20 has its header note and updated shapes, and `CLAUDE.md` is updated.
 
 ## Decisions
 

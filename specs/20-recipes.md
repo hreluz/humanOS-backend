@@ -1,4 +1,4 @@
-# SPEC 19 — Recipes
+# SPEC 20 — Recipes
 
 > **Status:** Draft
 > **Depends on:** SPEC 04, SPEC 15, SPEC 16, SPEC 18
@@ -24,12 +24,12 @@ The frontend already builds recipes (`/food/recipes/new`) against mocks: a name,
 
 **Out of scope (for future specs):**
 
-- **Recipes inside recipes** (SPEC 20). One saved recipe used as a line of another. Example: you save "Homemade tomato sauce" (tomatoes, onion, olive oil, 4 servings), then build "Spaghetti bolognese" and add "1 serving of Homemade tomato sauce" as a line next to the pasta and beef, instead of re-entering the sauce's ingredients. Bolognese's macros include the sauce's per-serving macros, and editing the sauce changes the bolognese. It needs cycle checks (A can't contain B if B contains A), recursive macros, and delete rules. The frontend's picker also leaves recipes out today.
-- **Instructions, notes or prep steps** (SPEC 21).
-- **Photos** of a recipe (SPEC 23, on SPEC 22's uploads).
-- **Cost and prices** (SPEC 24). The backend has no prices yet.
-- **Logging a recipe** (SPEC 25, without meal slots). Meal slots and plain-ingredient entries come with the meal-logging specs.
-- **Sharing recipes** with other users (SPEC 26).
+- **Recipes inside recipes** (SPEC 21). One saved recipe used as a line of another. Example: you save "Homemade tomato sauce" (tomatoes, onion, olive oil, 4 servings), then build "Spaghetti bolognese" and add "1 serving of Homemade tomato sauce" as a line next to the pasta and beef, instead of re-entering the sauce's ingredients. Bolognese's macros include the sauce's per-serving macros, and editing the sauce changes the bolognese. It needs cycle checks (A can't contain B if B contains A), recursive macros, and delete rules. The frontend's picker also leaves recipes out today.
+- **Instructions, notes or prep steps** (SPEC 22).
+- **Photos** of a recipe (SPEC 24, on SPEC 23's uploads).
+- **Cost and prices** (SPEC 25). The backend has no prices yet.
+- **Logging a recipe** (SPEC 26, without meal slots). Meal slots and plain-ingredient entries come with the meal-logging specs.
+- **Sharing recipes** with other users (SPEC 27).
 - **Recipes in a food search** next to ingredients. No spec yet.
 - Rate limiting and a cap on recipes per user.
 - Frontend changes.
@@ -291,7 +291,7 @@ All commands run inside the `app` container. Branch from `spec-18-user-ingredien
 - **Yes:** `r_<ulid>` keys and names that aren't unique, as in SPEC 18.
 - **Yes:** private recipes enforced by the route binding, with no policy. There are no catalog recipes, so there's no 403 case.
 - **Yes:** recipes soft-deletable and removed through `CatalogRemover`, so meal logs can later reference them with `RESTRICT` without changing this spec.
-- **Yes:** the out-of-scope items each get their own spec. SPEC 20 to SPEC 26 were written right after this one. Recipes in a food search has no spec yet.
+- **Yes:** the out-of-scope items each get their own spec. SPEC 21 to SPEC 27 were written right after this one. Recipes in a food search has no spec yet.
 
 ## Risks
 
@@ -305,6 +305,6 @@ All commands run inside the `app` container. Branch from `spec-18-user-ingredien
 
 ## What is **not** in this spec
 
-- Recipes inside recipes, instructions, photos, cost, logging a recipe to a meal, sharing, and recipes in ingredient search (SPEC 20 to SPEC 26, except food search, which has no spec yet).
+- Recipes inside recipes, instructions, photos, cost, logging a recipe to a meal, sharing, and recipes in ingredient search (SPEC 21 to SPEC 27, except food search, which has no spec yet).
 - Rate limiting and a cap on recipes per user.
 - Frontend changes.

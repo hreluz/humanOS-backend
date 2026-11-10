@@ -1,5 +1,5 @@
 ---
-description: Prepare the local Docker database. Runs pending migrations, seeds the exercise and ingredient catalogs, and ensures a verified test user exists. Safe to re-run.
+description: Update the local Docker database without wiping it. Runs pending migrations, seeds the exercise and ingredient catalogs, and ensures a verified test user exists. Safe to re-run.
 allowed-tools: Bash(docker compose:*), Bash(HOST_UID=*), Bash(id:*), Bash(test:*)
 model: haiku
 ---
@@ -9,7 +9,7 @@ Prepare the **local** humanOS database. Run the steps below in order, from the r
 ## Rules
 
 - Only touch the local Docker stack. If step 2 doesn't report `local`, stop without changing anything.
-- Never run anything destructive: no `migrate:fresh`, `migrate:refresh`, `migrate:reset`, `migrate:rollback`, `db:wipe`, `docker compose down -v`, or `--force`. If a migration fails or the data looks wrong, report it and leave the fix to the user.
+- Never run anything destructive: no `migrate:fresh`, `migrate:refresh`, `migrate:reset`, `migrate:rollback`, `db:wipe`, `docker compose down -v`, or `--force`. If a migration fails or the data looks wrong, report it and leave the fix to the user (`/local-db-reset` rebuilds the database from scratch).
 - Don't edit any files.
 - Don't run plain `db:seed`. `DatabaseSeeder` always inserts `test@example.com`, so it fails with a duplicate email once that user exists. Step 4 seeds the catalogs by class, and step 5 handles the user.
 

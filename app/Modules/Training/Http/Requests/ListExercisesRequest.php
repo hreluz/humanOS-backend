@@ -68,6 +68,13 @@ class ListExercisesRequest extends FormRequest
              */
             'role' => ['sometimes', Rule::enum(MuscleRole::class)],
             /**
+             * Only the exercises saved at this workout location. Must be the key of one of the caller's locations, from `/locations`.
+             *
+             * @example l_01JC9Z7M4Q8N2R5T6V7W8X9Y0Z
+             */
+            // Scramble reads `rules()` without a user, hence the nullsafe call.
+            'location' => ['sometimes', 'string', Rule::exists('workout_locations', 'key')->where('user_id', $this->user()?->getKey())],
+            /**
              * Page number. Defaults to 1.
              *
              * @example 1

@@ -1,20 +1,20 @@
-# SPEC 23 — Recipe photos
+# SPEC 24 — Recipe photos
 
 > **Status:** Draft
-> **Depends on:** SPEC 19, SPEC 22
+> **Depends on:** SPEC 20, SPEC 23
 > **Date:** 2026-11-05
-> **Objective:** Let a user upload, reorder and delete up to three photos of their own recipes, using the SPEC 22 upload pipeline, with the main photo shown in the recipe list.
+> **Objective:** Let a user upload, reorder and delete up to three photos of their own recipes, using the SPEC 23 upload pipeline, with the main photo shown in the recipe list.
 
 ## Why this spec exists
 
-A recipe card without a picture is a line of text. SPEC 22 built the upload groundwork (the `photos` disk, validation, WebP re-encoding, file cleanup) for ingredients, and said recipe photos would reuse it. This spec adds only the recipe side.
+A recipe card without a picture is a line of text. SPEC 23 built the upload groundwork (the `photos` disk, validation, WebP re-encoding, file cleanup) for ingredients, and said recipe photos would reuse it. This spec adds only the recipe side.
 
 ## Scope
 
 **In:**
 
 - A `recipe_photos` table.
-- `POST`, `PATCH` (reorder) and `DELETE` for a recipe's photos, at most 3 per recipe, with the same rules as SPEC 22.
+- `POST`, `PATCH` (reorder) and `DELETE` for a recipe's photos, at most 3 per recipe, with the same rules as SPEC 23.
 - `photos` on the recipe detail, and the main `photo` on each list item.
 - File removal when a photo, its recipe or its user is deleted.
 - Feature tests, Scramble docs, and `docs/openapi/v1.json` re-exported.
@@ -22,9 +22,9 @@ A recipe card without a picture is a line of text. SPEC 22 built the upload grou
 **Out of scope (for future specs):**
 
 - Photos on steps.
-- A photo on a sub-recipe line (SPEC 20). Clients get it from the sub-recipe's own detail.
+- A photo on a sub-recipe line (SPEC 21). Clients get it from the sub-recipe's own detail.
 - More than 3 photos.
-- Everything SPEC 22 leaves out: queued processing, cropping, moderation, a prune command, quotas and rate limiting.
+- Everything SPEC 23 leaves out: queued processing, cropping, moderation, a prune command, quotas and rate limiting.
 - Frontend changes.
 
 ## Data model
@@ -45,9 +45,9 @@ Schema::create('recipe_photos', function (Blueprint $table) {
 });
 ```
 
-- `key` is `ph_` + 8 random lowercase letters and digits, as in SPEC 22.
+- `key` is `ph_` + 8 random lowercase letters and digits, as in SPEC 23.
 - `path` is `recipes/<recipe key>/<photo key>`. Files are `-960.webp` and `-330.webp` on the `photos` disk.
-- `position` is 1–3, with 1 the main photo, renumbered in two passes after every delete and reorder (SPEC 22).
+- `position` is 1–3, with 1 the main photo, renumbered in two passes after every delete and reorder (SPEC 23).
 - No `source` or credit columns. Every recipe photo is an upload.
 
 ### Model
@@ -59,7 +59,7 @@ Schema::create('recipe_photos', function (Blueprint $table) {
 
 ## Endpoints
 
-All of them require a bearer token (401 otherwise) and live under `api/v1/nutrition`. `{key}` resolves through SPEC 19's binding, so another user's recipe is a 404. There's no 403 case, since every recipe is private.
+All of them require a bearer token (401 otherwise) and live under `api/v1/nutrition`. `{key}` resolves through SPEC 20's binding, so another user's recipe is a 404. There's no 403 case, since every recipe is private.
 
 | Method | Path | Success | Errors |
 |---|---|---|---|
@@ -67,10 +67,10 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 | `PATCH` | `/recipes/{key}/photos` | `200`, the recipe detail shape | 404, 422 |
 | `DELETE` | `/recipes/{key}/photos/{photo}` | `200`, the recipe detail shape | 404 |
 
-- `POST` takes multipart field `photo`, with SPEC 22's rules: JPEG, PNG, WebP or HEIC, at most 10 MB, shorter side at least 330 px, decodable, and fewer than 3 photos (checked with the recipe row locked).
+- `POST` takes multipart field `photo`, with SPEC 23's rules: JPEG, PNG, WebP or HEIC, at most 10 MB, shorter side at least 330 px, decodable, and fewer than 3 photos (checked with the recipe row locked).
 - `PATCH` takes `{ "order": [keys] }`, every current key exactly once.
 - `DELETE` removes the row, renumbers the rest, and deletes the files after commit.
-- Requests: `StoreRecipePhotoRequest` and `ReorderRecipePhotosRequest`. They share their rules with SPEC 22's requests through `PhotoUploader::rules()`, so the two never drift.
+- Requests: `StoreRecipePhotoRequest` and `ReorderRecipePhotosRequest`. They share their rules with SPEC 23's requests through `PhotoUploader::rules()`, so the two never drift.
 
 ### Response changes
 
@@ -84,12 +84,12 @@ Recipe detail gains `photos`:
 
 - `[]` when there are none.
 - Each list item gains `photo`: the main photo in the same shape, or `null`. The list loads it with one extra query per page, not per item.
-- This is a contract change to SPEC 19's response shapes, which get updated in place, following the CLAUDE.md rule.
+- This is a contract change to SPEC 20's response shapes, which get updated in place, following the CLAUDE.md rule.
 
 ### File removal
 
 - **Deleting a photo:** row and files.
-- **Deleting a recipe** (`DELETE /recipes/{key}`): its photo rows are deleted before `CatalogRemover` runs, and their files after commit, whether the recipe ends up hard- or soft-deleted (SPEC 20 can soft-delete a recipe used inside another).
+- **Deleting a recipe** (`DELETE /recipes/{key}`): its photo rows are deleted before `CatalogRemover` runs, and their files after commit, whether the recipe ends up hard- or soft-deleted (SPEC 21 can soft-delete a recipe used inside another).
 - **Deleting a user:** the `User` deleting hook also collects every recipe photo path and deletes the files after commit.
 
 ## Files
@@ -112,7 +112,7 @@ app/Modules/Nutrition/
 app/Models/User.php                              (deleting hook removes recipe photo files)
 database/migrations/<date>_create_recipe_photos_table.php
 docs/openapi/v1.json
-specs/19-recipes.md                              (header note, response shapes)
+specs/20-recipes.md                              (header note, response shapes)
 CLAUDE.md
 tests/Feature/Nutrition/RecipePhotoApiTest.php
 ```
@@ -121,9 +121,9 @@ Plus additions to `RecipeDeleteApiTest`, `RecipeListApiTest` and `OpenApiDocumen
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-22-ingredient-photo-uploads`, and rebase onto `master` once it's merged.
+All commands run inside the `app` container. Branch from `spec-23-ingredient-photo-uploads`, and rebase onto `master` once it's merged.
 
-1. **Shared pieces.** Extract `HasOrderedPhotos` and `PhotoUploader::rules()` from SPEC 22's code. The SPEC 22 tests still pass unchanged.
+1. **Shared pieces.** Extract `HasOrderedPhotos` and `PhotoUploader::rules()` from SPEC 23's code. The SPEC 23 tests still pass unchanged.
 2. **Schema and model.** Add the migration, `RecipePhoto`, `photos` and `mainPhoto`. Tests: `migrate` and `migrate:rollback` work.
 3. **Upload, reorder and delete.** Add the controller, requests, resource and routes. Tests in `RecipePhotoApiTest`, on `Storage::fake('photos')`:
    - 401 without a token, 404 on another user's recipe;
@@ -138,19 +138,19 @@ All commands run inside the `app` container. Branch from `spec-22-ingredient-pho
 5. **Cleanup on deletes.** Change `RecipeController::destroy` and the `User` hook. Tests:
    - deleting a recipe removes photo rows and files, both when it's hard-deleted and when a parent recipe line makes it soft-deleted;
    - deleting a user removes every recipe photo file of theirs.
-6. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 19's shapes in place and add to its header: `> **Note:** recipes gain photos (detail) and photo (list), by SPEC 23.` Update `CLAUDE.md`.
+6. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Update SPEC 20's shapes in place and add to its header: `> **Note:** recipes gain photos (detail) and photo (list), by SPEC 24.` Update `CLAUDE.md`.
 7. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
 
 - [ ] `docker compose exec app composer test` passes and `vendor/bin/pint --test` reports no issues.
 - [ ] A user can upload up to 3 photos to their own recipe, stored as WebP at 960 and 330 px through `PhotoUploader`.
-- [ ] Upload validation matches SPEC 22's, and failed uploads leave no files.
-- [ ] Reorder and delete work as in SPEC 22, and positions stay 1 to n.
+- [ ] Upload validation matches SPEC 23's, and failed uploads leave no files.
+- [ ] Reorder and delete work as in SPEC 23, and positions stay 1 to n.
 - [ ] The detail returns `photos`, and each list item returns the main `photo` or `null`, without a query per item.
 - [ ] Deleting a photo, its recipe (hard or soft) or its user removes the photo files.
 - [ ] Another user's recipe gives 404 on all three endpoints.
-- [ ] `docs/openapi/v1.json` is re-exported, SPEC 19 has its header note and updated shapes, and `CLAUDE.md` is updated.
+- [ ] `docs/openapi/v1.json` is re-exported, SPEC 20 has its header note and updated shapes, and `CLAUDE.md` is updated.
 
 ## Decisions
 
@@ -158,7 +158,7 @@ All commands run inside the `app` container. Branch from `spec-22-ingredient-pho
 - **Yes:** a separate `recipe_photos` table. Recipe photos have no `source` or credit, and a polymorphic table would weaken the foreign keys. **No:** reusing `ingredient_photos` with a morph column.
 - **Yes:** shared rules and ordering code through `PhotoUploader::rules()` and `HasOrderedPhotos`, so the two photo types can't drift.
 - **Yes:** the main photo on list items. It's what a recipe card shows, and it costs one query per page.
-- **Yes:** photos removed with their recipe, even when it's soft-deleted, as SPEC 22 does for ingredients.
+- **Yes:** photos removed with their recipe, even when it's soft-deleted, as SPEC 23 does for ingredients.
 
 ## What is **not** in this spec
 

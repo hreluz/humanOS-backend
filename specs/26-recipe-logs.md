@@ -1,13 +1,13 @@
-# SPEC 25 — Recipe logs
+# SPEC 26 — Recipe logs
 
 > **Status:** Draft
-> **Depends on:** SPEC 04, SPEC 19, SPEC 20
+> **Depends on:** SPEC 04, SPEC 20, SPEC 21
 > **Date:** 2026-11-05
 > **Objective:** Let a user log servings of one of their recipes as eaten at a given time, with the lines of the portion eaten and their macros frozen at log time, and read back a day's entries and totals.
 
 ## Why this spec exists
 
-The frontend's Quick log lets the user pick a saved recipe, adjust what went into the portion ("a bit less rice today"), and add it to the day. Saving recipes (SPEC 19) is only useful if eating them can be recorded. This spec records recipe entries only. Meal slots (breakfast, lunch, dinner, snacks), plain-ingredient entries and day ranges come with the meal-logging specs, on top of these tables.
+The frontend's Quick log lets the user pick a saved recipe, adjust what went into the portion ("a bit less rice today"), and add it to the day. Saving recipes (SPEC 20) is only useful if eating them can be recorded. This spec records recipe entries only. Meal slots (breakfast, lunch, dinner, snacks), plain-ingredient entries and day ranges come with the meal-logging specs, on top of these tables.
 
 ## Scope
 
@@ -17,7 +17,7 @@ The frontend's Quick log lets the user pick a saved recipe, adjust what went int
 - Macros frozen at log time, per line and per entry, along with the recipe, ingredient and portion names.
 - `eaten_at` with its UTC offset, and a `local_date` fixed at log time.
 - `POST`, `GET {key}`, `PATCH {key}` and `DELETE {key}` on `/api/v1/nutrition/recipe-logs`, and `GET /recipe-logs?date=` for one day with its totals.
-- Sub-recipe lines (SPEC 20) flattened into ingredients at log time.
+- Sub-recipe lines (SPEC 21) flattened into ingredients at log time.
 - Feature tests, Scramble docs, and `docs/openapi/v1.json` re-exported.
 
 **Out of scope (for future specs):**
@@ -25,7 +25,7 @@ The frontend's Quick log lets the user pick a saved recipe, adjust what went int
 - Meal slots (breakfast, lunch, dinner, snacks). The meal-logging specs.
 - Logging a plain ingredient. The meal-logging specs, on the same tables.
 - Date ranges, weekly totals and charts.
-- Cost on log entries (SPEC 24 left it out).
+- Cost on log entries (SPEC 25 left it out).
 - Targets, "remaining today", and recommendations.
 - Recent and frequent recipes.
 - Frontend changes.
@@ -78,11 +78,11 @@ Schema::create('recipe_log_lines', function (Blueprint $table) {
 - `key` is `rl_` + lowercase ULID (29 characters).
 - `eaten_at` is stored in UTC. `utc_offset_minutes` keeps the offset the client sent, so responses return the time as the user saw it.
 - `local_date` is the date of `eaten_at` at that offset, computed once on create, and again only when a `PATCH` changes `eaten_at`. Changing time zones later never moves an entry to another day.
-- The entry's macros are the sum of its lines' macros at log time. `fiber` is `null` only when no line has fiber, as in SPEC 19.
+- The entry's macros are the sum of its lines' macros at log time. `fiber` is `null` only when no line has fiber, as in SPEC 20.
 - A line's macros are `grams × per_100g / 100` of the ingredient at log time.
 - `recipe_name`, `ingredient_name` and `portion_label` are copied at log time, so a log reads without joins and never changes when a name is edited.
 - Every reference uses `RESTRICT`, per CLAUDE.md. Deleting a logged recipe, ingredient or portion soft-deletes it through `CatalogRemover`, and the entry is unchanged.
-- The `User` deleting hook (SPEC 19) also deletes the user's recipe logs before the rest, so their `RESTRICT` keys don't block the cascade.
+- The `User` deleting hook (SPEC 20) also deletes the user's recipe logs before the rest, so their `RESTRICT` keys don't block the cascade.
 
 ### Models
 
@@ -94,7 +94,7 @@ Schema::create('recipe_log_lines', function (Blueprint $table) {
 ### Building the lines
 
 - **`ingredients` absent:** the recipe's lines are copied and scaled by `servings / recipe.servings`, applied to both `quantity` and `grams`, rounded to 2 decimals.
-- **A sub-recipe line** (SPEC 20) is replaced by the sub-recipe's ingredient lines, scaled by `line quantity / sub-recipe servings`, then by the factor above.
+- **A sub-recipe line** (SPEC 21) is replaced by the sub-recipe's ingredient lines, scaled by `line quantity / sub-recipe servings`, then by the factor above.
 - **Repeats after flattening** (the same ingredient and portion twice) are merged into one line by summing `quantity` and `grams`. The merged line takes the position of the first one.
 - **`ingredients` sent:** the list as sent is the portion eaten. `servings` is kept as the label.
 - Lines copied from the recipe can include soft-deleted ingredients or portions. They're logged as they are.
@@ -130,7 +130,7 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 | `recipe` | required, the key of one of the caller's recipes, not soft-deleted |
 | `servings` | required, number, 0.25–12, a multiple of 0.25 |
 | `eaten_at` | required, ISO 8601 date-time with a UTC offset (`Z` or `±hh:mm`), not before 2000-01-01, and at most 24 hours after the request |
-| `ingredients` | optional, list of 1–50 items, ingredient lines only, with SPEC 19's line rules (visible, not soft-deleted, portion of that ingredient, quantity limits, no repeats) |
+| `ingredients` | optional, list of 1–50 items, ingredient lines only, with SPEC 20's line rules (visible, not soft-deleted, portion of that ingredient, quantity limits, no repeats) |
 | `ingredients.*.recipe` | prohibited. Sub-recipes are only flattened from the recipe |
 
 - Another user's recipe gives the same 422 as an unknown key.
@@ -140,7 +140,7 @@ All of them require a bearer token (401 otherwise) and live under `api/v1/nutrit
 
 - `servings`, `eaten_at` and `ingredients` are optional. None can be `null`. `recipe` is prohibited, since an entry can't change recipe.
 - `eaten_at` sent: `eaten_at`, `utc_offset_minutes` and `local_date` are recomputed. The macros don't change.
-- `ingredients` sent: it's the full new list, and the snapshot is taken again from current per-100 g values. A line may reference a soft-deleted ingredient or portion only when the entry's current lines already use that same pair (SPEC 19's rule).
+- `ingredients` sent: it's the full new list, and the snapshot is taken again from current per-100 g values. A line may reference a soft-deleted ingredient or portion only when the entry's current lines already use that same pair (SPEC 20's rule).
 - `servings` sent without `ingredients`: the current lines are scaled by `new servings / old servings`, and the snapshot is taken again.
 - Only `eaten_at` sent: the frozen macros and names stay as they are.
 
@@ -203,7 +203,7 @@ app/Models/User.php                              (deleting hook removes logs fir
 database/migrations/<date>_create_recipe_logs_table.php
 database/migrations/<date>_create_recipe_log_lines_table.php
 docs/openapi/v1.json
-specs/19-recipes.md                              (header note)
+specs/20-recipes.md                              (header note)
 CLAUDE.md
 tests/Feature/Nutrition/RecipeLogStoreApiTest.php
 tests/Feature/Nutrition/RecipeLogUpdateApiTest.php
@@ -216,7 +216,7 @@ Plus additions to `RecipeDeleteApiTest`, `UserIngredientDeleteApiTest` and `Open
 
 ## Implementation plan
 
-All commands run inside the `app` container. Branch from `spec-20-nested-recipes`, and rebase onto `master` once it's merged.
+All commands run inside the `app` container. Branch from `spec-21-nested-recipes`, and rebase onto `master` once it's merged.
 
 1. **Schema and models.** Add both migrations, both models, the key generation, the route binding and the `User` hook change. Tests:
    - `migrate` and `migrate:rollback` work;
@@ -232,7 +232,7 @@ All commands run inside the `app` container. Branch from `spec-20-nested-recipes
    - `201` with the detail shape, an `rl_` key of 29 characters, and `eaten_at` returned with the sent offset;
    - `local_date`: `2026-11-05T23:30:00-05:00` is stored on `2026-11-05`, while its UTC time is on the 6th;
    - with `ingredients` absent, the lines are the scaled recipe. With `ingredients` sent, the lines are as sent;
-   - each rule gives 422: an unknown, another user's or a soft-deleted recipe, servings of 0, 0.3 or 12.25, `eaten_at` without an offset, before 2000, or 25 hours ahead, and `ingredients` breaking a SPEC 19 line rule or holding a `recipe` line;
+   - each rule gives 422: an unknown, another user's or a soft-deleted recipe, servings of 0, 0.3 or 12.25, `eaten_at` without an offset, before 2000, or 25 hours ahead, and `ingredients` breaking a SPEC 20 line rule or holding a `recipe` line;
    - detail returns the entry, and another user's or an unknown key gives 404.
 4. **Frozen values.** Tests:
    - after logging, editing the ingredient's macros, renaming the recipe and editing the recipe's lines leave the entry's macros, names and lines unchanged;
@@ -252,7 +252,7 @@ All commands run inside the `app` container. Branch from `spec-20-nested-recipes
    - an empty day gives `entries: []`, zero totals and `fiber: null`;
    - a missing or malformed `date` gives 422;
    - 2 and 12 entries run the same two queries.
-7. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Add to SPEC 19's header: `> **Note:** recipes can be logged as eaten, by SPEC 25.` Update `CLAUDE.md`: recipe logs, frozen macros, `local_date`, and that the meal-logging specs build on these tables.
+7. **Docs and records.** PHPDoc and `@example`s, then `php artisan scramble:export --path=docs/openapi/v1.json`. Extend `OpenApiDocumentTest`. Add to SPEC 20's header: `> **Note:** recipes can be logged as eaten, by SPEC 26.` Update `CLAUDE.md`: recipe logs, frozen macros, `local_date`, and that the meal-logging specs build on these tables.
 8. **Housekeeping.** `vendor/bin/pint`, then `vendor/bin/pint --test` reports no issues.
 
 ## Acceptance criteria
@@ -267,7 +267,7 @@ All commands run inside the `app` container. Branch from `spec-20-nested-recipes
 - [ ] Another user's entry gives 404 on detail, update and delete, and never appears in a day.
 - [ ] Deleting a logged recipe or ingredient soft-deletes it and leaves the entry intact.
 - [ ] Deleting a user with recipe logs succeeds.
-- [ ] `docs/openapi/v1.json` is re-exported, SPEC 19 has its header note, and `CLAUDE.md` is updated.
+- [ ] `docs/openapi/v1.json` is re-exported, SPEC 20 has its header note, and `CLAUDE.md` is updated.
 
 ## Decisions
 
