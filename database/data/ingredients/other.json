@@ -1,0 +1,713 @@
+[
+  {
+    "key": "almond_milk",
+    "name": "Almond milk, unsweetened",
+    "category": "other",
+    "source": "usda_foundation",
+    "source_id": "2257045",
+    "kcal": 19.3,
+    "protein": 0.656,
+    "carbs": 0.671,
+    "fat": 1.56,
+    "fiber": 0,
+    "nutrients": {
+      "calcium": 158,
+      "iron": 0.125,
+      "magnesium": 8.25,
+      "phosphorus": 19.1,
+      "potassium": 49.3,
+      "sodium": 59.2,
+      "zinc": 0.077,
+      "copper": 0.027,
+      "manganese": 0.056,
+      "vitamin_d": 1.59,
+      "vitamin_k": 0,
+      "thiamin": 0.005,
+      "riboflavin": 0.083,
+      "niacin": 0.089,
+      "vitamin_b6": 0,
+      "vitamin_b12": 0.449
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 262,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Bebida de almendras sin azúcar"
+    },
+    "aliases": {
+      "es": [
+        "leche de almendras"
+      ]
+    },
+    "photos": [
+      {
+        "file": "002-almondmilk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kjokkenutstyr"
+      },
+      {
+        "file": "Raspberry_bites_and_almond_milk_(33358177692).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "cappi thompson from Gorham, New Hampshire, USA"
+      }
+    ]
+  },
+  {
+    "key": "beer",
+    "name": "Beer",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "168746",
+    "kcal": 43,
+    "protein": 0.46,
+    "carbs": 3.55,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 4,
+      "iron": 0.02,
+      "magnesium": 6,
+      "phosphorus": 14,
+      "potassium": 27,
+      "sodium": 4,
+      "zinc": 0.01,
+      "copper": 0.005,
+      "manganese": 0.008,
+      "selenium": 0.6,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0.005,
+      "riboflavin": 0.025,
+      "niacin": 0.513,
+      "pantothenic_acid": 0.041,
+      "vitamin_b6": 0.046,
+      "folate": 6,
+      "vitamin_b12": 0.02,
+      "choline": 10.1
+    },
+    "portions": [
+      {
+        "key": "can",
+        "label": "1 can (12 fl oz)",
+        "grams": 356,
+        "translations": {
+          "es": "1 lata (355 ml)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cerveza"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Von_Trapp_beer_glass_with_beer_2021_001.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Adam S. Keck"
+      },
+      {
+        "file": "Tusker_beer_bottle_with_beer_glass,_Wikimania_2025_(01).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bahnfrend"
+      }
+    ]
+  },
+  {
+    "key": "black_tea_brewed",
+    "name": "Black tea, brewed",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "173227",
+    "kcal": 1,
+    "protein": 0,
+    "carbs": 0.3,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.002,
+      "monounsaturated_fat": 0.001,
+      "polyunsaturated_fat": 0.004,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 0,
+      "iron": 0.02,
+      "magnesium": 3,
+      "phosphorus": 1,
+      "potassium": 37,
+      "sodium": 3,
+      "zinc": 0.02,
+      "copper": 0.01,
+      "manganese": 0.219,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0.014,
+      "niacin": 0,
+      "pantothenic_acid": 0.011,
+      "vitamin_b6": 0,
+      "folate": 5,
+      "vitamin_b12": 0,
+      "choline": 0.4
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup (8 fl oz)",
+        "grams": 237,
+        "translations": {
+          "es": "1 taza (240 ml)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Té negro preparado"
+    },
+    "aliases": {
+      "en": [
+        "tea"
+      ],
+      "es": [
+        "té"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Cup_of_black_tea.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "AntanO"
+      },
+      {
+        "file": "A_cup_of_black_tea_from_Srimangal_Bangladesh.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sm faysal"
+      }
+    ]
+  },
+  {
+    "key": "cocoa_powder",
+    "name": "Cocoa powder, unsweetened",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "169593",
+    "kcal": 228,
+    "protein": 19.6,
+    "carbs": 57.9,
+    "fat": 13.7,
+    "fiber": 37,
+    "nutrients": {
+      "sugars": 1.75,
+      "saturated_fat": 8.07,
+      "monounsaturated_fat": 4.57,
+      "polyunsaturated_fat": 0.44,
+      "cholesterol": 0,
+      "calcium": 128,
+      "iron": 13.9,
+      "magnesium": 499,
+      "phosphorus": 734,
+      "potassium": 1520,
+      "sodium": 21,
+      "zinc": 6.81,
+      "copper": 3.79,
+      "manganese": 3.84,
+      "selenium": 14.3,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.1,
+      "vitamin_k": 2.5,
+      "thiamin": 0.078,
+      "riboflavin": 0.241,
+      "niacin": 2.18,
+      "pantothenic_acid": 0.254,
+      "vitamin_b6": 0.118,
+      "folate": 32,
+      "vitamin_b12": 0,
+      "choline": 12
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 5.4,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 86,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cacao en polvo sin azúcar"
+    },
+    "aliases": {
+      "es": [
+        "cocoa"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Dutch_process_and_natural_cocoa.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "F_A"
+      },
+      {
+        "file": "Cocoa_powder.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "blair"
+      }
+    ]
+  },
+  {
+    "key": "coffee_brewed",
+    "name": "Coffee, brewed",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "171890",
+    "kcal": 1,
+    "protein": 0.12,
+    "carbs": 0,
+    "fat": 0.02,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.002,
+      "monounsaturated_fat": 0.015,
+      "polyunsaturated_fat": 0.001,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 2,
+      "iron": 0.01,
+      "magnesium": 3,
+      "phosphorus": 3,
+      "potassium": 49,
+      "sodium": 2,
+      "zinc": 0.02,
+      "copper": 0.002,
+      "manganese": 0.023,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.01,
+      "vitamin_k": 0.1,
+      "thiamin": 0.014,
+      "riboflavin": 0.076,
+      "niacin": 0.191,
+      "pantothenic_acid": 0.254,
+      "vitamin_b6": 0.001,
+      "folate": 2,
+      "vitamin_b12": 0,
+      "choline": 2.6
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup (8 fl oz)",
+        "grams": 237,
+        "translations": {
+          "es": "1 taza (240 ml)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Café preparado"
+    },
+    "aliases": {
+      "en": [
+        "black coffee"
+      ],
+      "es": [
+        "café pasado",
+        "café de filtro",
+        "café negro"
+      ]
+    },
+    "photos": [
+      {
+        "file": "A_small_cup_of_coffee.JPG",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Julius Schorzman"
+      },
+      {
+        "file": "Cup_of_coffee_(Serbian_cuisine,_Grand_kava).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      }
+    ]
+  },
+  {
+    "key": "dark_chocolate",
+    "name": "Dark chocolate, 70–85% cacao",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "170273",
+    "kcal": 598,
+    "protein": 7.79,
+    "carbs": 45.9,
+    "fat": 42.6,
+    "fiber": 10.9,
+    "nutrients": {
+      "sugars": 24,
+      "saturated_fat": 24.5,
+      "monounsaturated_fat": 12.8,
+      "polyunsaturated_fat": 1.26,
+      "trans_fat": 0.03,
+      "cholesterol": 3,
+      "calcium": 73,
+      "iron": 11.9,
+      "magnesium": 228,
+      "phosphorus": 308,
+      "potassium": 715,
+      "sodium": 20,
+      "zinc": 3.31,
+      "copper": 1.77,
+      "manganese": 1.95,
+      "selenium": 6.8,
+      "vitamin_a": 2,
+      "vitamin_e": 0.59,
+      "vitamin_k": 7.3,
+      "thiamin": 0.034,
+      "riboflavin": 0.078,
+      "niacin": 1.05,
+      "pantothenic_acid": 0.418,
+      "vitamin_b6": 0.038,
+      "vitamin_b12": 0.28
+    },
+    "portions": [
+      {
+        "key": "bar",
+        "label": "1 bar",
+        "grams": 101,
+        "translations": {
+          "es": "1 barra"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Chocolate negro, 70–85 % cacao"
+    },
+    "aliases": {
+      "es": [
+        "chocolate amargo",
+        "chocolate oscuro"
+      ]
+    },
+    "photos": [
+      {
+        "file": "2023_Gorzka_czekolada.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
+  },
+  {
+    "key": "oat_milk",
+    "name": "Oat milk, unsweetened",
+    "category": "other",
+    "source": "usda_foundation",
+    "source_id": "2257046",
+    "kcal": 48.3,
+    "protein": 0.797,
+    "carbs": 5.1,
+    "fat": 2.75,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 2.32,
+      "calcium": 148,
+      "iron": 0.261,
+      "magnesium": 5.91,
+      "phosphorus": 89.2,
+      "potassium": 148,
+      "sodium": 42,
+      "zinc": 0.091,
+      "copper": 0.027,
+      "manganese": 0.126,
+      "selenium": 0,
+      "vitamin_d": 1.7,
+      "vitamin_k": 0.4,
+      "thiamin": 0.04,
+      "riboflavin": 0.281,
+      "niacin": 0.096,
+      "vitamin_b6": 0.006,
+      "vitamin_b12": 0.506
+    },
+    "portions": [],
+    "translations": {
+      "es": "Bebida de avena sin azúcar"
+    },
+    "aliases": {
+      "es": [
+        "leche de avena"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Oat_milk_glass_and_bottles.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      },
+      {
+        "file": "Oat_milk_glass.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Shisma"
+      }
+    ]
+  },
+  {
+    "key": "orange_juice",
+    "name": "Orange juice, fresh",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "169098",
+    "kcal": 45,
+    "protein": 0.7,
+    "carbs": 10.4,
+    "fat": 0.2,
+    "fiber": 0.2,
+    "nutrients": {
+      "sugars": 8.4,
+      "saturated_fat": 0.024,
+      "monounsaturated_fat": 0.036,
+      "polyunsaturated_fat": 0.04,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 11,
+      "iron": 0.2,
+      "magnesium": 11,
+      "phosphorus": 17,
+      "potassium": 200,
+      "sodium": 1,
+      "zinc": 0.05,
+      "copper": 0.044,
+      "manganese": 0.014,
+      "selenium": 0.1,
+      "vitamin_a": 10,
+      "vitamin_c": 50,
+      "vitamin_d": 0,
+      "vitamin_e": 0.04,
+      "vitamin_k": 0.1,
+      "thiamin": 0.09,
+      "riboflavin": 0.03,
+      "niacin": 0.4,
+      "pantothenic_acid": 0.19,
+      "vitamin_b6": 0.04,
+      "folate": 30,
+      "vitamin_b12": 0,
+      "choline": 6.2
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 248,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "fruit_yield",
+        "label": "Juice of 1 orange",
+        "grams": 86,
+        "translations": {
+          "es": "Jugo de 1 naranja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Jugo de naranja natural"
+    },
+    "aliases": {
+      "es": [
+        "zumo de naranja"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Orange_juice_1_edit1.jpg",
+        "license": "Public domain",
+        "author": "Agency of the United States Department of Agriculture Edited Version by: Arad"
+      },
+      {
+        "file": "Orange_juice_half_glass.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Corn cheese"
+      }
+    ]
+  },
+  {
+    "key": "red_wine",
+    "name": "Red wine",
+    "category": "other",
+    "source": "usda_sr_legacy",
+    "source_id": "173190",
+    "kcal": 85,
+    "protein": 0.07,
+    "carbs": 2.61,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.62,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 8,
+      "iron": 0.46,
+      "magnesium": 12,
+      "phosphorus": 23,
+      "potassium": 127,
+      "sodium": 4,
+      "zinc": 0.14,
+      "copper": 0.011,
+      "manganese": 0.132,
+      "selenium": 0.2,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0.4,
+      "thiamin": 0.005,
+      "riboflavin": 0.031,
+      "niacin": 0.224,
+      "pantothenic_acid": 0.03,
+      "vitamin_b6": 0.057,
+      "folate": 1,
+      "vitamin_b12": 0,
+      "choline": 5.7
+    },
+    "portions": [
+      {
+        "key": "glass",
+        "label": "1 glass (5 fl oz)",
+        "grams": 147,
+        "translations": {
+          "es": "1 copa (150 ml)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Vino tinto"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "020260524_140002_Red_wine_in_glass.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Auctor quaerendae"
+      },
+      {
+        "file": "Offering_a_glass_of_red_wine.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FranHogan"
+      }
+    ]
+  },
+  {
+    "key": "soy_milk",
+    "name": "Soy milk, unsweetened",
+    "category": "other",
+    "source": "usda_foundation",
+    "source_id": "1999630",
+    "kcal": 38.5,
+    "protein": 3.55,
+    "carbs": 1.29,
+    "fat": 2.12,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.557,
+      "saturated_fat": 0.314,
+      "monounsaturated_fat": 0.416,
+      "polyunsaturated_fat": 1.15,
+      "trans_fat": 0,
+      "calcium": 101,
+      "iron": 0.542,
+      "magnesium": 21.5,
+      "phosphorus": 68.6,
+      "potassium": 158,
+      "sodium": 34.3,
+      "zinc": 0.312,
+      "copper": 0.108,
+      "manganese": 0.208,
+      "selenium": 1.94,
+      "vitamin_a": 58.2,
+      "vitamin_d": 0.681,
+      "vitamin_e": 0.156,
+      "thiamin": 0.063,
+      "riboflavin": 0.084,
+      "niacin": 0.236,
+      "vitamin_b6": 0.055,
+      "vitamin_b12": 0.393
+    },
+    "portions": [],
+    "translations": {
+      "es": "Bebida de soya sin azúcar"
+    },
+    "aliases": {
+      "en": [
+        "soymilk"
+      ],
+      "es": [
+        "leche de soya",
+        "leche de soja"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Soymilk_can_and_glass_2.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Stu Spivack, GeeJo"
+      },
+      {
+        "file": "Midori_Soy_Milk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Mr.ちゅらさん"
+      }
+    ]
+  }
+]

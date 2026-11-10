@@ -1,0 +1,1565 @@
+[
+  {
+    "key": "almonds",
+    "name": "Almonds",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2346393",
+    "kcal": 584,
+    "protein": 21.5,
+    "carbs": 20,
+    "fat": 51.1,
+    "fiber": 10.8,
+    "nutrients": {
+      "saturated_fat": 3.78,
+      "monounsaturated_fat": 31.3,
+      "polyunsaturated_fat": 11.2,
+      "calcium": 254,
+      "iron": 3.74,
+      "magnesium": 258,
+      "phosphorus": 503,
+      "potassium": 733,
+      "sodium": 0,
+      "zinc": 2.86,
+      "copper": 0.91,
+      "manganese": 2.15,
+      "vitamin_k": 0,
+      "thiamin": 0.16,
+      "niacin": 3.77,
+      "vitamin_b6": 0.101
+    },
+    "portions": [
+      {
+        "key": "cup_whole",
+        "label": "1 cup, whole",
+        "grams": 143,
+        "translations": {
+          "es": "1 taza, enteras"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 92,
+        "translations": {
+          "es": "1 taza, fileteadas"
+        }
+      },
+      {
+        "key": "almond",
+        "label": "1 almond",
+        "grams": 1.2,
+        "translations": {
+          "es": "1 almendra"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Almendras"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "butter",
+    "name": "Butter",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "173410",
+    "kcal": 717,
+    "protein": 0.85,
+    "carbs": 0.06,
+    "fat": 81.1,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.06,
+      "saturated_fat": 51.4,
+      "monounsaturated_fat": 21,
+      "polyunsaturated_fat": 3.04,
+      "trans_fat": 3.28,
+      "cholesterol": 215,
+      "calcium": 24,
+      "iron": 0.02,
+      "magnesium": 2,
+      "phosphorus": 24,
+      "potassium": 24,
+      "sodium": 643,
+      "zinc": 0.09,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 1,
+      "vitamin_a": 684,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 2.32,
+      "vitamin_k": 7,
+      "thiamin": 0.005,
+      "riboflavin": 0.034,
+      "niacin": 0.042,
+      "pantothenic_acid": 0.11,
+      "vitamin_b6": 0.003,
+      "folate": 3,
+      "vitamin_b12": 0.17,
+      "choline": 18.8
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 14.2,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "pat",
+        "label": "1 pat (1 in square)",
+        "grams": 5,
+        "translations": {
+          "es": "1 cuadrito (2,5 cm)"
+        }
+      },
+      {
+        "key": "stick",
+        "label": "1 stick",
+        "grams": 113,
+        "translations": {
+          "es": "1 barra"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mantequilla"
+    },
+    "aliases": {
+      "es": [
+        "manteca"
+      ]
+    },
+    "photos": [
+      {
+        "file": "2023_Masło_w_maselniczce.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "Butter_at_the_Borough_Market.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Charles Haynes from Bangalore, India"
+      }
+    ]
+  },
+  {
+    "key": "canola_oil",
+    "name": "Canola oil",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "172336",
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 7.36,
+      "monounsaturated_fat": 63.3,
+      "polyunsaturated_fat": 28.1,
+      "trans_fat": 0.395,
+      "cholesterol": 0,
+      "calcium": 0,
+      "iron": 0,
+      "magnesium": 0,
+      "phosphorus": 0,
+      "potassium": 0,
+      "sodium": 0,
+      "zinc": 0,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 17.5,
+      "vitamin_k": 71.3,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 14,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 218,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aceite de canola"
+    },
+    "aliases": {
+      "en": [
+        "rapeseed oil"
+      ],
+      "es": [
+        "aceite de colza"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Canola_Oil_(4107885913).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Veganbaking.net from USA"
+      },
+      {
+        "file": "Great_value_canola_oil_in_a_bottle.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Philipp Michel Reichold"
+      }
+    ]
+  },
+  {
+    "key": "cashews",
+    "name": "Cashews",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515374",
+    "kcal": 533,
+    "protein": 17.4,
+    "carbs": 36.3,
+    "fat": 38.9,
+    "fiber": 4.1,
+    "nutrients": {
+      "calcium": 42,
+      "iron": 5.99,
+      "magnesium": 251,
+      "phosphorus": 532,
+      "potassium": 638,
+      "sodium": 4.76,
+      "zinc": 5.07,
+      "copper": 2.22,
+      "manganese": 1.95,
+      "selenium": 20.7
+    },
+    "portions": [],
+    "translations": {
+      "es": "Anacardos"
+    },
+    "aliases": {
+      "es": [
+        "castañas de cajú",
+        "marañón",
+        "nueces de la india"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Cashew_nuts_in_West_Bengal_of_India.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Billjones94"
+      }
+    ]
+  },
+  {
+    "key": "chia_seeds",
+    "name": "Chia seeds",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "170554",
+    "kcal": 486,
+    "protein": 16.5,
+    "carbs": 42.1,
+    "fat": 30.7,
+    "fiber": 34.4,
+    "nutrients": {
+      "saturated_fat": 3.33,
+      "monounsaturated_fat": 2.31,
+      "polyunsaturated_fat": 23.7,
+      "trans_fat": 0.14,
+      "cholesterol": 0,
+      "calcium": 631,
+      "iron": 7.72,
+      "magnesium": 335,
+      "phosphorus": 860,
+      "potassium": 407,
+      "sodium": 16,
+      "zinc": 4.58,
+      "copper": 0.924,
+      "manganese": 2.72,
+      "selenium": 55.2,
+      "vitamin_c": 1.6,
+      "vitamin_e": 0.5,
+      "thiamin": 0.62,
+      "riboflavin": 0.17,
+      "niacin": 8.83,
+      "vitamin_b12": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Semillas de chía"
+    },
+    "aliases": {
+      "es": [
+        "chía"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Chia_Seeds_with_the_word_Chia_spelled_out.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "formulatehealth"
+      },
+      {
+        "file": "Chia_seeds_in_a_cup.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Zenyrgarden"
+      }
+    ]
+  },
+  {
+    "key": "coconut_oil",
+    "name": "Coconut oil",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "330458",
+    "kcal": 833,
+    "protein": 0,
+    "carbs": 0.84,
+    "fat": 99.1,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 82.5,
+      "monounsaturated_fat": 6.31,
+      "polyunsaturated_fat": 1.7,
+      "trans_fat": 0.028,
+      "calcium": 1,
+      "iron": 0.05,
+      "magnesium": 0,
+      "phosphorus": 0,
+      "potassium": 0,
+      "sodium": 0,
+      "zinc": 0.02,
+      "copper": 0,
+      "manganese": 0,
+      "vitamin_e": 0.11,
+      "vitamin_k": 0.6
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 13.6,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 218,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aceite de coco"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Coconut_oil_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      }
+    ]
+  },
+  {
+    "key": "flaxseed_ground",
+    "name": "Flaxseed, ground",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2262075",
+    "kcal": 514,
+    "protein": 18,
+    "carbs": 34.4,
+    "fat": 37.3,
+    "fiber": 23.1,
+    "nutrients": {
+      "saturated_fat": 3.28,
+      "monounsaturated_fat": 5.94,
+      "polyunsaturated_fat": 24.7,
+      "calcium": 230,
+      "iron": 5.78,
+      "magnesium": 372,
+      "phosphorus": 556,
+      "potassium": 793,
+      "sodium": 36.7,
+      "zinc": 4.74,
+      "copper": 1.34,
+      "manganese": 2.4,
+      "selenium": 136,
+      "vitamin_e": 0,
+      "vitamin_k": 3.68,
+      "thiamin": 0.537,
+      "niacin": 3.76,
+      "vitamin_b6": 0.393
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 7,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Linaza molida"
+    },
+    "aliases": {
+      "en": [
+        "linseed"
+      ],
+      "es": [
+        "semillas de lino"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Linum_Usitatissimum_(Brown_linseed).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Guytn"
+      },
+      {
+        "file": "Brown_flaxseed_on_spoon.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Dvortygirl"
+      }
+    ]
+  },
+  {
+    "key": "ghee",
+    "name": "Ghee (clarified butter)",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "173412",
+    "kcal": 876,
+    "protein": 0.28,
+    "carbs": 0,
+    "fat": 99.5,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 61.9,
+      "monounsaturated_fat": 28.7,
+      "polyunsaturated_fat": 3.69,
+      "cholesterol": 256,
+      "calcium": 4,
+      "iron": 0,
+      "magnesium": 0,
+      "phosphorus": 3,
+      "potassium": 5,
+      "sodium": 2,
+      "zinc": 0.01,
+      "copper": 0.001,
+      "manganese": 0,
+      "selenium": 0,
+      "vitamin_a": 840,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 2.8,
+      "vitamin_k": 8.6,
+      "thiamin": 0.001,
+      "riboflavin": 0.005,
+      "niacin": 0.003,
+      "pantothenic_acid": 0.01,
+      "vitamin_b6": 0.001,
+      "folate": 0,
+      "vitamin_b12": 0.01,
+      "choline": 22.3
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 12.8,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 205,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mantequilla clarificada (ghee)"
+    },
+    "aliases": {
+      "en": [
+        "ghee",
+        "clarified butter"
+      ],
+      "es": [
+        "ghee"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Butterschmalz-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Rainer Z ..."
+      },
+      {
+        "file": "Pure_Ghee-Homemade-Maharashtra.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Phadke09"
+      }
+    ]
+  },
+  {
+    "key": "hazelnuts",
+    "name": "Hazelnuts",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515375",
+    "kcal": 602,
+    "protein": 13.5,
+    "carbs": 26.5,
+    "fat": 53.5,
+    "fiber": 8.41,
+    "nutrients": {
+      "calcium": 135,
+      "iron": 3.46,
+      "magnesium": 156,
+      "phosphorus": 321,
+      "potassium": 636,
+      "sodium": 0,
+      "zinc": 2.33,
+      "copper": 1.41,
+      "manganese": 6.06,
+      "selenium": 0
+    },
+    "portions": [
+      {
+        "key": "cup_whole",
+        "label": "1 cup, whole",
+        "grams": 135,
+        "translations": {
+          "es": "1 taza, enteras"
+        }
+      },
+      {
+        "key": "ten",
+        "label": "10 hazelnuts",
+        "grams": 14,
+        "translations": {
+          "es": "10 avellanas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Avellanas"
+    },
+    "aliases": {
+      "en": [
+        "filberts"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Hazelnuts_(Corylus_avellana)_-_whole_with_kernels.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Hazelnuts_(Corylus_avellana).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "olive_oil",
+    "name": "Olive oil",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "171413",
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 13.8,
+      "monounsaturated_fat": 73,
+      "polyunsaturated_fat": 10.5,
+      "cholesterol": 0,
+      "calcium": 1,
+      "iron": 0.56,
+      "magnesium": 0,
+      "phosphorus": 0,
+      "potassium": 1,
+      "sodium": 2,
+      "zinc": 0,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 14.4,
+      "vitamin_k": 60.2,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0.3
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 13.5,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 216,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aceite de oliva"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "2023_Oliwa_z_oliwek_Iliada_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
+  },
+  {
+    "key": "peanut_butter",
+    "name": "Peanut butter",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2262072",
+    "kcal": 589,
+    "protein": 24,
+    "carbs": 22.7,
+    "fat": 49.4,
+    "fiber": 6.32,
+    "nutrients": {
+      "saturated_fat": 8.42,
+      "monounsaturated_fat": 30.7,
+      "polyunsaturated_fat": 9.78,
+      "calcium": 49.8,
+      "iron": 1.85,
+      "magnesium": 193,
+      "phosphorus": 393,
+      "potassium": 654,
+      "sodium": 221,
+      "zinc": 3.06,
+      "copper": 0.54,
+      "manganese": 1.68,
+      "selenium": 20.2,
+      "vitamin_e": 5.41,
+      "vitamin_k": 0,
+      "thiamin": 0.121,
+      "niacin": 17.2,
+      "vitamin_b6": 0.38
+    },
+    "portions": [
+      {
+        "key": "two_tbsp",
+        "label": "2 tablespoons",
+        "grams": 32,
+        "translations": {
+          "es": "2 cucharadas"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 258,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mantequilla de maní"
+    },
+    "aliases": {
+      "es": [
+        "crema de cacahuate",
+        "mantequilla de cacahuete",
+        "pasta de maní"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Peanut_butter_knife.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "\"Peanut Butter\" by Dr Stephen Dann is licensed under CC BY-SA 2.0"
+      },
+      {
+        "file": "Peanut-Butter-Jelly-Sandwich.jpg",
+        "license": "Public domain",
+        "author": "Evan-Amos"
+      }
+    ]
+  },
+  {
+    "key": "peanuts_dry_roasted",
+    "name": "Peanuts, dry-roasted",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "173806",
+    "kcal": 587,
+    "protein": 24.4,
+    "carbs": 21.3,
+    "fat": 49.7,
+    "fiber": 8.4,
+    "nutrients": {
+      "sugars": 4.9,
+      "saturated_fat": 7.72,
+      "monounsaturated_fat": 26.2,
+      "polyunsaturated_fat": 9.77,
+      "trans_fat": 0.027,
+      "cholesterol": 0,
+      "calcium": 58,
+      "iron": 1.58,
+      "magnesium": 178,
+      "phosphorus": 363,
+      "potassium": 634,
+      "sodium": 6,
+      "zinc": 2.77,
+      "copper": 0.428,
+      "manganese": 1.79,
+      "selenium": 9.3,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 4.93,
+      "vitamin_k": 0,
+      "thiamin": 0.152,
+      "riboflavin": 0.197,
+      "niacin": 14.4,
+      "pantothenic_acid": 1.01,
+      "vitamin_b6": 0.466,
+      "folate": 97,
+      "vitamin_b12": 0,
+      "choline": 64.6
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 146,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "peanut",
+        "label": "1 peanut",
+        "grams": 1,
+        "translations": {
+          "es": "1 maní"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Maní, tostado"
+    },
+    "aliases": {
+      "es": [
+        "cacahuates tostados",
+        "cacahuetes tostados"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Roasted_Peanuts_with_shell.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      },
+      {
+        "file": "Dry_Roasted_Virginia_Peanuts.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gogerr"
+      }
+    ]
+  },
+  {
+    "key": "peanuts_raw",
+    "name": "Peanuts, raw",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515376",
+    "kcal": 551,
+    "protein": 23.2,
+    "carbs": 26.5,
+    "fat": 43.3,
+    "fiber": 8.01,
+    "nutrients": {
+      "calcium": 49.1,
+      "iron": 1.55,
+      "magnesium": 180,
+      "phosphorus": 380,
+      "potassium": 636,
+      "sodium": 1.49,
+      "zinc": 2.78,
+      "copper": 0.46,
+      "manganese": 1.68,
+      "selenium": 17.8
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 146,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Maní, crudo"
+    },
+    "aliases": {
+      "es": [
+        "cacahuates",
+        "cacahuetes"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Raw_peanuts_with_skin_on_white_plate.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Undeka 11"
+      },
+      {
+        "file": "Raw_peanuts.JPG",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Sakurai Midori"
+      }
+    ]
+  },
+  {
+    "key": "pecans",
+    "name": "Pecans",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2346395",
+    "kcal": 700,
+    "protein": 9.96,
+    "carbs": 12.7,
+    "fat": 73.3,
+    "fiber": 5.79,
+    "nutrients": {
+      "saturated_fat": 6.46,
+      "monounsaturated_fat": 39.3,
+      "polyunsaturated_fat": 22.9,
+      "calcium": 54.8,
+      "iron": 2.37,
+      "magnesium": 103,
+      "phosphorus": 253,
+      "potassium": 360,
+      "sodium": 0,
+      "zinc": 3.93,
+      "copper": 0.906,
+      "manganese": 2.28,
+      "vitamin_k": 4.1,
+      "thiamin": 0.548,
+      "niacin": 0.946,
+      "vitamin_b6": 0.171
+    },
+    "portions": [
+      {
+        "key": "cup_halves",
+        "label": "1 cup, halves",
+        "grams": 99,
+        "translations": {
+          "es": "1 taza, mitades"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 109,
+        "translations": {
+          "es": "1 taza, picadas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pecanas"
+    },
+    "aliases": {
+      "es": [
+        "nueces pecanas"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Pekan_nuts_9578.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Henning Schlottmann (User:H-stt)"
+      },
+      {
+        "file": "Pecan_halves.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bubba73"
+      }
+    ]
+  },
+  {
+    "key": "pistachios",
+    "name": "Pistachios",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515379",
+    "kcal": 561,
+    "protein": 20.5,
+    "carbs": 27.7,
+    "fat": 45,
+    "fiber": 6.97,
+    "nutrients": {
+      "calcium": 117,
+      "iron": 3.46,
+      "magnesium": 110,
+      "phosphorus": 500,
+      "potassium": 947,
+      "sodium": 0,
+      "zinc": 2.18,
+      "copper": 1.05,
+      "manganese": 1.05,
+      "selenium": 23.1
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 123,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "kernel",
+        "label": "1 pistachio",
+        "grams": 0.7,
+        "translations": {
+          "es": "1 pistacho"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pistachos"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Pistachio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Kobi Schutz"
+      }
+    ]
+  },
+  {
+    "key": "pumpkin_seeds",
+    "name": "Pumpkin seeds",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515380",
+    "kcal": 515,
+    "protein": 29.9,
+    "carbs": 18.7,
+    "fat": 40,
+    "fiber": 5.08,
+    "nutrients": {
+      "calcium": 37.4,
+      "iron": 8.36,
+      "magnesium": 500,
+      "phosphorus": 1150,
+      "potassium": 691,
+      "sodium": 0,
+      "zinc": 6.34,
+      "copper": 1.22,
+      "manganese": 4.12,
+      "selenium": 20.5
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 129,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Semillas de calabaza"
+    },
+    "aliases": {
+      "en": [
+        "pepitas"
+      ],
+      "es": [
+        "pepitas"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Pumpkin_seed._img_016.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      },
+      {
+        "file": "Pumpkin_Seeds_macro_1.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Daniel Schwen"
+      }
+    ]
+  },
+  {
+    "key": "sesame_seeds",
+    "name": "Sesame seeds",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "170150",
+    "kcal": 573,
+    "protein": 17.7,
+    "carbs": 23.4,
+    "fat": 49.7,
+    "fiber": 11.8,
+    "nutrients": {
+      "sugars": 0.3,
+      "saturated_fat": 6.96,
+      "monounsaturated_fat": 18.8,
+      "polyunsaturated_fat": 21.8,
+      "cholesterol": 0,
+      "calcium": 975,
+      "iron": 14.6,
+      "magnesium": 351,
+      "phosphorus": 629,
+      "potassium": 468,
+      "sodium": 11,
+      "zinc": 7.75,
+      "copper": 4.08,
+      "manganese": 2.46,
+      "selenium": 34.4,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.25,
+      "vitamin_k": 0,
+      "thiamin": 0.791,
+      "riboflavin": 0.247,
+      "niacin": 4.52,
+      "pantothenic_acid": 0.05,
+      "vitamin_b6": 0.79,
+      "folate": 97,
+      "vitamin_b12": 0,
+      "choline": 25.6
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 9,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 144,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Semillas de sésamo"
+    },
+    "aliases": {
+      "es": [
+        "ajonjolí"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Sesame-Seeds.jpg",
+        "license": "Public domain",
+        "author": "No machine-readable author provided. Ies assumed (based on copyright claims)."
+      },
+      {
+        "file": "Sesame_seeds2.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Tiia Monto"
+      }
+    ]
+  },
+  {
+    "key": "sunflower_oil",
+    "name": "Sunflower oil",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "171025",
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 10.3,
+      "monounsaturated_fat": 19.5,
+      "polyunsaturated_fat": 65.7,
+      "cholesterol": 0,
+      "calcium": 0,
+      "iron": 0,
+      "magnesium": 0,
+      "phosphorus": 0,
+      "potassium": 0,
+      "sodium": 0,
+      "zinc": 0,
+      "copper": 0,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 41.1,
+      "vitamin_k": 5.4,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 13.6,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 218,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aceite de girasol"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Sunflower_oil_and_sunflower.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "torange.biz"
+      },
+      {
+        "file": "Bottle_1_liter_Sunflower_refined_oil.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Exgsp Gmbh LLC BOTTLE 1 liter Sunflower refined oil"
+      }
+    ]
+  },
+  {
+    "key": "sunflower_seeds",
+    "name": "Sunflower seeds",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2515381",
+    "kcal": 571,
+    "protein": 18.9,
+    "carbs": 24.5,
+    "fat": 48.4,
+    "fiber": 7.22,
+    "nutrients": {
+      "calcium": 116,
+      "iron": 4.37,
+      "magnesium": 302,
+      "phosphorus": 732,
+      "potassium": 657,
+      "sodium": 0,
+      "zinc": 5.58,
+      "copper": 1.88,
+      "manganese": 2.63,
+      "selenium": 17.8
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 140,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Semillas de girasol"
+    },
+    "aliases": {
+      "es": [
+        "pipas de girasol"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Sunflower_seeds._img_004.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      },
+      {
+        "file": "Sunflower_seeds._img_012.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dmitry Makeev"
+      }
+    ]
+  },
+  {
+    "key": "tahini",
+    "name": "Tahini (sesame paste)",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2262073",
+    "kcal": 648,
+    "protein": 19.7,
+    "carbs": 14.2,
+    "fat": 62.4,
+    "fiber": 8.37,
+    "nutrients": {
+      "saturated_fat": 8.97,
+      "monounsaturated_fat": 22.6,
+      "polyunsaturated_fat": 26.4,
+      "calcium": 116,
+      "iron": 7,
+      "magnesium": 357,
+      "phosphorus": 719,
+      "potassium": 408,
+      "sodium": 63.6,
+      "zinc": 6.04,
+      "copper": 1.65,
+      "manganese": 1.61,
+      "selenium": 46.5,
+      "vitamin_e": 0,
+      "vitamin_k": 1.71,
+      "thiamin": 0.993,
+      "niacin": 5.81,
+      "vitamin_b6": 0.595
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 15,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tahini (pasta de sésamo)"
+    },
+    "aliases": {
+      "es": [
+        "tahina"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Tahina.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Gilabrand"
+      }
+    ]
+  },
+  {
+    "key": "soybean_oil",
+    "name": "Vegetable oil (soybean)",
+    "category": "fats",
+    "source": "usda_sr_legacy",
+    "source_id": "171411",
+    "kcal": 884,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 100,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 15.6,
+      "monounsaturated_fat": 22.8,
+      "polyunsaturated_fat": 57.7,
+      "trans_fat": 0.533,
+      "cholesterol": 0,
+      "calcium": 0,
+      "iron": 0.05,
+      "magnesium": 0,
+      "phosphorus": 0,
+      "potassium": 0,
+      "sodium": 0,
+      "zinc": 0.01,
+      "copper": 0,
+      "manganese": 0,
+      "selenium": 0,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 8.18,
+      "vitamin_k": 184,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 13.6,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 218,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Aceite vegetal (soya)"
+    },
+    "aliases": {
+      "en": [
+        "vegetable oil",
+        "soybean oil"
+      ],
+      "es": [
+        "aceite de soya",
+        "aceite de soja"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Soybean_Oil,_Meal_and_Beans_(10059732523).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "United Soybean Board"
+      },
+      {
+        "file": "Soybean_Oil_(10059657806).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "United Soybean Board"
+      }
+    ]
+  },
+  {
+    "key": "walnuts",
+    "name": "Walnuts",
+    "category": "fats",
+    "source": "usda_foundation",
+    "source_id": "2346394",
+    "kcal": 679,
+    "protein": 14.6,
+    "carbs": 10.9,
+    "fat": 69.7,
+    "fiber": 5.21,
+    "nutrients": {
+      "saturated_fat": 6.05,
+      "monounsaturated_fat": 9.62,
+      "polyunsaturated_fat": 49.3,
+      "calcium": 88.3,
+      "iron": 2.24,
+      "magnesium": 142,
+      "phosphorus": 365,
+      "potassium": 424,
+      "sodium": 0,
+      "zinc": 2.76,
+      "copper": 1.21,
+      "manganese": 3,
+      "vitamin_k": 1.7,
+      "thiamin": 0.23,
+      "niacin": 1.22,
+      "vitamin_b6": 0.66
+    },
+    "portions": [
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 117,
+        "translations": {
+          "es": "1 taza, picadas"
+        }
+      },
+      {
+        "key": "cup_halves",
+        "label": "1 cup, halves (about 50)",
+        "grams": 100,
+        "translations": {
+          "es": "1 taza, mitades (unas 50)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Nueces"
+    },
+    "aliases": {
+      "es": [
+        "nueces de nogal"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Walnuts_-_whole_and_open_with_halved_kernel.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  }
+]

@@ -17,7 +17,9 @@ class ExerciseController
      *
      * Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when
      * `muscle` is set. Filters combine with AND, and values inside one array filter combine with
-     * OR. `instructions` and `source_id` are only returned by the detail endpoint.
+     * OR. `location` keeps only the exercises saved at one of the caller's workout locations and combines with
+     * the other filters, the muscle ranking included. `instructions` and `source_id` are only returned by the
+     * detail endpoint.
      */
     public function index(ListExercisesRequest $request): AnonymousResourceCollection
     {

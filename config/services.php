@@ -41,4 +41,11 @@ return [
         'wger' => env('EXERCISE_PHOTOS_WGER_URL', 'https://wger.de/media'),
     ],
 
+    'ingredient_photos' => [
+        'base_url' => env('INGREDIENT_PHOTOS_BASE_URL', 'https://commons.wikimedia.org/wiki/Special:FilePath'),
+        'width' => 960,           // detail view; must be a Wikimedia standard width
+        'thumbnail_width' => 330, // lists and cards; must be a Wikimedia standard width
+        'user_agent' => env('INGREDIENT_PHOTOS_USER_AGENT', 'humanOS/1.0 (https://github.com/hreluz/humanOS-backend)'),
+    ],
+
 ];

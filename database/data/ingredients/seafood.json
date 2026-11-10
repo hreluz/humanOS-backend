@@ -1,0 +1,1018 @@
+[
+  {
+    "key": "cod_baked",
+    "name": "Cod, baked",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "171956",
+    "kcal": 105,
+    "protein": 22.8,
+    "carbs": 0,
+    "fat": 0.86,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.168,
+      "monounsaturated_fat": 0.124,
+      "polyunsaturated_fat": 0.292,
+      "cholesterol": 55,
+      "calcium": 14,
+      "iron": 0.49,
+      "magnesium": 42,
+      "phosphorus": 138,
+      "potassium": 244,
+      "sodium": 78,
+      "zinc": 0.58,
+      "copper": 0.036,
+      "manganese": 0.02,
+      "selenium": 37.6,
+      "vitamin_a": 14,
+      "vitamin_c": 1,
+      "vitamin_d": 1.2,
+      "vitamin_e": 0.81,
+      "vitamin_k": 0.1,
+      "thiamin": 0.088,
+      "riboflavin": 0.079,
+      "niacin": 2.51,
+      "pantothenic_acid": 0.18,
+      "vitamin_b6": 0.283,
+      "folate": 8,
+      "vitamin_b12": 1.05,
+      "choline": 83.7
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 180,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Bacalao fresco, al horno"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Baked_cod_fillet.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      },
+      {
+        "file": "Ling_Cod_with_Baked_Potato_(15988408872).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Prayitno / Thank you for (12 millions +) view from Los Angeles, USA"
+      }
+    ]
+  },
+  {
+    "key": "cod_raw",
+    "name": "Cod, raw",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "2684444",
+    "kcal": 70.5,
+    "protein": 16.1,
+    "carbs": 0,
+    "fat": 0.668,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 0.044,
+      "monounsaturated_fat": 0.026,
+      "polyunsaturated_fat": 0.081,
+      "cholesterol": 47.4,
+      "calcium": 6.59,
+      "iron": 0.065,
+      "magnesium": 18,
+      "phosphorus": 224,
+      "potassium": 245,
+      "sodium": 299,
+      "zinc": 0.305,
+      "copper": 0.004,
+      "manganese": 0,
+      "selenium": 22.8,
+      "vitamin_b12": 1.25
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 231,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Bacalao fresco, crudo"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Cod_fillet.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      }
+    ]
+  },
+  {
+    "key": "mackerel_baked",
+    "name": "Mackerel, baked",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "175120",
+    "kcal": 262,
+    "protein": 23.8,
+    "carbs": 0,
+    "fat": 17.8,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 4.18,
+      "monounsaturated_fat": 7.01,
+      "polyunsaturated_fat": 4.3,
+      "cholesterol": 75,
+      "calcium": 15,
+      "iron": 1.57,
+      "magnesium": 97,
+      "phosphorus": 278,
+      "potassium": 401,
+      "sodium": 83,
+      "zinc": 0.94,
+      "copper": 0.094,
+      "manganese": 0.02,
+      "selenium": 51.6,
+      "vitamin_a": 54,
+      "vitamin_c": 0.4,
+      "thiamin": 0.159,
+      "riboflavin": 0.412,
+      "niacin": 6.85,
+      "pantothenic_acid": 0.99,
+      "vitamin_b6": 0.46,
+      "folate": 2,
+      "vitamin_b12": 19
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 88,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Caballa, al horno"
+    },
+    "aliases": {
+      "es": [
+        "macarela al horno"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Grilled_mackerel_on_a_BBQ.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Kernow Skies"
+      },
+      {
+        "file": "Uskumru_(grilled).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "E4024"
+      }
+    ]
+  },
+  {
+    "key": "mackerel_raw",
+    "name": "Mackerel, raw",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "175119",
+    "kcal": 205,
+    "protein": 18.6,
+    "carbs": 0,
+    "fat": 13.9,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 3.26,
+      "monounsaturated_fat": 5.46,
+      "polyunsaturated_fat": 3.35,
+      "cholesterol": 70,
+      "calcium": 12,
+      "iron": 1.63,
+      "magnesium": 76,
+      "phosphorus": 217,
+      "potassium": 314,
+      "sodium": 90,
+      "zinc": 0.63,
+      "copper": 0.073,
+      "manganese": 0.015,
+      "selenium": 44.1,
+      "vitamin_a": 50,
+      "vitamin_c": 0.4,
+      "vitamin_d": 16.1,
+      "vitamin_e": 1.52,
+      "vitamin_k": 5,
+      "thiamin": 0.176,
+      "riboflavin": 0.312,
+      "niacin": 9.08,
+      "pantothenic_acid": 0.856,
+      "vitamin_b6": 0.399,
+      "folate": 1,
+      "vitamin_b12": 8.71,
+      "choline": 65
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 112,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Caballa, cruda"
+    },
+    "aliases": {
+      "es": [
+        "macarela",
+        "verdel"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Atlantic_mackerel_(Scomber_scombrus).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Homemade_fish_smoking_-_Raw_mackerel_prepared_for_smoking.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Natalka Ukraine"
+      }
+    ]
+  },
+  {
+    "key": "trout_rainbow_baked",
+    "name": "Rainbow trout, farmed, baked",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "173718",
+    "kcal": 168,
+    "protein": 23.8,
+    "carbs": 0,
+    "fat": 7.38,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.65,
+      "monounsaturated_fat": 2.36,
+      "polyunsaturated_fat": 1.8,
+      "trans_fat": 0.056,
+      "cholesterol": 70,
+      "calcium": 30,
+      "iron": 0.36,
+      "magnesium": 30,
+      "phosphorus": 270,
+      "potassium": 450,
+      "sodium": 61,
+      "zinc": 0.54,
+      "copper": 0.055,
+      "manganese": 0.013,
+      "selenium": 28.1,
+      "vitamin_a": 100,
+      "vitamin_c": 2.9,
+      "vitamin_d": 19,
+      "vitamin_e": 2.79,
+      "vitamin_k": 0.1,
+      "thiamin": 0.143,
+      "riboflavin": 0.107,
+      "niacin": 6.65,
+      "pantothenic_acid": 1.99,
+      "vitamin_b6": 0.386,
+      "folate": 12,
+      "vitamin_b12": 4.11,
+      "choline": 77.6
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 71,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Trucha arcoíris de cultivo, al horno"
+    },
+    "aliases": {
+      "en": [
+        "trout, cooked"
+      ],
+      "es": [
+        "trucha cocida"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Baked_trout.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Forelle_gebacken_Haueis_Hermes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      }
+    ]
+  },
+  {
+    "key": "trout_rainbow_raw",
+    "name": "Rainbow trout, farmed, raw",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "173717",
+    "kcal": 141,
+    "protein": 19.9,
+    "carbs": 0,
+    "fat": 6.18,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.38,
+      "monounsaturated_fat": 1.98,
+      "polyunsaturated_fat": 1.51,
+      "trans_fat": 0.047,
+      "cholesterol": 59,
+      "calcium": 25,
+      "iron": 0.31,
+      "magnesium": 25,
+      "phosphorus": 226,
+      "potassium": 377,
+      "sodium": 51,
+      "zinc": 0.45,
+      "copper": 0.046,
+      "manganese": 0.011,
+      "selenium": 23.6,
+      "vitamin_a": 84,
+      "vitamin_c": 2.9,
+      "vitamin_d": 15.9,
+      "vitamin_e": 2.34,
+      "vitamin_k": 0.1,
+      "thiamin": 0.12,
+      "riboflavin": 0.09,
+      "niacin": 5.57,
+      "pantothenic_acid": 1.67,
+      "vitamin_b6": 0.34,
+      "folate": 11,
+      "vitamin_b12": 4.3,
+      "choline": 65
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 79,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Trucha arcoíris de cultivo, cruda"
+    },
+    "aliases": {
+      "en": [
+        "trout"
+      ],
+      "es": [
+        "trucha"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Forelle_gebacken_Haueis_Hermes.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      },
+      {
+        "file": "Baked_trout.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      }
+    ]
+  },
+  {
+    "key": "salmon_farmed_baked",
+    "name": "Salmon, farmed, baked",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "175168",
+    "kcal": 206,
+    "protein": 22.1,
+    "carbs": 0,
+    "fat": 12.4,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.4,
+      "monounsaturated_fat": 4.18,
+      "polyunsaturated_fat": 4.55,
+      "cholesterol": 63,
+      "calcium": 15,
+      "iron": 0.34,
+      "magnesium": 30,
+      "phosphorus": 252,
+      "potassium": 384,
+      "sodium": 61,
+      "zinc": 0.43,
+      "copper": 0.049,
+      "manganese": 0.016,
+      "selenium": 41.4,
+      "vitamin_a": 69,
+      "vitamin_c": 3.7,
+      "vitamin_d": 13.1,
+      "vitamin_e": 1.14,
+      "vitamin_k": 0.1,
+      "thiamin": 0.34,
+      "riboflavin": 0.135,
+      "niacin": 8.04,
+      "pantothenic_acid": 1.48,
+      "vitamin_b6": 0.647,
+      "folate": 34,
+      "vitamin_b12": 2.8,
+      "choline": 90.5
+    },
+    "portions": [
+      {
+        "key": "half_fillet",
+        "label": "½ fillet",
+        "grams": 178,
+        "translations": {
+          "es": "½ filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Salmón de cultivo, al horno"
+    },
+    "aliases": {
+      "en": [
+        "salmon, grilled"
+      ],
+      "es": [
+        "salmón a la plancha"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Baked_salmon_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tiia Monto"
+      },
+      {
+        "file": "02021_0611_(2)_Baked_salmon_and_chips.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Silar"
+      }
+    ]
+  },
+  {
+    "key": "salmon_farmed_raw",
+    "name": "Salmon, farmed, raw",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "2684441",
+    "kcal": 203,
+    "protein": 20.3,
+    "carbs": 0,
+    "fat": 13.1,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 2.28,
+      "monounsaturated_fat": 5.01,
+      "polyunsaturated_fat": 4.06,
+      "cholesterol": 62.1,
+      "calcium": 9.42,
+      "iron": 0.259,
+      "magnesium": 25.4,
+      "phosphorus": 230,
+      "potassium": 378,
+      "sodium": 49.5,
+      "zinc": 0.339,
+      "copper": 0.025,
+      "manganese": 0,
+      "selenium": 22.8,
+      "vitamin_b12": 5.7
+    },
+    "portions": [
+      {
+        "key": "half_fillet",
+        "label": "½ fillet",
+        "grams": 198,
+        "translations": {
+          "es": "½ filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Salmón de cultivo, crudo"
+    },
+    "aliases": {
+      "en": [
+        "atlantic salmon"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Salmon_fillet.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "BrokenSphere"
+      }
+    ]
+  },
+  {
+    "key": "sardines_canned_oil",
+    "name": "Sardines, canned in oil",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "175139",
+    "kcal": 208,
+    "protein": 24.6,
+    "carbs": 0,
+    "fat": 11.4,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.53,
+      "monounsaturated_fat": 3.87,
+      "polyunsaturated_fat": 5.15,
+      "cholesterol": 142,
+      "calcium": 382,
+      "iron": 2.92,
+      "magnesium": 39,
+      "phosphorus": 490,
+      "potassium": 397,
+      "sodium": 307,
+      "zinc": 1.31,
+      "copper": 0.186,
+      "manganese": 0.108,
+      "selenium": 52.7,
+      "vitamin_a": 32,
+      "vitamin_c": 0,
+      "vitamin_d": 4.8,
+      "vitamin_e": 2.04,
+      "vitamin_k": 2.6,
+      "thiamin": 0.08,
+      "riboflavin": 0.227,
+      "niacin": 5.24,
+      "pantothenic_acid": 0.642,
+      "vitamin_b6": 0.167,
+      "folate": 10,
+      "vitamin_b12": 8.94,
+      "choline": 75
+    },
+    "portions": [
+      {
+        "key": "two_sardines",
+        "label": "2 sardines",
+        "grams": 24,
+        "translations": {
+          "es": "2 sardinas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Sardinas en aceite, enlatadas"
+    },
+    "aliases": {
+      "es": [
+        "sardinas en lata"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Canned_sardines_with_lemon.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Pannet"
+      },
+      {
+        "file": "2014_03_19_397_Eingelegte_Fische.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "© Friedrich Haag / Wikimedia Commons"
+      }
+    ]
+  },
+  {
+    "key": "shrimp_boiled",
+    "name": "Shrimp, boiled",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "171971",
+    "kcal": 119,
+    "protein": 22.8,
+    "carbs": 1.52,
+    "fat": 1.7,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.521,
+      "monounsaturated_fat": 0.361,
+      "polyunsaturated_fat": 0.59,
+      "trans_fat": 0.035,
+      "cholesterol": 211,
+      "calcium": 91,
+      "iron": 0.32,
+      "magnesium": 37,
+      "phosphorus": 306,
+      "potassium": 170,
+      "sodium": 947,
+      "zinc": 1.63,
+      "copper": 0.258,
+      "manganese": 0.049,
+      "selenium": 49.5,
+      "vitamin_a": 90,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 2.2,
+      "vitamin_k": 0.4,
+      "thiamin": 0.032,
+      "riboflavin": 0.024,
+      "niacin": 2.68,
+      "pantothenic_acid": 0.519,
+      "vitamin_b6": 0.242,
+      "folate": 24,
+      "vitamin_b12": 1.66,
+      "choline": 135
+    },
+    "portions": [
+      {
+        "key": "four_large",
+        "label": "4 large shrimp",
+        "grams": 22,
+        "translations": {
+          "es": "4 camarones grandes"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Camarones, hervidos"
+    },
+    "aliases": {
+      "en": [
+        "prawns, cooked"
+      ],
+      "es": [
+        "gambas cocidas",
+        "langostinos cocidos"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Fried_mushrooms_and_cooked_shrimp_with_sauces.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jeffreyw"
+      },
+      {
+        "file": "Cooked_shrimp_on_a_plate.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Leon Brocard"
+      }
+    ]
+  },
+  {
+    "key": "shrimp_raw",
+    "name": "Shrimp, raw",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "2684443",
+    "kcal": 75.7,
+    "protein": 15.6,
+    "carbs": 0.485,
+    "fat": 0.801,
+    "fiber": 0,
+    "nutrients": {
+      "cholesterol": 136,
+      "calcium": 64.6,
+      "iron": 0.522,
+      "magnesium": 22.5,
+      "phosphorus": 191,
+      "potassium": 146,
+      "sodium": 475,
+      "zinc": 0.937,
+      "copper": 0.208,
+      "manganese": 0.029,
+      "selenium": 19.5,
+      "vitamin_b12": 0.996
+    },
+    "portions": [
+      {
+        "key": "four_large",
+        "label": "4 large shrimp",
+        "grams": 28,
+        "translations": {
+          "es": "4 camarones grandes"
+        }
+      },
+      {
+        "key": "medium",
+        "label": "1 medium shrimp",
+        "grams": 6,
+        "translations": {
+          "es": "1 camarón mediano"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Camarones, crudos"
+    },
+    "aliases": {
+      "en": [
+        "prawns"
+      ],
+      "es": [
+        "gambas",
+        "langostinos"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Fresh_jumbo_shrimp_from_San_Francisco_farmers_market.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      },
+      {
+        "file": "Raw_Shrimp_on_Plate_1_2017-01-22.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "F ASTILY"
+      }
+    ]
+  },
+  {
+    "key": "squid_raw",
+    "name": "Squid, raw",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "2747671",
+    "kcal": 43.9,
+    "protein": 8.81,
+    "carbs": 0.932,
+    "fat": 0.551,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 0.223,
+      "monounsaturated_fat": 0.058,
+      "polyunsaturated_fat": 0.27,
+      "trans_fat": 0,
+      "calcium": 10.6,
+      "iron": 0,
+      "magnesium": 10.5,
+      "phosphorus": 63.8,
+      "potassium": 9.48,
+      "sodium": 272,
+      "zinc": 0.527,
+      "copper": 0.077,
+      "manganese": 0.005,
+      "selenium": 20.9,
+      "vitamin_b12": 1.12
+    },
+    "portions": [],
+    "translations": {
+      "es": "Calamar, crudo"
+    },
+    "aliases": {
+      "en": [
+        "calamari"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Calamari_Dahab09.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Magellan"
+      }
+    ]
+  },
+  {
+    "key": "tilapia_baked",
+    "name": "Tilapia, baked",
+    "category": "seafood",
+    "source": "usda_sr_legacy",
+    "source_id": "175177",
+    "kcal": 128,
+    "protein": 26.2,
+    "carbs": 0,
+    "fat": 2.65,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.94,
+      "monounsaturated_fat": 0.955,
+      "polyunsaturated_fat": 0.6,
+      "cholesterol": 57,
+      "calcium": 14,
+      "iron": 0.69,
+      "magnesium": 34,
+      "phosphorus": 204,
+      "potassium": 380,
+      "sodium": 56,
+      "zinc": 0.41,
+      "copper": 0.075,
+      "manganese": 0.037,
+      "selenium": 54.4,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 3.7,
+      "vitamin_e": 0.79,
+      "vitamin_k": 0.9,
+      "thiamin": 0.093,
+      "riboflavin": 0.073,
+      "niacin": 4.74,
+      "pantothenic_acid": 0.664,
+      "vitamin_b6": 0.123,
+      "folate": 6,
+      "vitamin_b12": 1.86,
+      "choline": 51.3
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 87,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tilapia, al horno"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Fried_Tilapia,_Jul_2024.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ralff Nestor Nacor"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Fried_Tilapia_with_Roasted_Potatoes_and_Onions.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
+  },
+  {
+    "key": "tilapia_raw",
+    "name": "Tilapia, raw",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "2684442",
+    "kcal": 100,
+    "protein": 19,
+    "carbs": 0,
+    "fat": 2.48,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 0.647,
+      "monounsaturated_fat": 0.769,
+      "polyunsaturated_fat": 0.358,
+      "cholesterol": 47.6,
+      "calcium": 8.63,
+      "iron": 0,
+      "magnesium": 24.3,
+      "phosphorus": 159,
+      "potassium": 342,
+      "sodium": 93.7,
+      "zinc": 0.3,
+      "copper": 0,
+      "manganese": 0.005,
+      "selenium": 20.5,
+      "vitamin_b12": 0.759
+    },
+    "portions": [
+      {
+        "key": "fillet",
+        "label": "1 fillet",
+        "grams": 116,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tilapia, cruda"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Raw_Tilapia_Prepared_for_Baking.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
+  },
+  {
+    "key": "tuna_light_canned_water",
+    "name": "Tuna, light, canned in water",
+    "category": "seafood",
+    "source": "usda_foundation",
+    "source_id": "334194",
+    "kcal": 90,
+    "protein": 19,
+    "carbs": 0.08,
+    "fat": 0.94,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.224,
+      "monounsaturated_fat": 0.114,
+      "polyunsaturated_fat": 0.259,
+      "trans_fat": 0.002,
+      "cholesterol": 36,
+      "calcium": 18,
+      "iron": 1.67,
+      "magnesium": 22.7,
+      "phosphorus": 137,
+      "potassium": 176,
+      "sodium": 219,
+      "zinc": 0.66,
+      "copper": 0.048,
+      "manganese": 0.019,
+      "selenium": 67.8,
+      "vitamin_d": 1.2,
+      "thiamin": 0.03,
+      "riboflavin": 0.082,
+      "niacin": 9.92,
+      "pantothenic_acid": 0.148,
+      "vitamin_b6": 0.32,
+      "vitamin_b12": 2.57
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 154,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Atún claro en agua, enlatado"
+    },
+    "aliases": {
+      "en": [
+        "canned tuna"
+      ],
+      "es": [
+        "atún en lata",
+        "atún al natural"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Lata_de_atún-Albo.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Tamorlan"
+      },
+      {
+        "file": "Pirkka_Sweet_Chili_canned_tuna.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "JIP"
+      }
+    ]
+  }
+]

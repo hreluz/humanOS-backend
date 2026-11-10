@@ -1,0 +1,1328 @@
+[
+  {
+    "key": "black_pepper",
+    "name": "Black pepper, ground",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "170931",
+    "kcal": 251,
+    "protein": 10.4,
+    "carbs": 64,
+    "fat": 3.26,
+    "fiber": 25.3,
+    "nutrients": {
+      "sugars": 0.64,
+      "saturated_fat": 1.39,
+      "monounsaturated_fat": 0.739,
+      "polyunsaturated_fat": 0.998,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 443,
+      "iron": 9.71,
+      "magnesium": 171,
+      "phosphorus": 158,
+      "potassium": 1330,
+      "sodium": 20,
+      "zinc": 1.19,
+      "copper": 1.33,
+      "manganese": 12.8,
+      "selenium": 4.9,
+      "vitamin_a": 27,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 1.04,
+      "vitamin_k": 164,
+      "thiamin": 0.108,
+      "riboflavin": 0.18,
+      "niacin": 1.14,
+      "pantothenic_acid": 1.4,
+      "vitamin_b6": 0.291,
+      "folate": 17,
+      "vitamin_b12": 0,
+      "choline": 11.3
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.3,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "dash",
+        "label": "1 dash",
+        "grams": 0.1,
+        "translations": {
+          "es": "1 pizca"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pimienta negra molida"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Ground_black_pepper.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Eliška Jindříšková"
+      },
+      {
+        "file": "Black_pepper_(ground).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Susan Slater"
+      }
+    ]
+  },
+  {
+    "key": "chili_powder",
+    "name": "Chili powder",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "171319",
+    "kcal": 282,
+    "protein": 13.5,
+    "carbs": 49.7,
+    "fat": 14.3,
+    "fiber": 34.8,
+    "nutrients": {
+      "sugars": 7.19,
+      "saturated_fat": 2.46,
+      "monounsaturated_fat": 3.21,
+      "polyunsaturated_fat": 8.01,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 330,
+      "iron": 17.3,
+      "magnesium": 149,
+      "phosphorus": 300,
+      "potassium": 1950,
+      "sodium": 2870,
+      "zinc": 4.3,
+      "copper": 1,
+      "manganese": 1.7,
+      "selenium": 20.4,
+      "vitamin_a": 1480,
+      "vitamin_c": 0.7,
+      "vitamin_d": 0,
+      "vitamin_e": 38.1,
+      "vitamin_k": 106,
+      "thiamin": 0.25,
+      "riboflavin": 0.94,
+      "niacin": 11.6,
+      "pantothenic_acid": 0.888,
+      "vitamin_b6": 2.09,
+      "folate": 28,
+      "vitamin_b12": 0,
+      "choline": 66.5
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.7,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 8,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Chile en polvo"
+    },
+    "aliases": {
+      "es": [
+        "ají en polvo"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Red_Chili_Powder_(Lall_Mirch)_(49695826571).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ajay Suresh from New York, NY, USA"
+      },
+      {
+        "file": "Tumeric_and_chili_power_spice_at_Bakin_dogo_market,_Kaduna_North.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samsule2"
+      }
+    ]
+  },
+  {
+    "key": "cinnamon",
+    "name": "Cinnamon, ground",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "171320",
+    "kcal": 247,
+    "protein": 3.99,
+    "carbs": 80.6,
+    "fat": 1.24,
+    "fiber": 53.1,
+    "nutrients": {
+      "sugars": 2.17,
+      "saturated_fat": 0.345,
+      "monounsaturated_fat": 0.246,
+      "polyunsaturated_fat": 0.068,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 1000,
+      "iron": 8.32,
+      "magnesium": 60,
+      "phosphorus": 64,
+      "potassium": 431,
+      "sodium": 10,
+      "zinc": 1.83,
+      "copper": 0.339,
+      "manganese": 17.5,
+      "selenium": 3.1,
+      "vitamin_a": 15,
+      "vitamin_c": 3.8,
+      "vitamin_d": 0,
+      "vitamin_e": 2.32,
+      "vitamin_k": 31.2,
+      "thiamin": 0.022,
+      "riboflavin": 0.041,
+      "niacin": 1.33,
+      "pantothenic_acid": 0.358,
+      "vitamin_b6": 0.158,
+      "folate": 6,
+      "vitamin_b12": 0,
+      "choline": 11
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.6,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 7.8,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Canela molida"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Ground_Cinnamon_Powder_and_a_Cinnamon_Stick.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "formulatehealth"
+      },
+      {
+        "file": "Ground_cinnamon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "TheDeliciousLife"
+      }
+    ]
+  },
+  {
+    "key": "cumin",
+    "name": "Cumin seed",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "170923",
+    "kcal": 375,
+    "protein": 17.8,
+    "carbs": 44.2,
+    "fat": 22.3,
+    "fiber": 10.5,
+    "nutrients": {
+      "sugars": 2.25,
+      "saturated_fat": 1.54,
+      "monounsaturated_fat": 14,
+      "polyunsaturated_fat": 3.28,
+      "cholesterol": 0,
+      "calcium": 931,
+      "iron": 66.4,
+      "magnesium": 366,
+      "phosphorus": 499,
+      "potassium": 1790,
+      "sodium": 168,
+      "zinc": 4.8,
+      "copper": 0.867,
+      "manganese": 3.33,
+      "selenium": 5.2,
+      "vitamin_a": 64,
+      "vitamin_c": 7.7,
+      "vitamin_d": 0,
+      "vitamin_e": 3.33,
+      "vitamin_k": 5.4,
+      "thiamin": 0.628,
+      "riboflavin": 0.327,
+      "niacin": 4.58,
+      "vitamin_b6": 0.435,
+      "folate": 10,
+      "vitamin_b12": 0,
+      "choline": 24.7
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.1,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 6,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Comino"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Seeds_of_Cumin.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sanjay Acharya"
+      }
+    ]
+  },
+  {
+    "key": "honey",
+    "name": "Honey",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "169640",
+    "kcal": 304,
+    "protein": 0.3,
+    "carbs": 82.4,
+    "fat": 0,
+    "fiber": 0.2,
+    "nutrients": {
+      "sugars": 82.1,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "cholesterol": 0,
+      "calcium": 6,
+      "iron": 0.42,
+      "magnesium": 2,
+      "phosphorus": 4,
+      "potassium": 52,
+      "sodium": 4,
+      "zinc": 0.22,
+      "copper": 0.036,
+      "manganese": 0.08,
+      "selenium": 0.8,
+      "vitamin_a": 0,
+      "vitamin_c": 0.5,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0.038,
+      "niacin": 0.121,
+      "pantothenic_acid": 0.068,
+      "vitamin_b6": 0.024,
+      "folate": 2,
+      "vitamin_b12": 0,
+      "choline": 2.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 21,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 339,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Miel"
+    },
+    "aliases": {
+      "es": [
+        "miel de abeja"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Dipper_stick_and_honey_in_a_jar.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Three_French_monofloral_honey_jars.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Hayden Soloviev"
+      }
+    ]
+  },
+  {
+    "key": "jam",
+    "name": "Jam",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "169641",
+    "kcal": 278,
+    "protein": 0.37,
+    "carbs": 68.9,
+    "fat": 0.07,
+    "fiber": 1.1,
+    "nutrients": {
+      "sugars": 48.5,
+      "saturated_fat": 0.01,
+      "monounsaturated_fat": 0.038,
+      "polyunsaturated_fat": 0,
+      "cholesterol": 0,
+      "calcium": 20,
+      "iron": 0.49,
+      "magnesium": 4,
+      "phosphorus": 19,
+      "potassium": 77,
+      "sodium": 32,
+      "zinc": 0.06,
+      "copper": 0.1,
+      "manganese": 0.04,
+      "selenium": 2,
+      "vitamin_a": 0,
+      "vitamin_c": 8.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.12,
+      "vitamin_k": 0,
+      "thiamin": 0.016,
+      "riboflavin": 0.076,
+      "niacin": 0.036,
+      "pantothenic_acid": 0.02,
+      "vitamin_b6": 0.02,
+      "folate": 11,
+      "vitamin_b12": 0,
+      "choline": 10.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 20,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mermelada"
+    },
+    "aliases": {
+      "en": [
+        "preserves"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Jam_created_from_gelling_sugar.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Chris Bohn from Gainesville, FL, USA"
+      },
+      {
+        "file": "90_-_IMG_20150802_010021.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Susan Slater"
+      }
+    ]
+  },
+  {
+    "key": "ketchup",
+    "name": "Ketchup",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "168556",
+    "kcal": 101,
+    "protein": 1.04,
+    "carbs": 27.4,
+    "fat": 0.1,
+    "fiber": 0.3,
+    "nutrients": {
+      "sugars": 21.3,
+      "saturated_fat": 0.014,
+      "monounsaturated_fat": 0.015,
+      "polyunsaturated_fat": 0.041,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 15,
+      "iron": 0.35,
+      "magnesium": 13,
+      "phosphorus": 26,
+      "potassium": 281,
+      "sodium": 907,
+      "zinc": 0.17,
+      "copper": 0.085,
+      "manganese": 0.084,
+      "selenium": 0.7,
+      "vitamin_a": 26,
+      "vitamin_c": 4.1,
+      "vitamin_d": 0,
+      "vitamin_e": 1.46,
+      "vitamin_k": 3,
+      "thiamin": 0.011,
+      "riboflavin": 0.166,
+      "niacin": 1.43,
+      "pantothenic_acid": 0.047,
+      "vitamin_b6": 0.158,
+      "folate": 9,
+      "vitamin_b12": 0,
+      "choline": 12.5
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 17,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "packet",
+        "label": "1 packet",
+        "grams": 9,
+        "translations": {
+          "es": "1 sobre"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Kétchup"
+    },
+    "aliases": {
+      "en": [
+        "catsup"
+      ],
+      "es": [
+        "cátsup",
+        "salsa kétchup"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ketchup_20160918_181342.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Kim Holger Kelting"
+      },
+      {
+        "file": "French_Fries_with_Ketchup_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Kritzolina"
+      }
+    ]
+  },
+  {
+    "key": "mayonnaise",
+    "name": "Mayonnaise",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "171009",
+    "kcal": 680,
+    "protein": 0.96,
+    "carbs": 0.57,
+    "fat": 74.8,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.57,
+      "saturated_fat": 11.7,
+      "monounsaturated_fat": 16.8,
+      "polyunsaturated_fat": 44.7,
+      "trans_fat": 0.187,
+      "cholesterol": 42,
+      "calcium": 8,
+      "iron": 0.21,
+      "magnesium": 1,
+      "phosphorus": 21,
+      "potassium": 20,
+      "sodium": 635,
+      "zinc": 0.15,
+      "copper": 0.019,
+      "manganese": 0.007,
+      "selenium": 2.3,
+      "vitamin_a": 16,
+      "vitamin_c": 0,
+      "vitamin_d": 0.2,
+      "vitamin_e": 3.28,
+      "vitamin_k": 163,
+      "thiamin": 0.01,
+      "riboflavin": 0.019,
+      "niacin": 0,
+      "pantothenic_acid": 0.172,
+      "vitamin_b6": 0.008,
+      "folate": 5,
+      "vitamin_b12": 0.12,
+      "choline": 34.2
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 13.8,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "packet",
+        "label": "1 packet",
+        "grams": 10,
+        "translations": {
+          "es": "1 sobre"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mayonesa"
+    },
+    "aliases": {
+      "en": [
+        "mayo"
+      ],
+      "es": [
+        "mahonesa"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Homemade_mayonnaise_(4059871654).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Stacy Spensley"
+      },
+      {
+        "file": "Mayonnaise_(1).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "jules"
+      }
+    ]
+  },
+  {
+    "key": "mustard_yellow",
+    "name": "Mustard, yellow",
+    "category": "condiments",
+    "source": "usda_foundation",
+    "source_id": "326698",
+    "kcal": 61,
+    "protein": 4.25,
+    "carbs": 5.3,
+    "fat": 3.38,
+    "fiber": 4.3,
+    "nutrients": {
+      "sugars": 1.42,
+      "saturated_fat": 0.252,
+      "monounsaturated_fat": 2.59,
+      "polyunsaturated_fat": 0.903,
+      "trans_fat": 0.01,
+      "calcium": 63,
+      "iron": 1.59,
+      "magnesium": 47.7,
+      "phosphorus": 108,
+      "potassium": 150,
+      "sodium": 1100,
+      "zinc": 0.64,
+      "copper": 0.074,
+      "manganese": 0.42,
+      "selenium": 34,
+      "vitamin_a": 4,
+      "vitamin_c": 0.4,
+      "vitamin_e": 0.35,
+      "vitamin_k": 1.5,
+      "thiamin": 0.189,
+      "riboflavin": 0.066,
+      "niacin": 0.561,
+      "pantothenic_acid": 0.263,
+      "vitamin_b6": 0.069
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mostaza amarilla"
+    },
+    "aliases": {
+      "es": [
+        "mostaza"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Senf-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright claims)."
+      }
+    ]
+  },
+  {
+    "key": "oregano_dried",
+    "name": "Oregano, dried",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "171328",
+    "kcal": 265,
+    "protein": 9,
+    "carbs": 68.9,
+    "fat": 4.28,
+    "fiber": 42.5,
+    "nutrients": {
+      "sugars": 4.09,
+      "saturated_fat": 1.55,
+      "monounsaturated_fat": 0.716,
+      "polyunsaturated_fat": 1.37,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 1600,
+      "iron": 36.8,
+      "magnesium": 270,
+      "phosphorus": 148,
+      "potassium": 1260,
+      "sodium": 25,
+      "zinc": 2.69,
+      "copper": 0.633,
+      "manganese": 4.99,
+      "selenium": 4.5,
+      "vitamin_a": 85,
+      "vitamin_c": 2.3,
+      "vitamin_d": 0,
+      "vitamin_e": 18.3,
+      "vitamin_k": 622,
+      "thiamin": 0.177,
+      "riboflavin": 0.528,
+      "niacin": 4.64,
+      "pantothenic_acid": 0.921,
+      "vitamin_b6": 1.04,
+      "folate": 237,
+      "vitamin_b12": 0,
+      "choline": 32.3
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 1,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Orégano seco"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Oregano_dried.JPG",
+        "license": "Public domain",
+        "author": "Miansari66"
+      },
+      {
+        "file": "Dried_Oregano.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Revital Salomon"
+      }
+    ]
+  },
+  {
+    "key": "paprika",
+    "name": "Paprika",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "171329",
+    "kcal": 282,
+    "protein": 14.1,
+    "carbs": 54,
+    "fat": 12.9,
+    "fiber": 34.9,
+    "nutrients": {
+      "sugars": 10.3,
+      "saturated_fat": 2.14,
+      "monounsaturated_fat": 1.7,
+      "polyunsaturated_fat": 7.77,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 229,
+      "iron": 21.1,
+      "magnesium": 178,
+      "phosphorus": 314,
+      "potassium": 2280,
+      "sodium": 68,
+      "zinc": 4.33,
+      "copper": 0.713,
+      "manganese": 1.59,
+      "selenium": 6.3,
+      "vitamin_a": 2460,
+      "vitamin_c": 0.9,
+      "vitamin_d": 0,
+      "vitamin_e": 29.1,
+      "vitamin_k": 80.3,
+      "thiamin": 0.33,
+      "riboflavin": 1.23,
+      "niacin": 10.1,
+      "pantothenic_acid": 2.51,
+      "vitamin_b6": 2.14,
+      "folate": 49,
+      "vitamin_b12": 0,
+      "choline": 51.5
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 2.3,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 6.8,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pimentón en polvo"
+    },
+    "aliases": {
+      "es": [
+        "paprika"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Aleva_paprika.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ljiljana Sundać"
+      },
+      {
+        "file": "Sppon_of_Paprika.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Gnu-Bricoleur"
+      }
+    ]
+  },
+  {
+    "key": "salt",
+    "name": "Salt",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "173468",
+    "kcal": 0,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 24,
+      "iron": 0.33,
+      "magnesium": 1,
+      "phosphorus": 0,
+      "potassium": 8,
+      "sodium": 38800,
+      "zinc": 0.1,
+      "copper": 0.03,
+      "manganese": 0.1,
+      "selenium": 0.1,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 6,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "dash",
+        "label": "1 dash",
+        "grams": 0.4,
+        "translations": {
+          "es": "1 pizca"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Sal"
+    },
+    "aliases": {
+      "en": [
+        "table salt"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Table_salt_with_salt_shaker_V1.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Poyraz 72"
+      },
+      {
+        "file": "Salt_shaker_on_white_background.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Dubravko Sorić SoraZG on Flickr"
+      }
+    ]
+  },
+  {
+    "key": "soy_sauce",
+    "name": "Soy sauce",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "174277",
+    "kcal": 53,
+    "protein": 8.14,
+    "carbs": 4.93,
+    "fat": 0.57,
+    "fiber": 0.8,
+    "nutrients": {
+      "sugars": 0.4,
+      "saturated_fat": 0.073,
+      "monounsaturated_fat": 0.088,
+      "polyunsaturated_fat": 0.263,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 33,
+      "iron": 1.45,
+      "magnesium": 74,
+      "phosphorus": 166,
+      "potassium": 435,
+      "sodium": 5490,
+      "zinc": 0.87,
+      "copper": 0.043,
+      "manganese": 1.02,
+      "selenium": 0.5,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0.033,
+      "riboflavin": 0.165,
+      "niacin": 2.2,
+      "pantothenic_acid": 0.297,
+      "vitamin_b6": 0.148,
+      "folate": 14,
+      "vitamin_b12": 0,
+      "choline": 18.3
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 16,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 5.3,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Salsa de soya"
+    },
+    "aliases": {
+      "en": [
+        "shoyu"
+      ],
+      "es": [
+        "sillao",
+        "salsa de soja"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Soy_sauce_2.jpg",
+        "license": "CC BY-SA 2.0 kr",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
+        "author": "국립국어원"
+      }
+    ]
+  },
+  {
+    "key": "sugar_brown",
+    "name": "Sugar, brown",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "168833",
+    "kcal": 380,
+    "protein": 0.12,
+    "carbs": 98.1,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 97,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "cholesterol": 0,
+      "calcium": 83,
+      "iron": 0.71,
+      "magnesium": 9,
+      "phosphorus": 4,
+      "potassium": 133,
+      "sodium": 28,
+      "zinc": 0.03,
+      "copper": 0.047,
+      "manganese": 0.064,
+      "selenium": 1.2,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0.11,
+      "pantothenic_acid": 0.132,
+      "vitamin_b6": 0.041,
+      "folate": 1,
+      "vitamin_b12": 0,
+      "choline": 2.3
+    },
+    "portions": [
+      {
+        "key": "tsp_packed",
+        "label": "1 teaspoon, packed",
+        "grams": 4.6,
+        "translations": {
+          "es": "1 cucharadita, compacta"
+        }
+      },
+      {
+        "key": "cup_packed",
+        "label": "1 cup, packed",
+        "grams": 220,
+        "translations": {
+          "es": "1 taza, compacta"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Azúcar morena"
+    },
+    "aliases": {
+      "es": [
+        "azúcar rubia",
+        "azúcar moreno"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Brown_sugar.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "EstherDje"
+      },
+      {
+        "file": "Brown_sugar_examples.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Moe Rubenzahl"
+      }
+    ]
+  },
+  {
+    "key": "sugar_white",
+    "name": "Sugar, white",
+    "category": "condiments",
+    "source": "usda_foundation",
+    "source_id": "746784",
+    "kcal": 385,
+    "protein": 0,
+    "carbs": 99.6,
+    "fat": 0.32,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 99.8,
+      "calcium": 1,
+      "iron": 0.05,
+      "magnesium": 0.3,
+      "phosphorus": 0,
+      "potassium": 2,
+      "sodium": 1,
+      "zinc": 0.01,
+      "copper": 0.007,
+      "manganese": 0.004
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 4.2,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 200,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Azúcar blanca"
+    },
+    "aliases": {
+      "en": [
+        "granulated sugar"
+      ],
+      "es": [
+        "azúcar refinada"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Granulated_White_Sugar_with_Large_Crystals,_Bright_Front_Light.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Tobias Erbsland"
+      }
+    ]
+  },
+  {
+    "key": "turmeric",
+    "name": "Turmeric, ground",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "172231",
+    "kcal": 312,
+    "protein": 9.68,
+    "carbs": 67.1,
+    "fat": 3.25,
+    "fiber": 22.7,
+    "nutrients": {
+      "sugars": 3.21,
+      "saturated_fat": 1.84,
+      "monounsaturated_fat": 0.449,
+      "polyunsaturated_fat": 0.756,
+      "trans_fat": 0.056,
+      "cholesterol": 0,
+      "calcium": 168,
+      "iron": 55,
+      "magnesium": 208,
+      "phosphorus": 299,
+      "potassium": 2080,
+      "sodium": 27,
+      "zinc": 4.5,
+      "copper": 1.3,
+      "manganese": 19.8,
+      "selenium": 6.2,
+      "vitamin_a": 0,
+      "vitamin_c": 0.7,
+      "vitamin_d": 0,
+      "vitamin_e": 4.43,
+      "vitamin_k": 13.4,
+      "thiamin": 0.058,
+      "riboflavin": 0.15,
+      "niacin": 1.35,
+      "pantothenic_acid": 0.542,
+      "vitamin_b6": 0.107,
+      "folate": 20,
+      "vitamin_b12": 0,
+      "choline": 49.2
+    },
+    "portions": [
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 3,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      },
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 9.4,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cúrcuma molida"
+    },
+    "aliases": {
+      "es": [
+        "palillo"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Curcuma_longa_roots.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Simon A. Eugster"
+      },
+      {
+        "file": "Kunyit_Bubuk.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Herusutimbul"
+      }
+    ]
+  },
+  {
+    "key": "vinegar_white",
+    "name": "Vinegar, white",
+    "category": "condiments",
+    "source": "usda_sr_legacy",
+    "source_id": "172237",
+    "kcal": 18,
+    "protein": 0,
+    "carbs": 0.04,
+    "fat": 0,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.04,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 6,
+      "iron": 0.03,
+      "magnesium": 1,
+      "phosphorus": 4,
+      "potassium": 2,
+      "sodium": 2,
+      "zinc": 0.01,
+      "copper": 0.006,
+      "manganese": 0.055,
+      "selenium": 0.5,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 0,
+      "thiamin": 0,
+      "riboflavin": 0,
+      "niacin": 0,
+      "pantothenic_acid": 0,
+      "vitamin_b6": 0,
+      "folate": 0,
+      "vitamin_b12": 0,
+      "choline": 0
+    },
+    "portions": [
+      {
+        "key": "tbsp",
+        "label": "1 tablespoon",
+        "grams": 14.9,
+        "translations": {
+          "es": "1 cucharada"
+        }
+      },
+      {
+        "key": "tsp",
+        "label": "1 teaspoon",
+        "grams": 5,
+        "translations": {
+          "es": "1 cucharadita"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Vinagre blanco"
+    },
+    "aliases": {
+      "en": [
+        "distilled vinegar"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Synthetic_vinegar_bottles.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Sgroey"
+      }
+    ]
+  }
+]

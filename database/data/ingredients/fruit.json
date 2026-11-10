@@ -1,0 +1,2112 @@
+[
+  {
+    "key": "apple",
+    "name": "Apple",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "171688",
+    "kcal": 52,
+    "protein": 0.26,
+    "carbs": 13.8,
+    "fat": 0.17,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 10.4,
+      "saturated_fat": 0.028,
+      "monounsaturated_fat": 0.007,
+      "polyunsaturated_fat": 0.051,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 6,
+      "iron": 0.12,
+      "magnesium": 5,
+      "phosphorus": 11,
+      "potassium": 107,
+      "sodium": 1,
+      "zinc": 0.04,
+      "copper": 0.027,
+      "manganese": 0.035,
+      "selenium": 0,
+      "vitamin_a": 3,
+      "vitamin_c": 4.6,
+      "vitamin_d": 0,
+      "vitamin_e": 0.18,
+      "vitamin_k": 2.2,
+      "thiamin": 0.017,
+      "riboflavin": 0.026,
+      "niacin": 0.091,
+      "pantothenic_acid": 0.061,
+      "vitamin_b6": 0.041,
+      "folate": 3,
+      "vitamin_b12": 0,
+      "choline": 3.4
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium apple",
+        "grams": 182,
+        "translations": {
+          "es": "1 manzana mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large apple",
+        "grams": 223,
+        "translations": {
+          "es": "1 manzana grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small apple",
+        "grams": 149,
+        "translations": {
+          "es": "1 manzana pequeña"
+        }
+      },
+      {
+        "key": "cup_slices",
+        "label": "1 cup, sliced",
+        "grams": 109,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Manzana"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Red_Apple.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Abhijit Tembhekar from Mumbai, India"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Red_Apple_(Whole_Fruit).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
+  },
+  {
+    "key": "banana",
+    "name": "Banana",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "1105314",
+    "kcal": 97,
+    "protein": 0.74,
+    "carbs": 23,
+    "fat": 0.29,
+    "fiber": 1.7,
+    "nutrients": {
+      "sugars": 15.8,
+      "calcium": 5,
+      "iron": 0,
+      "magnesium": 28,
+      "phosphorus": 22,
+      "potassium": 326,
+      "sodium": 0,
+      "zinc": 0.16,
+      "copper": 0.101,
+      "manganese": 0.258,
+      "selenium": 0,
+      "vitamin_a": 1,
+      "vitamin_c": 12.3,
+      "vitamin_k": 0.1,
+      "thiamin": 0.056,
+      "riboflavin": 0,
+      "niacin": 0.662,
+      "vitamin_b6": 0.209
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium banana",
+        "grams": 118,
+        "translations": {
+          "es": "1 banana mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large banana",
+        "grams": 136,
+        "translations": {
+          "es": "1 banana grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small banana",
+        "grams": 101,
+        "translations": {
+          "es": "1 banana pequeña"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 150,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Banana"
+    },
+    "aliases": {
+      "es": [
+        "plátano",
+        "banano",
+        "guineo",
+        "cambur"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Bananas_on_black_background_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Krzysztof Golik"
+      },
+      {
+        "file": "Banana_on_whitebackground.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Filo gèn'"
+      }
+    ]
+  },
+  {
+    "key": "blueberries",
+    "name": "Blueberries",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "171711",
+    "kcal": 57,
+    "protein": 0.74,
+    "carbs": 14.5,
+    "fat": 0.33,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 9.96,
+      "saturated_fat": 0.028,
+      "monounsaturated_fat": 0.047,
+      "polyunsaturated_fat": 0.146,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 6,
+      "iron": 0.28,
+      "magnesium": 6,
+      "phosphorus": 12,
+      "potassium": 77,
+      "sodium": 1,
+      "zinc": 0.16,
+      "copper": 0.057,
+      "manganese": 0.336,
+      "selenium": 0.1,
+      "vitamin_a": 3,
+      "vitamin_c": 9.7,
+      "vitamin_d": 0,
+      "vitamin_e": 0.57,
+      "vitamin_k": 19.3,
+      "thiamin": 0.037,
+      "riboflavin": 0.041,
+      "niacin": 0.418,
+      "pantothenic_acid": 0.124,
+      "vitamin_b6": 0.052,
+      "folate": 6,
+      "vitamin_b12": 0,
+      "choline": 6
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 148,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Arándanos"
+    },
+    "aliases": {
+      "es": [
+        "arándanos azules",
+        "moras azules"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Dish_of_blueberries.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Petar Milošević"
+      },
+      {
+        "file": "Blueberries_in_harvest_season.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marc-Lautenbacher"
+      }
+    ]
+  },
+  {
+    "key": "cantaloupe",
+    "name": "Cantaloupe melon",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "746770",
+    "kcal": 34,
+    "protein": 0.82,
+    "carbs": 8.16,
+    "fat": 0.18,
+    "fiber": 0.8,
+    "nutrients": {
+      "sugars": 7.88,
+      "calcium": 9,
+      "iron": 0.38,
+      "magnesium": 13,
+      "phosphorus": 17,
+      "potassium": 157,
+      "sodium": 30,
+      "zinc": 0.44,
+      "copper": 0.085,
+      "manganese": 0.046,
+      "selenium": 1.7,
+      "vitamin_a": 232,
+      "vitamin_c": 10.9,
+      "vitamin_k": 2.7,
+      "thiamin": 0.049,
+      "riboflavin": 0.027,
+      "niacin": 0.694,
+      "pantothenic_acid": 0.085,
+      "vitamin_b6": 0.04
+    },
+    "portions": [
+      {
+        "key": "cup_cubes",
+        "label": "1 cup, cubed",
+        "grams": 160,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "wedge_medium",
+        "label": "1 wedge (⅛ of a medium melon)",
+        "grams": 69,
+        "translations": {
+          "es": "1 tajada (⅛ de un melón mediano)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Melón cantalupo"
+    },
+    "aliases": {
+      "en": [
+        "melon"
+      ],
+      "es": [
+        "melón"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Cucumis_melo_var._reticulatus_(photo_by_Scott_Bauer).jpg",
+        "license": "Public domain",
+        "author": "USDA photo by Scott Bauer. Image Number K7355-11."
+      },
+      {
+        "file": "Nationalist_product_labeling_of_a_cantaloupe_2024.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Bartleby08"
+      }
+    ]
+  },
+  {
+    "key": "cherries",
+    "name": "Cherries",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "171719",
+    "kcal": 63,
+    "protein": 1.06,
+    "carbs": 16,
+    "fat": 0.2,
+    "fiber": 2.1,
+    "nutrients": {
+      "sugars": 12.8,
+      "saturated_fat": 0.038,
+      "monounsaturated_fat": 0.047,
+      "polyunsaturated_fat": 0.052,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 13,
+      "iron": 0.36,
+      "magnesium": 11,
+      "phosphorus": 21,
+      "potassium": 222,
+      "sodium": 0,
+      "zinc": 0.07,
+      "copper": 0.06,
+      "manganese": 0.07,
+      "selenium": 0,
+      "vitamin_a": 3,
+      "vitamin_c": 7,
+      "vitamin_d": 0,
+      "vitamin_e": 0.07,
+      "vitamin_k": 2.1,
+      "thiamin": 0.027,
+      "riboflavin": 0.033,
+      "niacin": 0.154,
+      "pantothenic_acid": 0.199,
+      "vitamin_b6": 0.049,
+      "folate": 4,
+      "vitamin_b12": 0,
+      "choline": 6.1
+    },
+    "portions": [
+      {
+        "key": "cup_pitted",
+        "label": "1 cup, pitted",
+        "grams": 154,
+        "translations": {
+          "es": "1 taza, sin hueso"
+        }
+      },
+      {
+        "key": "cherry",
+        "label": "1 cherry",
+        "grams": 8.2,
+        "translations": {
+          "es": "1 cereza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Cerezas"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Bing_Cherries_(USDA_ARS).jpg",
+        "license": "Public domain",
+        "author": "Peggy Greb, USDA ARS"
+      },
+      {
+        "file": "Silver_bracelet_and_cherries_by_ASQ.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "W.carter"
+      }
+    ]
+  },
+  {
+    "key": "coconut_meat",
+    "name": "Coconut meat, raw",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "170169",
+    "kcal": 354,
+    "protein": 3.33,
+    "carbs": 15.2,
+    "fat": 33.5,
+    "fiber": 9,
+    "nutrients": {
+      "sugars": 6.23,
+      "saturated_fat": 29.7,
+      "monounsaturated_fat": 1.42,
+      "polyunsaturated_fat": 0.366,
+      "cholesterol": 0,
+      "calcium": 14,
+      "iron": 2.43,
+      "magnesium": 32,
+      "phosphorus": 113,
+      "potassium": 356,
+      "sodium": 20,
+      "zinc": 1.1,
+      "copper": 0.435,
+      "manganese": 1.5,
+      "selenium": 10.1,
+      "vitamin_a": 0,
+      "vitamin_c": 3.3,
+      "vitamin_d": 0,
+      "vitamin_e": 0.24,
+      "vitamin_k": 0.2,
+      "thiamin": 0.066,
+      "riboflavin": 0.02,
+      "niacin": 0.54,
+      "pantothenic_acid": 0.3,
+      "vitamin_b6": 0.054,
+      "folate": 26,
+      "vitamin_b12": 0,
+      "choline": 12.1
+    },
+    "portions": [
+      {
+        "key": "cup_shredded",
+        "label": "1 cup, shredded",
+        "grams": 80,
+        "translations": {
+          "es": "1 taza, rallado"
+        }
+      },
+      {
+        "key": "piece",
+        "label": "1 piece (2 × 2 × ½ in)",
+        "grams": 45,
+        "translations": {
+          "es": "1 trozo (5 × 5 × 1 cm)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pulpa de coco"
+    },
+    "aliases": {
+      "en": [
+        "coconut"
+      ],
+      "es": [
+        "coco"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Coconuts_-_single_and_cracked_open.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Coconut_meat,_Andamans.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "© Vyacheslav Argenberg"
+      }
+    ]
+  },
+  {
+    "key": "dates",
+    "name": "Dates",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "171726",
+    "kcal": 282,
+    "protein": 2.45,
+    "carbs": 75,
+    "fat": 0.39,
+    "fiber": 8,
+    "nutrients": {
+      "sugars": 63.4,
+      "saturated_fat": 0.032,
+      "monounsaturated_fat": 0.036,
+      "polyunsaturated_fat": 0.019,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 39,
+      "iron": 1.02,
+      "magnesium": 43,
+      "phosphorus": 62,
+      "potassium": 656,
+      "sodium": 2,
+      "zinc": 0.29,
+      "copper": 0.206,
+      "manganese": 0.262,
+      "selenium": 3,
+      "vitamin_a": 0,
+      "vitamin_c": 0.4,
+      "vitamin_d": 0,
+      "vitamin_e": 0.05,
+      "vitamin_k": 2.7,
+      "thiamin": 0.052,
+      "riboflavin": 0.066,
+      "niacin": 1.27,
+      "pantothenic_acid": 0.589,
+      "vitamin_b6": 0.165,
+      "folate": 19,
+      "vitamin_b12": 0,
+      "choline": 6.3
+    },
+    "portions": [
+      {
+        "key": "date",
+        "label": "1 date, pitted",
+        "grams": 7.1,
+        "translations": {
+          "es": "1 dátil sin hueso"
+        }
+      },
+      {
+        "key": "cup_chopped",
+        "label": "1 cup, chopped",
+        "grams": 147,
+        "translations": {
+          "es": "1 taza, picados"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Dátiles"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Pile_of_Wet_Dates_at_Barkin_Dogo_Market,_Kaduna_North.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samsule2"
+      },
+      {
+        "file": "Dates_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ayshamarjana"
+      }
+    ]
+  },
+  {
+    "key": "grapes",
+    "name": "Grapes",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "174683",
+    "kcal": 69,
+    "protein": 0.72,
+    "carbs": 18.1,
+    "fat": 0.16,
+    "fiber": 0.9,
+    "nutrients": {
+      "sugars": 15.5,
+      "saturated_fat": 0.054,
+      "monounsaturated_fat": 0.007,
+      "polyunsaturated_fat": 0.048,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 10,
+      "iron": 0.36,
+      "magnesium": 7,
+      "phosphorus": 20,
+      "potassium": 191,
+      "sodium": 2,
+      "zinc": 0.07,
+      "copper": 0.127,
+      "manganese": 0.071,
+      "selenium": 0.1,
+      "vitamin_a": 3,
+      "vitamin_c": 3.2,
+      "vitamin_d": 0,
+      "vitamin_e": 0.19,
+      "vitamin_k": 14.6,
+      "thiamin": 0.069,
+      "riboflavin": 0.07,
+      "niacin": 0.188,
+      "pantothenic_acid": 0.05,
+      "vitamin_b6": 0.086,
+      "folate": 2,
+      "vitamin_b12": 0,
+      "choline": 5.6
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 151,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "ten_grapes",
+        "label": "10 grapes",
+        "grams": 49,
+        "translations": {
+          "es": "10 uvas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Uvas"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Green_Grape_3.jpg",
+        "license": "Public domain",
+        "author": "Martin Kozák"
+      },
+      {
+        "file": "Pinot_Grigio-20201027-RM-114053.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Reinhold Möller"
+      }
+    ]
+  },
+  {
+    "key": "guava",
+    "name": "Guava",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "173044",
+    "kcal": 68,
+    "protein": 2.55,
+    "carbs": 14.3,
+    "fat": 0.95,
+    "fiber": 5.4,
+    "nutrients": {
+      "sugars": 8.92,
+      "saturated_fat": 0.272,
+      "monounsaturated_fat": 0.087,
+      "polyunsaturated_fat": 0.401,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 18,
+      "iron": 0.26,
+      "magnesium": 22,
+      "phosphorus": 40,
+      "potassium": 417,
+      "sodium": 2,
+      "zinc": 0.23,
+      "copper": 0.23,
+      "manganese": 0.15,
+      "selenium": 0.6,
+      "vitamin_a": 31,
+      "vitamin_c": 228,
+      "vitamin_d": 0,
+      "vitamin_e": 0.73,
+      "vitamin_k": 2.6,
+      "thiamin": 0.067,
+      "riboflavin": 0.04,
+      "niacin": 1.08,
+      "pantothenic_acid": 0.451,
+      "vitamin_b6": 0.11,
+      "folate": 49,
+      "vitamin_b12": 0,
+      "choline": 7.6
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 guava",
+        "grams": 55,
+        "translations": {
+          "es": "1 guayaba"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 165,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Guayaba"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Goiaba_vermelha.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rodrigo.Argenton"
+      },
+      {
+        "file": "GUAVA_FRUIT.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "GTSPACE"
+      }
+    ]
+  },
+  {
+    "key": "kiwi",
+    "name": "Kiwi",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "327046",
+    "kcal": 58,
+    "protein": 1.06,
+    "carbs": 14,
+    "fat": 0.44,
+    "fiber": 3,
+    "nutrients": {
+      "sugars": 8.99,
+      "calcium": 35,
+      "iron": 0.24,
+      "magnesium": 15.7,
+      "phosphorus": 34,
+      "potassium": 198,
+      "sodium": 5,
+      "zinc": 0.14,
+      "copper": 0.134,
+      "manganese": 0.064,
+      "selenium": 0.2,
+      "vitamin_a": 4,
+      "vitamin_c": 74.7,
+      "vitamin_e": 1.3,
+      "vitamin_k": 40.3,
+      "thiamin": 0.027,
+      "riboflavin": 0.025,
+      "niacin": 0.37,
+      "pantothenic_acid": 0.206,
+      "vitamin_b6": 0.061
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 kiwi",
+        "grams": 69,
+        "translations": {
+          "es": "1 kiwi"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 180,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Kiwi"
+    },
+    "aliases": {
+      "en": [
+        "kiwifruit"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg",
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "I, Luc Viatour"
+      },
+      {
+        "file": "Kiwifruit_cross_section.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "lemon",
+    "name": "Lemon",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "167746",
+    "kcal": 29,
+    "protein": 1.1,
+    "carbs": 9.32,
+    "fat": 0.3,
+    "fiber": 2.8,
+    "nutrients": {
+      "sugars": 2.5,
+      "saturated_fat": 0.039,
+      "monounsaturated_fat": 0.011,
+      "polyunsaturated_fat": 0.089,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 26,
+      "iron": 0.6,
+      "magnesium": 8,
+      "phosphorus": 16,
+      "potassium": 138,
+      "sodium": 2,
+      "zinc": 0.06,
+      "copper": 0.037,
+      "manganese": 0.03,
+      "selenium": 0.4,
+      "vitamin_a": 1,
+      "vitamin_c": 53,
+      "vitamin_d": 0,
+      "vitamin_e": 0.15,
+      "vitamin_k": 0,
+      "thiamin": 0.04,
+      "riboflavin": 0.02,
+      "niacin": 0.1,
+      "pantothenic_acid": 0.19,
+      "vitamin_b6": 0.08,
+      "folate": 11,
+      "vitamin_b12": 0,
+      "choline": 5.1
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 lemon",
+        "grams": 58,
+        "translations": {
+          "es": "1 limón"
+        }
+      },
+      {
+        "key": "wedge",
+        "label": "1 wedge",
+        "grams": 7,
+        "translations": {
+          "es": "1 gajo"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Limón amarillo"
+    },
+    "aliases": {
+      "es": [
+        "limón"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Lemon.jpg",
+        "license": "CC BY-SA 2.5",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "André Karwath aka Aka"
+      },
+      {
+        "file": "Lemon_-_whole_and_split.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "lime",
+    "name": "Lime",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "168155",
+    "kcal": 30,
+    "protein": 0.7,
+    "carbs": 10.5,
+    "fat": 0.2,
+    "fiber": 2.8,
+    "nutrients": {
+      "sugars": 1.69,
+      "saturated_fat": 0.022,
+      "monounsaturated_fat": 0.019,
+      "polyunsaturated_fat": 0.055,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 33,
+      "iron": 0.6,
+      "magnesium": 6,
+      "phosphorus": 18,
+      "potassium": 102,
+      "sodium": 2,
+      "zinc": 0.11,
+      "copper": 0.065,
+      "manganese": 0.008,
+      "selenium": 0.4,
+      "vitamin_a": 2,
+      "vitamin_c": 29.1,
+      "vitamin_d": 0,
+      "vitamin_e": 0.22,
+      "vitamin_k": 0.6,
+      "thiamin": 0.03,
+      "riboflavin": 0.02,
+      "niacin": 0.2,
+      "pantothenic_acid": 0.217,
+      "vitamin_b6": 0.043,
+      "folate": 8,
+      "vitamin_b12": 0,
+      "choline": 5.1
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 lime",
+        "grams": 67,
+        "translations": {
+          "es": "1 lima"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lima"
+    },
+    "aliases": {
+      "es": [
+        "limón verde",
+        "limón sutil"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Lime_-_whole_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Lime_Drops_(4269384402).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "THOR"
+      }
+    ]
+  },
+  {
+    "key": "mandarin",
+    "name": "Mandarin",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "2710832",
+    "kcal": 55.6,
+    "protein": 1.04,
+    "carbs": 13.4,
+    "fat": 0.458,
+    "fiber": 1.33,
+    "nutrients": {
+      "sugars": 9.12,
+      "calcium": 44,
+      "iron": 0,
+      "magnesium": 12.6,
+      "phosphorus": 19.7,
+      "potassium": 167,
+      "sodium": 0,
+      "zinc": 0.069,
+      "copper": 0.043,
+      "manganese": 0.05,
+      "vitamin_c": 21.2
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium mandarin",
+        "grams": 88,
+        "translations": {
+          "es": "1 mandarina mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large mandarin",
+        "grams": 120,
+        "translations": {
+          "es": "1 mandarina grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small mandarin",
+        "grams": 76,
+        "translations": {
+          "es": "1 mandarina pequeña"
+        }
+      },
+      {
+        "key": "cup_sections",
+        "label": "1 cup, sections",
+        "grams": 195,
+        "translations": {
+          "es": "1 taza, en gajos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mandarina"
+    },
+    "aliases": {
+      "en": [
+        "tangerine"
+      ],
+      "es": [
+        "tangerina"
+      ]
+    },
+    "photos": [
+      {
+        "file": "2023_Mandarynki.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "Mandarin_Oranges_(Citrus_Reticulata).jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Joe Ravi"
+      }
+    ]
+  },
+  {
+    "key": "mango",
+    "name": "Mango",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169910",
+    "kcal": 60,
+    "protein": 0.82,
+    "carbs": 15,
+    "fat": 0.38,
+    "fiber": 1.6,
+    "nutrients": {
+      "sugars": 13.7,
+      "saturated_fat": 0.092,
+      "monounsaturated_fat": 0.14,
+      "polyunsaturated_fat": 0.071,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 11,
+      "iron": 0.16,
+      "magnesium": 10,
+      "phosphorus": 14,
+      "potassium": 168,
+      "sodium": 1,
+      "zinc": 0.09,
+      "copper": 0.111,
+      "manganese": 0.063,
+      "selenium": 0.6,
+      "vitamin_a": 54,
+      "vitamin_c": 36.4,
+      "vitamin_d": 0,
+      "vitamin_e": 0.9,
+      "vitamin_k": 4.2,
+      "thiamin": 0.028,
+      "riboflavin": 0.038,
+      "niacin": 0.669,
+      "pantothenic_acid": 0.197,
+      "vitamin_b6": 0.119,
+      "folate": 43,
+      "vitamin_b12": 0,
+      "choline": 7.6
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 mango, flesh only",
+        "grams": 336,
+        "translations": {
+          "es": "1 mango, solo pulpa"
+        }
+      },
+      {
+        "key": "cup_pieces",
+        "label": "1 cup, pieces",
+        "grams": 165,
+        "translations": {
+          "es": "1 taza, en trozos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Mango"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Mangos_-_single_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Mango_fruit_Nam_Dok_Mai.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "orange",
+    "name": "Orange",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169097",
+    "kcal": 47,
+    "protein": 0.94,
+    "carbs": 11.8,
+    "fat": 0.12,
+    "fiber": 2.4,
+    "nutrients": {
+      "sugars": 9.35,
+      "saturated_fat": 0.015,
+      "monounsaturated_fat": 0.023,
+      "polyunsaturated_fat": 0.025,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 40,
+      "iron": 0.1,
+      "magnesium": 10,
+      "phosphorus": 14,
+      "potassium": 181,
+      "sodium": 0,
+      "zinc": 0.07,
+      "copper": 0.045,
+      "manganese": 0.025,
+      "selenium": 0.5,
+      "vitamin_a": 11,
+      "vitamin_c": 53.2,
+      "vitamin_d": 0,
+      "vitamin_e": 0.18,
+      "vitamin_k": 0,
+      "thiamin": 0.087,
+      "riboflavin": 0.04,
+      "niacin": 0.282,
+      "pantothenic_acid": 0.25,
+      "vitamin_b6": 0.06,
+      "folate": 30,
+      "vitamin_b12": 0,
+      "choline": 8.4
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 orange",
+        "grams": 131,
+        "translations": {
+          "es": "1 naranja"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large orange",
+        "grams": 184,
+        "translations": {
+          "es": "1 naranja grande"
+        }
+      },
+      {
+        "key": "cup_sections",
+        "label": "1 cup, sections",
+        "grams": 180,
+        "translations": {
+          "es": "1 taza, en gajos"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Naranja"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Oranges_-_whole-halved-segment.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Ambersweet_oranges.jpg",
+        "license": "Public domain"
+      }
+    ]
+  },
+  {
+    "key": "papaya",
+    "name": "Papaya",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169926",
+    "kcal": 43,
+    "protein": 0.47,
+    "carbs": 10.8,
+    "fat": 0.26,
+    "fiber": 1.7,
+    "nutrients": {
+      "sugars": 7.82,
+      "saturated_fat": 0.081,
+      "monounsaturated_fat": 0.072,
+      "polyunsaturated_fat": 0.058,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 20,
+      "iron": 0.25,
+      "magnesium": 21,
+      "phosphorus": 10,
+      "potassium": 182,
+      "sodium": 8,
+      "zinc": 0.08,
+      "copper": 0.045,
+      "manganese": 0.04,
+      "selenium": 0.6,
+      "vitamin_a": 47,
+      "vitamin_c": 60.9,
+      "vitamin_d": 0,
+      "vitamin_e": 0.3,
+      "vitamin_k": 2.6,
+      "thiamin": 0.023,
+      "riboflavin": 0.027,
+      "niacin": 0.357,
+      "pantothenic_acid": 0.191,
+      "vitamin_b6": 0.038,
+      "folate": 37,
+      "vitamin_b12": 0,
+      "choline": 6.1
+    },
+    "portions": [
+      {
+        "key": "cup_pieces",
+        "label": "1 cup, pieces",
+        "grams": 145,
+        "translations": {
+          "es": "1 taza, en trozos"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small papaya",
+        "grams": 157,
+        "translations": {
+          "es": "1 papaya pequeña"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Papaya"
+    },
+    "aliases": {
+      "es": [
+        "lechosa",
+        "fruta bomba"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Papaya_-_longitudinal_section.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Papaya_-_longitudinal_section_close-up_view.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "passion_fruit",
+    "name": "Passion fruit",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169108",
+    "kcal": 97,
+    "protein": 2.2,
+    "carbs": 23.4,
+    "fat": 0.7,
+    "fiber": 10.4,
+    "nutrients": {
+      "sugars": 11.2,
+      "saturated_fat": 0.059,
+      "monounsaturated_fat": 0.086,
+      "polyunsaturated_fat": 0.411,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 12,
+      "iron": 1.6,
+      "magnesium": 29,
+      "phosphorus": 68,
+      "potassium": 348,
+      "sodium": 28,
+      "zinc": 0.1,
+      "copper": 0.086,
+      "selenium": 0.6,
+      "vitamin_a": 64,
+      "vitamin_c": 30,
+      "vitamin_d": 0,
+      "vitamin_e": 0.02,
+      "vitamin_k": 0.7,
+      "thiamin": 0,
+      "riboflavin": 0.13,
+      "niacin": 1.5,
+      "vitamin_b6": 0.1,
+      "folate": 14,
+      "vitamin_b12": 0,
+      "choline": 7.6
+    },
+    "portions": [
+      {
+        "key": "fruit",
+        "label": "1 passion fruit, pulp only",
+        "grams": 18,
+        "translations": {
+          "es": "1 maracuyá, solo pulpa"
+        }
+      },
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 236,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Maracuyá"
+    },
+    "aliases": {
+      "es": [
+        "parchita",
+        "fruta de la pasión"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Passiflora_Edulis_Open_Fruit2.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Alexander Klink"
+      },
+      {
+        "file": "Passion_fruits_-_whole_and_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "peach",
+    "name": "Peach",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "325430",
+    "kcal": 42,
+    "protein": 0.91,
+    "carbs": 10.1,
+    "fat": 0.27,
+    "fiber": 1.5,
+    "nutrients": {
+      "sugars": 8.39,
+      "calcium": 4,
+      "iron": 0.34,
+      "magnesium": 8,
+      "phosphorus": 22,
+      "potassium": 122,
+      "sodium": 13,
+      "zinc": 0.23,
+      "copper": 0.078,
+      "manganese": 0.026,
+      "selenium": 2.1,
+      "vitamin_a": 24,
+      "vitamin_c": 4.1,
+      "vitamin_k": 3,
+      "thiamin": 0.024,
+      "riboflavin": 0.031,
+      "niacin": 0.806,
+      "pantothenic_acid": 0.153,
+      "vitamin_b6": 0.025
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium peach",
+        "grams": 150,
+        "translations": {
+          "es": "1 durazno mediano"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large peach",
+        "grams": 175,
+        "translations": {
+          "es": "1 durazno grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small peach",
+        "grams": 130,
+        "translations": {
+          "es": "1 durazno pequeño"
+        }
+      },
+      {
+        "key": "cup_slices",
+        "label": "1 cup, sliced",
+        "grams": 154,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Durazno"
+    },
+    "aliases": {
+      "es": [
+        "melocotón"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Autumn_Red_peaches.jpg",
+        "license": "Public domain",
+        "author": "Jack Dykinga, USDA"
+      },
+      {
+        "file": "Peach_fruit_3.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Prianxi"
+      }
+    ]
+  },
+  {
+    "key": "pear",
+    "name": "Pear",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169118",
+    "kcal": 57,
+    "protein": 0.36,
+    "carbs": 15.2,
+    "fat": 0.14,
+    "fiber": 3.1,
+    "nutrients": {
+      "sugars": 9.75,
+      "saturated_fat": 0.022,
+      "monounsaturated_fat": 0.084,
+      "polyunsaturated_fat": 0.094,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 9,
+      "iron": 0.18,
+      "magnesium": 7,
+      "phosphorus": 12,
+      "potassium": 116,
+      "sodium": 1,
+      "zinc": 0.1,
+      "copper": 0.082,
+      "manganese": 0.048,
+      "selenium": 0.1,
+      "vitamin_a": 1,
+      "vitamin_c": 4.3,
+      "vitamin_d": 0,
+      "vitamin_e": 0.12,
+      "vitamin_k": 4.4,
+      "thiamin": 0.012,
+      "riboflavin": 0.026,
+      "niacin": 0.161,
+      "pantothenic_acid": 0.049,
+      "vitamin_b6": 0.029,
+      "folate": 7,
+      "vitamin_b12": 0,
+      "choline": 5.1
+    },
+    "portions": [
+      {
+        "key": "medium",
+        "label": "1 medium pear",
+        "grams": 178,
+        "translations": {
+          "es": "1 pera mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large pear",
+        "grams": 230,
+        "translations": {
+          "es": "1 pera grande"
+        }
+      },
+      {
+        "key": "small",
+        "label": "1 small pear",
+        "grams": 148,
+        "translations": {
+          "es": "1 pera pequeña"
+        }
+      },
+      {
+        "key": "cup_slices",
+        "label": "1 cup, sliced",
+        "grams": 140,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pera"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "D'anjou_pear.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Rhododendrites"
+      },
+      {
+        "file": "Pear_DS.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Augustus Binu"
+      }
+    ]
+  },
+  {
+    "key": "pineapple",
+    "name": "Pineapple",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "2346398",
+    "kcal": 54,
+    "protein": 0.461,
+    "carbs": 14.1,
+    "fat": 0.211,
+    "fiber": 0.935,
+    "nutrients": {
+      "sugars": 11.4,
+      "calcium": 12.5,
+      "iron": 0.054,
+      "magnesium": 13.4,
+      "phosphorus": 5.42,
+      "potassium": 137,
+      "sodium": 0,
+      "zinc": 0.107,
+      "copper": 0.095,
+      "manganese": 0.866,
+      "vitamin_c": 58.6,
+      "thiamin": 0.064,
+      "niacin": 0.228,
+      "vitamin_b6": 0.11
+    },
+    "portions": [
+      {
+        "key": "cup_chunks",
+        "label": "1 cup, chunks",
+        "grams": 165,
+        "translations": {
+          "es": "1 taza, en trozos"
+        }
+      },
+      {
+        "key": "slice",
+        "label": "1 slice",
+        "grams": 84,
+        "translations": {
+          "es": "1 rodaja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Piña"
+    },
+    "aliases": {
+      "es": [
+        "ananá"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Pineapple-fruit.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "UneksAbdullahi"
+      },
+      {
+        "file": "Pineapple_Chunks.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gaurav Dhwaj Khadka"
+      }
+    ]
+  },
+  {
+    "key": "plantain_ripe_baked",
+    "name": "Plantain, ripe, baked",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "169131",
+    "kcal": 155,
+    "protein": 1.52,
+    "carbs": 41.4,
+    "fat": 0.16,
+    "fiber": 2.2,
+    "nutrients": {
+      "sugars": 21.3,
+      "saturated_fat": 0,
+      "monounsaturated_fat": 0,
+      "polyunsaturated_fat": 0,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 3,
+      "iron": 0.28,
+      "magnesium": 41,
+      "phosphorus": 37,
+      "potassium": 477,
+      "sodium": 2,
+      "zinc": 0.21,
+      "copper": 0.044,
+      "manganese": 0.165,
+      "selenium": 0,
+      "vitamin_a": 45,
+      "vitamin_c": 16.4,
+      "vitamin_d": 0,
+      "vitamin_e": 0,
+      "vitamin_k": 12.9,
+      "thiamin": 0.09,
+      "riboflavin": 0.13,
+      "niacin": 0.685,
+      "pantothenic_acid": 0.53,
+      "vitamin_b6": 0.21,
+      "folate": 53,
+      "vitamin_b12": 0,
+      "choline": 12.7
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 139,
+        "translations": {
+          "es": "1 taza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Plátano macho maduro, al horno"
+    },
+    "aliases": {
+      "es": [
+        "plátano maduro al horno"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ripe_plantains.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Vis M"
+      },
+      {
+        "file": "Ripe_plantains_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Vis M"
+      }
+    ]
+  },
+  {
+    "key": "plantain_ripe_raw",
+    "name": "Plantain, ripe, raw",
+    "category": "fruit",
+    "source": "usda_foundation",
+    "source_id": "2710817",
+    "kcal": 123,
+    "protein": 1.16,
+    "carbs": 31,
+    "fat": 0.893,
+    "fiber": 2.12,
+    "nutrients": {
+      "sugars": 14.2,
+      "calcium": 3.82,
+      "iron": 0.319,
+      "magnesium": 33.9,
+      "phosphorus": 30.1,
+      "potassium": 396,
+      "sodium": 0,
+      "zinc": 0.147,
+      "copper": 0.1,
+      "manganese": 0.205,
+      "vitamin_c": 20.1,
+      "riboflavin": 0.1,
+      "vitamin_b6": 0.189
+    },
+    "portions": [
+      {
+        "key": "plantain",
+        "label": "1 plantain",
+        "grams": 270,
+        "translations": {
+          "es": "1 plátano macho"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 148,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Plátano macho maduro, crudo"
+    },
+    "aliases": {
+      "es": [
+        "plátano maduro",
+        "maduro"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ripe_Plantain_for_sale.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Iwai-Dialax"
+      }
+    ]
+  },
+  {
+    "key": "raisins",
+    "name": "Raisins",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "168165",
+    "kcal": 299,
+    "protein": 3.3,
+    "carbs": 79.3,
+    "fat": 0.25,
+    "fiber": 4.5,
+    "nutrients": {
+      "sugars": 65.2,
+      "saturated_fat": 0.094,
+      "monounsaturated_fat": 0.024,
+      "polyunsaturated_fat": 0.053,
+      "trans_fat": 0.001,
+      "cholesterol": 0,
+      "calcium": 62,
+      "iron": 1.79,
+      "magnesium": 36,
+      "phosphorus": 98,
+      "potassium": 744,
+      "sodium": 26,
+      "zinc": 0.36,
+      "copper": 0.272,
+      "manganese": 0.281,
+      "selenium": 0.6,
+      "vitamin_a": 0,
+      "vitamin_c": 2.3,
+      "vitamin_d": 0,
+      "vitamin_e": 0.12,
+      "vitamin_k": 3.5,
+      "thiamin": 0.106,
+      "riboflavin": 0.125,
+      "niacin": 0.766,
+      "vitamin_b6": 0.174,
+      "folate": 5,
+      "vitamin_b12": 0,
+      "choline": 11.1
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 145,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "fifty",
+        "label": "50 raisins",
+        "grams": 26,
+        "translations": {
+          "es": "50 pasas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pasas"
+    },
+    "aliases": {
+      "es": [
+        "uvas pasas"
+      ]
+    },
+    "photos": [
+      {
+        "file": "2023_Rodzynki_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      },
+      {
+        "file": "2023_Rodzynki_(2).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Jacek Halicki"
+      }
+    ]
+  },
+  {
+    "key": "raspberries",
+    "name": "Raspberries",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "167755",
+    "kcal": 52,
+    "protein": 1.2,
+    "carbs": 11.9,
+    "fat": 0.65,
+    "fiber": 6.5,
+    "nutrients": {
+      "sugars": 4.42,
+      "saturated_fat": 0.019,
+      "monounsaturated_fat": 0.064,
+      "polyunsaturated_fat": 0.375,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 25,
+      "iron": 0.69,
+      "magnesium": 22,
+      "phosphorus": 29,
+      "potassium": 151,
+      "sodium": 1,
+      "zinc": 0.42,
+      "copper": 0.09,
+      "manganese": 0.67,
+      "selenium": 0.2,
+      "vitamin_a": 2,
+      "vitamin_c": 26.2,
+      "vitamin_d": 0,
+      "vitamin_e": 0.87,
+      "vitamin_k": 7.8,
+      "thiamin": 0.032,
+      "riboflavin": 0.038,
+      "niacin": 0.598,
+      "pantothenic_acid": 0.329,
+      "vitamin_b6": 0.055,
+      "folate": 21,
+      "vitamin_b12": 0,
+      "choline": 12.3
+    },
+    "portions": [
+      {
+        "key": "cup",
+        "label": "1 cup",
+        "grams": 123,
+        "translations": {
+          "es": "1 taza"
+        }
+      },
+      {
+        "key": "ten",
+        "label": "10 raspberries",
+        "grams": 19,
+        "translations": {
+          "es": "10 frambuesas"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Frambuesas"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Raspberry_-_whole_(Rubus_idaeus).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Clover_flower_on_bed_of_raspberries.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "grendelkhan from USA"
+      }
+    ]
+  },
+  {
+    "key": "strawberries",
+    "name": "Strawberries",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "167762",
+    "kcal": 32,
+    "protein": 0.67,
+    "carbs": 7.68,
+    "fat": 0.3,
+    "fiber": 2,
+    "nutrients": {
+      "sugars": 4.89,
+      "saturated_fat": 0.015,
+      "monounsaturated_fat": 0.043,
+      "polyunsaturated_fat": 0.155,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 16,
+      "iron": 0.41,
+      "magnesium": 13,
+      "phosphorus": 24,
+      "potassium": 153,
+      "sodium": 1,
+      "zinc": 0.14,
+      "copper": 0.048,
+      "manganese": 0.386,
+      "selenium": 0.4,
+      "vitamin_a": 1,
+      "vitamin_c": 58.8,
+      "vitamin_d": 0,
+      "vitamin_e": 0.29,
+      "vitamin_k": 2.2,
+      "thiamin": 0.024,
+      "riboflavin": 0.022,
+      "niacin": 0.386,
+      "pantothenic_acid": 0.125,
+      "vitamin_b6": 0.047,
+      "folate": 24,
+      "vitamin_b12": 0,
+      "choline": 5.7
+    },
+    "portions": [
+      {
+        "key": "cup_whole",
+        "label": "1 cup, whole",
+        "grams": 144,
+        "translations": {
+          "es": "1 taza, enteras"
+        }
+      },
+      {
+        "key": "cup_sliced",
+        "label": "1 cup, sliced",
+        "grams": 166,
+        "translations": {
+          "es": "1 taza, en rodajas"
+        }
+      },
+      {
+        "key": "medium",
+        "label": "1 medium strawberry",
+        "grams": 12,
+        "translations": {
+          "es": "1 fresa mediana"
+        }
+      },
+      {
+        "key": "large",
+        "label": "1 large strawberry",
+        "grams": 18,
+        "translations": {
+          "es": "1 fresa grande"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Fresas"
+    },
+    "aliases": {
+      "es": [
+        "frutillas"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      },
+      {
+        "file": "Garden_strawberry_(Fragaria_×_ananassa)_halved.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ivar Leidus"
+      }
+    ]
+  },
+  {
+    "key": "watermelon",
+    "name": "Watermelon",
+    "category": "fruit",
+    "source": "usda_sr_legacy",
+    "source_id": "167765",
+    "kcal": 30,
+    "protein": 0.61,
+    "carbs": 7.55,
+    "fat": 0.15,
+    "fiber": 0.4,
+    "nutrients": {
+      "sugars": 6.2,
+      "saturated_fat": 0.016,
+      "monounsaturated_fat": 0.037,
+      "polyunsaturated_fat": 0.05,
+      "trans_fat": 0,
+      "cholesterol": 0,
+      "calcium": 7,
+      "iron": 0.24,
+      "magnesium": 10,
+      "phosphorus": 11,
+      "potassium": 112,
+      "sodium": 1,
+      "zinc": 0.1,
+      "copper": 0.042,
+      "manganese": 0.038,
+      "selenium": 0.4,
+      "vitamin_a": 28,
+      "vitamin_c": 8.1,
+      "vitamin_d": 0,
+      "vitamin_e": 0.05,
+      "vitamin_k": 0.1,
+      "thiamin": 0.033,
+      "riboflavin": 0.021,
+      "niacin": 0.178,
+      "pantothenic_acid": 0.221,
+      "vitamin_b6": 0.045,
+      "folate": 3,
+      "vitamin_b12": 0,
+      "choline": 4.1
+    },
+    "portions": [
+      {
+        "key": "cup_diced",
+        "label": "1 cup, diced",
+        "grams": 152,
+        "translations": {
+          "es": "1 taza, en cubos"
+        }
+      },
+      {
+        "key": "wedge",
+        "label": "1 wedge (1/16 of a melon)",
+        "grams": 286,
+        "translations": {
+          "es": "1 tajada (1/16 de sandía)"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Sandía"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Slice_of_Watermelon_from_Wilson_Farm,_Lexington_MA.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "John Phelan"
+      },
+      {
+        "file": "Slices_of_watermelon.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Funmoring46"
+      }
+    ]
+  }
+]

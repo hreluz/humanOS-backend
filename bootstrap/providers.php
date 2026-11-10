@@ -1,6 +1,7 @@
 <?php
 
 use App\Modules\Auth\AuthServiceProvider;
+use App\Modules\Nutrition\NutritionServiceProvider;
 use App\Modules\Profile\ProfileServiceProvider;
 use App\Modules\Training\TrainingServiceProvider;
 use App\Providers\AppServiceProvider;
@@ -10,4 +11,5 @@ return [
     AuthServiceProvider::class,
     ProfileServiceProvider::class,
     TrainingServiceProvider::class,
+    NutritionServiceProvider::class,
 ];

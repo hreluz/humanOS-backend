@@ -20,6 +20,9 @@
         },
         {
             "name": "Training"
+        },
+        {
+            "name": "Nutrition"
         }
     ],
     "security": [
@@ -577,6 +580,438 @@
                 }
             }
         },
+        "/v1/nutrition/ingredients": {
+            "get": {
+                "operationId": "ingredient.index",
+                "description": "Returns every ingredient whose English name or English alias contains `search`, ignoring case and\naccents, in one unpaginated list: the catalog plus the caller's own ingredients, never another\nuser's. A user's ingredient matches on its name only. Ranked by the name: an exact match first, then\nnames starting with the term, then names with a word starting with it, then the rest (mid-word or\nalias-only matches); ties sort by name, then key. The caller's own ingredients get no priority and are\nmarked by `is_mine`. Values are per 100 g. `nutrients` and `source` are only returned by the detail\nendpoint. Each ingredient's first photo is its main photo; use its `thumbnail_url` in lists.",
+                "summary": "Search ingredients",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "required": true,
+                        "description": "Matched anywhere in the English name or an English alias, ignoring case and accents.",
+                        "schema": {
+                            "type": "string",
+                            "minLength": 3,
+                            "maxLength": 100
+                        },
+                        "example": "rice"
+                    },
+                    {
+                        "name": "category[]",
+                        "in": "query",
+                        "description": "Only these categories.",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/components/schemas/IngredientCategory"
+                            }
+                        },
+                        "example": [
+                            "grains",
+                            "vegetables"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/IngredientResource"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "ingredient.store",
+                "description": "Creates a private ingredient owned by the caller, with its macros per 100 g as on a food label and\nup to 10 portions. The ingredient gets a generated `u_` key and each portion a generated `p_` key;\nneither changes afterwards. Returns the detail shape.",
+                "summary": "Create an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreIngredientRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "`IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/IngredientResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/v1/nutrition/ingredients/{ingredient}": {
+            "get": {
+                "operationId": "ingredient.show",
+                "description": "Returns one ingredient by its key, with every measured nutrient per 100 g and the data source. A\nnutrient that wasn't measured is left out; clients show it as \"no data\". Another user's ingredient\nis a 404. A user's ingredient has no nutrients or photos yet, and its source is `user` with a `null` id.",
+                "summary": "Show an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "ingredient",
+                        "in": "path",
+                        "required": true,
+                        "description": "The ingredient key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "`IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/IngredientResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "patch": {
+                "operationId": "ingredient.update",
+                "description": "Changes only the fields sent; `fiber: null` clears the fiber. The sum rule is checked with stored\nvalues filling the fields not sent. `portions`, when sent, is the full new list: items with a `key`\nupdate that portion, items without one are new portions, and portions left out are removed. Only the\nowner may edit: a catalog ingredient is a 403, another user's is a 404. Returns the detail shape.",
+                "summary": "Update an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "ingredient",
+                        "in": "path",
+                        "required": true,
+                        "description": "The ingredient key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateIngredientRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "`IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/IngredientResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/AuthorizationException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "ingredient.destroy",
+                "description": "Deletes the caller's own ingredient and its portions. It's gone from every endpoint afterwards. Only\nthe owner may delete: a catalog ingredient is a 403, another user's is a 404.",
+                "summary": "Delete an ingredient",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "ingredient",
+                        "in": "path",
+                        "required": true,
+                        "description": "The ingredient key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "403": {
+                        "$ref": "#/components/responses/AuthorizationException"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/nutrition/my-ingredients": {
+            "get": {
+                "operationId": "ingredient.mine",
+                "description": "Returns the caller's own ingredients, paginated and sorted by name, then key. Items have the search\nshape: `nutrients` and `source` are only returned by the detail endpoint.",
+                "summary": "List my ingredients",
+                "tags": [
+                    "Nutrition"
+                ],
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number. Defaults to 1.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "example": 1
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Page size. Defaults to 50.",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 100
+                        },
+                        "example": 50
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Paginated set of `IngredientResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/IngredientResource"
+                                            }
+                                        },
+                                        "links": {
+                                            "type": "object",
+                                            "properties": {
+                                                "first": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "last": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "prev": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                },
+                                                "next": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [
+                                                "first",
+                                                "last",
+                                                "prev",
+                                                "next"
+                                            ]
+                                        },
+                                        "meta": {
+                                            "type": "object",
+                                            "properties": {
+                                                "current_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "from": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "minimum": 1
+                                                },
+                                                "last_page": {
+                                                    "type": "integer",
+                                                    "minimum": 1
+                                                },
+                                                "links": {
+                                                    "type": "array",
+                                                    "description": "Generated paginator links.",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "url": {
+                                                                "type": [
+                                                                    "string",
+                                                                    "null"
+                                                                ]
+                                                            },
+                                                            "label": {
+                                                                "type": "string"
+                                                            },
+                                                            "active": {
+                                                                "type": "boolean"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "url",
+                                                            "label",
+                                                            "active"
+                                                        ]
+                                                    }
+                                                },
+                                                "path": {
+                                                    "type": [
+                                                        "string",
+                                                        "null"
+                                                    ],
+                                                    "description": "Base path for paginator generated URLs."
+                                                },
+                                                "per_page": {
+                                                    "type": "integer",
+                                                    "description": "Number of items shown per page.",
+                                                    "minimum": 0
+                                                },
+                                                "to": {
+                                                    "type": [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                                    "description": "Number of the last item in the slice.",
+                                                    "minimum": 1
+                                                },
+                                                "total": {
+                                                    "type": "integer",
+                                                    "description": "Total number of items being paginated.",
+                                                    "minimum": 0
+                                                }
+                                            },
+                                            "required": [
+                                                "current_page",
+                                                "from",
+                                                "last_page",
+                                                "links",
+                                                "path",
+                                                "per_page",
+                                                "to",
+                                                "total"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "data",
+                                        "links",
+                                        "meta"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
         "/v1/profile": {
             "get": {
                 "operationId": "profile.show",
@@ -824,7 +1259,7 @@
         "/v1/training/exercises": {
             "get": {
                 "operationId": "exercise.index",
-                "description": "Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when\n`muscle` is set. Filters combine with AND, and values inside one array filter combine with\nOR. `instructions` and `source_id` are only returned by the detail endpoint.",
+                "description": "Returns the exercise catalog, paginated and sorted by name, or ranked by the muscle when\n`muscle` is set. Filters combine with AND, and values inside one array filter combine with\nOR. `location` keeps only the exercises saved at one of the caller's workout locations and combines with\nthe other filters, the muscle ranking included. `instructions` and `source_id` are only returned by the\ndetail endpoint.",
                 "summary": "List exercises",
                 "tags": [
                     "Training"
@@ -918,6 +1353,15 @@
                             "$ref": "#/components/schemas/MuscleRole"
                         },
                         "example": "primary"
+                    },
+                    {
+                        "name": "location",
+                        "in": "query",
+                        "description": "Only the exercises saved at this workout location. Must be the key of one of the caller's locations, from `/locations`.",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "l_01JC9Z7M4Q8N2R5T6V7W8X9Y0Z"
                     },
                     {
                         "name": "page",
@@ -1127,6 +1571,300 @@
                                 }
                             }
                         }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations": {
+            "get": {
+                "operationId": "workoutLocation.index",
+                "description": "Returns the caller's workout locations, sorted by name, then key, with how many exercises each has. Not\npaginated: a user has at most 20. The exercise keys are only returned by the detail endpoint.",
+                "summary": "List my workout locations",
+                "tags": [
+                    "Training"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Array of `WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/WorkoutLocationResource"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "workoutLocation.store",
+                "description": "Creates a named location for the caller, with no exercises yet. The location gets a generated `l_` key\nthat never changes. A user has at most 20 locations, and names are unique per user, ignoring case and\naccents. Returns the detail shape.",
+                "summary": "Create a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StoreWorkoutLocationRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations/{workoutLocation}": {
+            "get": {
+                "operationId": "workoutLocation.show",
+                "description": "Returns one of the caller's locations with the keys of its exercises, sorted by exercise name, then key.\nClients use them to mark exercises already at the location. Another user's location is a 404.",
+                "summary": "Show a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "patch": {
+                "operationId": "workoutLocation.update",
+                "description": "Changes only the fields sent; an empty body changes nothing. Keeping the current name is allowed, and\ntaking another of the caller's location names, in any case, is a 422. Another user's location is a 404.\nReturns the detail shape.",
+                "summary": "Update a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateWorkoutLocationRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "`WorkoutLocationResource`",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/WorkoutLocationResource"
+                                        }
+                                    },
+                                    "required": [
+                                        "data"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    },
+                    "422": {
+                        "$ref": "#/components/responses/ValidationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "workoutLocation.destroy",
+                "description": "Deletes one of the caller's locations and its exercise list. The exercises themselves are not touched.\nAnother user's location is a 404.",
+                "summary": "Delete a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            }
+        },
+        "/v1/training/locations/{workoutLocation}/exercises/{exercise}": {
+            "put": {
+                "operationId": "workoutLocationExercise.store",
+                "description": "Saves the exercise at one of the caller's locations. Idempotent: an exercise already there is also a 204,\nso a double tap or a retry is safe. The location's `updated_at` only moves when the exercise was added.\nAnother user's location, or an unknown exercise, is a 404.",
+                "summary": "Add an exercise to a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "exercise",
+                        "in": "path",
+                        "required": true,
+                        "description": "The exercise key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/ModelNotFoundException"
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/AuthenticationException"
+                    }
+                }
+            },
+            "delete": {
+                "operationId": "workoutLocationExercise.destroy",
+                "description": "Removes the exercise from one of the caller's locations. Idempotent: an exercise that isn't there is also\na 204. The location's `updated_at` only moves when the exercise was removed. Another user's location, or\nan unknown exercise, is a 404.",
+                "summary": "Remove an exercise from a workout location",
+                "tags": [
+                    "Training"
+                ],
+                "parameters": [
+                    {
+                        "name": "workoutLocation",
+                        "in": "path",
+                        "required": true,
+                        "description": "The workout location key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "exercise",
+                        "in": "path",
+                        "required": true,
+                        "description": "The exercise key",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No content"
                     },
                     "404": {
                         "$ref": "#/components/responses/ModelNotFoundException"
@@ -1513,6 +2251,307 @@
                 ],
                 "title": "ForgotPasswordRequest"
             },
+            "IngredientCategory": {
+                "type": "string",
+                "description": "How a person shops for the food. The frontend's 13 keys (`app/types/food.ts`).\n",
+                "enum": [
+                    "meat",
+                    "seafood",
+                    "eggs",
+                    "plant_protein",
+                    "dairy",
+                    "grains",
+                    "legumes",
+                    "vegetables",
+                    "fruit",
+                    "fats",
+                    "condiments",
+                    "supplements",
+                    "other"
+                ],
+                "title": "IngredientCategory"
+            },
+            "IngredientNutrientResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "examples": [
+                            "cholesterol"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "Cholesterol"
+                        ]
+                    },
+                    "group": {
+                        "examples": [
+                            "fats_and_sugars"
+                        ],
+                        "$ref": "#/components/schemas/NutrientGroup"
+                    },
+                    "unit": {
+                        "examples": [
+                            "mg"
+                        ],
+                        "$ref": "#/components/schemas/NutrientUnit"
+                    },
+                    "amount": {
+                        "type": "number",
+                        "description": "Amount per 100 g, in `unit`. A measured `0` is sent as `0`.",
+                        "examples": [
+                            411
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "label",
+                    "group",
+                    "unit",
+                    "amount"
+                ],
+                "title": "IngredientNutrientResource"
+            },
+            "IngredientPhotoResource": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "description": "The photo at the detail-view width. Use it as given; never build photo URLs.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/Special:FilePath/Example_avocado_whole.jpg?width=960"
+                        ]
+                    },
+                    "thumbnail_url": {
+                        "type": "string",
+                        "description": "The photo at the list and card width. Use it as given; never build photo URLs.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/Special:FilePath/Example_avocado_whole.jpg?width=330"
+                        ]
+                    },
+                    "license": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "License short name. Clients must show it wherever they show the photo, linked to `license_url` when set.",
+                        "examples": [
+                            "CC BY-SA 4.0"
+                        ]
+                    },
+                    "license_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Link to the license. `null` only for some `CC0` and `Public domain` photos.",
+                        "examples": [
+                            "https://creativecommons.org/licenses/by-sa/4.0"
+                        ]
+                    },
+                    "author": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "Credit for the photo. Clients must show it when set. `null` for `CC0` and `Public domain` photos.",
+                        "examples": [
+                            "Example Author"
+                        ]
+                    },
+                    "credit_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "description": "The photo's source page. Clients must link to it wherever they show the photo.",
+                        "examples": [
+                            "https://commons.wikimedia.org/wiki/File:Example_avocado_whole.jpg"
+                        ]
+                    }
+                },
+                "required": [
+                    "url",
+                    "thumbnail_url",
+                    "license",
+                    "license_url",
+                    "author",
+                    "credit_url"
+                ],
+                "title": "IngredientPhotoResource"
+            },
+            "IngredientPortionResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier of the portion within its ingredient.",
+                        "examples": [
+                            "large"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "examples": [
+                            "1 large egg"
+                        ]
+                    },
+                    "grams": {
+                        "type": "number",
+                        "description": "Weight of the portion in grams.",
+                        "examples": [
+                            50
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "label",
+                    "grams"
+                ],
+                "title": "IngredientPortionResource"
+            },
+            "IngredientResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used in the URL. Catalog keys are snake_case words; a user's ingredient has a\ngenerated `u_` key.",
+                        "examples": [
+                            "egg_whole_raw"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "English name for catalog ingredients. A user's ingredient returns its name as written, in any language.",
+                        "examples": [
+                            "Egg, whole, raw"
+                        ]
+                    },
+                    "category": {
+                        "examples": [
+                            "eggs"
+                        ],
+                        "$ref": "#/components/schemas/IngredientCategory"
+                    },
+                    "is_mine": {
+                        "type": "boolean",
+                        "description": "Whether the caller owns the ingredient: `true` for their own, `false` for catalog ingredients.",
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "per_100g": {
+                        "type": "object",
+                        "description": "Energy and macronutrients per 100 g: `kcal` in kcal, the rest in grams. `fiber` is `null` when it\nisn't known; clients show it as \"no data\" and leave it out of totals.",
+                        "examples": [
+                            {
+                                "kcal": 148,
+                                "protein": 12.4,
+                                "carbs": 0.96,
+                                "fat": 9.96,
+                                "fiber": 0
+                            }
+                        ],
+                        "properties": {
+                            "kcal": {
+                                "type": "number"
+                            },
+                            "protein": {
+                                "type": "number"
+                            },
+                            "carbs": {
+                                "type": "number"
+                            },
+                            "fat": {
+                                "type": "number"
+                            },
+                            "fiber": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "kcal",
+                            "protein",
+                            "carbs",
+                            "fat",
+                            "fiber"
+                        ]
+                    },
+                    "portions": {
+                        "type": "array",
+                        "description": "Portions in display order. Can be empty.",
+                        "items": {
+                            "$ref": "#/components/schemas/IngredientPortionResource"
+                        }
+                    },
+                    "photos": {
+                        "type": "array",
+                        "description": "Photos in display order. The first is the main photo, for lists and thumbnails. Can be empty. Clients must\nshow each photo's `author`, license and a link to `credit_url` wherever they show it.",
+                        "items": {
+                            "$ref": "#/components/schemas/IngredientPhotoResource"
+                        }
+                    },
+                    "nutrients": {
+                        "type": "array",
+                        "description": "Measured nutrients per 100 g, in display order. Unmeasured ones are left out. Only returned by the detail endpoint.",
+                        "items": {
+                            "$ref": "#/components/schemas/IngredientNutrientResource"
+                        }
+                    },
+                    "source": {
+                        "type": "object",
+                        "description": "Where the values come from: the USDA FoodData Central dataset and the FDC id, or `user` with a `null`\nid for a user's ingredient. Only returned by the detail endpoint.",
+                        "examples": [
+                            {
+                                "type": "usda_foundation",
+                                "id": "748967"
+                            }
+                        ],
+                        "properties": {
+                            "type": {
+                                "$ref": "#/components/schemas/IngredientSource"
+                            },
+                            "id": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "id"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "name",
+                    "category",
+                    "is_mine",
+                    "per_100g",
+                    "portions",
+                    "photos"
+                ],
+                "title": "IngredientResource"
+            },
+            "IngredientSource": {
+                "type": "string",
+                "description": "Where an ingredient's values come from: a USDA FoodData Central dataset (SPEC 15), or the user who typed them in (SPEC 18). Catalog entries never use `user`.\n",
+                "enum": [
+                    "usda_foundation",
+                    "usda_sr_legacy",
+                    "user"
+                ],
+                "title": "IngredientSource"
+            },
             "LoginRequest": {
                 "type": "object",
                 "properties": {
@@ -1613,6 +2652,24 @@
                     "secondary"
                 ],
                 "title": "MuscleRole"
+            },
+            "NutrientGroup": {
+                "type": "string",
+                "enum": [
+                    "fats_and_sugars",
+                    "minerals",
+                    "vitamins"
+                ],
+                "title": "NutrientGroup"
+            },
+            "NutrientUnit": {
+                "type": "string",
+                "enum": [
+                    "g",
+                    "mg",
+                    "ug"
+                ],
+                "title": "NutrientUnit"
             },
             "PhotoSource": {
                 "type": "string",
@@ -1826,6 +2883,139 @@
                 ],
                 "title": "Sex"
             },
+            "StoreIngredientRequest": {
+                "type": "object",
+                "description": "A new private ingredient, typed in from a food label (SPEC 18). Strings are trimmed by the global middleware.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u2013100 characters after trimming, in any language. Not unique.",
+                        "examples": [
+                            "Protein bar, chocolate"
+                        ],
+                        "maxLength": 100
+                    },
+                    "category": {
+                        "examples": [
+                            "supplements"
+                        ],
+                        "$ref": "#/components/schemas/IngredientCategory"
+                    },
+                    "kcal": {
+                        "type": "number",
+                        "description": "Energy per 100 g, in kcal. Not checked against the macros: labels round, and alcohol or sugar\nalcohols add calories the macros don't explain.",
+                        "examples": [
+                            380
+                        ],
+                        "minimum": 0,
+                        "maximum": 900
+                    },
+                    "protein": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            33
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "carbs": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            38
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fat": {
+                        "type": "number",
+                        "description": "Grams per 100 g. `protein + carbs + fat` may be at most 100.",
+                        "examples": [
+                            11
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fiber": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Grams per 100 g. Leave it out or send `null` when the label doesn't list it. Not in the sum rule.",
+                        "examples": [
+                            9
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "portions": {
+                        "type": "array",
+                        "description": "Measures in display order, at most 10. Keys are generated.",
+                        "examples": [
+                            [
+                                {
+                                    "label": "1 bar",
+                                    "grams": 45
+                                }
+                            ]
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "label": {
+                                    "type": "string",
+                                    "description": "1\u201350 characters after trimming.",
+                                    "examples": [
+                                        "1 bar"
+                                    ],
+                                    "maxLength": 50
+                                },
+                                "grams": {
+                                    "type": "number",
+                                    "description": "Weight of the measure in grams: more than 0, at most 5000.",
+                                    "examples": [
+                                        45
+                                    ],
+                                    "maximum": 5000
+                                }
+                            },
+                            "required": [
+                                "label",
+                                "grams"
+                            ]
+                        },
+                        "maxItems": 10
+                    }
+                },
+                "required": [
+                    "name",
+                    "category",
+                    "kcal",
+                    "protein",
+                    "carbs",
+                    "fat"
+                ],
+                "title": "StoreIngredientRequest"
+            },
+            "StoreWorkoutLocationRequest": {
+                "type": "object",
+                "description": "A new workout location for the caller (SPEC 19). Strings are trimmed by the global middleware.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u201350 characters after trimming. Unique among the caller's locations, ignoring case and accents.",
+                        "examples": [
+                            "Gym Local"
+                        ],
+                        "maxLength": 50
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "title": "StoreWorkoutLocationRequest"
+            },
             "TargetWeightEntryResource": {
                 "type": "object",
                 "properties": {
@@ -1930,6 +3120,126 @@
                 ],
                 "title": "UnitSystem"
             },
+            "UpdateIngredientRequest": {
+                "type": "object",
+                "description": "A partial edit of the caller's own ingredient (SPEC 18). A field that isn't sent keeps its stored value.\nAuthorization runs before validation, so a catalog ingredient is a 403 whatever the body.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u2013100 characters after trimming, in any language. Not unique.",
+                        "examples": [
+                            "Protein bar, dark chocolate"
+                        ],
+                        "maxLength": 100
+                    },
+                    "category": {
+                        "examples": [
+                            "supplements"
+                        ],
+                        "$ref": "#/components/schemas/IngredientCategory"
+                    },
+                    "kcal": {
+                        "type": "number",
+                        "description": "Energy per 100 g, in kcal.",
+                        "examples": [
+                            380
+                        ],
+                        "minimum": 0,
+                        "maximum": 900
+                    },
+                    "protein": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            33
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "carbs": {
+                        "type": "number",
+                        "description": "Grams per 100 g.",
+                        "examples": [
+                            38
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fat": {
+                        "type": "number",
+                        "description": "Grams per 100 g. `protein + carbs + fat`, with stored values filling the fields not sent, may be at most 100.",
+                        "examples": [
+                            11
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "fiber": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "description": "Grams per 100 g. `null` clears it.",
+                        "examples": [
+                            9
+                        ],
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "portions": {
+                        "type": "array",
+                        "description": "The full new list of portions, in display order, at most 10. Leave it out to keep the portions as they\nare. An item with a `key` updates that portion, an item without one is a new portion, and a portion\nleft out is removed. `[]` removes them all.",
+                        "examples": [
+                            [
+                                {
+                                    "key": "p_8k2d4x7q",
+                                    "label": "1 bar",
+                                    "grams": 45
+                                },
+                                {
+                                    "label": "2 bars",
+                                    "grams": 90
+                                }
+                            ]
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "key": {
+                                    "type": "string",
+                                    "description": "A current portion of this ingredient, at most once. Leave it out for a new portion.",
+                                    "examples": [
+                                        "p_8k2d4x7q"
+                                    ]
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "description": "1\u201350 characters after trimming.",
+                                    "examples": [
+                                        "1 bar"
+                                    ],
+                                    "maxLength": 50
+                                },
+                                "grams": {
+                                    "type": "number",
+                                    "description": "Weight of the measure in grams: more than 0, at most 5000.",
+                                    "examples": [
+                                        45
+                                    ],
+                                    "maximum": 5000
+                                }
+                            },
+                            "required": [
+                                "label",
+                                "grams"
+                            ]
+                        },
+                        "maxItems": 10,
+                        "uniqueItems": true
+                    }
+                },
+                "title": "UpdateIngredientRequest"
+            },
             "UpdateProfileRequest": {
                 "type": "object",
                 "properties": {
@@ -1992,6 +3302,21 @@
                     "activity_level"
                 ],
                 "title": "UpdateProfileRequest"
+            },
+            "UpdateWorkoutLocationRequest": {
+                "type": "object",
+                "description": "A partial edit of the caller's own workout location (SPEC 19). A field that isn't sent keeps its stored value.",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "1\u201350 characters after trimming. Unique among the caller's other locations, ignoring case and accents.\nKeeping the current name is allowed.",
+                        "examples": [
+                            "House workout"
+                        ],
+                        "maxLength": 50
+                    }
+                },
+                "title": "UpdateWorkoutLocationRequest"
             },
             "UserResource": {
                 "type": "object",
@@ -2085,6 +3410,70 @@
                     "recorded_at"
                 ],
                 "title": "WeightEntryResource"
+            },
+            "WorkoutLocationResource": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Stable identifier, used in the URL and in the exercise list's `location` filter. Never changes.",
+                        "examples": [
+                            "l_01JC9Z7M4Q8N2R5T6V7W8X9Y0Z"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "examples": [
+                            "Gym Local"
+                        ]
+                    },
+                    "exercise_count": {
+                        "type": "integer",
+                        "description": "How many exercises are saved at the location.",
+                        "examples": [
+                            2
+                        ]
+                    },
+                    "exercises": {
+                        "type": "array",
+                        "description": "Keys of the exercises saved at the location, sorted by exercise name, then key. Only returned by the\ndetail shape (create, show and update). Full exercise cards come from `/exercises?location=<key>`.",
+                        "examples": [
+                            [
+                                "barbell_bench_press",
+                                "dumbbell_bicep_curl"
+                            ]
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "created_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "examples": [
+                            "2026-11-10T10:00:00Z"
+                        ]
+                    },
+                    "updated_at": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "examples": [
+                            "2026-11-10T10:00:00Z"
+                        ]
+                    }
+                },
+                "required": [
+                    "key",
+                    "name",
+                    "exercise_count",
+                    "created_at",
+                    "updated_at"
+                ],
+                "title": "WorkoutLocationResource"
             }
         },
         "responses": {
@@ -2139,6 +3528,25 @@
             },
             "ModelNotFoundException": {
                 "description": "Not found",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "message": {
+                                    "type": "string",
+                                    "description": "Error overview."
+                                }
+                            },
+                            "required": [
+                                "message"
+                            ]
+                        }
+                    }
+                }
+            },
+            "AuthorizationException": {
+                "description": "Authorization error",
                 "content": {
                     "application/json": {
                         "schema": {

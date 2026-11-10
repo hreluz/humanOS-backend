@@ -1,0 +1,1838 @@
+[
+  {
+    "key": "bacon_pan_fried",
+    "name": "Bacon, pan-fried",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "168322",
+    "kcal": 468,
+    "protein": 33.9,
+    "carbs": 1.7,
+    "fat": 35.1,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 12,
+      "monounsaturated_fat": 15.5,
+      "polyunsaturated_fat": 6.11,
+      "trans_fat": 0.144,
+      "cholesterol": 99,
+      "calcium": 11,
+      "iron": 0.95,
+      "magnesium": 31,
+      "phosphorus": 388,
+      "potassium": 499,
+      "sodium": 1680,
+      "zinc": 3.06,
+      "copper": 0.105,
+      "manganese": 0.022,
+      "selenium": 50.7,
+      "vitamin_a": 11,
+      "vitamin_c": 0,
+      "vitamin_d": 0.4,
+      "vitamin_e": 0.42,
+      "vitamin_k": 0,
+      "thiamin": 0.56,
+      "riboflavin": 0.232,
+      "niacin": 10.5,
+      "pantothenic_acid": 1.1,
+      "vitamin_b6": 0.535,
+      "folate": 0,
+      "vitamin_b12": 1.09,
+      "choline": 89.5
+    },
+    "portions": [
+      {
+        "key": "slice",
+        "label": "1 slice",
+        "grams": 11.5,
+        "translations": {
+          "es": "1 lonja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tocino, frito"
+    },
+    "aliases": {
+      "es": [
+        "tocineta frita",
+        "beicon frito"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Two_slices_of_raw_bacon_and_parsley_on_the_wooden_board._Two_tomatoes_next_to_it.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Close-up_of_the_piled_slices_of_raw_bacon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      }
+    ]
+  },
+  {
+    "key": "bacon_raw",
+    "name": "Bacon, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "168277",
+    "kcal": 393,
+    "protein": 13.7,
+    "carbs": 0,
+    "fat": 37.1,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0.35,
+      "saturated_fat": 12.6,
+      "monounsaturated_fat": 15.9,
+      "polyunsaturated_fat": 5.76,
+      "trans_fat": 0.147,
+      "cholesterol": 66,
+      "calcium": 6,
+      "iron": 0.38,
+      "magnesium": 13,
+      "phosphorus": 166,
+      "potassium": 201,
+      "sodium": 751,
+      "zinc": 1.14,
+      "copper": 0.046,
+      "manganese": 0.012,
+      "selenium": 20.1,
+      "vitamin_a": 11,
+      "vitamin_c": 0,
+      "vitamin_d": 0.4,
+      "vitamin_e": 0.43,
+      "vitamin_k": 0,
+      "thiamin": 0.276,
+      "riboflavin": 0.081,
+      "niacin": 4.02,
+      "pantothenic_acid": 0.555,
+      "vitamin_b6": 0.266,
+      "folate": 0,
+      "vitamin_b12": 0.5,
+      "choline": 47.8
+    },
+    "portions": [
+      {
+        "key": "slice",
+        "label": "1 slice",
+        "grams": 28,
+        "translations": {
+          "es": "1 lonja"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Tocino, crudo"
+    },
+    "aliases": {
+      "es": [
+        "tocineta",
+        "beicon",
+        "panceta ahumada"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Two_slices_of_raw_bacon_and_parsley_on_the_wooden_board._Two_tomatoes_next_to_it.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      },
+      {
+        "file": "Close-up_of_the_piled_slices_of_raw_bacon.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Shixart1985"
+      }
+    ]
+  },
+  {
+    "key": "beef_chuck_braised",
+    "name": "Beef chuck, braised",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "168669",
+    "kcal": 309,
+    "protein": 30.2,
+    "carbs": 0,
+    "fat": 19.9,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 7.9,
+      "monounsaturated_fat": 8.58,
+      "polyunsaturated_fat": 0.757,
+      "cholesterol": 121,
+      "calcium": 16,
+      "iron": 2.61,
+      "magnesium": 20,
+      "phosphorus": 182,
+      "potassium": 241,
+      "sodium": 49,
+      "zinc": 6.87,
+      "copper": 0.116,
+      "manganese": 0.01,
+      "selenium": 27.8,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0.3,
+      "vitamin_e": 0.54,
+      "vitamin_k": 1.9,
+      "thiamin": 0.057,
+      "riboflavin": 0.193,
+      "niacin": 4.22,
+      "pantothenic_acid": 0.595,
+      "vitamin_b6": 0.29,
+      "folate": 9,
+      "vitamin_b12": 2.46,
+      "choline": 115
+    },
+    "portions": [],
+    "translations": {
+      "es": "Paleta de res, guisada"
+    },
+    "aliases": {
+      "en": [
+        "beef stew meat, cooked"
+      ],
+      "es": [
+        "estofado de res"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Braised_Beef_Cheek.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ceeseven"
+      },
+      {
+        "file": "Braised_Beef_Tongue_with_Spaghetti.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ceeseven"
+      }
+    ]
+  },
+  {
+    "key": "beef_chuck_raw",
+    "name": "Beef chuck, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2646174",
+    "kcal": 237,
+    "protein": 18.4,
+    "carbs": 0,
+    "fat": 17.8,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 6.34,
+      "monounsaturated_fat": 7.02,
+      "polyunsaturated_fat": 0.556,
+      "trans_fat": 0.669,
+      "cholesterol": 66.8,
+      "calcium": 4.58,
+      "iron": 2.06,
+      "magnesium": 17,
+      "phosphorus": 151,
+      "potassium": 281,
+      "sodium": 48.4,
+      "zinc": 5.39,
+      "copper": 0.054,
+      "manganese": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Paleta de res, cruda"
+    },
+    "aliases": {
+      "en": [
+        "stewing beef"
+      ],
+      "es": [
+        "aguja de res",
+        "carne de res para guisar"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Högrev,_rå.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Hangsna"
+      }
+    ]
+  },
+  {
+    "key": "beef_liver_fried",
+    "name": "Beef liver, pan-fried",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "168627",
+    "kcal": 175,
+    "protein": 26.5,
+    "carbs": 5.16,
+    "fat": 4.68,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.53,
+      "monounsaturated_fat": 1.11,
+      "polyunsaturated_fat": 1.02,
+      "trans_fat": 0.335,
+      "cholesterol": 381,
+      "calcium": 6,
+      "iron": 6.17,
+      "magnesium": 22,
+      "phosphorus": 485,
+      "potassium": 351,
+      "sodium": 77,
+      "zinc": 5.23,
+      "copper": 14.6,
+      "manganese": 0.356,
+      "selenium": 32.8,
+      "vitamin_a": 7740,
+      "vitamin_c": 0.7,
+      "vitamin_d": 1.2,
+      "vitamin_e": 0.46,
+      "vitamin_k": 3.9,
+      "thiamin": 0.177,
+      "riboflavin": 3.42,
+      "niacin": 17.5,
+      "pantothenic_acid": 6.94,
+      "vitamin_b6": 1.03,
+      "folate": 260,
+      "vitamin_b12": 83.1,
+      "choline": 418
+    },
+    "portions": [
+      {
+        "key": "slice",
+        "label": "1 slice",
+        "grams": 81,
+        "translations": {
+          "es": "1 filete"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Hígado de res, frito"
+    },
+    "aliases": {
+      "es": [
+        "hígado de vacuno frito"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Liver_dish,_Hattenheim.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gerda Arendt"
+      },
+      {
+        "file": "Hähnchen-Leber_Fröschbrunna_Kronach.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Benreis"
+      }
+    ]
+  },
+  {
+    "key": "beef_liver_raw",
+    "name": "Beef liver, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "169451",
+    "kcal": 135,
+    "protein": 20.4,
+    "carbs": 3.89,
+    "fat": 3.63,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.23,
+      "monounsaturated_fat": 0.479,
+      "polyunsaturated_fat": 0.465,
+      "trans_fat": 0.17,
+      "cholesterol": 275,
+      "calcium": 5,
+      "iron": 4.9,
+      "magnesium": 18,
+      "phosphorus": 387,
+      "potassium": 313,
+      "sodium": 69,
+      "zinc": 4,
+      "copper": 9.76,
+      "manganese": 0.31,
+      "selenium": 39.7,
+      "vitamin_a": 4970,
+      "vitamin_c": 1.3,
+      "vitamin_d": 1.2,
+      "vitamin_e": 0.38,
+      "vitamin_k": 3.1,
+      "thiamin": 0.189,
+      "riboflavin": 2.76,
+      "niacin": 13.2,
+      "pantothenic_acid": 7.17,
+      "vitamin_b6": 1.08,
+      "folate": 290,
+      "vitamin_b12": 59.3,
+      "choline": 333
+    },
+    "portions": [],
+    "translations": {
+      "es": "Hígado de res, crudo"
+    },
+    "aliases": {
+      "es": [
+        "hígado de vacuno"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Raw_veal_liver,_2010.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Javier Lastras"
+      }
+    ]
+  },
+  {
+    "key": "beef_sirloin_broiled",
+    "name": "Beef sirloin steak, broiled",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "168729",
+    "kcal": 257,
+    "protein": 26.8,
+    "carbs": 0,
+    "fat": 15.8,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 6.2,
+      "monounsaturated_fat": 6.56,
+      "polyunsaturated_fat": 0.583,
+      "cholesterol": 96,
+      "calcium": 18,
+      "iron": 1.81,
+      "magnesium": 22,
+      "phosphorus": 201,
+      "potassium": 327,
+      "sodium": 54,
+      "zinc": 4.81,
+      "copper": 0.088,
+      "manganese": 0.009,
+      "selenium": 29,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_e": 0.46,
+      "vitamin_k": 1.6,
+      "thiamin": 0.067,
+      "riboflavin": 0.118,
+      "niacin": 7.27,
+      "pantothenic_acid": 0.528,
+      "vitamin_b6": 0.534,
+      "folate": 8,
+      "vitamin_b12": 1.77,
+      "choline": 102
+    },
+    "portions": [],
+    "translations": {
+      "es": "Bistec de sirloin de res, a la parrilla"
+    },
+    "aliases": {
+      "en": [
+        "beef sirloin steak, grilled"
+      ],
+      "es": [
+        "bistec de res a la plancha"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Milestone_-_Top_Sirloin_with_Peppercorn_Sauce_(5853156226).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Calgary Reviews from Calgary, Canada"
+      },
+      {
+        "file": "Sirloin_Steak,_Otawara.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Miyuki Meinaka"
+      }
+    ]
+  },
+  {
+    "key": "beef_sirloin_raw",
+    "name": "Beef sirloin steak, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2727574",
+    "kcal": 146,
+    "protein": 22,
+    "carbs": 0.218,
+    "fat": 5.71,
+    "fiber": 0,
+    "nutrients": {
+      "cholesterol": 60.1,
+      "calcium": 3.7,
+      "iron": 2.22,
+      "magnesium": 22.1,
+      "phosphorus": 193,
+      "potassium": 349,
+      "sodium": 42.8,
+      "zinc": 3.45,
+      "copper": 0.07,
+      "manganese": 0.002
+    },
+    "portions": [],
+    "translations": {
+      "es": "Bistec de sirloin de res, crudo"
+    },
+    "aliases": {
+      "en": [
+        "top sirloin"
+      ],
+      "es": [
+        "cadera de res",
+        "cuadril",
+        "aguayón"
+      ]
+    },
+    "photos": [
+      {
+        "file": "대통령상에_빛나는_행주한우.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "고양축산농협"
+      }
+    ]
+  },
+  {
+    "key": "chicken_breast_raw",
+    "name": "Chicken breast, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2646170",
+    "kcal": 112,
+    "protein": 22.5,
+    "carbs": 0,
+    "fat": 1.93,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 0.349,
+      "monounsaturated_fat": 0.369,
+      "polyunsaturated_fat": 0.296,
+      "trans_fat": 0.009,
+      "cholesterol": 72.7,
+      "calcium": 3.94,
+      "iron": 0.354,
+      "magnesium": 26.2,
+      "phosphorus": 215,
+      "potassium": 330,
+      "sodium": 65.8,
+      "zinc": 0.654,
+      "copper": 0.004,
+      "manganese": 0
+    },
+    "portions": [
+      {
+        "key": "piece",
+        "label": "1 piece",
+        "grams": 272,
+        "translations": {
+          "es": "1 pieza"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pechuga de pollo, cruda"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "CHICKEN_BREAST.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "MrBeastRapper"
+      }
+    ]
+  },
+  {
+    "key": "chicken_breast_roasted",
+    "name": "Chicken breast, roasted",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "171477",
+    "kcal": 165,
+    "protein": 31,
+    "carbs": 0,
+    "fat": 3.57,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.01,
+      "monounsaturated_fat": 1.24,
+      "polyunsaturated_fat": 0.77,
+      "cholesterol": 85,
+      "calcium": 15,
+      "iron": 1.04,
+      "magnesium": 29,
+      "phosphorus": 228,
+      "potassium": 256,
+      "sodium": 74,
+      "zinc": 1,
+      "copper": 0.049,
+      "manganese": 0.017,
+      "selenium": 27.6,
+      "vitamin_a": 6,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 0.27,
+      "vitamin_k": 0.3,
+      "thiamin": 0.07,
+      "riboflavin": 0.114,
+      "niacin": 13.7,
+      "pantothenic_acid": 0.965,
+      "vitamin_b6": 0.6,
+      "folate": 4,
+      "vitamin_b12": 0.34,
+      "choline": 85.3
+    },
+    "portions": [
+      {
+        "key": "cup_diced",
+        "label": "1 cup, chopped or diced",
+        "grams": 140,
+        "translations": {
+          "es": "1 taza, picada o en cubos"
+        }
+      },
+      {
+        "key": "half_breast",
+        "label": "½ breast",
+        "grams": 86,
+        "translations": {
+          "es": "½ pechuga"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pechuga de pollo, asada"
+    },
+    "aliases": {
+      "en": [
+        "chicken breast, grilled",
+        "chicken breast, baked"
+      ],
+      "es": [
+        "pechuga de pollo a la plancha",
+        "pechuga de pollo al horno"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Pan_Roasted_Chicken_Breasts,_Garlic_Mashed_Potatoes,_Fiddlehead_Ferns_and_Sauce_Supreme.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "John Herschell"
+      }
+    ]
+  },
+  {
+    "key": "chicken_drumstick_raw",
+    "name": "Chicken drumstick, with skin, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "172373",
+    "kcal": 161,
+    "protein": 18.1,
+    "carbs": 0.11,
+    "fat": 9.2,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.46,
+      "monounsaturated_fat": 3.72,
+      "polyunsaturated_fat": 1.96,
+      "trans_fat": 0.047,
+      "cholesterol": 92,
+      "calcium": 8,
+      "iron": 0.71,
+      "magnesium": 18,
+      "phosphorus": 163,
+      "potassium": 211,
+      "sodium": 106,
+      "zinc": 1.86,
+      "copper": 0.062,
+      "manganese": 0.014,
+      "selenium": 20.2,
+      "vitamin_a": 14,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 0.19,
+      "vitamin_k": 2.5,
+      "thiamin": 0.083,
+      "riboflavin": 0.195,
+      "niacin": 4.84,
+      "pantothenic_acid": 1.03,
+      "vitamin_b6": 0.345,
+      "folate": 3,
+      "vitamin_b12": 0.53,
+      "choline": 52.8
+    },
+    "portions": [
+      {
+        "key": "drumstick",
+        "label": "1 drumstick",
+        "grams": 133,
+        "translations": {
+          "es": "1 pierna"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Pierna de pollo, con piel, cruda"
+    },
+    "aliases": {
+      "es": [
+        "jamoncito de pollo"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Raw_chicken_drumsticks_(3312851753).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Geoff Peters from Vancouver, BC, Canada"
+      },
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_with_potatoes,_onion,_garlic,_and_rosemary_before_roasting.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
+  },
+  {
+    "key": "chicken_drumstick_roasted",
+    "name": "Chicken drumstick, with skin, roasted",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "173612",
+    "kcal": 191,
+    "protein": 23.4,
+    "carbs": 0,
+    "fat": 10.2,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.74,
+      "monounsaturated_fat": 4.16,
+      "polyunsaturated_fat": 2.08,
+      "trans_fat": 0.055,
+      "cholesterol": 130,
+      "calcium": 11,
+      "iron": 1.11,
+      "magnesium": 22,
+      "phosphorus": 195,
+      "potassium": 247,
+      "sodium": 123,
+      "zinc": 2.36,
+      "copper": 0.071,
+      "manganese": 0.015,
+      "selenium": 26.9,
+      "vitamin_a": 12,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 0.19,
+      "vitamin_k": 3.2,
+      "thiamin": 0.093,
+      "riboflavin": 0.203,
+      "niacin": 5.4,
+      "pantothenic_acid": 1.08,
+      "vitamin_b6": 0.383,
+      "folate": 4,
+      "vitamin_b12": 0.39,
+      "choline": 67.8
+    },
+    "portions": [],
+    "translations": {
+      "es": "Pierna de pollo, con piel, asada"
+    },
+    "aliases": {
+      "es": [
+        "jamoncito de pollo asado"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_Drumstick_with_Jalapeño.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      },
+      {
+        "file": "Fırında_Domates_Soslu_Tavuk_Baget.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Samizambak"
+      }
+    ]
+  },
+  {
+    "key": "chicken_liver_raw",
+    "name": "Chicken liver, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "171060",
+    "kcal": 119,
+    "protein": 16.9,
+    "carbs": 0.73,
+    "fat": 4.83,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 1.56,
+      "monounsaturated_fat": 1.25,
+      "polyunsaturated_fat": 1.31,
+      "trans_fat": 0.065,
+      "cholesterol": 345,
+      "calcium": 8,
+      "iron": 8.99,
+      "magnesium": 19,
+      "phosphorus": 297,
+      "potassium": 230,
+      "sodium": 71,
+      "zinc": 2.67,
+      "copper": 0.492,
+      "manganese": 0.255,
+      "selenium": 54.6,
+      "vitamin_a": 3300,
+      "vitamin_c": 17.9,
+      "vitamin_d": 0,
+      "vitamin_e": 0.7,
+      "vitamin_k": 0,
+      "thiamin": 0.305,
+      "riboflavin": 1.78,
+      "niacin": 9.73,
+      "pantothenic_acid": 6.23,
+      "vitamin_b6": 0.853,
+      "folate": 588,
+      "vitamin_b12": 16.6,
+      "choline": 194
+    },
+    "portions": [
+      {
+        "key": "liver",
+        "label": "1 liver",
+        "grams": 44,
+        "translations": {
+          "es": "1 hígado"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Hígado de pollo, crudo"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Preparing_Chicken_Liver_01.JPG",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Poupou l'quourouce"
+      },
+      {
+        "file": "Preparing_Chicken_Liver_02.JPG",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Poupou l'quourouce"
+      }
+    ]
+  },
+  {
+    "key": "chicken_liver_simmered",
+    "name": "Chicken liver, simmered",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "171061",
+    "kcal": 167,
+    "protein": 24.5,
+    "carbs": 0.87,
+    "fat": 6.51,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.06,
+      "monounsaturated_fat": 1.42,
+      "polyunsaturated_fat": 1.99,
+      "trans_fat": 0.09,
+      "cholesterol": 563,
+      "calcium": 11,
+      "iron": 11.6,
+      "magnesium": 25,
+      "phosphorus": 405,
+      "potassium": 263,
+      "sodium": 76,
+      "zinc": 3.98,
+      "copper": 0.496,
+      "manganese": 0.359,
+      "selenium": 82.4,
+      "vitamin_a": 3980,
+      "vitamin_c": 27.9,
+      "vitamin_d": 0,
+      "vitamin_e": 0.82,
+      "vitamin_k": 0,
+      "thiamin": 0.291,
+      "riboflavin": 1.99,
+      "niacin": 11,
+      "pantothenic_acid": 6.67,
+      "vitamin_b6": 0.755,
+      "folate": 578,
+      "vitamin_b12": 16.8,
+      "choline": 290
+    },
+    "portions": [
+      {
+        "key": "liver",
+        "label": "1 liver",
+        "grams": 44,
+        "translations": {
+          "es": "1 hígado"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Hígado de pollo, hervido"
+    },
+    "aliases": {},
+    "photos": [
+      {
+        "file": "Liat_Portal_for_Foodie_Disorder_-_Chicken_Liver_with_Chestnuts_and_Rice.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "HaJunkiyada"
+      }
+    ]
+  },
+  {
+    "key": "chicken_thigh_raw",
+    "name": "Chicken thigh, skinless, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2646171",
+    "kcal": 149,
+    "protein": 18.6,
+    "carbs": 0,
+    "fat": 7.92,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 1.66,
+      "monounsaturated_fat": 2.24,
+      "polyunsaturated_fat": 1.42,
+      "trans_fat": 0.024,
+      "cholesterol": 91.7,
+      "calcium": 5.65,
+      "iron": 0.602,
+      "magnesium": 21.8,
+      "phosphorus": 178,
+      "potassium": 272,
+      "sodium": 62.3,
+      "zinc": 1.35,
+      "copper": 0.042,
+      "manganese": 0
+    },
+    "portions": [
+      {
+        "key": "thigh",
+        "label": "1 thigh",
+        "grams": 149,
+        "translations": {
+          "es": "1 muslo"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Muslo de pollo, sin piel, crudo"
+    },
+    "aliases": {
+      "es": [
+        "contramuslo de pollo"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Raw_chicken_thighs.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "gran"
+      }
+    ]
+  },
+  {
+    "key": "chicken_thigh_roasted",
+    "name": "Chicken thigh, skinless, roasted",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "172388",
+    "kcal": 179,
+    "protein": 24.8,
+    "carbs": 0,
+    "fat": 8.15,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 2.31,
+      "monounsaturated_fat": 3.36,
+      "polyunsaturated_fat": 1.7,
+      "trans_fat": 0.044,
+      "cholesterol": 133,
+      "calcium": 9,
+      "iron": 1.13,
+      "magnesium": 24,
+      "phosphorus": 230,
+      "potassium": 269,
+      "sodium": 106,
+      "zinc": 1.92,
+      "copper": 0.067,
+      "manganese": 0.016,
+      "selenium": 27.1,
+      "vitamin_a": 8,
+      "vitamin_c": 0,
+      "vitamin_d": 0.2,
+      "vitamin_e": 0.18,
+      "vitamin_k": 3.9,
+      "thiamin": 0.096,
+      "riboflavin": 0.218,
+      "niacin": 6.21,
+      "pantothenic_acid": 1.3,
+      "vitamin_b6": 0.462,
+      "folate": 5,
+      "vitamin_b12": 0.42,
+      "choline": 71.8
+    },
+    "portions": [
+      {
+        "key": "thigh",
+        "label": "1 thigh",
+        "grams": 116,
+        "translations": {
+          "es": "1 muslo"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Muslo de pollo, sin piel, asado"
+    },
+    "aliases": {
+      "en": [
+        "chicken thigh, grilled"
+      ],
+      "es": [
+        "contramuslo de pollo asado"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Roast_Chicken_Legs_and_Thighs_(31196736704).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Willis Lam"
+      }
+    ]
+  },
+  {
+    "key": "beef_ground_90_cooked",
+    "name": "Ground beef 90/10, cooked",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "171794",
+    "kcal": 230,
+    "protein": 28.4,
+    "carbs": 0,
+    "fat": 12,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 4.71,
+      "monounsaturated_fat": 5.03,
+      "polyunsaturated_fat": 0.428,
+      "trans_fat": 0.359,
+      "cholesterol": 89,
+      "calcium": 16,
+      "iron": 3.08,
+      "magnesium": 27,
+      "phosphorus": 250,
+      "potassium": 433,
+      "sodium": 87,
+      "zinc": 6.84,
+      "copper": 0.099,
+      "manganese": 0.013,
+      "selenium": 21.6,
+      "vitamin_a": 3,
+      "vitamin_c": 0,
+      "vitamin_d": 0,
+      "vitamin_e": 0.12,
+      "vitamin_k": 1.2,
+      "thiamin": 0.043,
+      "riboflavin": 0.191,
+      "niacin": 6.8,
+      "pantothenic_acid": 0.807,
+      "vitamin_b6": 0.428,
+      "folate": 8,
+      "vitamin_b12": 2.8,
+      "choline": 91.4
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de res 90/10, cocida"
+    },
+    "aliases": {
+      "en": [
+        "minced beef, cooked"
+      ],
+      "es": [
+        "carne picada de vacuno cocida"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ground_beef_frying.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "BrokenSphere"
+      }
+    ]
+  },
+  {
+    "key": "beef_ground_90_raw",
+    "name": "Ground beef 90/10, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2514743",
+    "kcal": 190,
+    "protein": 18.2,
+    "carbs": 0,
+    "fat": 12.8,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 5.05,
+      "monounsaturated_fat": 4.48,
+      "polyunsaturated_fat": 0.361,
+      "trans_fat": 0.484,
+      "cholesterol": 65.9,
+      "calcium": 7.14,
+      "iron": 2.13,
+      "magnesium": 16.5,
+      "phosphorus": 148,
+      "potassium": 281,
+      "sodium": 61.6,
+      "zinc": 4.19,
+      "copper": 0.056,
+      "manganese": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de res 90/10, cruda"
+    },
+    "aliases": {
+      "en": [
+        "minced beef"
+      ],
+      "es": [
+        "carne picada de vacuno",
+        "carne de res molida"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ground_Beef.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Julia033"
+      }
+    ]
+  },
+  {
+    "key": "lamb_ground_broiled",
+    "name": "Ground lamb, broiled",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "172544",
+    "kcal": 283,
+    "protein": 24.8,
+    "carbs": 0,
+    "fat": 19.6,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 8.12,
+      "monounsaturated_fat": 8.32,
+      "polyunsaturated_fat": 1.4,
+      "cholesterol": 97,
+      "calcium": 22,
+      "iron": 1.79,
+      "magnesium": 24,
+      "phosphorus": 201,
+      "potassium": 339,
+      "sodium": 81,
+      "zinc": 4.67,
+      "copper": 0.128,
+      "manganese": 0.024,
+      "selenium": 27.7,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 0.14,
+      "vitamin_k": 5.3,
+      "thiamin": 0.1,
+      "riboflavin": 0.25,
+      "niacin": 6.7,
+      "pantothenic_acid": 0.66,
+      "vitamin_b6": 0.14,
+      "folate": 19,
+      "vitamin_b12": 2.61,
+      "choline": 93.4
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de cordero, a la parrilla"
+    },
+    "aliases": {
+      "es": [
+        "carne picada de cordero cocida"
+      ]
+    },
+    "photos": [
+      {
+        "file": "20240809_Kabab_koobideh_&_Kabuli_Pulao_Restaurant_Safrani_Berlin_anagoria.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Anagoria"
+      },
+      {
+        "file": "Dinner_30_07_2019_Lamb_Koftas_with_salad,_a_sourdough_and_linseed_wrap_with_onion_&_garlic_dip_(48162583727).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "CharmaineZoe's Marvelous Melange from England"
+      }
+    ]
+  },
+  {
+    "key": "lamb_ground_raw",
+    "name": "Ground lamb, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "174370",
+    "kcal": 282,
+    "protein": 16.6,
+    "carbs": 0,
+    "fat": 23.4,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 10.2,
+      "monounsaturated_fat": 9.6,
+      "polyunsaturated_fat": 1.85,
+      "cholesterol": 73,
+      "calcium": 16,
+      "iron": 1.55,
+      "magnesium": 21,
+      "phosphorus": 157,
+      "potassium": 222,
+      "sodium": 59,
+      "zinc": 3.41,
+      "copper": 0.101,
+      "manganese": 0.019,
+      "selenium": 18.8,
+      "vitamin_a": 0,
+      "vitamin_c": 0,
+      "vitamin_d": 0.1,
+      "vitamin_e": 0.2,
+      "vitamin_k": 3.6,
+      "thiamin": 0.11,
+      "riboflavin": 0.21,
+      "niacin": 5.96,
+      "pantothenic_acid": 0.65,
+      "vitamin_b6": 0.13,
+      "folate": 18,
+      "vitamin_b12": 2.31,
+      "choline": 69.3
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de cordero, cruda"
+    },
+    "aliases": {
+      "en": [
+        "minced lamb"
+      ],
+      "es": [
+        "carne picada de cordero"
+      ]
+    },
+    "photos": [
+      {
+        "file": "20240809_Kabab_koobideh_&_Kabuli_Pulao_Restaurant_Safrani_Berlin_anagoria.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Anagoria"
+      },
+      {
+        "file": "Dinner_30_07_2019_Lamb_Koftas_with_salad,_a_sourdough_and_linseed_wrap_with_onion_&_garlic_dip_(48162583727).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "CharmaineZoe's Marvelous Melange from England"
+      }
+    ]
+  },
+  {
+    "key": "pork_ground_cooked",
+    "name": "Ground pork, cooked",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "167903",
+    "kcal": 297,
+    "protein": 25.7,
+    "carbs": 0,
+    "fat": 20.8,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 7.72,
+      "monounsaturated_fat": 9.25,
+      "polyunsaturated_fat": 1.87,
+      "cholesterol": 94,
+      "calcium": 22,
+      "iron": 1.29,
+      "magnesium": 24,
+      "phosphorus": 226,
+      "potassium": 362,
+      "sodium": 73,
+      "zinc": 3.21,
+      "copper": 0.044,
+      "manganese": 0.011,
+      "selenium": 35.4,
+      "vitamin_a": 2,
+      "vitamin_c": 0.7,
+      "vitamin_d": 0.5,
+      "vitamin_e": 0.21,
+      "vitamin_k": 0,
+      "thiamin": 0.706,
+      "riboflavin": 0.22,
+      "niacin": 4.21,
+      "pantothenic_acid": 0.52,
+      "vitamin_b6": 0.391,
+      "folate": 6,
+      "vitamin_b12": 0.54,
+      "choline": 88.3
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de cerdo, cocida"
+    },
+    "aliases": {
+      "es": [
+        "carne picada de cerdo cocida"
+      ]
+    },
+    "photos": [
+      {
+        "file": "DSCF1165_Crispy_fried_pork_with_peanuts_fresh_green_chilies_and_kaffir_lime_leaves_-_a_spicy_crunchy_Thai-style_appetizer.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "PattayaPatrol"
+      }
+    ]
+  },
+  {
+    "key": "pork_ground_raw",
+    "name": "Ground pork, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2514745",
+    "kcal": 233,
+    "protein": 17.8,
+    "carbs": 0,
+    "fat": 17.5,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 6.28,
+      "monounsaturated_fat": 7.78,
+      "polyunsaturated_fat": 2.55,
+      "trans_fat": 0.066,
+      "cholesterol": 71.2,
+      "calcium": 5.86,
+      "iron": 0.788,
+      "magnesium": 19,
+      "phosphorus": 173,
+      "potassium": 318,
+      "sodium": 53.6,
+      "zinc": 2.23,
+      "copper": 0.067,
+      "manganese": 0
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de cerdo, cruda"
+    },
+    "aliases": {
+      "es": [
+        "carne picada de cerdo"
+      ]
+    },
+    "photos": [
+      {
+        "file": "DSCF1165_Crispy_fried_pork_with_peanuts_fresh_green_chilies_and_kaffir_lime_leaves_-_a_spicy_crunchy_Thai-style_appetizer.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "PattayaPatrol"
+      }
+    ]
+  },
+  {
+    "key": "turkey_ground_cooked",
+    "name": "Ground turkey, cooked",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "746785",
+    "kcal": 220,
+    "protein": 27.1,
+    "carbs": 0,
+    "fat": 11.6,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 2.97,
+      "monounsaturated_fat": 3.78,
+      "polyunsaturated_fat": 3.49,
+      "trans_fat": 0.144,
+      "cholesterol": 104,
+      "calcium": 31,
+      "iron": 1.56,
+      "magnesium": 29.1,
+      "phosphorus": 259,
+      "potassium": 304,
+      "sodium": 90,
+      "zinc": 3.77,
+      "copper": 0.166,
+      "manganese": 0.01,
+      "selenium": 28.4,
+      "vitamin_a": 30,
+      "vitamin_e": 0.18,
+      "thiamin": 0.088,
+      "riboflavin": 0.262,
+      "niacin": 8.09,
+      "pantothenic_acid": 1.4,
+      "vitamin_b6": 0.497,
+      "vitamin_b12": 1.9,
+      "choline": 78.7
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de pavo, cocida"
+    },
+    "aliases": {
+      "es": [
+        "pavo molido cocido"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ground_turkey_(4515834437).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
+  },
+  {
+    "key": "turkey_ground_raw",
+    "name": "Ground turkey, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2514747",
+    "kcal": 158,
+    "protein": 17.3,
+    "carbs": 0,
+    "fat": 9.59,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 2.26,
+      "monounsaturated_fat": 2.87,
+      "polyunsaturated_fat": 2.59,
+      "trans_fat": 0.081,
+      "cholesterol": 82.3,
+      "calcium": 23.6,
+      "iron": 1.09,
+      "magnesium": 17.3,
+      "phosphorus": 162,
+      "potassium": 246,
+      "sodium": 80.2,
+      "zinc": 2.95,
+      "copper": 0.076,
+      "manganese": 0.016
+    },
+    "portions": [],
+    "translations": {
+      "es": "Carne molida de pavo, cruda"
+    },
+    "aliases": {
+      "es": [
+        "pavo molido"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Ground_turkey_(4515834437).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
+  },
+  {
+    "key": "ham_sliced",
+    "name": "Ham, sliced",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "173864",
+    "kcal": 164,
+    "protein": 16.6,
+    "carbs": 3.63,
+    "fat": 8.8,
+    "fiber": 1.3,
+    "nutrients": {
+      "sugars": 1,
+      "saturated_fat": 0.5,
+      "monounsaturated_fat": 4.35,
+      "polyunsaturated_fat": 0.789,
+      "cholesterol": 57,
+      "calcium": 24,
+      "iron": 1.02,
+      "magnesium": 22,
+      "phosphorus": 153,
+      "potassium": 287,
+      "sodium": 814,
+      "zinc": 1.35,
+      "copper": 0.089,
+      "manganese": 0.557,
+      "selenium": 20.7,
+      "vitamin_a": 0,
+      "vitamin_c": 4,
+      "vitamin_d": 0.7,
+      "vitamin_e": 0.08,
+      "vitamin_k": 0,
+      "thiamin": 0.626,
+      "riboflavin": 0.178,
+      "niacin": 2.9,
+      "pantothenic_acid": 0.435,
+      "vitamin_b6": 0.329,
+      "folate": 7,
+      "vitamin_b12": 0.42,
+      "choline": 81.9
+    },
+    "portions": [
+      {
+        "key": "slice",
+        "label": "1 slice",
+        "grams": 28,
+        "translations": {
+          "es": "1 loncha"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Jamón cocido, en lonchas"
+    },
+    "aliases": {
+      "en": [
+        "deli ham"
+      ],
+      "es": [
+        "jamón de york",
+        "jamón en rebanadas",
+        "jamón inglés"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Sliced_cooked_ham.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Anna.Massini"
+      },
+      {
+        "file": "Glazed_and_sliced_ham.jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Michael Coté from Austin, Texas, Texas"
+      }
+    ]
+  },
+  {
+    "key": "pork_loin_raw",
+    "name": "Pork loin, raw",
+    "category": "meat",
+    "source": "usda_foundation",
+    "source_id": "2646168",
+    "kcal": 174,
+    "protein": 21.1,
+    "carbs": 0,
+    "fat": 9.47,
+    "fiber": 0,
+    "nutrients": {
+      "saturated_fat": 3.28,
+      "monounsaturated_fat": 3.95,
+      "polyunsaturated_fat": 1.38,
+      "trans_fat": 0.029,
+      "cholesterol": 55.9,
+      "calcium": 4.11,
+      "iron": 0.452,
+      "magnesium": 22,
+      "phosphorus": 197,
+      "potassium": 361,
+      "sodium": 40.2,
+      "zinc": 1.57,
+      "copper": 0.038,
+      "manganese": 0
+    },
+    "portions": [
+      {
+        "key": "chop",
+        "label": "1 chop, boneless part",
+        "grams": 117,
+        "translations": {
+          "es": "1 chuleta, parte sin hueso"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lomo de cerdo, crudo"
+    },
+    "aliases": {
+      "es": [
+        "lomo de chancho",
+        "lomo de puerco"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Pork_loin.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Pannet"
+      },
+      {
+        "file": "Pork_loin_(1027276219).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Father.Jack from Coventry, UK"
+      }
+    ]
+  },
+  {
+    "key": "pork_loin_roasted",
+    "name": "Pork loin, roasted",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "167821",
+    "kcal": 248,
+    "protein": 27.1,
+    "carbs": 0,
+    "fat": 14.6,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 5.37,
+      "monounsaturated_fat": 6.51,
+      "polyunsaturated_fat": 1.21,
+      "cholesterol": 82,
+      "calcium": 19,
+      "iron": 0.99,
+      "magnesium": 26,
+      "phosphorus": 242,
+      "potassium": 408,
+      "sodium": 59,
+      "zinc": 2.32,
+      "copper": 0.056,
+      "manganese": 0.011,
+      "selenium": 33.4,
+      "vitamin_a": 3,
+      "vitamin_c": 0.6,
+      "vitamin_d": 1,
+      "vitamin_e": 0.19,
+      "vitamin_k": 0,
+      "thiamin": 0.988,
+      "riboflavin": 0.313,
+      "niacin": 5.57,
+      "pantothenic_acid": 0.76,
+      "vitamin_b6": 0.516,
+      "folate": 6,
+      "vitamin_b12": 0.71,
+      "choline": 93.1
+    },
+    "portions": [
+      {
+        "key": "chop",
+        "label": "1 chop, boneless part",
+        "grams": 89,
+        "translations": {
+          "es": "1 chuleta, parte sin hueso"
+        }
+      }
+    ],
+    "translations": {
+      "es": "Lomo de cerdo, asado"
+    },
+    "aliases": {
+      "es": [
+        "lomo de chancho asado",
+        "lomo de puerco asado"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Smoked_Pork_Loin_Roast_(3153427521).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "brian gautreau from Colorado Springs, USA"
+      },
+      {
+        "file": "Pork_loin_with_apricots.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "MOs810"
+      }
+    ]
+  },
+  {
+    "key": "turkey_breast_raw",
+    "name": "Turkey breast, raw",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "174515",
+    "kcal": 114,
+    "protein": 23.3,
+    "carbs": 0,
+    "fat": 2.33,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.344,
+      "monounsaturated_fat": 0.562,
+      "polyunsaturated_fat": 0.639,
+      "trans_fat": 0.013,
+      "cholesterol": 53,
+      "calcium": 9,
+      "iron": 0.76,
+      "magnesium": 27,
+      "phosphorus": 185,
+      "potassium": 267,
+      "sodium": 74,
+      "zinc": 1.16,
+      "copper": 0.054,
+      "manganese": 0.006,
+      "selenium": 22.1,
+      "vitamin_a": 5,
+      "vitamin_c": 0,
+      "vitamin_d": 0.2,
+      "vitamin_e": 0.09,
+      "vitamin_k": 0,
+      "thiamin": 0.052,
+      "riboflavin": 0.165,
+      "niacin": 10.3,
+      "pantothenic_acid": 1.05,
+      "vitamin_b6": 0.814,
+      "vitamin_b12": 1.35,
+      "choline": 52.3
+    },
+    "portions": [],
+    "translations": {
+      "es": "Pechuga de pavo, cruda"
+    },
+    "aliases": {
+      "es": [
+        "pechuga de pavita",
+        "pechuga de guajolote"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Krůtí_prsa.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Dezidor"
+      }
+    ]
+  },
+  {
+    "key": "turkey_breast_roasted",
+    "name": "Turkey breast, roasted",
+    "category": "meat",
+    "source": "usda_sr_legacy",
+    "source_id": "174516",
+    "kcal": 136,
+    "protein": 29.5,
+    "carbs": 0,
+    "fat": 1.97,
+    "fiber": 0,
+    "nutrients": {
+      "sugars": 0,
+      "saturated_fat": 0.66,
+      "monounsaturated_fat": 0.64,
+      "polyunsaturated_fat": 0.67,
+      "trans_fat": 0.024,
+      "cholesterol": 70,
+      "calcium": 14,
+      "iron": 0.97,
+      "magnesium": 28,
+      "phosphorus": 253,
+      "potassium": 297,
+      "sodium": 114,
+      "zinc": 1.52,
+      "copper": 0.06,
+      "manganese": 0.005,
+      "selenium": 30.7,
+      "vitamin_a": 3,
+      "vitamin_c": 0,
+      "vitamin_d": 0.2,
+      "vitamin_e": 0.06,
+      "vitamin_k": 0,
+      "thiamin": 0.043,
+      "riboflavin": 0.19,
+      "niacin": 11.8,
+      "pantothenic_acid": 1.04,
+      "vitamin_b6": 0.83,
+      "folate": 9,
+      "vitamin_b12": 1.76,
+      "choline": 76.4
+    },
+    "portions": [],
+    "translations": {
+      "es": "Pechuga de pavo, asada"
+    },
+    "aliases": {
+      "es": [
+        "pechuga de pavita asada"
+      ]
+    },
+    "photos": [
+      {
+        "file": "Cooked_turkey_breast_-_November_2023_-_Sarah_Stierch.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Missvain"
+      }
+    ]
+  }
+]
